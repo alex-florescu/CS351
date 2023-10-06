@@ -21,7 +21,7 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/components/specificati
     - can be updated and improved
    
 ## 2. Objectives
-The overall objective of the project is to design and implement a series of mono audio effects that are commonly used for guitars.
+The overall objective of the project is to design a series of mono audio effects that are commonly used for guitars, and implement them in SystemVerilog to produce an audio effects processor on an FPGA board.
   * Must have
     - Bypass option: permitting the sound to pass through the system with no alterations
     - Delay effect: Adding a delayed copy of the input sound on top of the input sound
@@ -31,4 +31,21 @@ The overall objective of the project is to design and implement a series of mono
   * Could have
     - Noise cancellation effect: removing an unwanted sound of a certain frequency from the input sound
     - Tuner: leds on the board could provide information to help tune the guitar
-  
+
+## 3. Methodology
+ * Development methodology
+   - To enable future objective re-prioritisation, an Agile methodology is suitable
+   - For each audio effect/filter we can imagine a cycle consisting of
+      1. research
+      2. intial implementation
+      3. reflection on potential changes
+      4. final implementation
+      5. testing
+ * Code/version management methodology
+   - use of GitHub for Version control and parallel documentation development
+
+## 4. Timetable
+
+## 5. Resources & Risks
+
+## 6. Legal, Social, Ethical and Professional Issues & Considerations
