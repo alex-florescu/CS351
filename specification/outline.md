@@ -45,6 +45,7 @@ The overall objective of the project is to design a series of mono audio effects
    - use of GitHub for Version control and parallel documentation development
 
 ## 4. Timetable
+![image](https://github.com/alex-florescu/CS351/assets/97969710/daf7c321-5390-4946-b1ae-149fc0fb9830)
 
 ## 5. Resources & Risks
 
