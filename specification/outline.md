@@ -10,7 +10,6 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/components/specificati
   * Problem
 
 According to statistics gathered by the guitar manufacturing company Fender, the number of people who know how to play the guitar or have attempted playing it is estimated to 712 million. ( https://www.guitarchalk.com/how-many-guitar-players/#:~:text=Estimated%20number%20of%20guitar%20players,percent%20of%20the%20world's%20population. )
-an estimated 700 million know how to play this instrument or have at least attempted playing it a few times in their life.
     - Desired outcomes of playing an instrument: being able to reproduce your favourite pieces of music
     - We need to be able to add effects. So far this is commonly done either through hardware (separate or combined effects pedals), or through software (interface + a software that allows you to obtain the desired tone)
   * Cause
@@ -52,8 +51,7 @@ The overall objective of the project is to design a series of mono audio effects
 Tasks interrupted by Holidays or other priorities have been given a longer duration
 ## 5. Risks & Resources
 ### Potential Risks
-In order to prevent unexpected setbacks on the development of the product, a set of possible risks has been 
-A set of potential risks has been identified, to 
+In order to prevent unexpected setbacks on the development of the product, a set of possible risks has been considered:
  - The PC used for developing the audio system breaks and the progress is lost
     * Use a cloud storage method for both code base and documentation, such as GitHub to prevent any data loss
     * Do not leave the PC unsupervised in public areas
