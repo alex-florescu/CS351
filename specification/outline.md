@@ -8,6 +8,9 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/components/specificati
     - Xilinx definition: https://www.xilinx.com/products/silicon-devices/fpga/what-is-an-fpga.html
       - Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASICs), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogrammed as the design evolves.
   * Problem
+
+According to statistics gathered by the guitar manufacturing company Fender, the number of people who know how to play the guitar or have attempted playing it is estimated to 712 million. ( https://www.guitarchalk.com/how-many-guitar-players/#:~:text=Estimated%20number%20of%20guitar%20players,percent%20of%20the%20world's%20population. )
+an estimated 700 million know how to play this instrument or have at least attempted playing it a few times in their life.
     - Desired outcomes of playing an instrument: being able to reproduce your favourite pieces of music
     - We need to be able to add effects. So far this is commonly done either through hardware (separate or combined effects pedals), or through software (interface + a software that allows you to obtain the desired tone)
   * Cause
@@ -47,6 +50,31 @@ The overall objective of the project is to design a series of mono audio effects
 ## 4. Timetable
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/daf7c321-5390-4946-b1ae-149fc0fb9830)
 Tasks interrupted by Holidays or other priorities have been given a longer duration
-## 5. Resources & Risks
+## 5. Risks & Resources
+### Potential Risks
+In order to prevent unexpected setbacks on the development of the product, a set of possible risks has been 
+A set of potential risks has been identified, to 
+ - The PC used for developing the audio system breaks and the progress is lost
+    * Use a cloud storage method for both code base and documentation, such as GitHub to prevent any data loss
+    * Do not leave the PC unsupervised in public areas
+  
+ - The FPGA kit breaks and development is stalled
+    * Avoid unnecesarry transportation of the kit
+    * Only use the kit in a trusted and safe environment
+    * Use simulation testbenches as the main method of verification. Only perform hardware testing after simulations are denoted successful
+
+ - Student illness or inability to work
+    * Respect a healthy schedule and a maintain an adequate balance of rest and time dedicated to work.
+    * Consider ergonomic recomendations, such as correct posture or appropriate room lighting.
+    * Divide project objectives into mandatory and optional categories, to allow deprioritisation of goals in the case of an unfortunate event.
+
+### Resources
+- The system will be created in the SystemVerilog language. Code will be developed using Visual Studio Code and Xilinx Vivado. The latter will also be used to simulations and testbench creation.
+- The FPGA board that will be used is a *Xilinx Zybo Z7-20*
+- The music equipment used are
+   * Harley Benton JB-20 Bass Guitar
+   * Fender Rumble 40 Amplifier
+   * 6.35mm Jack cables and 6.35mm Jack to 3.5mm Jack adapters 
 
 ## 6. Legal, Social, Ethical and Professional Issues & Considerations
+Testing will be performed in a private environment, and the presentation will only be available to the Department Computer Science and other staff members within the University of Warwick. The SystemVerilog system will not be published and no data will be collected for the development of this project. Hence there are no legal, social, ethical or professional issues to be considered. 
