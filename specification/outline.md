@@ -20,36 +20,22 @@ _Xilinx_, the biggest worldwide manufacturer of such devices, defines _Field Pro
 The device that will be used for this project is a *Xilinx Zybo Z7-20*, a piece of hardware of small dimensions (8.8 x 12.2cm) and a maximum clock frequency of over 500MHz. This will make possible the development of real-time audio processing system which would include a series of audio effects, such as **delay**, **distortion** and **reverb**. Implementing such a system on an FPGA will provide the advantages of an upgradable and highly customizable audio effects processor, while maintaining the convenience of a compact device.
 
 Building onto the _ES2E3 Digital Systems Design_ module content, in which an FPGA board was used to create a simple videogame, the _FPGA Guitar/Bass Effects Processor_ project should constitute a challenging goal, and a demanding learning experience.
-
-
-
-
-
-
-  * Problem
-    - Desired outcomes of playing an instrument: being able to reproduce your favourite pieces of music
-    - We need to be able to add effects. So far this is commonly done either through hardware (separate or combined effects pedals), or through software (interface + a software that allows you to obtain the desired tone)
-  * Cause
-    - Effect pedals are often non-flexible and expensive
-    - Software requires a larger set up and usually a laptop
-  * Solution
-    - Implementing effects on an FPGA kit
-  * Impact
-    - adds more physical mobility: does not require a large set-up
-    - Accessible price (under £500 excluding cost of code development)
-    - can be updated and improved
    
 ## 2. Objectives
-The overall objective of the project is to design a series of mono audio effects that are commonly used for guitars, and implement them in SystemVerilog to produce an audio effects processor on an FPGA board.
-  * Must have
-    - Bypass option: permitting the sound to pass through the system with no alterations
-    - Delay effect: Adding a delayed copy of the input sound on top of the input sound
-    - Distortion effect: Outputting a distorted version of the input sound
-  * Should have
-    - Reverb effect: Adding multiple slightly-delayed and lowered copies of the sound on top of the input sound
-  * Could have
+ * Mandatory Objectives
+The core objective of the project is to design a series of mono audio effects (which are commonly used by guitar players) and implement them in SystemVerilog to produce an functional FPGA audio processor. This would consist of:
+    - Bypass option: permit the sound to pass through the system with no alterations
+    - Delay effect: create an effect where a limited number of delayed copies of the sound are added on top of the input sound.
+    - Distortion effect: create and effect where the input sound signal is amplified and clipped, producing a "fuzzy" tone
+    - Effect selector: implement a method to select one (or none) of the effects offered by the audio processor
+ * Optional Objectives
+Depending on the progress and pace of the project, other effects and features can be added to the audio processor, such as:
+    - Reverb effect: adding multiple slightly-delayed and lowered copies of the sound on top of the input sound
+    - Effects pipelining: allow multiple effects to be selected at the same time, in a desired order
+ * Potential Objectives
+If the prior objectives are accomplished far before the project deadline, some other features can be added to the audio processor, such as:
     - Noise cancellation effect: removing an unwanted sound of a certain frequency from the input sound
-    - Tuner: leds on the board could provide information to help tune the guitar
+    - Tuner: leds on the board can be programmed to provide information useful for tuning the guitar
 
 ## 3. Methodology
  * Development methodology
