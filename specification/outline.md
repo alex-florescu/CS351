@@ -7,9 +7,11 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/components/specificati
     - Field Programmable Gate Array - programmable hardware
     - Xilinx definition: https://www.xilinx.com/products/silicon-devices/fpga/what-is-an-fpga.html
       - Field Programmable Gate Arrays (FPGAs) are semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASICs), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogrammed as the design evolves.
-  * Problem
 
 According to statistics gathered by the guitar manufacturing company Fender, the number of people who know how to play the guitar or have attempted playing it is estimated to 712 million. ( https://www.guitarchalk.com/how-many-guitar-players/#:~:text=Estimated%20number%20of%20guitar%20players,percent%20of%20the%20world's%20population. )
+One of the main approaches to learning how to play an instrument is reproducing several pieces of music, preferably of increasing difficulty. In the attempt of recreating a specific sound, audio effects provide noticeable difference.
+The common procedure of adding audio effects to your guitar is by either purchasing _pedals_, hardware devices that are pipelined and connected in between the guitar and the amplifier, or by purchasing software that would replicate the _pedals_ and connecting the guitar to a computer through a separate audio interface.
+  * Problem
     - Desired outcomes of playing an instrument: being able to reproduce your favourite pieces of music
     - We need to be able to add effects. So far this is commonly done either through hardware (separate or combined effects pedals), or through software (interface + a software that allows you to obtain the desired tone)
   * Cause
