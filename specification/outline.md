@@ -15,25 +15,25 @@ The aim of this project is to offer an alternative medium that combines the adva
 
 _Xilinx_, the biggest worldwide manufacturer of such devices, defines _Field Programmable Gate Arrays_ (FPGAs) as "semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASICs), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogrammed as the design evolves."
 
-The device that will be used for this project is a *Xilinx Zybo Z7-20*, a piece of hardware of small dimensions (8.8 x 12.2cm) with a maximum clock frequency of over 500 MHz. This will make possible the development of a real-time audio processing system, which will include a series of audio effects such as **delay**, **distortion**, and **reverb**. Implementing such a system on an FPGA will provide the advantages of an upgradable and highly customizable audio effects processor while maintaining the convenience of a compact device.
+The device that will be used for this project is a *Xilinx Zybo Z7-20*, a piece of hardware of small dimensions (8.8 x 12.2cm) with a maximum clock frequency of over 500 MHz. This will make possible the development of a real-time audio processing system, which will include a series of audio effects such as **delay**, **distortion**, and **reverb**. Implementing such a system on an FPGA will provide the advantages of an upgradable and highly customizable audio effects processor while maintaining the conve﻿nience of a compact device.
 
 Building on the _ES2E3 Digital Systems Design_ module content, in which an FPGA board was used to create a simple videogame, the _FPGA Guitar/Bass Effects Processor_ project should constitute a challenging goal and a demanding learning experience.
    
 ## 2. Objectives
- * Mandatory Objectives
+### Mandatory Objectives
 The core objective of the project is to design a series of mono audio effects (which are commonly used by guitar players) and implement them in SystemVerilog to produce a functional FPGA audio processor. This would consist of:
-    - Bypass option: permit the sound to pass through the system with no alterations.
-    - Delay effect: create an effect where a limited number of delayed copies of the sound are added on top of the input sound.
-    - Distortion effect: create an effect where the input sound signal is amplified and clipped, producing a "fuzzy" tone.
-    - Effect selector: implement a method to select one (or none) of the effects offered by the audio processor.
- * Optional Objectivesrough
+   * Bypass option: permit the sound to pass through the system with no alterations.
+   * Delay effect: create an effect where a limited number of delayed copies of the sound are added on top of the input sound.
+   * Distortion effect: create an effect where the input sound signal is amplified and clipped, producing a "fuzzy" tone.
+   * Effect selector: implement a method to select one (or none) of the effects offered by the audio processor.
+### Optional Objectives
 Depending on the progress and pace of the project, ﻿other effects and features can be added to the audio processor, such as:
-    - Reverb effect: adding multiple slightly delayed and lowered copies of the sound on top of the input sound.
-    - Effects pipelining: allow multiple effects to be selected at the same time, in a desired order.
- * Potential Objectives
+   * Reverb effect: adding multiple slightly delayed and lowered copies of the sound on top of the input sound.
+   * Effects pipelining: allow multiple effects to be selected at the same time, in a desired order.
+### Potential Objectives
 If the prior objectives are accomplished far before the project deadline, some other features can be added to the audio processor, such as:
-    - Noise cancellation effect: removing an unwan﻿ted sound of a certain frequency from the input sound.
-    - Tuner: LEDs on the board can be programmed to provide information useful for tuning the guitar.
+   * Noise cancellation effect: removing an unwanted sound of a certain frequency from the input sound.
+   * Tuner: LEDs on the board can be programmed to provide information useful for tuning the guitar.
 
 ## 3. Methodology
 
@@ -50,7 +50,7 @@ To allow such changes, a mix between a plan-driven and agile approach is suitabl
 ### Code and documentation management
 The local storage area where the project is developed will be regularly synchronised with an online GitHub repository. This must be done to prevent unwanted data loss and to guarantee a controlled coding environment that can be easily accessed by the project supervisor.
 GitHub will also be used to synchronise the documentation files with Overleaf (a practical online tool for accelerated LaTeX compilation).
-above
+
 ### Testing
 Since the project is developed in SystemVerilog, it will be thoroughly examined using testbenches. Each feature of the system will most likely be organised as an independent module of the audio processor. Therefore, the overall functionality of each component can be separately tested at the end of each sprint. The investigations should ensure not only a correct relationship between input and output signals but also adequate FPGA-specific statistics, such as _maximum frequency_ and _latency_. After the project is considered complete, final testbench statistics will be collected to create a formal testing report.
 
@@ -63,16 +63,16 @@ The timetable includes events that might interfere with the evolution of the sys
 ## 5. Risks and Resources
 ### Potential Risks
 In order to prevent unexpected setbacks in the development of the product, a set of possible risks has been considered:
- - The PC used for developing the audio system breaks:
+ - The PC used for developing the audio system breaks.
     * Use a cloud storage method for both code base and documentation, such as GitHub, to prevent any data loss.
     * Do not leave the PC unsupervised in public areas.
   
- - The FPGA kit breaks, and development is stalled:
+ - The FPGA kit breaks, and development is stalled.
     * Avoid unnecessary transportation of the kit.
     * Only use the kit in a trusted and safe environment.
     * Use simulation testbenches as the main method of verification. Only perform hardware testing after simulations are denoted as successful.
 
- - Student illness or inability to work:
+ - Student is illness or unable to work.
     * Respect a healthy schedule and maintain an adequate balance of rest and time dedicated to work.
     * Consider ergonomic recommendations, such as correct posture or appropriate room lighting.
     * Divide project objectives into mandatory and optional categories to allow deprioritisation of goals in the case of an unfortunate event.
