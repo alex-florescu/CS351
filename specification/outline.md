@@ -37,7 +37,7 @@ If the prior objectives are accomplished far before the project deadline, some o
 
 ## 3. Methodology
 
-### Development methodology the fact
+### Development methodology
 Since the project is delimited by fixed deadlines, its duration can be estimated at 6 months. With the overall objective of the project being straight-forward and the tasks being rather independent, a rough plan can be created. However, the project requires a substantial amount of research before final decisions can be made about the development of the system. In other words, tasks can be arranged in an approximate timetable, but the priorities are subject to change over the first few weeks of the project.
 
 To allow such changes, a mix between a plan-driven and agile approach is suitable, ensuring a balance between adaptability and steadiness. The project will be organised in 2-week sprints, with the intention that a new feature will be added to the audio processor at the end of each sprint. For each audio effect, filter, or feature of the system, we can outline a development cycle consisting of:
@@ -57,7 +57,8 @@ Since the project is developed in SystemVerilog, it will be thoroughly examined 
 ## 4. Timetable
 As mentioned above, the project development approach will consist of a mix of plan-driven and agile characteristics. A rudimentary Gantt chart of the tasks has been created, but it is expected to change in the near future as the project begins to take shape.
 
-![image](https://github.com/alex-florescu/CS351/assets/97969710/daf7c321-5390-4946-b1ae-149fc0fb9830)
+![cs351-spec-gantt-chart2](https://github.com/alex-florescu/CS351/assets/97969710/c61a2947-2f8e-4627-8784-ec629133a527)
+
 The timetable includes events that might interfere with the evolution of the system, and tasks surrounding these events have been assigned longer durations.
 
 ## 5. Risks and Resources
@@ -72,7 +73,7 @@ In order to prevent unexpected setbacks in the development of the product, a set
     * Only use the kit in a trusted and safe environment.
     * Use simulation testbenches as the main method of verification. Only perform hardware testing after simulations are denoted as successful.
 
- - Student is illness or unable to work.
+ - Student is ill or unable to work.
     * Respect a healthy schedule and maintain an adequate balance of rest and time dedicated to work.
     * Consider ergonomic recommendations, such as correct posture or appropriate room lighting.
     * Divide project objectives into mandatory and optional categories to allow deprioritisation of goals in the case of an unfortunate event.
