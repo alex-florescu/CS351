@@ -38,6 +38,9 @@ If the prior objectives are accomplished far before the project deadline, some o
     - Tuner: leds on the board can be programmed to provide information useful for tuning the guitar
 
 ## 3. Methodology
+Considering the fact that the project has fixed deadlines while also requiring a substantial amount of research, a mix between a plan-driven and agile approach is suitable.
+
+
  * Development methodology
    - To enable future objective re-prioritisation, an Agile methodology is suitable
    - For each audio effect/filter we can imagine a cycle consisting of
