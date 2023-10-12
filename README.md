@@ -2,10 +2,7 @@
 https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
 
 ## Keep in mind:
-  * start by talk about the problem that you are fixing!
   * set up meeting with supervisor, decide how. Don't show up to meetings with nothing to discuss
-  * divide objectives into: core & extra, so that your work can be considered complete if you met only the core objectives
-  * timetable: include breaks for exams and holidays
   * apply the things you learn in Project Management
   * Spend time on "impressive" things!
 
@@ -26,3 +23,8 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggest
   - when you reference any project/paper/etc. write a paragraph about outcomes, then compare the works in columns
   - all figures need reference
 * Do research now, as it will all probably be useful for the final report
+
+## Past notes
+  * start by talk about the problem that you are fixing!
+  * timetable: include breaks for exams and holidays
+  * divide objectives into: core & extra, so that your work can be considered complete if you met only the core objectives
