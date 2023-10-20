@@ -14,7 +14,10 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
  * Octave Pedal
 
 ### Creating a loopback
-https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt
+- constraints file
+  * https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt
+- https://github.com/Vladilit/fpga-multi-effect/tree/master
+
 
 ## Keep in mind:
   * set up meeting with supervisor, decide how. Don't show up to meetings with nothing to discuss
