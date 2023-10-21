@@ -16,7 +16,8 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 ### Creating a loopback
 - Official Digilent Zybo z20 constraints file 
   * [https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt](https://github.com/Digilent/digilent-xdc/blob/master/Zybo-Z7-Master.xdc)
-- https://github.com/Vladilit/fpga-multi-effect/tree/master
+- Zybo Reference Manual: https://digilent.com/reference/programmable-logic/zybo/reference-manual
+- Multi effects FPGA (but VHDL): https://github.com/Vladilit/fpga-multi-effect/tree/master
 
 
 ## Keep in mind:
