@@ -18,7 +18,16 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
   * [https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt](https://github.com/Digilent/digilent-xdc/blob/master/Zybo-Z7-Master.xdc)
 - Zybo Reference Manual: https://digilent.com/reference/programmable-logic/zybo/reference-manual
 - Multi effects FPGA (but VHDL): https://github.com/Vladilit/fpga-multi-effect/tree/master
+- Currently a bit confused about I2C and how I can actually use that: I need to convert it to something easier to modify
+   * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!!
 
+### Effects
+1. #### Gain
+- inputs are the outpus of ADC
+- fixed point multiplication with a given input
+
+
+----
 
 ## Keep in mind:
   * set up meeting with supervisor, decide how. Don't show up to meetings with nothing to discuss
