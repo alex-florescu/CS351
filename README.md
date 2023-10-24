@@ -19,7 +19,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 - Zybo Reference Manual: https://digilent.com/reference/programmable-logic/zybo/reference-manual
 - Multi effects FPGA (but VHDL): https://github.com/Vladilit/fpga-multi-effect/tree/master
 - Currently a bit confused about I2C and how I can actually use that: I need to convert it to something easier to modify
-   * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!!
+   * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!! https://www.xilinx.com/products/intellectual-property/audio-i2s.html
 
 ### Effects
 1. #### Gain
