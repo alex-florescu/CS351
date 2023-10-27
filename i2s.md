@@ -25,6 +25,11 @@ The word select line indicates the channel being transmitted:
 - WS = 0; channel 1 (left);
 - WS = 1; channel 2 (right).
 The official I2S specification explains that "WS may change either on a trailing or leading edge of the serial clock, but it doesn’t need to be symmetrical.
-In the target, this signal is latched on the leading edge of the clock signal. **The WS line changes one clock period before the MSB is transmitted**. This allows the target transmitter to derive synchronous timing of the serial data that will be set up for transmission. Furthermore, it enables the receiver to store the previous word and clear the input for the next word" (https://www.nxp.com/docs/en/user-manual/UM11732.pdf)
+An important feature of the WS signal si that it changes **one clock cycle after the MSB is transmitted**, which allowes a clock cycle for other necessary calculations, such as:
+- allowing target transmitter to derive synchronous timing of the serial data that will be set up for transmission
+- enabling the receiver to store the previous word and clear the input for the next word
+(https://www.nxp.com/docs/en/user-manual/UM11732.pdf)
+
+
 
 
