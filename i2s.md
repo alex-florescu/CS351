@@ -57,8 +57,8 @@ To use the audio codec in a design with non-default settings, it needs to be con
 A demo project that uses the Zybo Z7 audio codec in a bare-metal application can be found on the Zybo Z7 Resource Center. The audio codec is also supported in Petalinux generated embedded Linux systems, and will appear as a standard ALSA audio device. (https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
 
 ## Configuring the I2S Audio Codec
-https://c64onfpga.blogspot.com/2019/02/creating-sound-on-zybo-board.html
-https://docs.xilinx.com/r/en-US/ug1085-zynq-ultrascale-trm/I2C-Controller-Programming-Steps
+* https://c64onfpga.blogspot.com/2019/02/creating-sound-on-zybo-board.html
+* https://docs.xilinx.com/r/en-US/ug1085-zynq-ultrascale-trm/I2C-Controller-Programming-Steps
 
 ## I2S to AXI
 (https://docs.xilinx.com/r/en-US/pg308-i2s/Licensing-and-Ordering)
