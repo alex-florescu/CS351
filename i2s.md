@@ -33,8 +33,7 @@ An important feature of the WS signal si that it changes **one clock cycle after
 
 ## Using I2S Protocol in a Vivado Project
 
-### Zybo Z7 I2S signals
-* Copied directly from the reference manual!!!!!!
+### Zybo Z7 I2S signals - Copied directly from the reference manual!!!!!!
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/fec3a1f6-154f-4554-b0b2-382059f34d48)
 The audio codec needs to be clocked from the Zynq on the MCLK pin. This master clock will be used by the audio codec to establish the audio sampling frequency. This clock is required to be an integer multiple of the desired sampling rate. The default settings require a master clock of 12.288 Mhz, resulting in a 48 kHz sampling rate. For other frequencies and their respective configuration parameters, consult the SSM2603 datasheet.
 
