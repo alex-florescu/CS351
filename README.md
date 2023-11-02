@@ -20,6 +20,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 - Multi effects FPGA (but VHDL): https://github.com/Vladilit/fpga-multi-effect/tree/master
 - Currently a bit confused about I2C and how I can actually use that: I need to convert it to something easier to modify
    * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!! https://www.xilinx.com/products/intellectual-property/audio-i2s.html
+- Looper using FPGA: https://digilent.com/reference/learn/programmable-logic/tutorials/nexys-video-looper-demo/start?redirect=1
 
 ### Effects
 1. #### Gain
