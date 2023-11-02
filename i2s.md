@@ -33,6 +33,20 @@ An important feature of the WS signal si that it changes **one clock cycle after
 
 ## Using I2S Protocol in a Vivado Project
 
+### Zybo Z7 I2S signals
+* Copied directly from the reference manual!!!!!!
+![image](https://github.com/alex-florescu/CS351/assets/97969710/fec3a1f6-154f-4554-b0b2-382059f34d48)
+The audio codec needs to be clocked from the Zynq on the MCLK pin. This master clock will be used by the audio codec to establish the audio sampling frequency. This clock is required to be an integer multiple of the desired sampling rate. The default settings require a master clock of 12.288 Mhz, resulting in a 48 kHz sampling rate. For other frequencies and their respective configuration parameters, consult the SSM2603 datasheet.
+
+The codec has two modes: master and slave, with the slave being default. In this mode, the direction of the signals is specified in Table 12.2. When configured as master, the direction of BCLK, PBLRC and RECLRC is inverted. In this mode, the codec generates the proper frequencies for these clocks. No matter where the clocks are generated, PBDAT needs to be driven out and RECDAT sampled in sync with them. The master clock is always driven out of the Zynq. The timing diagram of an I²S stream can be seen on Figure 12.1. Note the one-cycle delay of the data stream with respect to the left/right clock changing state. Audio samples are transmitted MSB first, noted as 1 in the diagram.
+The digital mute signal (MUTE) is active-low, with a pull-down resistor. This means that when not used in the design, it will stay low and the analog outputs of the codec will stay muted. To enable the analog outputs, drive this signal high.
+
+To use the audio codec in a design with non-default settings, it needs to be configured over I2C. The audio path needs to be established by configuring the (de)multiplexers and amplifiers in the codec. Some digital processing can also be done in the codec. Configuration is read out and written by accessing the register map via I2C transfers. The register map is described in the SSM2603 datasheet.
+![image](https://github.com/alex-florescu/CS351/assets/97969710/66f8a472-c360-4241-aa16-a4fdb96aebe8)
+
+A demo project that uses the Zybo Z7 audio codec in a bare-metal application can be found on the Zybo Z7 Resource Center. The audio codec is also supported in Petalinux generated embedded Linux systems, and will appear as a standard ALSA audio device. (https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
+
+
 (https://docs.xilinx.com/r/en-US/pg308-i2s/Licensing-and-Ordering)
 Within the Vivado IP Catalogue, we can find the Xilinx® LogiCORE™ IP I2S Transmitter and LogiCORE™ Receiver cores, which "which makes it easy to implement the inter-IC-sound (I2S) interface used to connect audio devices for transmitting and receiving PCM audio".
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/584468a7-2673-4c39-bd14-4665e75002b1)
