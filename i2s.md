@@ -31,9 +31,7 @@ An important feature of the WS signal si that it changes **one clock cycle after
 (https://www.nxp.com/docs/en/user-manual/UM11732.pdf)
 
 
-## Using I2S Protocol in a Vivado Project
-
-### Zybo Z7 I2S signals - Copied directly from the reference manual!!!!!!
+## I2S signals on Zybo Z7 - Copied directly from the reference manual!!!!!!
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/fec3a1f6-154f-4554-b0b2-382059f34d48)
 The audio codec needs to be clocked from the Zynq on the MCLK pin. This master clock will be used by the audio codec to establish the audio sampling frequency. This clock is required to be an integer multiple of the desired sampling rate. The default settings require a master clock of 12.288 Mhz, resulting in a 48 kHz sampling rate. For other frequencies and their respective configuration parameters, consult the SSM2603 datasheet.
 
@@ -45,7 +43,9 @@ To use the audio codec in a design with non-default settings, it needs to be con
 
 A demo project that uses the Zybo Z7 audio codec in a bare-metal application can be found on the Zybo Z7 Resource Center. The audio codec is also supported in Petalinux generated embedded Linux systems, and will appear as a standard ALSA audio device. (https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
 
+## I2S signals in a Vivado project
 
+## I2S to AXI
 (https://docs.xilinx.com/r/en-US/pg308-i2s/Licensing-and-Ordering)
 Within the Vivado IP Catalogue, we can find the Xilinx® LogiCORE™ IP I2S Transmitter and LogiCORE™ Receiver cores, which "which makes it easy to implement the inter-IC-sound (I2S) interface used to connect audio devices for transmitting and receiving PCM audio".
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/584468a7-2673-4c39-bd14-4665e75002b1)
