@@ -11,5 +11,7 @@
 - 27 Oct - read and note information on I2S and converter IP
 - 27 Oct - Apply for MC
 - 28 Oct - run the DMA audio demo from Digilent
+- 31 Oct - Meeting with supervisor
 
 ### November
+- 02 Nov - Look into I2S signals and I2C controller
