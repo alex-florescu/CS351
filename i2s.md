@@ -59,6 +59,9 @@ A demo project that uses the Zybo Z7 audio codec in a bare-metal application can
 ## Configuring the I2S Audio Codec
 * https://c64onfpga.blogspot.com/2019/02/creating-sound-on-zybo-board.html
 * https://docs.xilinx.com/r/en-US/ug1085-zynq-ultrascale-trm/I2C-Controller-Programming-Steps
+* The audio codec is configured through the 2 I2C signals. Some information can be found here
+  * https://www.xilinx.com/products/intellectual-property/axi_iic.html?_ga=2.208365138.1385157479.1698953431-1389752106.1698953431#documentation
+    - first link brings up this: https://docs.xilinx.com/v/u/1.02a-English/axi_iic_ds756
 
 
 
