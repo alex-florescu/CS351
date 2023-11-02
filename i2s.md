@@ -32,6 +32,19 @@ An important feature of the WS signal si that it changes **one clock cycle after
 
 
 ## I2S signals on Zybo Z7 - Copied directly from the reference manual!!!!!!
+| Signal | Description |
+| -- | -- |
+MCLK | master/slave configuraion (decides direction of BCLK, PBLRC and RECLRC)
+BCLK | clock on which data is sent bit by bit
+PBLRC/RECLRC | word select (Left/Right) signals for Output and Input ports respectively
+PBDAT/RECDAT | 1-bit data bus for Output and Input channels respectively
+MUTE | Active low mute output. Set to 1 to enable audio output\
+SCL | I2C clock
+SDA | I2C data
+
+  * the two I2C signals are used (By Zynq) to configure the audio codec (example: the DMA Audio Demo selects input from either Line In or Mic In, but the Audio Codec has only got 1 set of RECDAT pins in the Constraints file)
+
+
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/fec3a1f6-154f-4554-b0b2-382059f34d48)
 The audio codec needs to be clocked from the Zynq on the MCLK pin. This master clock will be used by the audio codec to establish the audio sampling frequency. This clock is required to be an integer multiple of the desired sampling rate. The default settings require a master clock of 12.288 Mhz, resulting in a 48 kHz sampling rate. For other frequencies and their respective configuration parameters, consult the SSM2603 datasheet.
 
