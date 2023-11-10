@@ -8,16 +8,21 @@ ac_reclr & ac_pblrc | joint to LRCLK
 ac_recdat & ac_pbdat | joint to SDATA_I and SDATA_O
 ac_mclk | master clock at 12.288 MHz
 ac_muten | fixed at 1, since it's active low
-
+	
 ## Clocks in DMA demo
 * CLK_I is the input system clock (100MHz)
-* MCLK_O is the signal for configuring the I2S as either Master or Slave. Default is slave. (This needs to be configured from Zynq). DMA demo configures this using an ODDR flip flip at 12.288 MHz
-* BCLK_O configured based on
+* MCLK_O (clock of the Audio codec)
+  - also used for configuring the I2S as either Master or Slave. Default is slave. (This needs to be configured from Zynq).
+  - determines the sampling frequency
+    - DMA demo configures this using an ODDR flip flip at 12.288 MHz
+* BCLK_O (clock on which every data bit is sent)
+  - configured based on
   - rx tx enable
-  - 
-
-* 
+  - DIV_RATE
+    * we would only need one single configuration, so our DIV_RATE will be fixed
+* BCLK_Fall_int and BCLK_Rise_int signals created such that our clock remain unchanged when we are NOT receiving/transmitting data
 ----
+Snippet for BCLK_0
 
     SER_CLK: process(CLK_I)
     begin
@@ -41,10 +46,22 @@ ac_muten | fixed at 1, since it's active low
     -- Serial clock output
     BCLK_O <= BCLK_int when EN_RX_I = '1' or EN_TX_I = '1' else '1';
 
-	
+## Data in DMA demo
+* AC default configuration implies that Mic In and Line In are both transmitted through ac_recdat
+* registers are defined for data
+  - in: L & R
+  - out: L & R
+* LRCLK
+  - our frame is 64, hence at every 32 BCLK_Fall_int
+* Data transfer from register to SDATA_o
+  - on every 
+  - on a BCLK rise (if LRCLK changes)
+     - our internal data bus is filled from the register and MSB is left at 0
+  - on a BCLK fall
+     - our data is shifted 1 bit to the left, such that the MSB is filled with real data
+  - SDATA is continuously assigned to our MSB
 
 
-* This implies that the AC is configured in such way that Mic In and Line In are both transmitted through ac_recdat
 
 ## IIC signals (of audio codec)
 * "To use the audio codec in a design with non-default settings, it needs to be configured over I2C"
