@@ -46,26 +46,32 @@ Snippet for BCLK_0
     -- Serial clock output
     BCLK_O <= BCLK_int when EN_RX_I = '1' or EN_TX_I = '1' else '1';
 
-## Data in DMA demo
+## Input to output Path
+1. Data from SDATA_I placed bit by bit in register
+2. register data sent to fifo
+3. Data out of fifo, to AXIS Memory Mapped
+4. Data from AXIS MM to fifo
+5. Data sent from fifo to register
+6. Data sent out on SDATA_O from register bit by bit
+
+## Data sent to ports in DMA demo
 * AC default configuration implies that Mic In and Line In are both transmitted through ac_recdat
 * registers are defined for data
   - in: L & R
   - out: L & R
 * LRCLK
   - our frame is 64, hence at every 32 BCLK_Fall_int
-* Data transfer from register to SDATA_o
+* Data transfer from register to SDATA_O
   - on every 
   - on a BCLK rise (if LRCLK changes)
      - our internal data bus is filled from the register and MSB is left at 0
   - on a BCLK fall
      - our data is shifted 1 bit to the left, such that the MSB is filled with real data
-  - SDATA is continuously assigned to our MSB
+  - SDATA_O is continuously assigned to our MSB
 
-
+* Reversed similar approach for input data
 
 ## IIC signals (of audio codec)
 * "To use the audio codec in a design with non-default settings, it needs to be configured over I2C"
   * Zybo reference manual (https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
 * hence we might not need iic configuration
-* connected to a Vivado IP: xilinx.com:ip:axi_iic:2.0
-  - the input of this block is an S_AXI interface, output
