@@ -19,4 +19,4 @@
 - 04 Nov - More reading on I2C configuration
 - 07 Nov - Meeting with Eduardo
 - 10 Nov - Walk through DMA VHDL code and analyse data pata and clocks
-- 11 Nov - Start working on a rough implementation of I2S input to register??
+- 11 Nov - Write about configuring audio ports on Zybo board
