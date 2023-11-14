@@ -3,7 +3,8 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggest
 
 ## Notes for Progress Report
 - add a section of related works
-  - add table
+  - add table of summarised works
+- don't make it too long, it's only 5%
 
 ## Similar Projects
  * Design of DSP Guitar Effects with FPGA Implementation
