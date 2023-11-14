@@ -20,3 +20,4 @@
 - 07 Nov - Meeting with Eduardo
 - 10 Nov - Walk through DMA VHDL code and analyse data pata and clocks
 - 11 Nov - Write about configuring audio ports on Zybo board
+- 14 Nov - Meeting with Eduardo
