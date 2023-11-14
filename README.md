@@ -1,6 +1,10 @@
 # CS351 - FPGA Guitar Effects Project
 https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
 
+## Notes for Progress Report
+- add a section of related works
+  - add table
+
 ## Similar Projects
  * Design of DSP Guitar Effects with FPGA Implementation
 https://scholarworks.rit.edu/cgi/viewcontent.cgi?article=11514&context=theses
