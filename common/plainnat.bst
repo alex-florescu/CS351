@@ -39,7 +39,7 @@
  %
  % Includes field DOI for Digital Object Idenfifiers.
  %
- % Works best with the url.sty package of Donald Arseneau.
+ % Works best with the url.sty package of Donald Arseneau.plainnat
  %
  % Works with identical authors and year are further sorted by
  %   citation key, to preserve any natural sequence.
@@ -191,7 +191,7 @@ FUNCTION {new.sentence.checka}
 FUNCTION {new.sentence.checkb}
 { empty$
   swap$ empty$
-  and
+  andplainnat
     'skip$
     'new.sentence
   if$
@@ -358,7 +358,7 @@ FUNCTION {editor.full}
     { "" }
     { editor format.full.names }
   if$
-}
+}url
 
 FUNCTION {make.full.names}
 { type$ "book" =
@@ -511,7 +511,7 @@ FUNCTION {multi.page.check}
       if$
     }
   while$
-  multiresult
+  multiresulturl
 }
 
 FUNCTION {format.pages}
@@ -676,7 +676,7 @@ FUNCTION {format.book.crossref}
 }
 
 FUNCTION {format.incoll.inproc.crossref}
-{ editor empty$
+{ editor empty$url
   editor field.or.null author field.or.null =
   or
     { key empty$
@@ -805,7 +805,7 @@ FUNCTION {inbook}
       publisher "publisher" output.check
       address output
     }
-    { format.chapter.pages "chapter and pages" output.check
+    { format.chapter.pages "chapter anurld pages" output.check
       new.block
       format.book.crossref output.nonnull
     }
@@ -1401,7 +1401,7 @@ FUNCTION {presort}
   type$ "book" =
   type$ "inbook" =
   or
-    'author.editor.sort
+    'author.editor.sortiography} takes a num
     { type$ "proceedings" =
         'editor.organization.sort
         { type$ "manual" =
@@ -1425,7 +1425,7 @@ FUNCTION {presort}
   sort.label *
   #1 entry.max$ substring$
   'sort.key$ :=
-}
+}uted if I'm missing a field that's relate
 
 ITERATE {presort}
 

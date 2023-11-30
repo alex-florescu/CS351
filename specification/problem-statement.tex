@@ -1,0 +1,19 @@
+
+\subsection*{Current Problem}
+
+One of the main approaches to learning how to play an instrument is reproducing several pieces of music, preferably of increasing difficulty. In an attempt to recreate a specific sound, audio effects provide a noticeable difference and bring players a lot closer to making their instrument sound just like their favourite artist's.
+The guitar is the second most popular instrument in the world, with an estimated 700 million players, according to statistics\cite{700mil} gathered by the guitar manufacturing company \textit{Fender}. 
+
+The common procedure for adding audio effects to a guitar is either by purchasing \textit{effect pedals} (hardware devices connected in between the guitar and the amplifier) or by purchasing software, which can be used by connecting the guitar to a computer through a separate audio interface.
+
+Neither of these options is ideal. On one side, effect pedals offer the portability of a very small piece in a player's music setup but are often expensive. Additionally, the mixture of effects a player can create by using a couple of pedals is significantly limited. On the other side, using software to alter the sound of an instrument allows for a large range of adjustments (by simulating a pipeline of pedals or even replicating the signature sounds of popular amplifiers) and has the benefit of being upgradeable. While it might be a suitable decision for a music studio, a software-based setup becomes very inconvenient in a situation that demands mobility.
+
+\subsection*{Solution}
+
+The aim of this project is to offer an alternative medium that combines the advantages of both sides by recreating a few commonly used effects on an \textbf{FPGA board}.
+
+\textit{Xilinx}, the biggest worldwide manufacturer of such devices, defines Field Programmable Gate Arrays (FPGAs) as \textit{"semiconductor devices that are based around a matrix of configurable logic blocks (CLBs) connected via programmable interconnects. FPGAs can be reprogrammed to desired application or functionality requirements after manufacturing. This feature distinguishes FPGAs from Application Specific Integrated Circuits (ASICs), which are custom manufactured for specific design tasks. Although one-time programmable (OTP) FPGAs are available, the dominant types are SRAM based which can be reprogrammed as the design evolves."}\cite{whatisanfpga}
+
+The device that will be used for this project is a \textit{Xilinx Zybo Z7-20}, a piece of hardware of small dimensions (8.8 x 12.2cm) with a maximum clock frequency of over 500 MHz. This will make possible the development of a real-time audio processing system, which will include a series of audio effects such as \textbf{delay}, \textbf{distortion}, and \textbf{reverb}. Implementing such a system on an FPGA will provide the advantages of an upgradable and highly customisable audio effects processor while maintaining the convenience of a compact device.
+
+Building on the \textit{ES2E3 Digital Systems Design} module content, in which an FPGA board was used to create a simple video-game, the \textbf{FPGA Guitar/Bass Effects Processor} project should constitute a challenging goal and a demanding learning experience.
