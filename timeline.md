@@ -27,3 +27,6 @@
 - 04 Dec - Submitted Progress Report
 - 08 Dec - Working on the pass-through again: something is wrong
 - 09 Dec - More work on pass-through
+- 14 Dec - More work on pass-through: implement clock on negative edges
+- 18 Dec - Find issue with Audio Codec default configuration
+- 19 Dec
