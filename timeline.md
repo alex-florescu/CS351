@@ -29,4 +29,6 @@
 - 09 Dec - More work on pass-through
 - 14 Dec - More work on pass-through: implement clock on negative edges
 - 18 Dec - Find issue with Audio Codec default configuration
-- 19 Dec
+- 19 Dec - Reading on AC
+- 20 Dec - Written simple configuration of distortion effect
+- 21 Dec - 
