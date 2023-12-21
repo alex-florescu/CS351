@@ -13,9 +13,9 @@ module distortion #(
    input enable,
    input gain,
    input [DATA_WIDTH - 1:0] data_i,
-   // input  wire                  valid_i,
+   input  wire                  valid_i, // a 1 bit signal that is high for one clock cycle for each sample
    output reg [DATA_WIDTH - 1:0] data_o,
-   // output reg               valid_o,
+   output reg               valid_o,
 
 );
 
