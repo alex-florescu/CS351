@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Dec 22 10:22:00 2023
-# Process ID: 31448
+# Start of session at: Sat Dec 23 12:50:36 2023
+# Process ID: 28996
 # Current directory: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1
 # Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
 # Log file: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
@@ -12,6 +12,7 @@
 # Running On: alex-yoga, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14702 MB
 #-----------------------------------------------------------
 source clk_wiz_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 472.402 ; gain = 179.715
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: clk_wiz_0
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 70b83134750b4110 to dir: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.cache/ip/2023.2/7/0/70b83134750b4110/clk_wiz_0.dcp to C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp.
@@ -20,4 +21,4 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/alexm/OneDrive/Docu
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.cache/ip/2023.2/7/0/70b83134750b4110/clk_wiz_0_stub.v to C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1/clk_wiz_0_stub.v.
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.cache/ip/2023.2/7/0/70b83134750b4110/clk_wiz_0_stub.vhdl to C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/clk_wiz_0_synth_1/clk_wiz_0_stub.vhdl.
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = 70b83134750b4110.
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 22 10:22:09 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 23 12:50:46 2023...

@@ -14,7 +14,7 @@ module top(
     
     output ac_muten,
     
-    output [0:0] led,
+//    output [0:0] led,
     input  [0:0] sw
 );
 
@@ -98,15 +98,15 @@ assign ac_reclrc = lrclk_int;
 assign ac_pbdat = sw[0] ? out_data : ac_recdat;
 assign ac_bclk = bclk_int;
 
-reg [24:0] led_cnt = 25'b0;
-assign led[0] = led_cnt[20]; 
+//reg [24:0] led_cnt = 25'b0;
+//assign led[0] = led_cnt[20]; 
 
-always @(posedge ac_mclk) begin
-    if(rst)
-        led_cnt <= 25'b0;
-    else if(channel_cnt && bclk_nedge)
-        led_cnt <= led_cnt + 1;
-end
+//always @(posedge ac_mclk) begin
+//    if(rst)
+//        led_cnt <= 25'b0;
+//    else if(channel_cnt && bclk_nedge)
+//        led_cnt <= led_cnt + 1;
+//end
 
 assign ac_muten = 1'b1;
 

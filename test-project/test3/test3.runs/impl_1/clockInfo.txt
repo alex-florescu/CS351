@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Fri Dec 22 10:23:57 2023
+| Date         : Sat Dec 23 13:02:47 2023
 | Host         : alex-yoga
 | Design       : design_1
 | Device       : xc7z020-clg400-1--

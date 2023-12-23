@@ -1,0 +1,18 @@
+{
+  "name": "app_hello",
+  "type": "HOST",
+  "platform": "C:\\Users\\alexm\\OneDrive\\Documents\\uni\\CS351\\test-project\\test3\\hello\\export\\hello\\hello.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED",
+  "previousBuildStatusMap": {
+    "hw": "SUCCESS"
+  }
+}
