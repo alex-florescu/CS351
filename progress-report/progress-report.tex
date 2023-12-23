@@ -30,22 +30,33 @@
 \pagestyle{plain}
 
 \section{Introduction}
-\input{progress-report/introduction}
+\input{progress-report/1intro}
 
-\section{Background}
-\input{progress-report/background}
+\section{Related Works}
+\label{sec:backgr}
+\input{progress-report/2background}
 
 \section{Progress and Current Work}
-\input{progress-report/current-progress}
+\input{progress-report/3current}
 
-\section{Updated Timeline}
-\input{progress-report/timeline}
+\section{Future Plans}
+\input{progress-report/4next}
 
 \section{Project Management}
-\input{progress-report/management}
+\input{progress-report/5management}
 
-% \bibliographystyle{common/plainnat}
-\bibliographystyle{unsrt}
+\section{Ethical, Legal, Social and Professional Issues}
+\input{progress-report/6ethics}
+
+
+% \bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{common/bibliography}
+
+% append the specification
+\clearpage % Start a new page
+
+% Use \includepdf to append the external PDF
+\includepdf[pages=-]{specification/CS351.pdf}
 
 \end{document}

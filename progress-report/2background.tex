@@ -1,0 +1,51 @@
+There are many approaches for creating an audio processor in FPGA. Since this topic has been explored before, researching similar project will offer a great advantage when making important design decisions. Comparing results and objectives of related works, one can observe what ideas should be replicated in our environment. A concise comparison of the approaches taken by similar projects is presented in Table \ref{tab:related-works}.
+
+% table to compare them, ADD citations!!
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{5.5cm}|p{4cm}|p{2cm}|p{1.8cm}|p{1.5cm}|}
+        \hline
+        \textbf{Work} & \textbf{Objective} & \textbf{Target Device} & \textbf{Features} & \textbf{Number \mbox{of Effects}} \\
+        \hline
+        FPGA Design and Implementation of Electric Guitar Audio Effects \cite{tel-aviv} & Guitar effects with preset settings & Zedboard Zynq-7000 & Uses both PS and PL & 4 \\
+        \hline
+        Design of DSP Guitar Effects with FPGA Implementation \cite{rochester} & Guitar effects, physical user interface PCB & Zedboard Zynq-7000 & Uses both PS and PL & 8 \\
+        \hline
+        An FPGA Implementation of \mbox{Digital} Guitar Effects \cite{california} & Guitar effects, physical user interface PCB & CMOD A7 & Only uses PL & 5 \\
+        \hline
+        Zybo Z7 DMA Audio Demo \cite{dma-demo} & Record and playback 5-second audio samples & Zybo Zynq-7020 & Uses both PS and PL & N/A \\
+        \hline
+    \end{tabular}
+    \caption{Summary of Related Works}
+    \label{tab:related-works}
+\end{table}
+
+% tel aviv project
+\subsection[]{FPGA Design and Implementation of Electric Guitar Audio Effects\cite{tel-aviv}}
+
+Conducted within the University of Tel Aviv, this project aims to design four guitar effects using FPGA implementation: distortion, delay, tremolo and octavolo (an experimental combination of \textit{octaver} and tremolo). The targeted device for developing this project was a Digilent Zedboard, a powerful Xilinx SoC (System-on-Chip) which includes a Dual ARM A9 Processing System (PS) and FPGA programmable logic. Using the buttons and switches available on the board, a multi-effect system was created, consisting of several internal configurations the user could choose from. The final product produced satisfactory results, presenting a powerful audio processing system with a maximal latency of 1ms, a performance that exceeds the capabilities of leading commercial guitar pedals.
+
+A significant feature of this project is the usage of the AXI protocol\cite{axi} for transferring audio samples between modules responsible for implementing the effects. The PS of the device is used for configuring the I2C\cite{i2c} and I2S\cite{i2s} signals. These signals combined are controlling the Audio Codec of the Zedboard and, therefore, the communication with the analogue ports.
+
+% rochester project
+\subsection[]{Design of DSP Guitar Effects with FPGA Implementation\cite{rochester}}
+Completed in May 2020, this project uses the same target device and builds upon the accomplishments of the project from the University of Tel Aviv. This design aims to create a more configurable system, with real-time tunable algorithms. A significant part of this project is the creation of a physical user interface, more similar to traditional guitar pedals, where a foot-controlled circuit board takes user inputs from switches an potentiometers. To speed up the development time, the system is using the open-source configuration of the Audio Codec from the Tel Aviv project, and expands it to include the communication with the physical external controls. This project advocates for the advantages of customisable parameters and highlights this feature as one of the key objectives of the project.
+
+Additionally, this project manages to incorporate a total of 8 audio effects: gain, overdrive, distortion, delay, chorus, tremolo, noise gate and equaliser.
+
+
+%Dma audio demo
+\subsection[]{Zybo Z7 DMA Audio Demo\cite{dma-demo}}
+This demo project is provided by the Zybo Z7 board manufacturer (Digilent) as an open-source example of using the audio connections. The design is using the buttons available on the board to record a 5-second audio sample from either the Microphone-In or Line-In jack inputs. Similarly, the system waits for another button press to play the recorded sample on the Headphone output.
+
+Although the final performance appears straight-forward, the system features many key components that can aid in expanding the functionality into something more complex. Similar to the previously mentioned works, the demo utilises the PS available on the board to convert the audio data format to the AXI protocol.
+
+% cali
+\subsection[]{An FPGA Implementation of Digital Guitar Effects\cite{california}}
+The two main deliverables of this project are a physical Printed Circuit Board (PCB) design that incorporates tuning knobs and enable switches, used for configuring the audio effects, and the FPGA implementation of the audio system, which uses the PCB settings as real time parameters. Unlike the other works listed above, this system does not use the AXI protocol to transmit audio data, and focuses on the hardware implementation of the effects without using a PS. The \textit{Digilent CMOD A7} was selected as the board of choice as its physical format allowed the device to be effortlessly mounted on the PCB.
+
+\subsection{Remarks}
+
+Although the possibilities for audio processing on FPGAs are endless, not all these features are essential for constructing a well performing product. 
+
+For this project, the \textit{School of Engineering} provided a Digilent Zybo Z7-20 board, as it incorporates the needed pins for audio transmission and meets all requirements for implementing audio filters. Most of the approaches from the papers mentioned above, such as using the PS of the device or the AXI protocol for data transfer can be replicated on this device. However, for the scope of this project, the efforts will mostly be focused on the hardware implementation of the audio effects, but these design decisions might be considered later on, if necessary.
