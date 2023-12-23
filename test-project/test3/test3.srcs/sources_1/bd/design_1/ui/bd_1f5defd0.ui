@@ -1,0 +1,17 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.59705",
+   "Default View_TopLeft":"10,-207",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_ac_sda -pg 1 -lvl 3 -x 640 -y 30 -defaultsOSRD
+preplace port port-id_ac_scl -pg 1 -lvl 3 -x 640 -y 60 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 430 -y -20 -defaultsOSRD
+preplace inst top_0 -pg 1 -lvl 1 -x 120 -y 170 -defaultsOSRD
+levelinfo -pg 1 -20 120 430 640
+pagesize -pg 1 -db -bbox -sgen -110 -210 740 290
+"
+}
+
