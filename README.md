@@ -1,10 +1,6 @@
 # CS351 - FPGA Guitar Effects Project
 https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
 
-## Notes for Progress Report
-- add a section of related works
-  - add table of summarised works
-- don't make it too long, it's only 5%
 
 ## Similar Projects
  * Design of DSP Guitar Effects with FPGA Implementation
@@ -18,7 +14,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
  * Flanger Pedal (Left-Right)
  * Octave Pedal
 
-### Creating a loopback
+### Creating a pass-through
 - Official Digilent Zybo z20 constraints file 
   * [https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt](https://github.com/Digilent/digilent-xdc/blob/master/Zybo-Z7-Master.xdc)
 - Zybo Reference Manual: https://digilent.com/reference/programmable-logic/zybo/reference-manual
@@ -26,12 +22,6 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 - Currently a bit confused about I2C and how I can actually use that: I need to convert it to something easier to modify
    * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!! https://www.xilinx.com/products/intellectual-property/audio-i2s.html
 - Looper using FPGA: https://digilent.com/reference/learn/programmable-logic/tutorials/nexys-video-looper-demo/start?redirect=1
-
-### Effects
-1. #### Gain
-- inputs are the outpus of ADC
-- fixed point multiplication with a given input
-
 
 ----
 
@@ -46,42 +36,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
   - find works related to my project
   - when you reference any project/paper/etc. write a paragraph about outcomes, then compare the works in columns
  
-## Specification Notes:
-  * usually 8h/week
-  * deadline next Thu 12th October
-* Small introduction:
-  - What an FPGA is
-  - imagine this is reviewed by someone from CS
-  - introduce the problem, after introducing the big "FPGA" subject
-* Objectives
-  - must, might, could
-* Project Management
-  - gantt chart: divide project by weeks
-  - the idea is to show all the steps
-* Literature review
-  - find works related to my project
-  - when you reference any project/paper/etc. write a paragraph about outcomes, then compare the works in columns
-  - all figures need reference
-* Do research now, as it will all probably be useful for the final report
-
-## Past notes
+ ## Past notes
   * start by talk about the problem that you are fixing!
   * timetable: include breaks for exams and holidays
   * divide objectives into: core & extra, so that your work can be considered complete if you met only the core objectives
-### Specification Notes:
-  * usually 8h/week
-  * deadline next Thu 12th October
-* Small introduction:
-  - What an FPGA is
-  - imagine this is reviewed by someone from CS
-  - introduce the problem, after introducing the big "FPGA" subject
-* Objectives
-  - must, might, could
-* Project Management
-  - gantt chart: divide project by weeks
-  - the idea is to show all the steps
-* Literature review
-  - find works related to my project
-  - when you reference any project/paper/etc. write a paragraph about outcomes, then compare the works in columns
-  - all figures need reference
-* Do research now, as it will all probably be useful for the final report
