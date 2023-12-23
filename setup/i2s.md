@@ -31,7 +31,7 @@ An important feature of the WS signal si that it changes **one clock cycle after
 (https://www.nxp.com/docs/en/user-manual/UM11732.pdf)
 
 
-## I2S signals on Zybo Z7 - Copied directly from the reference manual!!!!!!
+## DIRECT COPY FROM REFERENCE MANUAL - I2S signals on Zybo Z7
 | Signal | Description |
 | -- | -- |
 MCLK | master/slave configuraion (decides direction of BCLK, PBLRC and RECLRC)
@@ -55,13 +55,3 @@ To use the audio codec in a design with non-default settings, it needs to be con
 ![image](https://github.com/alex-florescu/CS351/assets/97969710/66f8a472-c360-4241-aa16-a4fdb96aebe8)
 
 A demo project that uses the Zybo Z7 audio codec in a bare-metal application can be found on the Zybo Z7 Resource Center. The audio codec is also supported in Petalinux generated embedded Linux systems, and will appear as a standard ALSA audio device. (https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual)
-
-## Configuring the I2S Audio Codec
-* https://c64onfpga.blogspot.com/2019/02/creating-sound-on-zybo-board.html
-* https://docs.xilinx.com/r/en-US/ug1085-zynq-ultrascale-trm/I2C-Controller-Programming-Steps
-* The audio codec is configured through the 2 I2C signals. Some information can be found here
-  * https://www.xilinx.com/products/intellectual-property/axi_iic.html?_ga=2.208365138.1385157479.1698953431-1389752106.1698953431#documentation
-    - first link brings up this: https://docs.xilinx.com/v/u/1.02a-English/axi_iic_ds756
-
-
-

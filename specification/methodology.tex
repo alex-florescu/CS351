@@ -1,0 +1,19 @@
+\subsection*{Development methodology}
+Since the project is delimited by fixed deadlines, its duration can be estimated at 6 months. With the overall objective of the project being straight-forward and the tasks being rather independent, a rough plan can be created. However, the project requires a substantial amount of research before final decisions can be made about the development of the system. In other words, tasks can be arranged in an approximate timetable, but the priorities are subject to change over the first few weeks of the project.
+
+To allow such changes, a mix between a plan-driven and agile approach is suitable, ensuring a balance between adaptability and steadiness. The project will be organised in 2-week sprints, with the intention that a new feature will be added to the audio processor at the end of each sprint. For each audio effect, filter, or feature of the system, we can outline a development cycle consisting of:
+\begin{enumerate}
+    \item Research
+    \item Initial implementation
+    \item Reflection on potential changes
+    \item Final implementation
+    \item Testing
+\end{enumerate}
+
+
+\subsection*{Code and documentation management}
+The local storage area where the project is developed will be regularly synchronised with an online GitHub repository. This must be done to prevent unwanted data loss and to guarantee a controlled coding environment that can be easily accessed by the project supervisor.
+GitHub will also be used to synchronise the documentation files with Overleaf\cite{overleaf} (a practical online tool for accelerated LaTeX compilation).
+
+\subsection*{Testing}
+Since the project is developed in SystemVerilog, it will be thoroughly examined using testbenches. Each feature of the system will most likely be organised as an independent module of the audio processor. Therefore, the overall functionality of each component can be separately tested at the end of each sprint. The investigations should ensure not only a correct relationship between input and output signals but also adequate FPGA-specific statistics, such as \textit{maximum frequency} and \textit{latency}. After the project is considered complete, final testbench statistics will be collected to create a formal testing report.
