@@ -65,7 +65,10 @@ module design_1_top_0_0 (
   ac_recdat,
   ac_reclrc,
   ac_muten,
-  sw
+  sw,
+  led5_r,
+  led5_g,
+  led5_b
 );
 
 input wire sysclk;
@@ -80,6 +83,9 @@ input wire ac_recdat;
 output wire ac_reclrc;
 output wire ac_muten;
 input wire [0 : 0] sw;
+output wire led5_r;
+output wire led5_g;
+output wire led5_b;
 
   top inst (
     .sysclk(sysclk),
@@ -91,6 +97,9 @@ input wire [0 : 0] sw;
     .ac_recdat(ac_recdat),
     .ac_reclrc(ac_reclrc),
     .ac_muten(ac_muten),
-    .sw(sw)
+    .sw(sw),
+    .led5_r(led5_r),
+    .led5_g(led5_g),
+    .led5_b(led5_b)
   );
 endmodule

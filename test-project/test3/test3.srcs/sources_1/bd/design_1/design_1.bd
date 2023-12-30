@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4942F2DB30B45B9",
+      "boundary_crc": "0xCBC170A5C7EDDECB",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../test3.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -302,6 +302,15 @@
       },
       "rst": {
         "direction": "I"
+      },
+      "led5_r": {
+        "direction": "O"
+      },
+      "led5_g": {
+        "direction": "O"
+      },
+      "led5_b": {
+        "direction": "O"
       }
     },
     "components": {
@@ -462,6 +471,9 @@
           "PCW_EN_EMIO_I2C0": {
             "value": "1"
           },
+          "PCW_EN_EMIO_I2C1": {
+            "value": "1"
+          },
           "PCW_EN_ENET0": {
             "value": "1"
           },
@@ -469,6 +481,9 @@
             "value": "1"
           },
           "PCW_EN_I2C0": {
+            "value": "1"
+          },
+          "PCW_EN_I2C1": {
             "value": "1"
           },
           "PCW_EN_QSPI": {
@@ -499,6 +514,12 @@
             "value": "EMIO"
           },
           "PCW_I2C0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C1_I2C1_IO": {
+            "value": "EMIO"
+          },
+          "PCW_I2C1_PERIPHERAL_ENABLE": {
             "value": "1"
           },
           "PCW_I2C_PERIPHERAL_FREQMHZ": {
@@ -1758,6 +1779,15 @@
             "direction": "I",
             "left": "0",
             "right": "0"
+          },
+          "led5_r": {
+            "direction": "O"
+          },
+          "led5_g": {
+            "direction": "O"
+          },
+          "led5_b": {
+            "direction": "O"
           }
         }
       }
@@ -1787,10 +1817,10 @@
           "processing_system7_0/FIXED_IO"
         ]
       },
-      "processing_system7_0_IIC_0": {
+      "processing_system7_0_IIC_1": {
         "interface_ports": [
           "IIC_interface",
-          "processing_system7_0/IIC_0"
+          "processing_system7_0/IIC_1"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1891,6 +1921,24 @@
         "ports": [
           "top_0/ac_reclrc",
           "ac_reclrc"
+        ]
+      },
+      "top_0_led5_b": {
+        "ports": [
+          "top_0/led5_b",
+          "led5_b"
+        ]
+      },
+      "top_0_led5_g": {
+        "ports": [
+          "top_0/led5_g",
+          "led5_g"
+        ]
+      },
+      "top_0_led5_r": {
+        "ports": [
+          "top_0/led5_r",
+          "led5_r"
         ]
       }
     },

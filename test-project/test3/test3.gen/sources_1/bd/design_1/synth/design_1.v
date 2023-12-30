@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Dec 23 12:50:12 2023
+//Date        : Fri Dec 29 21:07:36 2023
 //Host        : alex-yoga running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -47,6 +47,9 @@ module design_1
     ac_recdat,
     ac_reclrc,
     btns_4bits_tri_i,
+    led5_b,
+    led5_g,
+    led5_r,
     leds_4bits_tri_o,
     rst,
     sw,
@@ -86,6 +89,9 @@ module design_1
   input ac_recdat;
   output ac_reclrc;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btns_4bits TRI_I" *) input [3:0]btns_4bits_tri_i;
+  output led5_b;
+  output led5_g;
+  output led5_r;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 leds_4bits TRI_O" *) output [3:0]leds_4bits_tri_o;
   input rst;
   input [0:0]sw;
@@ -117,12 +123,12 @@ module design_1
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
-  wire processing_system7_0_IIC_0_SCL_I;
-  wire processing_system7_0_IIC_0_SCL_O;
-  wire processing_system7_0_IIC_0_SCL_T;
-  wire processing_system7_0_IIC_0_SDA_I;
-  wire processing_system7_0_IIC_0_SDA_O;
-  wire processing_system7_0_IIC_0_SDA_T;
+  wire processing_system7_0_IIC_1_SCL_I;
+  wire processing_system7_0_IIC_1_SCL_O;
+  wire processing_system7_0_IIC_1_SCL_T;
+  wire processing_system7_0_IIC_1_SDA_I;
+  wire processing_system7_0_IIC_1_SDA_O;
+  wire processing_system7_0_IIC_1_SDA_T;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -188,11 +194,14 @@ module design_1
   wire top_0_ac_pbdat;
   wire top_0_ac_pblrc;
   wire top_0_ac_reclrc;
+  wire top_0_led5_b;
+  wire top_0_led5_g;
+  wire top_0_led5_r;
 
-  assign IIC_interface_scl_o = processing_system7_0_IIC_0_SCL_O;
-  assign IIC_interface_scl_t = processing_system7_0_IIC_0_SCL_T;
-  assign IIC_interface_sda_o = processing_system7_0_IIC_0_SDA_O;
-  assign IIC_interface_sda_t = processing_system7_0_IIC_0_SDA_T;
+  assign IIC_interface_scl_o = processing_system7_0_IIC_1_SCL_O;
+  assign IIC_interface_scl_t = processing_system7_0_IIC_1_SCL_T;
+  assign IIC_interface_sda_o = processing_system7_0_IIC_1_SDA_O;
+  assign IIC_interface_sda_t = processing_system7_0_IIC_1_SDA_T;
   assign ac_bclk = top_0_ac_bclk;
   assign ac_mclk = top_0_ac_mclk;
   assign ac_muten = top_0_ac_muten;
@@ -201,9 +210,12 @@ module design_1
   assign ac_recdat_1 = ac_recdat;
   assign ac_reclrc = top_0_ac_reclrc;
   assign axi_gpio_0_GPIO_TRI_I = btns_4bits_tri_i[3:0];
+  assign led5_b = top_0_led5_b;
+  assign led5_g = top_0_led5_g;
+  assign led5_r = top_0_led5_r;
   assign leds_4bits_tri_o[3:0] = axi_gpio_0_GPIO2_TRI_O;
-  assign processing_system7_0_IIC_0_SCL_I = IIC_interface_scl_i;
-  assign processing_system7_0_IIC_0_SDA_I = IIC_interface_sda_i;
+  assign processing_system7_0_IIC_1_SCL_I = IIC_interface_scl_i;
+  assign processing_system7_0_IIC_1_SDA_I = IIC_interface_sda_i;
   assign rst_1 = rst;
   assign sw_1 = sw[0];
   assign sysclk_1 = sysclk;
@@ -249,12 +261,14 @@ module design_1
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
-        .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
-        .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
-        .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
-        .I2C0_SDA_I(processing_system7_0_IIC_0_SDA_I),
-        .I2C0_SDA_O(processing_system7_0_IIC_0_SDA_O),
-        .I2C0_SDA_T(processing_system7_0_IIC_0_SDA_T),
+        .I2C0_SCL_I(1'b0),
+        .I2C0_SDA_I(1'b0),
+        .I2C1_SCL_I(processing_system7_0_IIC_1_SCL_I),
+        .I2C1_SCL_O(processing_system7_0_IIC_1_SCL_O),
+        .I2C1_SCL_T(processing_system7_0_IIC_1_SCL_T),
+        .I2C1_SDA_I(processing_system7_0_IIC_1_SDA_I),
+        .I2C1_SDA_O(processing_system7_0_IIC_1_SDA_O),
+        .I2C1_SDA_T(processing_system7_0_IIC_1_SDA_T),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
@@ -376,6 +390,9 @@ module design_1
         .ac_pblrc(top_0_ac_pblrc),
         .ac_recdat(ac_recdat_1),
         .ac_reclrc(top_0_ac_reclrc),
+        .led5_b(top_0_led5_b),
+        .led5_g(top_0_led5_g),
+        .led5_r(top_0_led5_r),
         .rst(rst_1),
         .sw(sw_1),
         .sysclk(sysclk_1));

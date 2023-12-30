@@ -248,6 +248,16 @@
 		xlnx,ip-name = "ps7_i2c";
 		xlnx,name = "ps7_i2c_0";
 	};
+	&i2c1 {
+		xlnx,rable = <0>;
+		xlnx,has-interrupt = <1>;
+		status = "okay";
+		xlnx,clock-freq = <111111115>;
+		xlnx,interconnect-s-axi-masters = "ps7_cortexa9_0.M_AXI_DP , & , ps7_cortexa9_1.M_AXI_DP";
+		xlnx,i2c-clk-freq-hz = <111111115>;
+		xlnx,ip-name = "ps7_i2c";
+		xlnx,name = "ps7_i2c_1";
+	};
 	&gpio0 {
 		xlnx,rable = <0>;
 		xlnx,mio-gpio-mask = <0x5600>;

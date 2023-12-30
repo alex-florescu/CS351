@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "design_1_top_0_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -99,7 +100,7 @@ set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0.xci
+read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

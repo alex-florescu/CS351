@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Sat Dec 23 13:03:13 2023
+| Date             : Fri Dec 29 21:10:17 2023
 | Host             : alex-yoga running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.002 |        9 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1434 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      410 |     53200 |            0.77 |
-|   Register              |    <0.001 |      619 |    106400 |            0.58 |
-|   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
+| Slice Logic             |    <0.001 |     1532 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      429 |     53200 |            0.81 |
+|   CARRY4                |    <0.001 |       24 |     13300 |            0.18 |
+|   Register              |    <0.001 |      681 |    106400 |            0.64 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
-|   Others                |     0.000 |      195 |       --- |             --- |
-| Signals                 |    <0.001 |     1005 |       --- |             --- |
+|   Others                |     0.000 |      196 |       --- |             --- |
+| Signals                 |    <0.001 |     1095 |       --- |             --- |
 | MMCM                    |     0.135 |        1 |         4 |           25.00 |
-| I/O                     |     0.004 |       20 |       125 |           16.00 |
+| I/O                     |     0.004 |       23 |       125 |           18.40 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
 | Total                   |     1.685 |          |           |                 |
@@ -162,8 +162,8 @@ Table of Contents
 |       inst               |     1.399 |
 |     ps7_0_axi_periph     |     0.002 |
 |       s00_couplers       |     0.002 |
-|     top_0                |     0.135 |
-|       inst               |     0.135 |
+|     top_0                |     0.136 |
+|       inst               |     0.136 |
 +--------------------------+-----------+
 
 

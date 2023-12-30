@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Dec 23 12:50:12 2023
+//Date        : Fri Dec 29 21:07:36 2023
 //Host        : alex-yoga running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -42,6 +42,9 @@ module design_1_wrapper
     ac_recdat,
     ac_reclrc,
     btns_4bits_tri_i,
+    led5_b,
+    led5_g,
+    led5_r,
     leds_4bits_tri_o,
     rst,
     sw,
@@ -77,6 +80,9 @@ module design_1_wrapper
   input ac_recdat;
   output ac_reclrc;
   input [3:0]btns_4bits_tri_i;
+  output led5_b;
+  output led5_g;
+  output led5_r;
   output [3:0]leds_4bits_tri_o;
   input rst;
   input [0:0]sw;
@@ -119,6 +125,9 @@ module design_1_wrapper
   wire ac_recdat;
   wire ac_reclrc;
   wire [3:0]btns_4bits_tri_i;
+  wire led5_b;
+  wire led5_g;
+  wire led5_r;
   wire [3:0]leds_4bits_tri_o;
   wire rst;
   wire [0:0]sw;
@@ -170,6 +179,9 @@ module design_1_wrapper
         .ac_recdat(ac_recdat),
         .ac_reclrc(ac_reclrc),
         .btns_4bits_tri_i(btns_4bits_tri_i),
+        .led5_b(led5_b),
+        .led5_g(led5_g),
+        .led5_r(led5_r),
         .leds_4bits_tri_o(leds_4bits_tri_o),
         .rst(rst),
         .sw(sw),
