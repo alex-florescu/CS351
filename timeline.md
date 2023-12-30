@@ -31,4 +31,6 @@
 - 18 Dec - Find issue with Audio Codec default configuration
 - 19 Dec - Reading on AC
 - 20 Dec - Written simple configuration of distortion effect
-- 21 Dec - 
+- 23 Dec - Implement simple software led funcitonality with SDK
+- 28 Dec - Generated sound output on the board with I2C configuration of Audio Codec
+- 29 Dec - Attempt to reproduce the input sound
