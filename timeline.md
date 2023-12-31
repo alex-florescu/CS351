@@ -33,4 +33,6 @@
 - 20 Dec - Written simple configuration of distortion effect
 - 23 Dec - Implement simple software led funcitonality with SDK
 - 28 Dec - Generated sound output on the board with I2C configuration of Audio Codec
-- 29 Dec - Attempt to reproduce the input sound
+- 29 Dec - Successfully reproduing the input sound
+- 30 Dec - Divide code into clean modules, implement a rough distortion effect
+- 31 Dec - Play with ADC configuation to make the distortion effect clean
