@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="6,857,244.915 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,860,427.147 ns"></ZoomEndTime>
+      <Cursor1Time time="6,858,340.742 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="315"></NameColumnWidth>
+      <ValueColumnWidth column_width="278"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/top/sysclk" type="logic">
+      <obj_property name="ElementShortName">sysclk</obj_property>
+      <obj_property name="ObjectShortName">sysclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/bclk" type="logic">
+      <obj_property name="ElementShortName">bclk</obj_property>
+      <obj_property name="ObjectShortName">bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/lrclk" type="logic">
+      <obj_property name="ElementShortName">lrclk</obj_property>
+      <obj_property name="ObjectShortName">lrclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/sw" type="array">
+      <obj_property name="ElementShortName">sw[0:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_recdat" type="logic">
+      <obj_property name="ElementShortName">ac_recdat</obj_property>
+      <obj_property name="ObjectShortName">ac_recdat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/rx_vld" type="logic">
+      <obj_property name="ElementShortName">rx_vld</obj_property>
+      <obj_property name="ObjectShortName">rx_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/eof" type="logic">
+      <obj_property name="ElementShortName">eof</obj_property>
+      <obj_property name="ObjectShortName">eof</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/tx_vld" type="logic">
+      <obj_property name="ElementShortName">tx_vld</obj_property>
+      <obj_property name="ObjectShortName">tx_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/index_in" type="array">
+      <obj_property name="ElementShortName">index_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">index_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/rx_dat" type="array">
+      <obj_property name="ElementShortName">rx_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_dat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_i2s/tx_dat" type="array">
+      <obj_property name="ElementShortName">tx_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_dat[15:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCBC170A5C7EDDECB",
+      "boundary_crc": "0x94C68B62120E354D",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../test3.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -267,11 +267,6 @@
       "ac_recdat": {
         "direction": "I"
       },
-      "sw": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
       "sysclk": {
         "type": "clk",
         "direction": "I",
@@ -303,14 +298,20 @@
       "rst": {
         "direction": "I"
       },
-      "led5_r": {
-        "direction": "O"
+      "led6_rgb": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
       },
-      "led5_g": {
-        "direction": "O"
+      "led5_rgb": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
       },
-      "led5_b": {
-        "direction": "O"
+      "sw": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
       }
     },
     "components": {
@@ -1760,6 +1761,9 @@
           "ac_bclk": {
             "direction": "O"
           },
+          "ac_muten": {
+            "direction": "O"
+          },
           "ac_pbdat": {
             "direction": "O"
           },
@@ -1772,22 +1776,20 @@
           "ac_reclrc": {
             "direction": "O"
           },
-          "ac_muten": {
-            "direction": "O"
-          },
           "sw": {
             "direction": "I",
-            "left": "0",
+            "left": "1",
             "right": "0"
           },
-          "led5_r": {
-            "direction": "O"
+          "led5_rgb": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
           },
-          "led5_g": {
-            "direction": "O"
-          },
-          "led5_b": {
-            "direction": "O"
+          "led6_rgb": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
           }
         }
       }
@@ -1923,22 +1925,16 @@
           "ac_reclrc"
         ]
       },
-      "top_0_led5_b": {
+      "top_0_led5_rgb": {
         "ports": [
-          "top_0/led5_b",
-          "led5_b"
+          "top_0/led5_rgb",
+          "led5_rgb"
         ]
       },
-      "top_0_led5_g": {
+      "top_0_led6_rgb": {
         "ports": [
-          "top_0/led5_g",
-          "led5_g"
-        ]
-      },
-      "top_0_led5_r": {
-        "ports": [
-          "top_0/led5_r",
-          "led5_r"
+          "top_0/led6_rgb",
+          "led6_rgb"
         ]
       }
     },

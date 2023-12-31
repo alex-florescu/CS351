@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Fri Dec 29 21:10:17 2023
+| Date             : Sun Dec 31 14:28:07 2023
 | Host             : alex-yoga running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.685        |
+| Total On-Chip Power (W)  | 1.686        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.541        |
@@ -53,15 +53,16 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.002 |        9 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1532 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      429 |     53200 |            0.81 |
-|   CARRY4                |    <0.001 |       24 |     13300 |            0.18 |
-|   Register              |    <0.001 |      681 |    106400 |            0.64 |
+| Slice Logic             |    <0.001 |     1671 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      473 |     53200 |            0.89 |
+|   CARRY4                |    <0.001 |       34 |     13300 |            0.26 |
+|   Register              |    <0.001 |      732 |    106400 |            0.69 |
+|   F7/F8 Muxes           |    <0.001 |        3 |     53200 |           <0.01 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
-|   Others                |     0.000 |      196 |       --- |             --- |
-| Signals                 |    <0.001 |     1095 |       --- |             --- |
+|   Others                |     0.000 |      199 |       --- |             --- |
+| Signals                 |    <0.001 |     1156 |       --- |             --- |
 | MMCM                    |     0.135 |        1 |         4 |           25.00 |
-| I/O                     |     0.004 |       23 |       125 |           18.40 |
+| I/O                     |     0.004 |       27 |       125 |           21.60 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
 | Total                   |     1.685 |          |           |                 |

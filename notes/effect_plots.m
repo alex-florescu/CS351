@@ -19,7 +19,7 @@ index = n*(2*pi*numPeriods/numSamples);
 x = amplitude*sin(index);
 
 % amplify
-yGain = x*gain;
+yGain = x*gainLin;
 
 % clip
 yDist = yGain;

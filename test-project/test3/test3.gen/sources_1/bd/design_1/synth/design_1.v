@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Fri Dec 29 21:07:36 2023
+//Date        : Sun Dec 31 14:21:48 2023
 //Host        : alex-yoga running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -47,9 +47,8 @@ module design_1
     ac_recdat,
     ac_reclrc,
     btns_4bits_tri_i,
-    led5_b,
-    led5_g,
-    led5_r,
+    led5_rgb,
+    led6_rgb,
     leds_4bits_tri_o,
     rst,
     sw,
@@ -89,12 +88,11 @@ module design_1
   input ac_recdat;
   output ac_reclrc;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btns_4bits TRI_I" *) input [3:0]btns_4bits_tri_i;
-  output led5_b;
-  output led5_g;
-  output led5_r;
+  output [2:0]led5_rgb;
+  output [2:0]led6_rgb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 leds_4bits TRI_O" *) output [3:0]leds_4bits_tri_o;
   input rst;
-  input [0:0]sw;
+  input [1:0]sw;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYSCLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYSCLK, CLK_DOMAIN design_1_sysclk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sysclk;
 
   wire ac_recdat_1;
@@ -186,7 +184,7 @@ module design_1
   wire ps7_0_axi_periph_M00_AXI_WVALID;
   wire rst_1;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
-  wire [0:0]sw_1;
+  wire [1:0]sw_1;
   wire sysclk_1;
   wire top_0_ac_bclk;
   wire top_0_ac_mclk;
@@ -194,9 +192,8 @@ module design_1
   wire top_0_ac_pbdat;
   wire top_0_ac_pblrc;
   wire top_0_ac_reclrc;
-  wire top_0_led5_b;
-  wire top_0_led5_g;
-  wire top_0_led5_r;
+  wire [2:0]top_0_led5_rgb;
+  wire [2:0]top_0_led6_rgb;
 
   assign IIC_interface_scl_o = processing_system7_0_IIC_1_SCL_O;
   assign IIC_interface_scl_t = processing_system7_0_IIC_1_SCL_T;
@@ -210,14 +207,13 @@ module design_1
   assign ac_recdat_1 = ac_recdat;
   assign ac_reclrc = top_0_ac_reclrc;
   assign axi_gpio_0_GPIO_TRI_I = btns_4bits_tri_i[3:0];
-  assign led5_b = top_0_led5_b;
-  assign led5_g = top_0_led5_g;
-  assign led5_r = top_0_led5_r;
+  assign led5_rgb[2:0] = top_0_led5_rgb;
+  assign led6_rgb[2:0] = top_0_led6_rgb;
   assign leds_4bits_tri_o[3:0] = axi_gpio_0_GPIO2_TRI_O;
   assign processing_system7_0_IIC_1_SCL_I = IIC_interface_scl_i;
   assign processing_system7_0_IIC_1_SDA_I = IIC_interface_sda_i;
   assign rst_1 = rst;
-  assign sw_1 = sw[0];
+  assign sw_1 = sw[1:0];
   assign sysclk_1 = sysclk;
   design_1_axi_gpio_0_0 axi_gpio_0
        (.gpio2_io_o(axi_gpio_0_GPIO2_TRI_O),
@@ -390,9 +386,8 @@ module design_1
         .ac_pblrc(top_0_ac_pblrc),
         .ac_recdat(ac_recdat_1),
         .ac_reclrc(top_0_ac_reclrc),
-        .led5_b(top_0_led5_b),
-        .led5_g(top_0_led5_g),
-        .led5_r(top_0_led5_r),
+        .led5_rgb(top_0_led5_rgb),
+        .led6_rgb(top_0_led6_rgb),
         .rst(rst_1),
         .sw(sw_1),
         .sysclk(sysclk_1));

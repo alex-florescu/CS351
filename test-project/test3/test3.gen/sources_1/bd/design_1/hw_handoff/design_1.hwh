@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 29 21:07:36 2023" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec 31 14:21:49 2023" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -179,19 +179,14 @@
         <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="led5_b" SIGIS="undef" SIGNAME="top_0_led5_b">
+    <PORT DIR="O" LEFT="2" NAME="led5_rgb" RIGHT="0" SIGIS="undef" SIGNAME="top_0_led5_rgb">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="top_0" PORT="led5_b"/>
+        <CONNECTION INSTANCE="top_0" PORT="led5_rgb"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="led5_g" SIGIS="undef" SIGNAME="top_0_led5_g">
+    <PORT DIR="O" LEFT="2" NAME="led6_rgb" RIGHT="0" SIGIS="undef" SIGNAME="top_0_led6_rgb">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="top_0" PORT="led5_g"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="led5_r" SIGIS="undef" SIGNAME="top_0_led5_r">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="top_0" PORT="led5_r"/>
+        <CONNECTION INSTANCE="top_0" PORT="led6_rgb"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="3" NAME="leds_4bits_tri_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
@@ -204,7 +199,7 @@
         <CONNECTION INSTANCE="top_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="0" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+    <PORT DIR="I" LEFT="1" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
       <CONNECTIONS>
         <CONNECTION INSTANCE="top_0" PORT="sw"/>
       </CONNECTIONS>
@@ -2885,19 +2880,14 @@
             <CONNECTION INSTANCE="External_Ports" PORT="ac_reclrc"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="led5_b" SIGIS="undef" SIGNAME="top_0_led5_b">
+        <PORT DIR="O" LEFT="2" NAME="led5_rgb" RIGHT="0" SIGIS="undef" SIGNAME="top_0_led5_rgb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led5_b"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="led5_rgb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="led5_g" SIGIS="undef" SIGNAME="top_0_led5_g">
+        <PORT DIR="O" LEFT="2" NAME="led6_rgb" RIGHT="0" SIGIS="undef" SIGNAME="top_0_led6_rgb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led5_g"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="led5_r" SIGIS="undef" SIGNAME="top_0_led5_r">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led5_r"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="led6_rgb"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
@@ -2905,7 +2895,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+        <PORT DIR="I" LEFT="1" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
           </CONNECTIONS>
