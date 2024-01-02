@@ -32,10 +32,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
   * Spend time on "impressive" things!
 
 ## Notes
-* Literature review
-  - find works related to my project
-  - when you reference any project/paper/etc. write a paragraph about outcomes, then compare the works in columns
- 
+* idk
  ## Past notes
   * start by talk about the problem that you are fixing!
   * timetable: include breaks for exams and holidays
