@@ -34,6 +34,6 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 ## Notes
 * idk
  ## Past notes
-  * start by talk about the problem that you are fixing!
+  * have a problem statement
   * timetable: include breaks for exams and holidays
   * divide objectives into: core & extra, so that your work can be considered complete if you met only the core objectives
