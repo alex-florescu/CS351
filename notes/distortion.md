@@ -12,6 +12,8 @@ TBD - currently the gain is kept at x1, meaning we only apply the hard clipping 
 
 We aim to create a couple of fixed modes of the filter that offer a range of distortion intensity settings.
 
+The selection of ports in the design of this module allows using it outside the overdrive context. If the threshold is set to the maximum possible value, the clippimg will never occur and the module will function like a simple "gain" filter. This can later be used in effects such as delay and reverb. However, a separate gain module can be created if the overall latency must be minimised.
+
 
 ### References
 * SSM2603 Data sheet (https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
