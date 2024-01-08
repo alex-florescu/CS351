@@ -22,8 +22,9 @@ This has been quite a challenge for me as I had no previous experience with the 
 
 The device that control the audio side of the Zybo board is the SSM2603 "Low Power Audio Codec" designed by Analog Devices. There are multiple online sources that are useful for creating a correct configuration for our project. However the common approach for this is to use the PS to also transmit the input and output data, which was not something this project intended to do. Instead, we aim to only use the PS for the adjusting the Audio Codec settings, while leaving all data manipulation for the PL side. This approach was taken by Johan Steenkamp in his open source "C64 on FPGA" project. We have followed the software ideas presented in this example to create a similar system that matches the settings needed for our scope.
 
-Even after consulting the data sheet of the SSM2603, there are some timing constraints to consider that are not mentioned in the document. Information regarding this can be found on Digilent forums. (insert reference)
+Even after consulting the data sheet of the SSM2603, there are some timing constraints to consider that are not mentioned in the document. Information regarding this can be found on Digilent forums.
 
 ### References
 * C64 on FPGA guide (https://c64onfpga.blogspot.com/2019/02/creating-sound-on-zybo-board.html)
 * SSM2603 (https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
+* Digilent Forum on Audio on Zybo Z20 (https://forum.digilent.com/topic/1738-how-to-use-audio-on-zybo-board/)
