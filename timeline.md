@@ -37,3 +37,4 @@
 - 30 Dec - Divide code into clean modules, implement a rough distortion effect
 - 31 Dec - Play with ADC configuation to make the distortion effect clean
 - 02 Jan - Find issue with gain noise
+- 09 Jan - Finished with January exams
