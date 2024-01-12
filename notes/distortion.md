@@ -14,6 +14,8 @@ We aim to create a couple of fixed modes of the filter that offer a range of dis
 
 The selection of ports in the design of this module allows using it outside the overdrive context. If the threshold is set to the maximum possible value, the clippimg will never occur and the module will function like a simple "gain" filter. This can later be used in effects such as delay and reverb. However, a separate gain module can be created if the overall latency must be minimised.
 
+Talk about denouncer.
+
 
 ### References
 * SSM2603 Data sheet (https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
