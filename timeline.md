@@ -38,3 +38,6 @@
 - 31 Dec - Play with ADC configuation to make the distortion effect clean
 - 02 Jan - Find issue with gain noise
 - 09 Jan - Finished with January exams
+- 11 Jan - placed beep functionality in a separate module
+- 12 Jan - debouncer code
+- 13 Jan - button counter for mode configuration
