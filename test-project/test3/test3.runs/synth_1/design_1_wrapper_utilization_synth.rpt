@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Dec 31 16:13:45 2023
+| Date         : Sat Jan 13 21:36:19 2024
 | Host         : alex-yoga running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   26 |     0 |          0 |       125 | 20.80 |
+| Bonded IOB                  |   27 |     0 |          0 |       125 | 21.60 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -149,7 +149,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | OBUF     |   16 |                  IO |
-| IBUF     |   10 |                  IO |
+| IBUF     |   11 |                  IO |
 | OBUFT    |    2 |                  IO |
 +----------+------+---------------------+
 
@@ -161,10 +161,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_top_0_0                |    1 |
-| design_1_rst_ps7_0_50M_1        |    1 |
 | design_1_processing_system7_0_1 |    1 |
-| design_1_axi_gpio_0_0           |    1 |
-| design_1_auto_pc_0              |    1 |
 +---------------------------------+------+
 
 

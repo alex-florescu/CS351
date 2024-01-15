@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sun Dec 31 14:21:48 2023
+//Date        : Sat Jan 13 21:34:59 2024
 //Host        : alex-yoga running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -41,10 +41,10 @@ module design_1_wrapper
     ac_pblrc,
     ac_recdat,
     ac_reclrc,
-    btns_4bits_tri_i,
+    btn,
+    led,
     led5_rgb,
     led6_rgb,
-    leds_4bits_tri_o,
     rst,
     sw,
     sysclk);
@@ -78,12 +78,12 @@ module design_1_wrapper
   output ac_pblrc;
   input ac_recdat;
   output ac_reclrc;
-  input [3:0]btns_4bits_tri_i;
+  input [2:0]btn;
+  output [3:0]led;
   output [2:0]led5_rgb;
   output [2:0]led6_rgb;
-  output [3:0]leds_4bits_tri_o;
   input rst;
-  input [1:0]sw;
+  input [3:0]sw;
   input sysclk;
 
   wire [14:0]DDR_addr;
@@ -122,12 +122,12 @@ module design_1_wrapper
   wire ac_pblrc;
   wire ac_recdat;
   wire ac_reclrc;
-  wire [3:0]btns_4bits_tri_i;
+  wire [2:0]btn;
+  wire [3:0]led;
   wire [2:0]led5_rgb;
   wire [2:0]led6_rgb;
-  wire [3:0]leds_4bits_tri_o;
   wire rst;
-  wire [1:0]sw;
+  wire [3:0]sw;
   wire sysclk;
 
   IOBUF IIC_interface_scl_iobuf
@@ -175,10 +175,10 @@ module design_1_wrapper
         .ac_pblrc(ac_pblrc),
         .ac_recdat(ac_recdat),
         .ac_reclrc(ac_reclrc),
-        .btns_4bits_tri_i(btns_4bits_tri_i),
+        .btn(btn),
+        .led(led),
         .led5_rgb(led5_rgb),
         .led6_rgb(led6_rgb),
-        .leds_4bits_tri_o(leds_4bits_tri_o),
         .rst(rst),
         .sw(sw),
         .sysclk(sysclk));

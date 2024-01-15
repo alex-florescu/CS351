@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2024 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -65,6 +65,8 @@ module design_1_top_0_0 (
   ac_recdat,
   ac_reclrc,
   sw,
+  btn,
+  led,
   led5_rgb,
   led6_rgb
 );
@@ -80,7 +82,9 @@ output wire ac_pbdat;
 output wire ac_pblrc;
 input wire ac_recdat;
 output wire ac_reclrc;
-input wire [1 : 0] sw;
+input wire [3 : 0] sw;
+input wire [2 : 0] btn;
+output wire [3 : 0] led;
 output wire [2 : 0] led5_rgb;
 output wire [2 : 0] led6_rgb;
 
@@ -95,6 +99,8 @@ output wire [2 : 0] led6_rgb;
     .ac_recdat(ac_recdat),
     .ac_reclrc(ac_reclrc),
     .sw(sw),
+    .btn(btn),
+    .led(led),
     .led5_rgb(led5_rgb),
     .led6_rgb(led6_rgb)
   );

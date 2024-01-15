@@ -45,7 +45,9 @@
         "ac_pblrc": [ { "direction": "out" } ],
         "ac_recdat": [ { "direction": "in" } ],
         "ac_reclrc": [ { "direction": "out" } ],
-        "sw": [ { "direction": "in", "size_left": "1", "size_right": "0" } ],
+        "sw": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
+        "btn": [ { "direction": "in", "size_left": "2", "size_right": "0" } ],
+        "led": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
         "led5_rgb": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
         "led6_rgb": [ { "direction": "out", "size_left": "2", "size_right": "0" } ]
       },

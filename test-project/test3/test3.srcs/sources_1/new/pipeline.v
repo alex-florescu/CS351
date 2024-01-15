@@ -30,14 +30,17 @@ module pipeline #(
     input  rx_vld,
     output tx_vld,
     
-    input [1:0] sw);
+    input [3:0] sw,
+    input beep_en);
 
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
+wire [DATA_WIDTH - 1:0] tx_dat_eff2;
 wire tx_vld_eff1;
+wire tx_vld_eff2;
 
 distortion #(
     .DATA_WIDTH(DATA_WIDTH),
-    .THRESH(500)
+    .THRESH(750)
 ) inst_dist (
     .clk(clk),
     .rst(rst),
@@ -45,10 +48,37 @@ distortion #(
     .o_dat(tx_dat_eff1),
     .i_vld(rx_vld),
     .o_vld(tx_vld_eff1),
-    .enable(sw[1]),
-    .gain(4'd1)
+    .enable(sw[0]),
+    .gain(4'd4)
 );
 
+delay #(
+    .DATA_WIDTH(DATA_WIDTH),
+    .FIFO_DEPTH(0),
+    .DIV_GAIN(2) // (as power of 2) div_gain is 2, data is div by 4
+) inst_delay (
+    .clk(clk),
+    .rst(rst),
+    .i_dat(tx_dat_eff1),
+    .o_dat(tx_dat_eff2),
+    .i_vld(tx_vld_eff1),
+    .o_vld(tx_vld_eff2),
+    .enable(sw[1])
+);
+
+beep #(
+    .DATA_WIDTH(DATA_WIDTH),
+    .BEEP_VALUE(16'd500),
+    .BEEP_PERIOD(8'd200) // Say how this is converted to freq
+) inst_beep (
+    .clk(clk),
+    .rst(rst),
+    .i_dat(tx_dat_eff2),
+    .o_dat(tx_dat_eff3),
+    .i_vld(tx_vld_eff2),
+    .o_vld(tx_vld_eff3),
+    .enable(beep_en)
+);
 
 // effect_template #(
 //     .DATA_WIDTH(DATA_WIDTH)
@@ -61,29 +91,9 @@ distortion #(
 //     .o_vld(tx_vld)
 // );
 
-reg [7:0] sample_cnt;
-reg [DATA_WIDTH - 1:0] beep_dat;
 
-always @(posedge clk) begin
-    if(rst) begin
-        beep_dat <= 16'b0;
-        sample_cnt <= 8'd0;
-    end else begin
-        if (tx_vld) begin
-            // output sound of fixed frequency for testing
-            if (sample_cnt == 8'd0) begin
-                sample_cnt <= 8'd200;
-                beep_dat <= (beep_dat == 16'd0) ? 16'd500 : 16'd0; // value was 30k
-                
-                // data changed at tx_vld, so the valid is not affected
-            end else
-                sample_cnt <= sample_cnt - 1;
-        end
-    end
-end
-
-assign tx_dat = (sw[0]) ? tx_dat_eff1 : beep_dat;
-assign tx_vld = tx_vld_eff1;
+assign tx_dat = tx_dat_eff3;
+assign tx_vld = tx_vld_eff3;
 
 
 endmodule
