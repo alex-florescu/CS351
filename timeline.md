@@ -36,8 +36,12 @@
 - 29 Dec - Successfully reproduing the input sound
 - 30 Dec - Divide code into clean modules, implement a rough distortion effect
 - 31 Dec - Play with ADC configuation to make the distortion effect clean
+
+### January
 - 02 Jan - Find issue with gain noise
 - 09 Jan - Finished with January exams
 - 11 Jan - placed beep functionality in a separate module
 - 12 Jan - debouncer code
 - 13 Jan - button counter for mode configuration
+- 15 Jan - coding delay effect
+- 16 Jan - simulating and testing delay effect (not working)
