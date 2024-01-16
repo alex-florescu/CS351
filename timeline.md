@@ -1,7 +1,7 @@
 # Timeline
 
 ### October
-- 02 Oct - Term 1 Starts
+- 02 Oct - **Term 1 Starts**
 - 09 Oct - Laptop broke down
 - 11 Oct - Specification submitted
 - 12 Oct - Specification deadline
@@ -30,15 +30,16 @@
 - 14 Dec - More work on pass-through: implement clock on negative edges
 - 18 Dec - Find issue with Audio Codec default configuration
 - 19 Dec - Reading on AC
-- 20 Dec - Written simple configuration of distortion effect
+- 20 Dec - Write simple configuration of distortion effect
 - 23 Dec - Implement simple software led funcitonality with SDK
 - 28 Dec - Generated sound output on the board with I2C configuration of Audio Codec
-- 29 Dec - Successfully reproduing the input sound
+- 29 Dec - Successfully reproducing the input sound
 - 30 Dec - Divide code into clean modules, implement a rough distortion effect
 - 31 Dec - Play with ADC configuation to make the distortion effect clean
 
 ### January
 - 02 Jan - Find issue with gain noise
+- 08 Jan - **Term 2 Starts**
 - 09 Jan - Finished with January exams
 - 11 Jan - placed beep functionality in a separate module
 - 12 Jan - debouncer code
