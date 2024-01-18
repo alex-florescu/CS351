@@ -1,6 +1,6 @@
 # CS351 - FPGA Guitar Effects Project
 https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
-
+After "must" objectives are complete, focus on adding interesting stuff: maybe operations in the frequency domain
 
 ## Similar Projects
  * Design of DSP Guitar Effects with FPGA Implementation
@@ -13,6 +13,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
  * Tuner
  * Flanger Pedal (Left-Right)
  * Octave Pedal
+
 
 ### Creating a pass-through
 - Official Digilent Zybo z20 constraints file 
