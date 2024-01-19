@@ -46,3 +46,4 @@
 - 13 Jan - button counter for mode configuration
 - 15 Jan - coding delay effect
 - 16 Jan - simulating and testing delay effect (not working)
+- 19 Jan - tried Vivado 19.1, written volume_color.v module
