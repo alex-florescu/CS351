@@ -47,3 +47,4 @@
 - 15 Jan - coding delay effect
 - 16 Jan - simulating and testing delay effect (not working)
 - 19 Jan - tried Vivado 19.1, written volume_color.v module
+- 20 Jan - got a simple delayed output to work
