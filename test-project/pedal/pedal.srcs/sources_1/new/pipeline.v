@@ -57,7 +57,7 @@ distortion #(
 
 delay #(
     .DATA_WIDTH(DATA_WIDTH),
-    .FIFO_DEPTH(25000), // number of samples (there are 48k samples in a second)
+    .FIFO_DEPTH(32768), // number of samples (there are 48k samples in a second)
     .DIV_GAIN(2) // (as power of 2) ex: if div_gain is 3, data is div by 8
 ) inst_delay (
     .clk(clk),

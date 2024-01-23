@@ -28,6 +28,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.cache/wt [current_project]
 set_property parent.project_path C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/alexm/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
@@ -36,7 +37,6 @@ set_property ip_output_repo c:/Users/alexm/OneDrive/Documents/uni/CS351/test-pro
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v
-  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/buffer_delay.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz_leaf.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer.v
@@ -46,8 +46,12 @@ read_verilog -library xil_defaultlib {
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/pipeline.v
+  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_delay.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v
 }
+read_ip -quiet c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+
 read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/design_1_top_0_0.xci
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -58,6 +62,8 @@ read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pe
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 set cached_ip [config_ip_cache -export -no_bom  -dir C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1 -new_name design_1_top_0_0 -ip [get_ips design_1_top_0_0]]

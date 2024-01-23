@@ -40,8 +40,8 @@ preplace netloc top_0_ac_pblrc 1 1 1 NJ 400
 preplace netloc top_0_led 1 1 1 420J 440n
 preplace netloc top_0_led6_rgb 1 1 1 400J 480n
 preplace netloc top_0_led5_rgb 1 1 1 410J 460n
-preplace netloc processing_system7_0_FIXED_IO 1 1 1 400J 80n
 preplace netloc processing_system7_0_IIC_1 1 1 1 NJ 120
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 400J 80n
 preplace netloc processing_system7_0_DDR 1 1 1 NJ 60
 levelinfo -pg 1 0 210 440
 pagesize -pg 1 -db -bbox -sgen -110 0 580 540
