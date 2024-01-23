@@ -40,7 +40,6 @@ module i2s_control #(
     input  tx_vld,
     
     // extra: remove later
-    input  [0:0] sw,
     output [2:0] led5_rgb,
     output [2:0] led6_rgb
     );
@@ -151,7 +150,7 @@ end
 // active low signal, so deactivate with 1
 assign muten = 1'b1;
 
-// RGB leds -----------------------------------------------------------
+// RGB led 5 ----------------------------------------------------------
 // sanity check for clocks
 reg [21:0] led_cnt = 22'd0;
 assign led5_rgb = led_cnt[21:19];
@@ -163,12 +162,24 @@ always @(posedge clk) begin
         led_cnt <= led_cnt + 1;
 end
 
-wire signed [15:0] rx_dat_cpy;
-wire [15:0] abs_data;
+// RGB led 6 ----------------------------------------------------------
+// amplitude in real time with colors
 
-assign rx_dat_cpy = rx_dat;
-assign abs_data = (rx_dat_cpy < 0) ? (-1)*rx_dat_cpy :rx_dat_cpy;
+volume_color #(
+    .DATA_WIDTH(DATA_WIDTH)
+) inst_volume_color (
+    .clk(clk),
+    .rst(rst),
+    .i_dat(rx_dat),
+    .rgb_led_out(led6_rgb)
+);
 
-assign led6_rgb = abs_data[14:12];
+// wire signed [15:0] rx_dat_cpy;
+// wire [15:0] abs_data;
+
+// assign rx_dat_cpy = rx_dat;
+// assign abs_data = (rx_dat_cpy < 0) ? (-1)*rx_dat_cpy :rx_dat_cpy;
+
+// assign led6_rgb = abs_data[14:12];
 
 endmodule

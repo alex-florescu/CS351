@@ -64,7 +64,7 @@ pipeline #(
     .rx_vld(rx_vld),
     .tx_vld(tx_vld),
     .sw(sw),
-    .beep_en(button[0])
+    .led(led)
 );
 
 // Clock generation: 12.288 MHz

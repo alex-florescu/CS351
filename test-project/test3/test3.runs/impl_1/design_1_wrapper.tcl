@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,7 +123,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param runs.launchOptions { -jobs 12  }
+  set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
   set_property board_part_repo_paths {C:/Users/alexm/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
@@ -143,8 +142,8 @@ OPTRACE "add files" START { }
   add_files -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
+  read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
   add_files C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/bd/design_1/design_1.bd
-  read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/constrs_1/new/constr.xdc

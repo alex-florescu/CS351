@@ -1,0 +1,505 @@
+
+*** Running vivado
+    with args -log design_1_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_top_0_0.tcl -notrace
+Command: synth_design -top design_1_top_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_top_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8672 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 601.141 ; gain = 183.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter CONFIG_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'i2s_control' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'i2s_control' (1#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/pipeline.v:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'distortion' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter THRESH bound to: 750 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-4471] merging register 'dist_data_reg[0][15:0]' into 'pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:24]
+WARNING: [Synth 8-6014] Unused sequential element dist_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'distortion' (2#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:1]
+INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 25000 - type: integer 
+	Parameter DIV_GAIN bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'buffer_delay' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/buffer_delay.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 25000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'buffer_delay' (3#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/buffer_delay.v:1]
+INFO: [Synth 8-4471] merging register 'delay_data_reg[0][15:0]' into 'pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:59]
+WARNING: [Synth 8-6014] Unused sequential element delay_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'delay' (4#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:1]
+INFO: [Synth 8-6157] synthesizing module 'beep' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter BEEP_VALUE bound to: 16'b0000000111110100 
+	Parameter BEEP_PERIOD bound to: 8'b10010110 
+INFO: [Synth 8-6155] done synthesizing module 'beep' (5#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline' (6#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/pipeline.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_leaf' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz_leaf.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (7#1) [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 48.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 78.125000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (8#1) [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (9#1) [C:/Xilinx2019/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_leaf' (10#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz_leaf.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (11#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'debouncer_array' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer_array.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer.v:1]
+	Parameter DEBOUNCE_PERIODS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer_array' (13#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer_array.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mode_select' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v:1]
+	Parameter CONFIG_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mode_select' (14#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (16#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
+WARNING: [Synth 8-3331] design buffer_delay has unconnected port rst
+WARNING: [Synth 8-3331] design pipeline has unconnected port sw[3]
+WARNING: [Synth 8-3331] design i2s_control has unconnected port tx_vld
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 890.207 ; gain = 472.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:14 ; elapsed = 00:02:50 . Memory (MB): peak = 890.207 ; gain = 472.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:14 ; elapsed = 00:02:50 . Memory (MB): peak = 890.207 ; gain = 472.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'beep_data_reg' in module 'beep'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                 0000000000000000
+                  iSTATE |                                1 |                 0000000111110100
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'beep_data_reg' using encoding 'sequential' in module 'beep'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:09 ; elapsed = 00:06:03 . Memory (MB): peak = 1459.777 ; gain = 1042.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |reg__14_buffer_delay |           1|    400000|
+|2     |delay__GC0           |           1|       145|
+|3     |pipeline__GC0        |           1|       510|
+|4     |clk_wiz_leaf__GC0    |           1|         3|
+|5     |top__GC0             |           1|       608|
++------+---------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register data_buffer_reg [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/buffer_delay.v:18]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	           400000 Bit    Registers := 1     
+	               16 Bit    Registers := 14    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register data_buffer_reg [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/buffer_delay.v:18]
+Hierarchical RTL Component report 
+Module buffer_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	           400000 Bit    Registers := 1     
+Module delay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module distortion 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+Module beep 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module i2s_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module debouncer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module mode_select 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst_dist/pure_data_reg[0][15:0]' into 'inst_dist/pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:23]
+INFO: [Synth 8-4471] merging register 'inst_i2s/rx_dat_reg[15:0]' into 'inst_i2s/rx_dat_reg[15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:119]
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[0] driven by constant 0
+WARNING: [Synth 8-3331] design design_1_top_0_0 has unconnected port sw[3]
+INFO: [Synth 8-3886] merging instance 'inst_delayi_1/fifo_data_reduced_reg[13]' (FDE) to 'inst_delayi_1/fifo_data_reduced_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst_delayi_1/fifo_data_reduced_reg[14]' (FDE) to 'inst_delayi_1/fifo_data_reduced_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:15:56 ; elapsed = 00:17:50 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |reg__14_buffer_delay |           1|    350000|
+|2     |delay__GC0           |           1|       133|
+|3     |pipeline__GC0        |           1|       315|
+|4     |clk_wiz_leaf__GC0    |           1|         3|
+|5     |top__GC0             |           1|       227|
++------+---------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:15:58 ; elapsed = 00:17:52 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |reg__14_buffer_delay |           1|    350000|
+|2     |delay__GC0           |           1|       133|
+|3     |pipeline__GC0        |           1|       315|
+|4     |clk_wiz_leaf__GC0    |           1|         3|
+|5     |top__GC0             |           1|       227|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:16:24 ; elapsed = 00:18:19 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|reg__14     | data_buffer_reg[399999] | 25000  | 14    | NO           | YES                | YES               | 0      | 10948   | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    24|
+|3     |LUT1       |    21|
+|4     |LUT2       |    76|
+|5     |LUT3       |    56|
+|6     |LUT4       |    26|
+|7     |LUT5       |     9|
+|8     |LUT6       |    22|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |     2|
+|11    |MUXF8      |     1|
+|12    |SRLC32E    | 10948|
+|13    |FDRE       |   272|
+|14    |FDSE       |     6|
+|15    |IBUF       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------+------+
+|      |Instance              |Module       |Cells |
++------+----------------------+-------------+------+
+|1     |top                   |             | 11467|
+|2     |  inst                |top          | 11467|
+|3     |    inst_clock_wizard |clk_wiz      |     4|
+|4     |      inst            |clk_wiz_leaf |     4|
+|5     |    inst_i2s          |i2s_control  |   166|
+|6     |    inst_pipe         |pipeline     | 11297|
+|7     |      inst_beep       |beep         |    20|
+|8     |      inst_delay      |delay        | 11090|
+|9     |        inst_buffer   |buffer_delay | 10990|
+|10    |      inst_dist       |distortion   |   187|
++------+----------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+Synthesis Optimization Complete : Time (s): cpu = 00:16:26 ; elapsed = 00:18:21 . Memory (MB): peak = 2704.215 ; gain = 2286.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_top_0_0' is not ideal for floorplanning, since the cellview 'buffer_delay' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2704.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:16:35 ; elapsed = 00:18:33 . Memory (MB): peak = 2704.215 ; gain = 2291.781
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2704.215 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.215 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2704.215 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 23 15:25:56 2024...

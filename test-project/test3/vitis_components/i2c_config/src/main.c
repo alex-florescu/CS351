@@ -1,11 +1,11 @@
-//AXI GPIO driver
-#include "xgpio.h"
+// //AXI GPIO driver
+// #include "xgpio.h"
 
-//send data over UART
-#include "xil_printf.h"
+// //send data over UART
+// #include "xil_printf.h"
 
-//information about AXI peripherals
-#include "xparameters.h"
+// //information about AXI peripherals
+// #include "xparameters.h"
 
 #include "sleep.h"
 

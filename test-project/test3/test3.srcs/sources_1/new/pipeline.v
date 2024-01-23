@@ -31,12 +31,15 @@ module pipeline #(
     output tx_vld,
     
     input [3:0] sw,
-    input beep_en);
+    output [3:0] led
+);
 
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
 wire [DATA_WIDTH - 1:0] tx_dat_eff2;
+wire [DATA_WIDTH - 1:0] tx_dat_eff3;
 wire tx_vld_eff1;
 wire tx_vld_eff2;
+wire tx_vld_eff3;
 
 distortion #(
     .DATA_WIDTH(DATA_WIDTH),
@@ -49,13 +52,13 @@ distortion #(
     .i_vld(rx_vld),
     .o_vld(tx_vld_eff1),
     .enable(sw[0]),
-    .gain(4'd4)
+    .gain(4'd3)
 );
 
 delay #(
     .DATA_WIDTH(DATA_WIDTH),
-    .FIFO_DEPTH(0),
-    .DIV_GAIN(2) // (as power of 2) div_gain is 2, data is div by 4
+    .FIFO_DEPTH(16000), // number of samples (there are 48k samples in a second)
+    .DIV_GAIN(2) // (as power of 2) ex: if div_gain is 3, data is div by 8
 ) inst_delay (
     .clk(clk),
     .rst(rst),
@@ -63,13 +66,14 @@ delay #(
     .o_dat(tx_dat_eff2),
     .i_vld(tx_vld_eff1),
     .o_vld(tx_vld_eff2),
-    .enable(sw[1])
+    .enable(sw[1]),
+    .led(led)
 );
 
 beep #(
     .DATA_WIDTH(DATA_WIDTH),
     .BEEP_VALUE(16'd500),
-    .BEEP_PERIOD(8'd200) // Say how this is converted to freq
+    .BEEP_PERIOD(8'd150) // Say how this is converted to freq
 ) inst_beep (
     .clk(clk),
     .rst(rst),
@@ -77,7 +81,7 @@ beep #(
     .o_dat(tx_dat_eff3),
     .i_vld(tx_vld_eff2),
     .o_vld(tx_vld_eff3),
-    .enable(beep_en)
+    .enable(sw[2])
 );
 
 // effect_template #(

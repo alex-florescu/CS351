@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "design_1_top_0_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 set_param ips.modRefOverrideMrefDirPath c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/bd/mref
@@ -95,6 +94,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/beep.v
+  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/buffer_delay.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/debouncer.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/debouncer_array.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v
@@ -102,12 +102,13 @@ read_verilog -library xil_defaultlib {
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/i2s_control.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/mode_select.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v
+  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/volume_color.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v
 }
-read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 
 read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0.xci
 

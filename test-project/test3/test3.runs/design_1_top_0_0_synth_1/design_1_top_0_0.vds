@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sat Jan 13 21:35:06 2024
-# Process ID: 26536
+# Start of session at: Tue Jan 23 13:33:16 2024
+# Process ID: 64640
 # Current directory: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1
 # Command line: vivado.exe -log design_1_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_0.tcl
 # Log file: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/design_1_top_0_0.vds
@@ -17,32 +17,24 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
 Command: synth_design -top design_1_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-
-WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-
-INFO: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
-* This IP has board specific outputs. Current project board 'digilentinc.com:zybo-z7-20:part0:1.1' and the board 'unset' used to customize the IP 'clk_wiz_0' do not match. * Current project part 'xc7z020clg400-1' and the part 'xc7z020clg400-3' used to customize the IP 'clk_wiz_0' do not match.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8588
+INFO: [Synth 8-7075] Helper process launched with PID 61816
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1348.312 ; gain = 437.816
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1350.000 ; gain = 438.676
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'tx_dat_eff3', assumed default net type 'wire' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v:77]
-INFO: [Synth 8-11241] undeclared symbol 'tx_vld_eff3', assumed default net type 'wire' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v:79]
 INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'i2s_control' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/i2s_control.v:23]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'volume_color' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/volume_color.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/volume_color.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'volume_color' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/volume_color.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'i2s_control' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/i2s_control.v:23]
-WARNING: [Synth 8-7071] port 'sw' of module 'i2s_control' is unconnected for instance 'inst_i2s' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v:37]
-WARNING: [Synth 8-7023] instance 'inst_i2s' of module 'i2s_control' has 15 connections declared, but only 14 given [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v:37]
 INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v:23]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'distortion' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/distortion.v:1]
@@ -51,18 +43,42 @@ INFO: [Synth 8-6157] synthesizing module 'distortion' [C:/Users/alexm/OneDrive/D
 INFO: [Synth 8-6155] done synthesizing module 'distortion' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/distortion.v:1]
 INFO: [Synth 8-6157] synthesizing module 'delay' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
-	Parameter FIFO_DEPTH bound to: 0 - type: integer 
+	Parameter FIFO_DEPTH bound to: 8000 - type: integer 
 	Parameter DIV_GAIN bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'buffer_delay' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/buffer_delay.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter FIFO_DEPTH bound to: 8000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'buffer_delay' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/buffer_delay.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'delay' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:1]
 INFO: [Synth 8-6157] synthesizing module 'beep' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/beep.v:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 	Parameter BEEP_VALUE bound to: 16'b0000000111110100 
-	Parameter BEEP_PERIOD bound to: 8'b11001000 
+	Parameter BEEP_PERIOD bound to: 8'b10010110 
 INFO: [Synth 8-6155] done synthesizing module 'beep' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/beep.v:1]
-WARNING: [Synth 8-689] width (1) of port connection 'o_dat' does not match port width (16) of module 'beep' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'pipeline' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/pipeline.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/.Xil/Vivado-26536-alex-yoga/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/.Xil/Vivado-26536-alex-yoga/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:73631]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 48.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 78.125000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:82174]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:65]
 INFO: [Synth 8-6157] synthesizing module 'debouncer_array' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/debouncer_array.v:1]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/debouncer.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/debouncer.v:1]
@@ -73,63 +89,64 @@ INFO: [Synth 8-6155] done synthesizing module 'mode_select' (0#1) [C:/Users/alex
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (0#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:53]
 WARNING: [Synth 8-6014] Unused sequential element dist_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/distortion.v:24]
-WARNING: [Synth 8-6014] Unused sequential element delay_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:24]
-WARNING: [Synth 8-3848] Net led in module/entity top does not have driver. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/top.v:17]
+WARNING: [Synth 8-7129] Port rst in module buffer_delay is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[3] in module pipeline is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[2] in module pipeline is either unconnected or has no load
 WARNING: [Synth 8-7129] Port tx_vld in module i2s_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[0] in module i2s_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[3] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[2] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[1] in module top is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[0] in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1458.676 ; gain = 548.180
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.098 ; gain = 636.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1458.676 ; gain = 548.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.098 ; gain = 636.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1458.676 ; gain = 548.180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1548.098 ; gain = 636.773
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1458.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1558.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst/inst_new_clk'
-Finished Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst/inst_new_clk'
+Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'inst/inst_new_clk/inst'
+Finished Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'inst/inst_new_clk/inst'
+Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'inst/inst_new_clk/inst'
+Finished Parsing XDC File [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'inst/inst_new_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_top_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_top_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1549.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1803.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1549.484 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1812.684 ; gain = 9.242
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1812.684 ; gain = 901.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1812.684 ; gain = 901.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sysclk. (constraint file  c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk. (constraint file  c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst_new_clk/inst. (constraint file  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/dont_touch.xdc, line 11).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/inst_new_clk. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1812.684 ; gain = 901.359
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'beep_data_reg' in module 'beep'
 ---------------------------------------------------------------------------------------------------
@@ -141,32 +158,37 @@ INFO: [Synth 8-802] inferred FSM for state register 'beep_data_reg' in module 'b
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'beep_data_reg' using encoding 'sequential' in module 'beep'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1812.684 ; gain = 901.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   15 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
 	   2 Input    8 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 3     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	               16 Bit    Registers := 14    
+	           128000 Bit    Registers := 1     
+	               16 Bit    Registers := 15    
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input   16 Bit        Muxes := 5     
 	   4 Input   16 Bit        Muxes := 1     
-	   2 Input   15 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
 	   2 Input    1 Bit        Muxes := 11    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -184,37 +206,32 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_delay/pure_data_reg[2]' and it is trimmed from '16' to '1' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:23]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_delay/pure_data_reg[1]' and it is trimmed from '16' to '1' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:23]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_delay/delay_data_reg[2]' and it is trimmed from '16' to '1' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/delay.v:24]
-INFO: [Synth 8-3917] design design_1_top_0_0 has port ac_muten driven by constant 1
-WARNING: [Synth 8-7129] Port led[3] in module design_1_top_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[2] in module design_1_top_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[1] in module design_1_top_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port led[0] in module design_1_top_0_0 is either unconnected or has no load
+WARNING: [Synth 8-3936] Found unconnected internal register 'inst_i2s/inst_volume_color/abs_dat_d_reg' and it is trimmed from '15' to '14' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.srcs/sources_1/new/volume_color.v:35]
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[0] driven by constant 0
 WARNING: [Synth 8-7129] Port sw[3] in module design_1_top_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[2] in module design_1_top_0_0 is either unconnected or has no load
-INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_beep/FSM_sequential_beep_data_reg) is unused and will be removed from module design_1_top_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:07 . Memory (MB): peak = 1854.617 ; gain = 943.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:19 . Memory (MB): peak = 1854.930 ; gain = 943.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Timing Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:26 . Memory (MB): peak = 2076.047 ; gain = 1164.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Technology Mapping : Time (s): cpu = 00:02:27 ; elapsed = 00:02:47 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -232,86 +249,106 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished IO Insertion : Time (s): cpu = 00:02:33 ; elapsed = 00:02:54 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:33 ; elapsed = 00:02:54 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:33 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:33 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:33 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:33 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|reg__19     | data_buffer_reg[127999] | 8000   | 16    | NO           | YES                | YES               | 0      | 4000    | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |clk_wiz_0     |         1|
-+------+--------------+----------+
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |clk_wiz |     1|
-|2     |CARRY4  |    21|
-|3     |LUT1    |    20|
-|4     |LUT2    |    42|
-|5     |LUT3    |     8|
-|6     |LUT4    |     6|
-|7     |LUT5    |     2|
-|8     |LUT6    |    19|
-|9     |FDRE    |   134|
-+------+--------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |    20|
+|3     |LUT1       |     9|
+|4     |LUT2       |    79|
+|5     |LUT3       |    42|
+|6     |LUT4       |    22|
+|7     |LUT5       |    11|
+|8     |LUT6       |    29|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |     2|
+|11    |MUXF8      |     1|
+|12    |SRLC32E    |  4000|
+|13    |FDRE       |   312|
+|14    |FDSE       |     6|
+|15    |IBUF       |     1|
++------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:33 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1549.484 ; gain = 548.180
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1549.484 ; gain = 638.988
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:36 . Memory (MB): peak = 2187.633 ; gain = 1011.723
+Synthesis Optimization Complete : Time (s): cpu = 00:02:34 ; elapsed = 00:02:55 . Memory (MB): peak = 2187.633 ; gain = 1276.309
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1549.484 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 2187.633 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_top_0_0' is not ideal for floorplanning, since the cellview 'buffer_delay' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1549.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2187.633 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: cf761750
+Synth Design complete | Checksum: b8ae49b0
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1549.484 ; gain = 1059.180
-INFO: [Coretcl 2-1174] Renamed 9 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1549.484 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:38 ; elapsed = 00:03:01 . Memory (MB): peak = 2187.633 ; gain = 1693.434
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2187.633 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/test3.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 21:35:41 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 23 13:36:26 2024...

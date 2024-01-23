@@ -93,7 +93,6 @@ libsrc/all: libsrc/coresightps_dcc/src/all
 libsrc/all: libsrc/devcfg/src/all
 libsrc/all: libsrc/dmaps/src/all
 libsrc/all: libsrc/emacps/src/all
-libsrc/all: libsrc/gpio/src/all
 libsrc/all: libsrc/gpiops/src/all
 libsrc/all: libsrc/iicps/src/all
 libsrc/all: libsrc/qspips/src/all
@@ -112,7 +111,6 @@ libsrc/preinstall: libsrc/coresightps_dcc/src/preinstall
 libsrc/preinstall: libsrc/devcfg/src/preinstall
 libsrc/preinstall: libsrc/dmaps/src/preinstall
 libsrc/preinstall: libsrc/emacps/src/preinstall
-libsrc/preinstall: libsrc/gpio/src/preinstall
 libsrc/preinstall: libsrc/gpiops/src/preinstall
 libsrc/preinstall: libsrc/iicps/src/preinstall
 libsrc/preinstall: libsrc/qspips/src/preinstall
@@ -132,7 +130,6 @@ libsrc/clean: libsrc/coresightps_dcc/src/clean
 libsrc/clean: libsrc/devcfg/src/clean
 libsrc/clean: libsrc/dmaps/src/clean
 libsrc/clean: libsrc/emacps/src/clean
-libsrc/clean: libsrc/gpio/src/clean
 libsrc/clean: libsrc/gpiops/src/clean
 libsrc/clean: libsrc/iicps/src/clean
 libsrc/clean: libsrc/qspips/src/clean
@@ -219,21 +216,6 @@ libsrc/emacps/src/preinstall:
 # Recursive "clean" directory target.
 libsrc/emacps/src/clean: libsrc/emacps/src/CMakeFiles/emacps.dir/clean
 .PHONY : libsrc/emacps/src/clean
-
-#=============================================================================
-# Directory level rules for directory libsrc/gpio/src
-
-# Recursive "all" directory target.
-libsrc/gpio/src/all: libsrc/gpio/src/CMakeFiles/gpio.dir/all
-.PHONY : libsrc/gpio/src/all
-
-# Recursive "preinstall" directory target.
-libsrc/gpio/src/preinstall:
-.PHONY : libsrc/gpio/src/preinstall
-
-# Recursive "clean" directory target.
-libsrc/gpio/src/clean: libsrc/gpio/src/CMakeFiles/gpio.dir/clean
-.PHONY : libsrc/gpio/src/clean
 
 #=============================================================================
 # Directory level rules for directory libsrc/gpiops/src
@@ -582,21 +564,20 @@ libsrc/xiltimer/src/core/scutimer/clean:
 # Target rules for target libsrc/CMakeFiles/combined.dir
 
 # All Build rule for target.
-libsrc/CMakeFiles/combined.dir/all: libsrc/coresightps_dcc/src/CMakeFiles/coresightps_dcc.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/devcfg/src/CMakeFiles/devcfg.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/dmaps/src/CMakeFiles/dmaps.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/gpio/src/CMakeFiles/gpio.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/coresightps_dcc/src/CMakeFiles/coresightps_dcc.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/emacps/src/CMakeFiles/emacps.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/qspips/src/CMakeFiles/qspips.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/iicps/src/CMakeFiles/iicps.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/scugic/src/CMakeFiles/scugic.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/dmaps/src/CMakeFiles/dmaps.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/gpiops/src/CMakeFiles/gpiops.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/qspips/src/CMakeFiles/qspips.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/scugic/src/CMakeFiles/scugic.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/iicps/src/CMakeFiles/iicps.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/scutimer/src/CMakeFiles/scutimer.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/uartps/src/CMakeFiles/uartps.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/sdps/src/CMakeFiles/sdps.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/uartps/src/CMakeFiles/uartps.dir/all
-libsrc/CMakeFiles/combined.dir/all: libsrc/usbps/src/CMakeFiles/usbps.dir/all
 libsrc/CMakeFiles/combined.dir/all: libsrc/xadcps/src/CMakeFiles/xadcps.dir/all
+libsrc/CMakeFiles/combined.dir/all: libsrc/usbps/src/CMakeFiles/usbps.dir/all
 	$(MAKE) $(MAKESILENT) -f libsrc/CMakeFiles/combined.dir/build.make libsrc/CMakeFiles/combined.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/CMakeFiles/combined.dir/build.make libsrc/CMakeFiles/combined.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num= "Built target combined"
@@ -604,7 +585,7 @@ libsrc/CMakeFiles/combined.dir/all: libsrc/xadcps/src/CMakeFiles/xadcps.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/CMakeFiles/combined.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 65
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/CMakeFiles/combined.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/CMakeFiles/combined.dir/rule
@@ -703,12 +684,12 @@ libsrc/dmaps/src/CMakeFiles/dmaps.dir/clean:
 libsrc/emacps/src/CMakeFiles/emacps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/emacps/src/CMakeFiles/emacps.dir/build.make libsrc/emacps/src/CMakeFiles/emacps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/emacps/src/CMakeFiles/emacps.dir/build.make libsrc/emacps/src/CMakeFiles/emacps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=11,12,13,14,15 "Built target emacps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=11,12,13,14,15,16 "Built target emacps"
 .PHONY : libsrc/emacps/src/CMakeFiles/emacps.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/emacps/src/CMakeFiles/emacps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/emacps/src/CMakeFiles/emacps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/emacps/src/CMakeFiles/emacps.dir/rule
@@ -723,44 +704,18 @@ libsrc/emacps/src/CMakeFiles/emacps.dir/clean:
 .PHONY : libsrc/emacps/src/CMakeFiles/emacps.dir/clean
 
 #=============================================================================
-# Target rules for target libsrc/gpio/src/CMakeFiles/gpio.dir
-
-# All Build rule for target.
-libsrc/gpio/src/CMakeFiles/gpio.dir/all:
-	$(MAKE) $(MAKESILENT) -f libsrc/gpio/src/CMakeFiles/gpio.dir/build.make libsrc/gpio/src/CMakeFiles/gpio.dir/depend
-	$(MAKE) $(MAKESILENT) -f libsrc/gpio/src/CMakeFiles/gpio.dir/build.make libsrc/gpio/src/CMakeFiles/gpio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=16,17,18,19,20 "Built target gpio"
-.PHONY : libsrc/gpio/src/CMakeFiles/gpio.dir/all
-
-# Build rule for subdir invocation for target.
-libsrc/gpio/src/CMakeFiles/gpio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/gpio/src/CMakeFiles/gpio.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
-.PHONY : libsrc/gpio/src/CMakeFiles/gpio.dir/rule
-
-# Convenience name for target.
-gpio: libsrc/gpio/src/CMakeFiles/gpio.dir/rule
-.PHONY : gpio
-
-# clean rule for target.
-libsrc/gpio/src/CMakeFiles/gpio.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libsrc/gpio/src/CMakeFiles/gpio.dir/build.make libsrc/gpio/src/CMakeFiles/gpio.dir/clean
-.PHONY : libsrc/gpio/src/CMakeFiles/gpio.dir/clean
-
-#=============================================================================
 # Target rules for target libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
 # All Build rule for target.
 libsrc/gpiops/src/CMakeFiles/gpiops.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/gpiops/src/CMakeFiles/gpiops.dir/build.make libsrc/gpiops/src/CMakeFiles/gpiops.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/gpiops/src/CMakeFiles/gpiops.dir/build.make libsrc/gpiops/src/CMakeFiles/gpiops.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=21,22,23,24 "Built target gpiops"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=17,18,19,20,21 "Built target gpiops"
 .PHONY : libsrc/gpiops/src/CMakeFiles/gpiops.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/gpiops/src/CMakeFiles/gpiops.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/gpiops/src/CMakeFiles/gpiops.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/gpiops/src/CMakeFiles/gpiops.dir/rule
@@ -781,12 +736,12 @@ libsrc/gpiops/src/CMakeFiles/gpiops.dir/clean:
 libsrc/iicps/src/CMakeFiles/iicps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/iicps/src/CMakeFiles/iicps.dir/build.make libsrc/iicps/src/CMakeFiles/iicps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/iicps/src/CMakeFiles/iicps.dir/build.make libsrc/iicps/src/CMakeFiles/iicps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=25,26,27,28,29,30,31,32 "Built target iicps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=22,23,24,25,26,27,28 "Built target iicps"
 .PHONY : libsrc/iicps/src/CMakeFiles/iicps.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/iicps/src/CMakeFiles/iicps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/iicps/src/CMakeFiles/iicps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/iicps/src/CMakeFiles/iicps.dir/rule
@@ -807,12 +762,12 @@ libsrc/iicps/src/CMakeFiles/iicps.dir/clean:
 libsrc/qspips/src/CMakeFiles/qspips.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/qspips/src/CMakeFiles/qspips.dir/build.make libsrc/qspips/src/CMakeFiles/qspips.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/qspips/src/CMakeFiles/qspips.dir/build.make libsrc/qspips/src/CMakeFiles/qspips.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=33,34,35,36 "Built target qspips"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=29,30,31,32,33 "Built target qspips"
 .PHONY : libsrc/qspips/src/CMakeFiles/qspips.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/qspips/src/CMakeFiles/qspips.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/qspips/src/CMakeFiles/qspips.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/qspips/src/CMakeFiles/qspips.dir/rule
@@ -833,7 +788,7 @@ libsrc/qspips/src/CMakeFiles/qspips.dir/clean:
 libsrc/scugic/src/CMakeFiles/scugic.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/scugic/src/CMakeFiles/scugic.dir/build.make libsrc/scugic/src/CMakeFiles/scugic.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/scugic/src/CMakeFiles/scugic.dir/build.make libsrc/scugic/src/CMakeFiles/scugic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=37,38,39,40,41 "Built target scugic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=34,35,36,37,38 "Built target scugic"
 .PHONY : libsrc/scugic/src/CMakeFiles/scugic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -859,12 +814,12 @@ libsrc/scugic/src/CMakeFiles/scugic.dir/clean:
 libsrc/scutimer/src/CMakeFiles/scutimer.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/scutimer/src/CMakeFiles/scutimer.dir/build.make libsrc/scutimer/src/CMakeFiles/scutimer.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/scutimer/src/CMakeFiles/scutimer.dir/build.make libsrc/scutimer/src/CMakeFiles/scutimer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=42,43,44 "Built target scutimer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=39,40,41,42 "Built target scutimer"
 .PHONY : libsrc/scutimer/src/CMakeFiles/scutimer.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/scutimer/src/CMakeFiles/scutimer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/scutimer/src/CMakeFiles/scutimer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/scutimer/src/CMakeFiles/scutimer.dir/rule
@@ -885,12 +840,12 @@ libsrc/scutimer/src/CMakeFiles/scutimer.dir/clean:
 libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/build.make libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/build.make libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=45,46,47,48 "Built target scuwdt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=43,44,45 "Built target scuwdt"
 .PHONY : libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/rule
@@ -911,7 +866,7 @@ libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/clean:
 libsrc/sdps/src/CMakeFiles/sdps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/sdps/src/CMakeFiles/sdps.dir/build.make libsrc/sdps/src/CMakeFiles/sdps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/sdps/src/CMakeFiles/sdps.dir/build.make libsrc/sdps/src/CMakeFiles/sdps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=49,50,51,52,53 "Built target sdps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=46,47,48,49,50 "Built target sdps"
 .PHONY : libsrc/sdps/src/CMakeFiles/sdps.dir/all
 
 # Build rule for subdir invocation for target.
@@ -937,12 +892,12 @@ libsrc/sdps/src/CMakeFiles/sdps.dir/clean:
 libsrc/uartps/src/CMakeFiles/uartps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/uartps/src/CMakeFiles/uartps.dir/build.make libsrc/uartps/src/CMakeFiles/uartps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/uartps/src/CMakeFiles/uartps.dir/build.make libsrc/uartps/src/CMakeFiles/uartps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=54,55,56,57,58 "Built target uartps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=51,52,53,54,55,56 "Built target uartps"
 .PHONY : libsrc/uartps/src/CMakeFiles/uartps.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/uartps/src/CMakeFiles/uartps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/uartps/src/CMakeFiles/uartps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/uartps/src/CMakeFiles/uartps.dir/rule
@@ -963,7 +918,7 @@ libsrc/uartps/src/CMakeFiles/uartps.dir/clean:
 libsrc/usbps/src/CMakeFiles/usbps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/usbps/src/CMakeFiles/usbps.dir/build.make libsrc/usbps/src/CMakeFiles/usbps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/usbps/src/CMakeFiles/usbps.dir/build.make libsrc/usbps/src/CMakeFiles/usbps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=59,60,61,62,63 "Built target usbps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=57,58,59,60,61 "Built target usbps"
 .PHONY : libsrc/usbps/src/CMakeFiles/usbps.dir/all
 
 # Build rule for subdir invocation for target.
@@ -989,7 +944,7 @@ libsrc/usbps/src/CMakeFiles/usbps.dir/clean:
 libsrc/xadcps/src/CMakeFiles/xadcps.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/xadcps/src/CMakeFiles/xadcps.dir/build.make libsrc/xadcps/src/CMakeFiles/xadcps.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/xadcps/src/CMakeFiles/xadcps.dir/build.make libsrc/xadcps/src/CMakeFiles/xadcps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=64,65,66,67 "Built target xadcps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=62,63,64,65 "Built target xadcps"
 .PHONY : libsrc/xadcps/src/CMakeFiles/xadcps.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1015,12 +970,12 @@ libsrc/xadcps/src/CMakeFiles/xadcps.dir/clean:
 libsrc/standalone/src/CMakeFiles/xilstandalone.dir/all:
 	$(MAKE) $(MAKESILENT) -f libsrc/standalone/src/CMakeFiles/xilstandalone.dir/build.make libsrc/standalone/src/CMakeFiles/xilstandalone.dir/depend
 	$(MAKE) $(MAKESILENT) -f libsrc/standalone/src/CMakeFiles/xilstandalone.dir/build.make libsrc/standalone/src/CMakeFiles/xilstandalone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97 "Built target xilstandalone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97 "Built target xilstandalone"
 .PHONY : libsrc/standalone/src/CMakeFiles/xilstandalone.dir/all
 
 # Build rule for subdir invocation for target.
 libsrc/standalone/src/CMakeFiles/xilstandalone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/standalone/src/CMakeFiles/xilstandalone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/test3/vitis_components/proj_plat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : libsrc/standalone/src/CMakeFiles/xilstandalone.dir/rule
