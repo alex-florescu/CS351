@@ -49,3 +49,4 @@
 - 19 Jan - tried Vivado 19.1, written volume_color.v module
 - 20 Jan - got a simple delayed output to work
 - 22 Jan - meeting with Eduardo
+- 23 Jan - delay effect working with RAM block
