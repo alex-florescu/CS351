@@ -16,6 +16,8 @@ The selection of ports in the design of this module allows using it outside the 
 
 Talk about denouncer.
 
+Talk about going back to vivado 2019.1
+
 
 ### References
 * SSM2603 Data sheet (https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
