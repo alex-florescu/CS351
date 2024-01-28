@@ -50,4 +50,4 @@
 - 20 Jan - got a simple delayed output to work
 - 22 Jan - meeting with Eduardo
 - 23 Jan - delay effect working with RAM block
-- 27 Jan - working on reverb effect
+- 27 Jan - 
