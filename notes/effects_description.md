@@ -1,3 +1,4 @@
+# Effects
 ## Distortion
 We attempt to create distortion using the Overdrive method
 1. increase the gain
@@ -17,6 +18,13 @@ The selection of ports in the design of this module allows using it outside the 
 Talk about denouncer.
 
 Talk about going back to vivado 2019.1
+
+# Delay
+Created using a RAM block. An index is used to indicate the delay amount to make it controllable in real time.
+Division needed, but the division amount does not need to be very precise, hence we can use division by shifting.
+TBC - for delay write-up say how you obtain division from shifting, and how that could have been done with a different operator in SystemVerilog
+
+# Reverb
 
 
 ### References
