@@ -34,6 +34,11 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 
 ## Notes
 * presentation: have a back up video of the effects, in case the demo is not working irl
+* final report
+  - for 1st: compare other works
+  - how everything is explained: a more technical language
+     - talk about time domain, frequency domain
+     - reflective writing, limitations of the work 
  ## Past notes
   * have a problem statement
   * timetable: include breaks for exams and holidays
