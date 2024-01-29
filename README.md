@@ -33,7 +33,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
   * Spend time on "impressive" things!
 
 ## Notes
-* idk
+* presentation: have a back up video of the effects, in case the demo is not working irl
  ## Past notes
   * have a problem statement
   * timetable: include breaks for exams and holidays
