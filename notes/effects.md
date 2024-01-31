@@ -24,6 +24,8 @@ Created using a RAM block. An index is used to indicate the delay amount to make
 Division needed, but the division amount does not need to be very precise, hence we can use division by shifting.
 TBC - for delay write-up say how you obtain division from shifting, and how that could have been done with a different operator in SystemVerilog
 
+To obtain this effect, the audio must be delayed for a substantial amount of time, such that the difference in noticeable. We aim for delay amounts between 0.20 and 1s. As mentioned before, the audio samples are obtained at a frequency of 48 kHz, meaning $`48*10^3`$ samples represent 1 second of audio data. (A single sample represents 20.83us of audio). For convenience, we store a number of samples that is a power of 2, such as 16384 or 32768, as it allows easier indexing when reading and writing this data in memory.
+
 # Reverb
 
 
