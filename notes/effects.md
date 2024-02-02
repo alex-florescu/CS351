@@ -27,6 +27,7 @@ TBC - for delay write-up say how you obtain division from shifting, and how that
 To obtain this effect, the audio must be delayed for a substantial amount of time, such that the difference in noticeable. We aim for delay amounts between 0.20 and 1s. As mentioned before, the audio samples are obtained at a frequency of 48 kHz, meaning $`48*10^3`$ samples represent 1 second of audio data. (A single sample represents 20.83us of audio). For convenience, we store a number of samples that is a power of 2, such as 16384 or 32768, as it allows easier indexing when reading and writing this data in memory.
 
 # Reverb
+Talk about BRAM issues: the read enable signal must be high for one additional clock (the clock the data is obtained). The data is obtained with a 2 clock cycle delay.
 
 
 ### References
