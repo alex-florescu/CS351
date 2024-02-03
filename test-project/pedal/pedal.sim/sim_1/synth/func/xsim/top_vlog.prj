@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../pedal.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../pedal.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" --include "C:/Xilinx2019/Vivado/2019.1/data/xilinx_vip/include" \
+"top_func_synth.v" \
+"../../../../../pedal.srcs/sources_1/new/beep.v" \
+"../../../../../pedal.srcs/sources_1/new/clk_wiz.v" \
+"../../../../../pedal.srcs/sources_1/new/clk_wiz_leaf.v" \
+"../../../../../pedal.srcs/sources_1/new/debouncer.v" \
+"../../../../../pedal.srcs/sources_1/new/debouncer_array.v" \
+"../../../../../pedal.srcs/sources_1/new/delay.v" \
+"../../../../../pedal.srcs/sources_1/new/distortion.v" \
+"../../../../../pedal.srcs/sources_1/new/i2s_control.v" \
+"../../../../../pedal.srcs/sources_1/new/mode_select.v" \
+"../../../../../pedal.srcs/sources_1/new/pipeline.v" \
+"../../../../../pedal.srcs/sources_1/new/ram_delay.v" \
+"../../../../../pedal.srcs/sources_1/new/top.v" \
+
+# Do not sort compile order
+nosort

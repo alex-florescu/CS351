@@ -1,6 +1,6 @@
 module delay #(
     parameter DATA_WIDTH = 16,
-    parameter FIFO_DEPTH = 16384,
+    parameter FIFO_DEPTH = 32768,
     parameter DIV_GAIN = 2
 )(
     input                     clk,
@@ -22,7 +22,7 @@ module delay #(
     reg signed [DATA_WIDTH - 1:0] fifo_data_reduced;
     reg [DEPTH - 1:0] valid;
 
-    assign led[3:0] = 4'b1111;
+    assign led[3:0] = 4'b1011;
 
     always @(posedge clk) begin
         if(rst) begin

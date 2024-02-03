@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="649628746791fs"></ZoomStartTime>
+      <ZoomEndTime time="650403915131fs"></ZoomEndTime>
+      <Cursor1Time time="649731267000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/top/sysclk" type="logic">
+      <obj_property name="ElementShortName">sysclk</obj_property>
+      <obj_property name="ObjectShortName">sysclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_bclk" type="logic">
+      <obj_property name="ElementShortName">ac_bclk</obj_property>
+      <obj_property name="ObjectShortName">ac_bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_muten" type="logic">
+      <obj_property name="ElementShortName">ac_muten</obj_property>
+      <obj_property name="ObjectShortName">ac_muten</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_pbdat" type="logic">
+      <obj_property name="ElementShortName">ac_pbdat</obj_property>
+      <obj_property name="ObjectShortName">ac_pbdat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_pblrc" type="logic">
+      <obj_property name="ElementShortName">ac_pblrc</obj_property>
+      <obj_property name="ObjectShortName">ac_pblrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_recdat" type="logic">
+      <obj_property name="ElementShortName">ac_recdat</obj_property>
+      <obj_property name="ObjectShortName">ac_recdat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_reclrc" type="logic">
+      <obj_property name="ElementShortName">ac_reclrc</obj_property>
+      <obj_property name="ObjectShortName">ac_reclrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/sw" type="array">
+      <obj_property name="ElementShortName">sw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/btn" type="array">
+      <obj_property name="ElementShortName">btn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/led5_rgb" type="array">
+      <obj_property name="ElementShortName">led5_rgb[2:0]</obj_property>
+      <obj_property name="ObjectShortName">led5_rgb[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/led6_rgb" type="array">
+      <obj_property name="ElementShortName">led6_rgb[2:0]</obj_property>
+      <obj_property name="ObjectShortName">led6_rgb[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/rx_dat" type="array">
+      <obj_property name="ElementShortName">rx_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_dat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/tx_dat" type="array">
+      <obj_property name="ElementShortName">tx_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_dat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/rx_vld" type="logic">
+      <obj_property name="ElementShortName">rx_vld</obj_property>
+      <obj_property name="ObjectShortName">rx_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/tx_vld" type="logic">
+      <obj_property name="ElementShortName">tx_vld</obj_property>
+      <obj_property name="ObjectShortName">tx_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/button" type="array">
+      <obj_property name="ElementShortName">button[2:0]</obj_property>
+      <obj_property name="ObjectShortName">button[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/config_value" type="array">
+      <obj_property name="ElementShortName">config_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">config_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/CONFIG_BITS" type="array">
+      <obj_property name="ElementShortName">CONFIG_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CONFIG_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/phase_vld" type="logic">
+      <obj_property name="ElementShortName">phase_vld</obj_property>
+      <obj_property name="ObjectShortName">phase_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/read_addr" type="array">
+      <obj_property name="ElementShortName">read_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">read_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/phase_d1" type="array">
+      <obj_property name="ElementShortName">phase_d1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">phase_d1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/read_enable" type="logic">
+      <obj_property name="ElementShortName">read_enable</obj_property>
+      <obj_property name="ObjectShortName">read_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/wr_enable" type="logic">
+      <obj_property name="ElementShortName">wr_enable</obj_property>
+      <obj_property name="ObjectShortName">wr_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/wr_addr" type="array">
+      <obj_property name="ElementShortName">wr_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/i_vld_d" type="array">
+      <obj_property name="ElementShortName">i_vld_d[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_vld_d[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/i_vld" type="logic">
+      <obj_property name="ElementShortName">i_vld</obj_property>
+      <obj_property name="ObjectShortName">i_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_enable" type="logic">
+      <obj_property name="ElementShortName">rd_enable</obj_property>
+      <obj_property name="ObjectShortName">rd_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/ac_mclk" type="logic">
+      <obj_property name="ElementShortName">ac_mclk</obj_property>
+      <obj_property name="ObjectShortName">ac_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/phase" type="array">
+      <obj_property name="ElementShortName">phase[1:0]</obj_property>
+      <obj_property name="ObjectShortName">phase[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/index" type="array">
+      <obj_property name="ElementShortName">index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/addr1" type="array">
+      <obj_property name="ElementShortName">addr1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_addr" type="array">
+      <obj_property name="ElementShortName">rd_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_enable" type="logic">
+      <obj_property name="ElementShortName">rd_enable</obj_property>
+      <obj_property name="ObjectShortName">rd_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_enable_hold" type="logic">
+      <obj_property name="ElementShortName">rd_enable_hold</obj_property>
+      <obj_property name="ObjectShortName">rd_enable_hold</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_enable_v2" type="logic">
+      <obj_property name="ElementShortName">rd_enable_v2</obj_property>
+      <obj_property name="ObjectShortName">rd_enable_v2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_vld" type="logic">
+      <obj_property name="ElementShortName">rd_vld</obj_property>
+      <obj_property name="ObjectShortName">rd_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/rd_vld_v2" type="logic">
+      <obj_property name="ElementShortName">rd_vld_v2</obj_property>
+      <obj_property name="ObjectShortName">rd_vld_v2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/o_dat0" type="array">
+      <obj_property name="ElementShortName">o_dat0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/o_dat1" type="array">
+      <obj_property name="ElementShortName">o_dat1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/o_dat2" type="array">
+      <obj_property name="ElementShortName">o_dat2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/o_dat3" type="array">
+      <obj_property name="ElementShortName">o_dat3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/i_dat_d" type="array">
+      <obj_property name="ElementShortName">i_dat_d[95:0]</obj_property>
+      <obj_property name="ObjectShortName">i_dat_d[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/index" type="array">
+      <obj_property name="ElementShortName">index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_reverb/inst_ram_reverb/index_d" type="array">
+      <obj_property name="ElementShortName">index_d[23:0]</obj_property>
+      <obj_property name="ObjectShortName">index_d[23:0]</obj_property>
+   </wvobject>
+</wave_config>

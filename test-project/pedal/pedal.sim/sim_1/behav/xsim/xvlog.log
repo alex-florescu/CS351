@@ -1,3 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v" into library xil_defaultlib
@@ -22,5 +24,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/u
 INFO: [VRFC 10-311] analyzing module pipeline
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_delay.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ram_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_reverb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_reverb
+INFO: [VRFC 10-2458] undeclared symbol o_dat, assumed default net type wire [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_reverb.v:102]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reverb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top

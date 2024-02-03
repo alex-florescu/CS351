@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: University of Warwick
-// Engineer: Alex Florescu
-// 
-// Create Date: 30.12.2023 11:05:53
-// Design Name: 
-// Module Name: pipeline
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: Module should include all effect instantiations
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module pipeline #(
     parameter DATA_WIDTH = 16 // fixed parameter
@@ -37,9 +17,11 @@ module pipeline #(
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
 wire [DATA_WIDTH - 1:0] tx_dat_eff2;
 wire [DATA_WIDTH - 1:0] tx_dat_eff3;
+wire [DATA_WIDTH - 1:0] tx_dat_eff4;
 wire tx_vld_eff1;
 wire tx_vld_eff2;
 wire tx_vld_eff3;
+wire tx_vld_eff4;
 
 distortion #(
     .DATA_WIDTH(DATA_WIDTH),
@@ -57,7 +39,7 @@ distortion #(
 
 delay #(
     .DATA_WIDTH(DATA_WIDTH),
-    .FIFO_DEPTH(32768), // number of samples (there are 48k samples in a second)
+    .FIFO_DEPTH(16384), // number of samples (there are 48k samples/s); 32768 stores 0.6826s of sound data
     .DIV_GAIN(2) // (as power of 2) ex: if div_gain is 3, data is div by 8
 ) inst_delay (
     .clk(clk),
@@ -70,6 +52,21 @@ delay #(
     .led(led)
 );
 
+// reverb #(
+//     .DATA_WIDTH(DATA_WIDTH),
+//     .FIFO_DEPTH(8192), // number of samples (there are 48k samples/s);
+//     .DIV_GAIN(3) // (as power of 2) ex: if div_gain is 3, data is div by 8
+// ) inst_reverb (
+//     .clk(clk),
+//     .rst(rst),
+//     .i_dat(tx_dat_eff2),
+//     .o_dat(tx_dat_eff3),
+//     .i_vld(tx_vld_eff2),
+//     .o_vld(tx_vld_eff3),
+//     .enable(sw[2]),
+//     .led(led)
+// );
+
 beep #(
     .DATA_WIDTH(DATA_WIDTH),
     .BEEP_VALUE(16'd500),
@@ -81,8 +78,25 @@ beep #(
     .o_dat(tx_dat_eff3),
     .i_vld(tx_vld_eff2),
     .o_vld(tx_vld_eff3),
+    .enable(sw[3])
+);
+
+reverb #(
+    .DATA_WIDTH(DATA_WIDTH),
+    .FIFO_DEPTH(8192), // use sth like 8000 number of samples (there are 48k samples/s);
+    .DIV_GAIN(3) // (as power of 2) ex: if div_gain is 3, data is div by 8
+) inst_reverb (
+    .clk(clk),
+    .rst(rst),
+    .i_dat(tx_dat_eff3),
+    .o_dat(tx_dat_eff4),
+    .i_vld(tx_vld_eff3),
+    .o_vld(tx_vld_eff4),
     .enable(sw[2])
 );
+assign tx_dat = tx_dat_eff4;
+assign tx_vld = tx_vld_eff4;
+
 
 // effect_template #(
 //     .DATA_WIDTH(DATA_WIDTH)
@@ -94,10 +108,5 @@ beep #(
 //     .i_vld(rx_vld),
 //     .o_vld(tx_vld)
 // );
-
-
-assign tx_dat = tx_dat_eff3;
-assign tx_vld = tx_vld_eff3;
-
 
 endmodule

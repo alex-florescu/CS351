@@ -52,12 +52,12 @@ module ram_delay #(
     end
 
     // perform writes 3 clocks after the read to avoid rw collisions
-    blk_mem_gen_0 inst_dpram (
+    blk_mem_gen_0 inst_dpram_delay (
         .clka(clk),    // input wire clka
         .ena(1'b1),      // input wire ena
-        .wea(i_vld_d3),      // input wire [0 : 0] wea
-        .addra(index_d3),  // input wire [7 : 0] addra
-        .dina(i_dat_d3),    // input wire [15 : 0] dina
+        .wea(i_vld_d1),      // input wire [0 : 0] wea
+        .addra(index_d1),  // input wire [7 : 0] addra
+        .dina(i_dat_d1),    // input wire [15 : 0] dina
         
         .clkb(clk),    // input wire clkb
         .enb(i_vld),      // input wire enb
