@@ -52,4 +52,6 @@
 - 23 Jan - delay effect working with RAM block
 - 29 Jan - meeting with Eduardo
 - 30 Jan - rough reverb design
-- 
+
+### February
+- 03 Feb - More work on Reverb
