@@ -12,7 +12,7 @@ module reverb #(
     input                     enable
 );
 
-    localparam DEPTH = 2; // number of stages for delay effect
+    localparam DEPTH = 3; // number of stages for delay effect
 
     // create registers for data pipelining
     reg signed [DATA_WIDTH - 1:0] delay_data [DEPTH - 1:0];
@@ -34,12 +34,14 @@ module reverb #(
             // path for delayed data
             pure_data[0] <= i_dat;
             pure_data[1] <= pure_data[0];
+            pure_data[2] <= pure_data[1];
             // pure_data[2] <= pure_data[1];
 
             // place data in a signed register
-            delay_data[0] <= fifo_data0 + fifo_data1 + fifo_data2 + fifo_data3;
+            delay_data[0] <= i_dat;
+            delay_data[1] <= delay_data[0]/2 + (fifo_data0 + fifo_data1 + fifo_data2 + fifo_data3)/8;
+            delay_data[2] <= delay_data[1] + pure_data[1]/2;
             
-
             // delay_data[1] <= delay_data[0];
 
             // // divide fifo output data by shifting, maintain sign
@@ -49,8 +51,7 @@ module reverb #(
 
             // // add reduced fifo data to unaltered input
             // delay_data[1] <= delay_data[0] + fifo_data_reduced;
-
-            delay_data[1] <= delay_data[0] / 4;
+            // delay_data[1] <= delay_data[0] / 4;
 
         end     
     end
@@ -62,8 +63,8 @@ module reverb #(
     ) inst_ram_reverb (
         .clk(clk),
         .rst(rst),
-        .i_dat(i_dat), // change to i_dat for simple delayed input
-        .i_vld(i_vld), // change to i_vld for simple delayed input
+        .i_dat(delay_data[1]), // change to i_dat for simple delayed input
+        .i_vld(valid[1]), // change to i_vld for simple delayed input
         .o_dat0(fifo_data0),
         .o_dat1(fifo_data1),
         .o_dat2(fifo_data2),
@@ -71,16 +72,17 @@ module reverb #(
     );
 
     // select output based on enable
-    assign o_dat = (enable) ? delay_data[1] : pure_data[1];
-    assign o_vld = valid[1];
+    assign o_dat = (enable) ? delay_data[2] : pure_data[2];
+    assign o_vld = valid[2];
 
     always @(posedge clk) begin
         // delay valid signal
         if(rst) begin
-            valid[0] <= 2'd0;
+            valid[0] <= 1'b0;
         end else begin
             valid[0] <= i_vld;
             valid[1] <= valid[0];
+            valid[2] <= valid[1];
         end
     end
 

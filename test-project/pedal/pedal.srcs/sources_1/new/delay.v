@@ -9,8 +9,7 @@ module delay #(
     input                     i_vld, // a 1 bit signal that is high for one clock cycle for each sample
     output [DATA_WIDTH - 1:0] o_dat,
     output                    o_vld,
-    input                     enable,
-    output [3:0] led
+    input                     enable
 );
 
     localparam DEPTH = 2; // number of stages for delay effect
@@ -21,8 +20,6 @@ module delay #(
     wire signed [DATA_WIDTH - 1:0] fifo_data;
     reg signed [DATA_WIDTH - 1:0] fifo_data_reduced;
     reg [DEPTH - 1:0] valid;
-
-    assign led[3:0] = 4'b1011;
 
     always @(posedge clk) begin
         if(rst) begin
@@ -98,7 +95,7 @@ module delay #(
     always @(posedge clk) begin
         // delay valid signal
         if(rst) begin
-            valid[0] <= 2'd0;
+            valid[0] <= 1'b0;
         end else begin
             valid[0] <= i_vld;
             valid[1] <= valid[0];

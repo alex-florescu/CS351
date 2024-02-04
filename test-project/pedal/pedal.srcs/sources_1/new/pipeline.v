@@ -14,6 +14,8 @@ module pipeline #(
     output [3:0] led
 );
 
+assign led[3:0] = 4'b1111;
+
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
 wire [DATA_WIDTH - 1:0] tx_dat_eff2;
 wire [DATA_WIDTH - 1:0] tx_dat_eff3;
@@ -48,8 +50,7 @@ delay #(
     .o_dat(tx_dat_eff2),
     .i_vld(tx_vld_eff1),
     .o_vld(tx_vld_eff2),
-    .enable(sw[1]),
-    .led(led)
+    .enable(sw[1])
 );
 
 // reverb #(
