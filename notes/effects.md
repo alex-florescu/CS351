@@ -19,7 +19,7 @@ Talk about denouncer.
 
 Talk about going back to vivado 2019.1
 
-# Delay
+## Delay
 Created using a RAM block. An index is used to indicate the delay amount to make it controllable in real time.
 Division needed, but the division amount does not need to be very precise, hence we can use division by shifting.
 TBC - for delay write-up say how you obtain division from shifting, and how that could have been done with a different operator in SystemVerilog
@@ -28,7 +28,7 @@ To obtain this effect, the audio must be delayed for a substantial amount of tim
 
 TODO: fix the BRAM 2 clock read here too
 
-# Reverb
+## Reverb
 Talk about BRAM issues: the read enable signal must be high for one additional clock (the clock the data is obtained). The data is obtained with a 2 clock cycle delay.
 Talk about clicky noises when playing with a pick and how that was reduced by reducing the sound before putting it in the delay module.
 Talk about decisions (maybe in the future use a high pass filter to reduce noises that are not "bounced back" by an echoed sound).
