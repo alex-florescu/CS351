@@ -38,7 +38,14 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
   - for 1st: compare other works
   - how everything is explained: a more technical language
      - talk about time domain, frequency domain
-     - reflective writing, limitations of the work 
+     - reflective writing, limitations of the work
+  - maybe do some formal testing with real data from Vivado ILA?
+     - also show some simple values (small delay values) data 0 and 999 or sth like that
+  - in the related works section, compare:
+     - project that use/don't use frequency altering effects
+     - the Audio Codec they had
+      
+       
  ## Past notes
   * have a problem statement
   * timetable: include breaks for exams and holidays
