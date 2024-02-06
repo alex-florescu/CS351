@@ -55,3 +55,5 @@
 
 ### February
 - 03 Feb - More work on Reverb
+- 04 Feb - removed clicky noise on reverb effect
+- 05 Feb - meeting with Eduardo
