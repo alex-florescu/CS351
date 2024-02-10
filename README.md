@@ -43,7 +43,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
      - also show some simple values (small delay values) data 0 and 999 or sth like that
   - in the related works section, compare:
      - project that use/don't use frequency altering effects
-     - the Audio Codec they had
+     - the Audio Codec device model they had
       
        
  ## Past notes
