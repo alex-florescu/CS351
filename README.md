@@ -27,6 +27,7 @@ https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpes
 ----
 
 ## Keep in mind:
+* think about tf.
 3rd year project with no customer or no iteration is NOT agile: it needs both of those things!!!! (ian saunders)
   * set up meeting with supervisor, decide how. Don't show up to meetings with nothing to discuss
   * apply the things you learn in Project Management
