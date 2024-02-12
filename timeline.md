@@ -59,3 +59,4 @@
 - 05 Feb - meeting with Eduardo
 - 06 Feb - started writing for the dissertation
 - 07 Feb - presentation outline
+- 12 Feb - meeting with Eduardo
