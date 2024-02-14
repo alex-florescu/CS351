@@ -4,7 +4,7 @@
 numPeriods = 3;
 numSamples = 1500;
 numBits = 16;
-amplitude = 2^(numBits-1) % values can be negative too
+amplitude = 2^(numBits-1); % values can be negative too
 
 amplitudeReal = amplitude/8;
 
@@ -47,5 +47,9 @@ xlim([index(1),index(end)])
 
 %%
 
-% 2^numBits possible values
+xTest = x;
+
+mags = fft(x);
+
+plot(abs(mags))
 
