@@ -60,3 +60,5 @@
 - 06 Feb - started writing for the dissertation
 - 07 Feb - presentation outline
 - 12 Feb - meeting with Eduardo
+- 13 Feb - Matlab model of frequency detector
+- 14 Feb - rough Matlab model of Wah effect
