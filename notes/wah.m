@@ -92,13 +92,14 @@ sound(audioWah, 48000); % Play audio from vector
 
 
 %%
-n = 20;
-position = linspace(1,179,n)
+n = 250;
+position = linspace(13,29,n)
 k = [40,25,19,15,11,8,6,4,2,1]
 
 audioComb = zeros(240000,n);
 audioOut = zeros(240000,1);
 
+% figure;
 
 
 for i = 1:n
@@ -106,22 +107,28 @@ for i = 1:n
     % y = sin(posRads);
     % x = cos(posRads);
 
-    wcNorm = position(i)/360*2;
+    wcNorm = [position(i) - 9,position(i)]./360.*2;
 
 
 
     % a1 = 1;
-    [b1,a1] = butter(6, wcNorm, "low");
+    [b1,a1] = butter(6, wcNorm, "bandpass");
+    b1 = b1*4*2;
     % b1 = fir1(100, wcNorm, 'low', hann(101));
     % b1 = [1, -2*x, (x^2 + y^2)] / k(i); % b is top side (zero)
     % a1 = [1,0,0]; % fixed pole
 
+    % h1 = impz(b1,a1);
+    % hold on
+    % freqz(h1)
+
     audioComb(:,i) = filter(b1, a1, audioRaw);
 end
+% hold off
 
 % sound(audioComb(:,10), 48000);
 
-portions = 50;
+portions = 1600; % smaller for a slower rotation effect
 partSize = 240000/portions;
 selector = 1;
 adder = 1;
@@ -132,7 +139,7 @@ for i = 0:(portions-1)
 
     audioOut(pos1 : pos2) = audioComb(pos1 : pos2, selector);
 
-    if(selector == 10 || selector == 1 && i ~= 0)
+    if(selector >= n || selector == 1 && i ~= 0)
         adder = adder*(-1);
     end
     selector = selector + adder;
@@ -140,7 +147,10 @@ end
 
 
 % sound(audioOut, 48000);
-sound(audioOut + audioRaw, 48000)
+sound(audioOut + audioRaw/2, 48000)
+
+%%
+sound(audioComb(:,4), 48000)
 %%
 
 % zero pair coordinates
@@ -153,8 +163,8 @@ x = cos(posRads);
 % a1 = [1, -0, 0]; % fixed pole
 
 % b1 = fir1(100, 0.1, 'low', hann(101))
-[b1,a1] = butter(6, 0.1);
-
+[b1,a1] = butter(6, [0.3, 0.35], "bandpass");
+b1 = b1*3;
 h1 = impz(b1,a1);
 
 
@@ -168,5 +178,20 @@ audioWah = filter(b1, a1, audioRaw);
 
 %%
 sound(audioOut, 48000);
+
+%%
+mags = abs(fft(audioRaw));
+figure;
+plot(mags)
+
+mags2 = abs(fft(audioOut));
+figure;
+plot(mags2)
+ylim([0,3000])
+
+%%
+figure;
+plot(audioOut)
+
 
 
