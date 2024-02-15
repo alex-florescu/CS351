@@ -62,3 +62,4 @@
 - 12 Feb - meeting with Eduardo
 - 13 Feb - Matlab model of frequency detector
 - 14 Feb - rough Matlab model of Wah effect
+- 15 Feb - cleaner Matlab model of Wah effect
