@@ -93,21 +93,24 @@ sound(audioWah, 48000); % Play audio from vector
 
 %%
 n = 250;
-position = linspace(13,29,n)
+% position = linspace(13,29,n)
+position = linspace(13,30,n)
+
 k = [40,25,19,15,11,8,6,4,2,1]
 
 audioComb = zeros(240000,n);
 audioOut = zeros(240000,1);
 
 % figure;
-
+a = zeros(n,13);
+b = zeros(n,13);
 
 for i = 1:n
     % posRads = position(i)/360*2*pi;
     % y = sin(posRads);
     % x = cos(posRads);
 
-    wcNorm = [position(i) - 9,position(i)]./360.*2;
+    wcNorm = [position(i) - 5,position(i)]./360.*2;
 
 
 
@@ -118,6 +121,8 @@ for i = 1:n
     % b1 = [1, -2*x, (x^2 + y^2)] / k(i); % b is top side (zero)
     % a1 = [1,0,0]; % fixed pole
 
+    a(i,:) = a1;
+    b(i,:) = b1;
     % h1 = impz(b1,a1);
     % hold on
     % freqz(h1)
@@ -147,7 +152,10 @@ end
 
 
 % sound(audioOut, 48000);
-sound(audioOut + audioRaw/2, 48000)
+% sound(audioOut + audioRaw/2, 48000)
+
+
+
 
 %%
 sound(audioComb(:,4), 48000)
@@ -163,7 +171,7 @@ x = cos(posRads);
 % a1 = [1, -0, 0]; % fixed pole
 
 % b1 = fir1(100, 0.1, 'low', hann(101))
-[b1,a1] = butter(6, [0.3, 0.35], "bandpass");
+[b1,a1] = butter(6, [0.3, 0.33], "bandpass");
 b1 = b1*3;
 h1 = impz(b1,a1);
 
@@ -192,6 +200,49 @@ ylim([0,3000])
 %%
 figure;
 plot(audioOut)
+
+%%
+var = 1; % start cycle from 1
+adder = 1; % fixed
+
+x = audioRaw;
+y = zeros(240000,1);
+
+for i = 1 : length(y)
+    print_var(i) = var;
+
+    out = x(i)*b(var,1);
+    for j = 2 : 13 
+        index = i - j + 1;
+        if(index > 0) % if index within bounds
+            out = out + x(index)*b(var,j);
+            out = out - y(index)*a(var,j);
+        end
+    end
+    out = out/a(var,1);
+    y(i) = out;
+
+    % mod(i,400)
+
+    if(mod(i,150) == 0)
+
+        var = var + adder;
+        if(var == n || var == 1)
+            adder = adder*(-1);
+        end
+    end
+
+    % var, adder, i
+end
+
+% sound(y,48000)
+sound(y + audioRaw/2, 48000)
+
+%%
+% converting 4.68169661834813e-08 to fixed point binary
+% 1 bit of 0 = integer part
+% 23 bits of 0
+% 25 bits 0110010010001001111001100 (twos complement)
 
 
 
