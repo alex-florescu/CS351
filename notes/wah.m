@@ -219,8 +219,12 @@ for i = 1 : length(y)
             out = out - y(index)*a(var,j);
         end
     end
+
     out = out/a(var,1);
     y(i) = out;
+
+    % precision = 16;
+    % y(i) = floor(y(i)*10^precision)/(10^precision);
 
     % mod(i,400)
 
@@ -238,11 +242,48 @@ end
 % sound(y,48000)
 sound(y + audioRaw/2, 48000)
 
+% by increasing/decreasing the precision we observe the following:
+% the denominator values of the transfer function (b coefficient), despite
+% having apparently insignificant value, they play a huge role in the
+% calculation of the appropriate output. We have tried computing the output
+% using smaller data and observed two main points.
+
+% 1. The precision of data sent to the speaker is not very significant
+% 2. The data used when applying the transfer function values must have
+% significant detail, otherwise the trasfer function will produce corrupted
+% values that will be perceived as noise
+
+% Based on these observations, we aim to only maintain the output data in a
+% high precision format (64 bit) when obtaining the values, and send it to
+% the transmitter after it is casted back to a precision format (16 bit)
+
+
 %%
 % converting 4.68169661834813e-08 to fixed point binary
 % 1 bit of 0 = integer part
 % 23 bits of 0
 % 25 bits 0110010010001001111001100 (twos complement)
 
+% y_cpy = y;
+%% 
+% x from 14 to 26
+in = [-0.151458740234375 -0.151489257812500 -0.148284912109375 -0.147003173828125 -0.144104003906250 -0.142120361328125 -0.139465332031250 -0.136596679687500 -0.133850097656250 -0.130828857421875 -0.127380371093750 -0.124420166015625 -0.120697021484375];
 
+% y from 14 to 26
+out = [-0.000626393218086096 -0.000786148208292181 -0.000941812377895140 -0.00107649478864728 -0.00117038799834840 -0.00120185994474483 -0.00114884348067963 -0.000990463417614950 -0.000708824988990932 -0.000290872180838085 0.000269789498733981 0.000971222143429236 0.00180175929986494];
 
+curr = -0.117126464843750;
+
+b_part = curr * b(1,1);
+
+for i = 2:13
+    b_part = b_part + in(15-i)*b(1,i);
+end
+
+a_part = 0;
+
+for i = 2:13
+    a_part = a_part - out(15-i)*a(1,i);
+end
+
+a_part, b_part
