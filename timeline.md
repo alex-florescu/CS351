@@ -63,3 +63,5 @@
 - 13 Feb - Matlab model of frequency detector
 - 14 Feb - rough Matlab model of Wah effect
 - 15 Feb - cleaner Matlab model of Wah effect
+- 17 Feb - Matlab Wah effect similar to an FPGA implementation
+- 18 Feb - prepared form for Demo Day
