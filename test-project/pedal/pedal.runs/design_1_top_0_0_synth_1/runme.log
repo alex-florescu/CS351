@@ -17,9 +17,19 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 53472 
+INFO: Helper process launched with PID 21860 
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:48]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:49]
+WARNING: [Synth 8-6901] identifier 'y_new' is used before its declaration [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:61]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:71]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:72]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:73]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:76]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:77]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:78]
+WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:79]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 861.613 ; gain = 177.656
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 868.016 ; gain = 184.840
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
@@ -32,7 +42,7 @@ INFO: [Synth 8-6157] synthesizing module 'pipeline' [C:/Users/alexm/OneDrive/Doc
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'distortion' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
-	Parameter THRESH bound to: 750 - type: integer 
+	Parameter THRESH bound to: 1024 - type: integer 
 	Parameter DEPTH bound to: 3 - type: integer 
 INFO: [Synth 8-4471] merging register 'dist_data_reg[0][15:0]' into 'pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:25]
 WARNING: [Synth 8-6014] Unused sequential element dist_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:25]
@@ -134,11 +144,6 @@ INFO: [Synth 8-6155] done synthesizing module 'ram_delay' (14#1) [C:/Users/alexm
 INFO: [Synth 8-4471] merging register 'delay_data_reg[0][15:0]' into 'pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:27]
 WARNING: [Synth 8-6014] Unused sequential element delay_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:27]
 INFO: [Synth 8-6155] done synthesizing module 'delay' (15#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/delay.v:1]
-INFO: [Synth 8-6157] synthesizing module 'beep' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v:1]
-	Parameter DATA_WIDTH bound to: 16 - type: integer 
-	Parameter BEEP_VALUE bound to: 16'b0000000111110100 
-	Parameter BEEP_PERIOD bound to: 8'b10010110 
-INFO: [Synth 8-6155] done synthesizing module 'beep' (16#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v:1]
 INFO: [Synth 8-6157] synthesizing module 'reverb' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 	Parameter FIFO_DEPTH bound to: 8192 - type: integer 
@@ -230,11 +235,41 @@ INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/alexm/OneDrive
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
 	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     9.0695 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_3' declared at 'c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_3' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:243]
-INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (17#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:73]
-INFO: [Synth 8-6155] done synthesizing module 'ram_reverb' (18#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_reverb.v:1]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (16#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:73]
+INFO: [Synth 8-6155] done synthesizing module 'ram_reverb' (17#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_reverb.v:1]
 INFO: [Synth 8-4471] merging register 'delay_data_reg[0][15:0]' into 'pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v:32]
 WARNING: [Synth 8-6014] Unused sequential element delay_data_reg[0] was removed.  [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'reverb' (19#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reverb' (18#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wah' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter b_coef0 bound to: 48'sb000000000000000000000101010111100000110011001011 
+	Parameter b_coef2 bound to: 48'sb111111111111111111011111110010111011001100111110 
+	Parameter b_coef4 bound to: 48'sb000000000000000001010000100000101011111111100110 
+	Parameter b_coef6 bound to: 48'sb111111111111111110010100101001110000000000100010 
+	Parameter b_coef8 bound to: 48'sb000000000000000001010000100000101011111111100110 
+	Parameter b_coef10 bound to: 48'sb111111111111111111011111110010111011001100111110 
+	Parameter b_coef12 bound to: 48'sb000000000000000000000101010111100000110011001011 
+	Parameter a_coef0 bound to: 25'sb1111111010101001100111000 
+	Parameter a_coef1 bound to: 25'sb0000011010100001110110011 
+	Parameter a_coef2 bound to: 25'sb1110101111011001111111111 
+	Parameter a_coef3 bound to: 25'sb0010100111000001100001011 
+	Parameter a_coef4 bound to: 25'sb1100000111010001101010111 
+	Parameter a_coef5 bound to: 25'sb0100010000111000010010101 
+	Parameter a_coef6 bound to: 25'sb1100100001110001001001011 
+	Parameter a_coef7 bound to: 25'sb0010000101010101101111101 
+	Parameter a_coef8 bound to: 25'sb1111000110100000101111000 
+	Parameter a_coef9 bound to: 25'sb0000010000111010001001110 
+	Parameter a_coef10 bound to: 25'sb1111111100111101000000000 
+	Parameter a_coef11 bound to: 25'sb0000000000010000010010010 
+	Parameter FILTER_DEPTH bound to: 13 - type: integer 
+	Parameter X_DEPTH bound to: 13 - type: integer 
+	Parameter Y_DEPTH bound to: 12 - type: integer 
+	Parameter Y_WIDTH bound to: 72 - type: integer 
+	Parameter BX_WIDTH bound to: 65 - type: integer 
+	Parameter AY_WIDTH bound to: 89 - type: integer 
+WARNING: [Synth 8-324] index 11 out of range [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:61]
+WARNING: [Synth 8-324] index 11 out of range [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'wah' (19#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'pipeline' (20#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/pipeline.v:3]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz.v:70]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_leaf' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz_leaf.v:68]
@@ -309,6 +344,7 @@ INFO: [Synth 8-6157] synthesizing module 'mode_select' [C:/Users/alexm/OneDrive/
 INFO: [Synth 8-6155] done synthesizing module 'mode_select' (28#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'top' (29#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (30#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
+WARNING: [Synth 8-3331] design wah has unconnected port rst
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MUX_RST[0]
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MEM_LAT_RST
 WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized2 has unconnected port MUX_REGCE[0]
@@ -408,10 +444,9 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unco
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unconnected port DINB[2]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unconnected port DINB[1]
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unconnected port DINB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unconnected port SLEEP
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -424,10 +459,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -439,20 +474,20 @@ Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal
 Finished Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1204.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1204.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1207.223 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Constraint Validation : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -460,19 +495,13 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for inst/inst_pipe/inst_reverb/inst_ram_reverb/inst_dpram_reverb. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/inst_pipe/inst_delay/inst_ram_delay/inst_dpram_delay. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'beep_data_reg' in module 'beep'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE0 |                                0 |                 0000000000000000
-                  iSTATE |                                1 |                 0000000111110100
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'beep_data_reg' using encoding 'sequential' in module 'beep'
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_new_reg' and it is trimmed from '64' to '16' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:152]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ax_bx_reg' and it is trimmed from '94' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:149]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:92]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -485,39 +514,63 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     92 Bit       Adders := 1     
+	   2 Input     91 Bit       Adders := 1     
+	   2 Input     90 Bit       Adders := 1     
+	   2 Input     78 Bit       Adders := 1     
+	   2 Input     67 Bit       Adders := 1     
+	   2 Input     66 Bit       Adders := 2     
+	   2 Input     65 Bit       Adders := 3     
+	   2 Input     44 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 2     
 	   4 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 3     
 	   2 Input     13 Bit       Adders := 3     
-	   2 Input      8 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               96 Bit    Registers := 1     
-	               78 Bit    Registers := 1     
-	               16 Bit    Registers := 24    
+	               92 Bit    Registers := 1     
+	               91 Bit    Registers := 2     
+	               90 Bit    Registers := 1     
+	               89 Bit    Registers := 1     
+	               82 Bit    Registers := 1     
+	               78 Bit    Registers := 2     
+	               67 Bit    Registers := 1     
+	               66 Bit    Registers := 2     
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               47 Bit    Registers := 2     
+	               44 Bit    Registers := 1     
+	               43 Bit    Registers := 2     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 59    
 	               14 Bit    Registers := 2     
 	               13 Bit    Registers := 4     
-	                8 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 8     
 	                1 Bit    Registers := 13    
++---Multipliers : 
+	                16x48  Multipliers := 3     
+	                16x31  Multipliers := 2     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 8     
 	   4 Input     16 Bit        Muxes := 3     
 	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
 	   4 Input     13 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 28    
 	   4 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -548,9 +601,10 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
 Module bindec 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -585,16 +639,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
-Module beep 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      8 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module bindec__parameterized0 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -646,6 +690,40 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
+Module wah 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     92 Bit       Adders := 1     
+	   2 Input     91 Bit       Adders := 1     
+	   2 Input     90 Bit       Adders := 1     
+	   2 Input     78 Bit       Adders := 1     
+	   2 Input     67 Bit       Adders := 1     
+	   2 Input     66 Bit       Adders := 2     
+	   2 Input     65 Bit       Adders := 3     
+	   2 Input     44 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 2     
++---Registers : 
+	               92 Bit    Registers := 1     
+	               91 Bit    Registers := 2     
+	               90 Bit    Registers := 1     
+	               89 Bit    Registers := 1     
+	               82 Bit    Registers := 1     
+	               78 Bit    Registers := 1     
+	               67 Bit    Registers := 1     
+	               66 Bit    Registers := 2     
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 3     
+	               48 Bit    Registers := 1     
+	               47 Bit    Registers := 2     
+	               44 Bit    Registers := 1     
+	               43 Bit    Registers := 2     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 35    
++---Multipliers : 
+	                16x48  Multipliers := 3     
+	                16x31  Multipliers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
 Module debouncer 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -677,11 +755,299 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-4471] merging register 'inst/inst_i2s/rx_dat_reg[15:0]' into 'inst/inst_i2s/rx_dat_reg[15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:119]
 INFO: [Synth 8-4471] merging register 'inst/inst_pipe/inst_dist/pure_data_reg[0][15:0]' into 'inst/inst_pipe/inst_dist/pure_data_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v:24]
+INFO: [Synth 8-4471] merging register 'inst/inst_pipe/inst_wah/y_new_reg[15:0]' into 'inst/inst_pipe/inst_wah/y_new_reg[15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:152]
+INFO: [Synth 8-4471] merging register 'inst/inst_pipe/inst_wah/y_reg[0][15:0]' into 'inst/inst_pipe/inst_wah/y_reg[0][15:0]' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:61]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/say_st4_reg' and it is trimmed from '92' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:146]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/say_st3_reg[1]' and it is trimmed from '91' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:143]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/say_st2_reg[2]' and it is trimmed from '91' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:139]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/say_st1_reg[5]' and it is trimmed from '90' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:132]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/bx_reg[0]' and it is trimmed from '48' to '19' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:92]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/sbx_st1_reg[3]' and it is trimmed from '48' to '19' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:102]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/bx_reg[6]' and it is trimmed from '48' to '19' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:92]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/inst_pipe/inst_wah/sbx_st1_reg[3]' and it is trimmed from '48' to '24' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:102]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 3 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:97]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:96]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 3 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:95]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:94]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 3 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:93]
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[10], operation Mode is: (C'+(A:0xfe7a00)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[10] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[10] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[10] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[10] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[10].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[8], operation Mode is: (C'+(A:0xe34178)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[8] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[8] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[8] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[8] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[8].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/say_st1_reg[4], operation Mode is: (PCIN+((A:0x8744e)*B'')')'.
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[9] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[9] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[4].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[6], operation Mode is: (C'+(A:0x90e24b)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[6].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/say_st1_reg[3], operation Mode is: (PCIN+((A:0x42ab7d)*B'')')'.
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[7] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[7] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[3].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[4], operation Mode is: (C'+(A:0x83a357)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[4].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/say_st1_reg[2], operation Mode is: (PCIN+((A:0x887095)*B'')')'.
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[2].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[2], operation Mode is: (C'+(A:0xd7b3ff)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[2].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/say_st1_reg[1], operation Mode is: (PCIN+((A:0x53830b)*B'')')'.
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[1].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/ay_reg[0], operation Mode is: (C'+(A:0xfd5338)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/y_new_reg is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/ay_reg[0].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/say_st1_reg[0], operation Mode is: (PCIN+((A:0xd43b3)*B'')')'.
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/y_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/say_st1_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/ay_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/say_st1_reg[0].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[6], operation Mode is: ((A:0x5e0ccb)*B'')'.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[6].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[6].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[6] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[6].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[6].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[5], operation Mode is: (A''*B)'.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/, operation Mode is: (A:0x1b33e)*B''.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[5], operation Mode is: (PCIN>>17)+A*B''.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[5] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[5].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/, operation Mode is: A''*(B:0xbfe6).
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[4], operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[4].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[4] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[4].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[4].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[4].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[3], operation Mode is: (A''*B)'.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/, operation Mode is: (A:0x10022)*B''.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[3], operation Mode is: (PCIN>>17)+A*B''.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[3] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[3].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/, operation Mode is: A''*(B:0xbfe6).
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[2], operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[2].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[2] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[2].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[2].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[2].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[1], operation Mode is: (A''*B)'.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/, operation Mode is: (A:0x1b33e)*B''.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: register inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/.
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[1], operation Mode is: (PCIN>>17)+A*B''.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[1] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: operator inst/inst_pipe/inst_wah/ is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[1].
+DSP Report: Generating DSP inst/inst_pipe/inst_wah/bx_reg[0], operation Mode is: ((A:0x5e0ccb)*B2)'.
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
+DSP Report: register inst/inst_pipe/inst_wah/bx_reg[0] is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
+DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
+DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
 INFO: [Synth 8-3917] design design_1_top_0_0 has port ac_muten driven by constant 1
-INFO: [Synth 8-3917] design design_1_top_0_0 has port led[3] driven by constant 1
 INFO: [Synth 8-3917] design design_1_top_0_0 has port led[2] driven by constant 1
-INFO: [Synth 8-3917] design design_1_top_0_0 has port led[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led[1] driven by constant 0
 INFO: [Synth 8-3917] design design_1_top_0_0 has port led[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[0] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111111]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111110]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111109]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111108]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111107]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111106]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111105]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111104]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111103]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111102]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111101]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111100]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111099]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111098]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111097]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][14]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_wah/bx_reg[0][-1111111096]' (FDE) to 'inst/inst_pipe/inst_wah/x_reg[0][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/ay_reg[11][77] )
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][0]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][1]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][2]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][3]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][4]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][5]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][6]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][7]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][8]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][9]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][10]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][11]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][12]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][13]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_dist/pure_data_reg[1][14]' (FDE) to 'inst/inst_pipe/inst_dist/dist_data_reg[1][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_dist/dist_data_reg[1][0] )
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr1_reg[0]' (FDE) to 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr2_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr2_reg[0]' (FDE) to 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr3_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr1_reg[1]' (FDE) to 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr2_reg[1]'
@@ -701,8 +1067,171 @@ INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_reverb/inst_ram_rever
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr1_reg[8]' (FDE) to 'inst/inst_pipe/inst_reverb/inst_ram_reverb/addr3_reg[8]'
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_delay/fifo_data_reduced_reg[13]' (FDE) to 'inst/inst_pipe/inst_delay/fifo_data_reduced_reg[14]'
 INFO: [Synth 8-3886] merging instance 'inst/inst_pipe/inst_delay/fifo_data_reduced_reg[14]' (FDE) to 'inst/inst_pipe/inst_delay/fifo_data_reduced_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/sbx_adapted_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/inst_pipe/inst_wah/say_st1_reg[5][47] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][47]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][46]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][45]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][44]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][43]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][42]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][41]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][40]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][39]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][38]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][37]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][36]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][35]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][34]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][33]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][32]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][31]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][30]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][29]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][28]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][27]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][26]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][25]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][24]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][23]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][22]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][21]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][20]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][19]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][18]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[5][17]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][47]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][46]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][45]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][44]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][43]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][42]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][41]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][40]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][39]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][38]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][37]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][36]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][35]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][34]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][33]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][32]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][31]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][30]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][29]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][28]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][27]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][26]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][25]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][24]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][23]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][22]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][21]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][20]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][19]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][18]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[4][17]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][47]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][46]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][45]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][44]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][43]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][42]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][41]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][40]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][39]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][38]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][37]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][36]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][35]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][34]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][33]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][32]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][31]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][30]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][29]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][28]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][27]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][26]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][25]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][24]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][23]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][22]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][21]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][20]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][19]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][18]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[3][17]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][47]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][46]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][45]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][44]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][43]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][42]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][41]) is unused and will be removed from module design_1_top_0_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1207.223 ; gain = 524.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|wah              | (C'+(A:0xfe7a00)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (C'+(A:0xe34178)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (PCIN+((A:0x8744e)*B'')')'  | 20     | 16     | -      | -      | 42     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|wah              | (C'+(A:0x90e24b)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (PCIN+((A:0x42ab7d)*B'')')' | 23     | 16     | -      | -      | 42     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|wah              | (C'+(A:0x83a357)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (PCIN+((A:0x887095)*B'')')' | 24     | 16     | -      | -      | 42     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|wah              | (C'+(A:0xd7b3ff)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (PCIN+((A:0x53830b)*B'')')' | 23     | 16     | -      | -      | 42     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|design_1_top_0_0 | (C'+(A:0xfd5338)*B'')'      | 24     | 16     | 40     | -      | 41     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|wah              | (PCIN+((A:0xd43b3)*B'')')'  | 20     | 16     | -      | -      | 42     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|design_1_top_0_0 | ((A:0x5e0ccb)*B'')'         | 24     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_top_0_0 | (A''*B)'                    | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|design_1_top_0_0 | (A:0x1b33e)*B''             | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|design_1_top_0_0 | (PCIN>>17)+A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|design_1_top_0_0 | A''*(B:0xbfe6)              | 17     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_top_0_0 | (PCIN>>17)+A''*B            | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|design_1_top_0_0 | (A''*B)'                    | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|design_1_top_0_0 | (A:0x10022)*B''             | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|design_1_top_0_0 | (PCIN>>17)+A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|design_1_top_0_0 | A''*(B:0xbfe6)              | 17     | 17     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_top_0_0 | (PCIN>>17)+A''*B            | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|design_1_top_0_0 | (A''*B)'                    | 17     | 15     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|design_1_top_0_0 | (A:0x1b33e)*B''             | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|design_1_top_0_0 | (PCIN>>17)+A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|design_1_top_0_0 | ((A:0x5e0ccb)*B2)'          | 24     | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 1    | 0    | 
++-----------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -714,13 +1243,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -732,7 +1261,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -756,7 +1285,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -769,7 +1298,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -781,25 +1310,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -832,110 +1361,118 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     2|
-|2     |CARRY4     |    61|
-|3     |LUT1       |    29|
-|4     |LUT2       |    86|
-|5     |LUT3       |   136|
-|6     |LUT4       |    45|
-|7     |LUT5       |    32|
-|8     |LUT6       |    63|
-|9     |MMCME2_ADV |     1|
-|10    |MUXF7      |     2|
-|11    |MUXF8      |     1|
-|12    |RAMB18E1   |     1|
-|13    |RAMB36E1   |     3|
-|14    |RAMB36E1_1 |     8|
-|15    |SRL16E     |    30|
-|16    |FDRE       |   517|
-|17    |FDSE       |     6|
-|18    |IBUF       |     1|
+|2     |CARRY4     |   270|
+|3     |DSP48E1    |     9|
+|4     |DSP48E1_1  |     5|
+|5     |DSP48E1_10 |     1|
+|6     |DSP48E1_4  |     3|
+|7     |DSP48E1_5  |     2|
+|8     |DSP48E1_6  |     2|
+|9     |DSP48E1_8  |     3|
+|10    |DSP48E1_9  |     1|
+|11    |LUT1       |    33|
+|12    |LUT2       |   767|
+|13    |LUT3       |   123|
+|14    |LUT4       |    45|
+|15    |LUT5       |    35|
+|16    |LUT6       |    56|
+|17    |MMCME2_ADV |     1|
+|18    |MUXF7      |     2|
+|19    |MUXF8      |     1|
+|20    |RAMB18E1   |     1|
+|21    |RAMB36E1   |     3|
+|22    |RAMB36E1_1 |     8|
+|23    |SRL16E     |    30|
+|24    |FDRE       |  1830|
+|25    |FDSE       |     1|
+|26    |IBUF       |     1|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-------------------------------------------------------+------------------------------------------+------+
 |      |Instance                                               |Module                                    |Cells |
 +------+-------------------------------------------------------+------------------------------------------+------+
-|1     |top                                                    |                                          |  1024|
-|2     |  inst                                                 |top                                       |  1024|
+|1     |top                                                    |                                          |  3235|
+|2     |  inst                                                 |top                                       |  3235|
 |3     |    inst_clock_wizard                                  |clk_wiz                                   |     4|
 |4     |      inst                                             |clk_wiz_leaf                              |     4|
-|5     |    inst_i2s                                           |i2s_control                               |   164|
-|6     |    inst_pipe                                          |pipeline                                  |   856|
-|7     |      inst_beep                                        |beep                                      |    36|
-|8     |      inst_delay                                       |delay                                     |   179|
-|9     |        inst_ram_delay                                 |ram_delay                                 |    79|
-|10    |          inst_dpram_delay                             |blk_mem_gen_0                             |    29|
-|11    |            U0                                         |blk_mem_gen_v8_4_3                        |    29|
-|12    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth                  |    29|
-|13    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |    29|
-|14    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                  |    29|
-|15    |                    \bindec_a.bindec_inst_a            |bindec                                    |     3|
-|16    |                    \bindec_b.bindec_inst_b            |bindec_1                                  |     3|
-|17    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |    13|
-|18    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
-|19    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
-|20    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
-|21    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
-|22    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
-|23    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
-|24    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
-|25    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
-|26    |                    \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
-|27    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
-|28    |                    \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
-|29    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
-|30    |                    \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
-|31    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
-|32    |                    \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     3|
-|33    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     3|
-|34    |      inst_dist                                        |distortion                                |   186|
-|35    |      inst_reverb                                      |reverb                                    |   455|
-|36    |        inst_ram_reverb                                |ram_reverb                                |   281|
-|37    |          inst_dpram_reverb                            |blk_mem_gen_1                             |    28|
-|38    |            U0                                         |blk_mem_gen_v8_4_3__parameterized1        |    28|
-|39    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth__parameterized0  |    28|
-|40    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0           |    28|
-|41    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0  |    28|
-|42    |                    \bindec_a.bindec_inst_a            |bindec__parameterized0                    |     2|
-|43    |                    \bindec_b.bindec_inst_b            |bindec__parameterized0_0                  |     2|
-|44    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized2           |    20|
-|45    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
-|46    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
-|47    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
-|48    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
-|49    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized9    |     1|
-|50    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
-|51    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized10   |     1|
-|52    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|5     |    inst_i2s                                           |i2s_control                               |   165|
+|6     |    inst_pipe                                          |pipeline                                  |  3066|
+|7     |      inst_delay                                       |delay                                     |   179|
+|8     |        inst_ram_delay                                 |ram_delay                                 |    79|
+|9     |          inst_dpram_delay                             |blk_mem_gen_0                             |    29|
+|10    |            U0                                         |blk_mem_gen_v8_4_3                        |    29|
+|11    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth                  |    29|
+|12    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |    29|
+|13    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                  |    29|
+|14    |                    \bindec_a.bindec_inst_a            |bindec                                    |     3|
+|15    |                    \bindec_b.bindec_inst_b            |bindec_1                                  |     3|
+|16    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |    13|
+|17    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
+|18    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
+|19    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
+|20    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
+|21    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
+|22    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
+|23    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
+|24    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|25    |                    \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
+|26    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
+|27    |                    \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
+|28    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
+|29    |                    \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
+|30    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|31    |                    \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     3|
+|32    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     3|
+|33    |      inst_dist                                        |distortion                                |   128|
+|34    |      inst_reverb                                      |reverb                                    |   456|
+|35    |        inst_ram_reverb                                |ram_reverb                                |   281|
+|36    |          inst_dpram_reverb                            |blk_mem_gen_1                             |    28|
+|37    |            U0                                         |blk_mem_gen_v8_4_3__parameterized1        |    28|
+|38    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth__parameterized0  |    28|
+|39    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0           |    28|
+|40    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0  |    28|
+|41    |                    \bindec_a.bindec_inst_a            |bindec__parameterized0                    |     2|
+|42    |                    \bindec_b.bindec_inst_b            |bindec__parameterized0_0                  |     2|
+|43    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized2           |    20|
+|44    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
+|45    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
+|46    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
+|47    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
+|48    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized9    |     1|
+|49    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|50    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized10   |     1|
+|51    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|52    |      inst_wah                                         |wah                                       |  2302|
 +------+-------------------------------------------------------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 302 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:01:21 . Memory (MB): peak = 1204.566 ; gain = 520.609
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1204.566 ; gain = 520.609
+Synthesis finished with 0 errors, 0 critical warnings and 304 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:25 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1207.223 ; gain = 524.047
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 312 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1204.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-88 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+337 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 1204.566 ; gain = 785.590
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1204.566 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1207.223 ; gain = 789.867
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1207.223 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1174] Renamed 51 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1204.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb  4 13:43:37 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 20 19:52:41 2024...

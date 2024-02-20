@@ -16,7 +16,12 @@ module top(
     input  [2:0] btn,
     output [3:0] led,
     output [2:0] led5_rgb,
-    output [2:0] led6_rgb
+    output [2:0] led6_rgb,
+    
+//    output [15:0] probe_rx_dat,
+//    output probe_rx_vld
+    output [15:0] probe_tx_dat,
+    output probe_tx_vld
 );
 
 localparam DATA_WIDTH = 16; // fixed
@@ -27,8 +32,15 @@ wire [DATA_WIDTH - 1:0] tx_dat; // transmit data to i2s
 wire rx_vld; // last clk before rx_dat changes
 wire tx_vld; // last clk before tx_dat changes
 
+//assign probe_rx_dat = rx_dat;
+//assign probe_rx_vld = rx_vld;
+assign probe_tx_dat = tx_dat;
+assign probe_tx_vld = tx_vld;
+
 wire [2:0] button; // stable button signals, output of debouncers
 wire [CONFIG_BITS - 1:0] config_value;
+
+assign led5_rgb = 3'b101;
 
 // I2S signals
 // BCLK 1.536 MHZ, LRCLK 48 kHZ, 16-bit data, (LR identical)
@@ -50,7 +62,7 @@ i2s_control #(
     .tx_vld(tx_vld),
 
     // extra: remove later
-    .led5_rgb(led5_rgb),
+    .led3(led[3]),
     .led6_rgb(led6_rgb)
 );
 
@@ -64,7 +76,7 @@ pipeline #(
     .rx_vld(rx_vld),
     .tx_vld(tx_vld),
     .sw(sw),
-    .led(led)
+    .led(led[2:0])
 );
 
 // Clock generation: 12.288 MHz

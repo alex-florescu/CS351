@@ -11,10 +11,10 @@ module pipeline #(
     output tx_vld,
     
     input [3:0] sw,
-    output [3:0] led
+    output [2:0] led
 );
 
-assign led[3:0] = 4'b1111;
+assign led[2:0] = 3'b101;
 
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
 wire [DATA_WIDTH - 1:0] tx_dat_eff2;
@@ -27,7 +27,7 @@ wire tx_vld_eff4;
 
 distortion #(
     .DATA_WIDTH(DATA_WIDTH),
-    .THRESH(750)
+    .THRESH(1024)
 ) inst_dist (
     .clk(clk),
     .rst(rst),
@@ -36,7 +36,7 @@ distortion #(
     .i_vld(rx_vld),
     .o_vld(tx_vld_eff1),
     .enable(sw[0]),
-    .gain(4'd3)
+    .gain(4'd2)
 );
 
 delay #(
@@ -53,34 +53,19 @@ delay #(
     .enable(sw[1])
 );
 
-// reverb #(
+// beep #(
 //     .DATA_WIDTH(DATA_WIDTH),
-//     .FIFO_DEPTH(8192), // number of samples (there are 48k samples/s);
-//     .DIV_GAIN(3) // (as power of 2) ex: if div_gain is 3, data is div by 8
-// ) inst_reverb (
+//     .BEEP_VALUE(16'd500),
+//     .BEEP_PERIOD(8'd150) // Say how this is converted to freq
+// ) inst_beep (
 //     .clk(clk),
 //     .rst(rst),
 //     .i_dat(tx_dat_eff2),
 //     .o_dat(tx_dat_eff3),
 //     .i_vld(tx_vld_eff2),
 //     .o_vld(tx_vld_eff3),
-//     .enable(sw[2]),
-//     .led(led)
+//     .enable(sw[3])
 // );
-
-beep #(
-    .DATA_WIDTH(DATA_WIDTH),
-    .BEEP_VALUE(16'd500),
-    .BEEP_PERIOD(8'd150) // Say how this is converted to freq
-) inst_beep (
-    .clk(clk),
-    .rst(rst),
-    .i_dat(tx_dat_eff2),
-    .o_dat(tx_dat_eff3),
-    .i_vld(tx_vld_eff2),
-    .o_vld(tx_vld_eff3),
-    .enable(sw[3])
-);
 
 reverb #(
     .DATA_WIDTH(DATA_WIDTH),
@@ -89,12 +74,26 @@ reverb #(
 ) inst_reverb (
     .clk(clk),
     .rst(rst),
+    .i_dat(tx_dat_eff2),
+    .o_dat(tx_dat_eff3),
+    .i_vld(tx_vld_eff2),
+    .o_vld(tx_vld_eff3),
+    .enable(sw[2])
+);
+
+wah #(
+    .DATA_WIDTH(DATA_WIDTH)
+) inst_wah (
+    .clk(clk),
+    .rst(rst),
     .i_dat(tx_dat_eff3),
     .o_dat(tx_dat_eff4),
     .i_vld(tx_vld_eff3),
     .o_vld(tx_vld_eff4),
-    .enable(sw[2])
+    .enable(sw[3])
 );
+
+
 assign tx_dat = tx_dat_eff4;
 assign tx_vld = tx_vld_eff4;
 

@@ -1227,11 +1227,25 @@
             "direction": "O",
             "left": "2",
             "right": "0"
+          },
+          "probe_tx_dat": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "probe_tx_vld": {
+            "direction": "O"
           }
         }
       }
     },
     "interface_nets": {
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
       "processing_system7_0_IIC_1": {
         "interface_ports": [
           "IIC_Interface",
@@ -1242,12 +1256,6 @@
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -1280,18 +1288,6 @@
         "ports": [
           "rst",
           "top_0/rst"
-        ]
-      },
-      "sysclk_1": {
-        "ports": [
-          "sysclk",
-          "top_0/sysclk"
-        ]
-      },
-      "top_0_ac_mclk": {
-        "ports": [
-          "top_0/ac_mclk",
-          "ac_mclk"
         ]
       },
       "top_0_ac_bclk": {
@@ -1340,6 +1336,18 @@
         "ports": [
           "top_0/led5_rgb",
           "led5_rgb"
+        ]
+      },
+      "sysclk_1": {
+        "ports": [
+          "sysclk",
+          "top_0/sysclk"
+        ]
+      },
+      "top_0_ac_mclk": {
+        "ports": [
+          "top_0/ac_mclk",
+          "ac_mclk"
         ]
       }
     },

@@ -65,3 +65,4 @@
 - 15 Feb - cleaner Matlab model of Wah effect
 - 17 Feb - Matlab Wah effect similar to an FPGA implementation
 - 18 Feb - prepared form for Demo Day
+- 19 Feb - meeting with Eduardo

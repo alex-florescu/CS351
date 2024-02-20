@@ -36,7 +36,6 @@ set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
 set_property ip_output_repo c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/beep.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/clk_wiz_leaf.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer.v
@@ -49,6 +48,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_delay.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/ram_reverb.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/reverb.v
+  C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v
   C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v
 }
 read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci

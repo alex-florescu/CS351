@@ -1,8 +1,8 @@
-11:57:22 **** Incremental Build of configuration Debug for project app_pedal ****
+19:47:07 **** Incremental Build of configuration Debug for project app_pedal ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-11:57:22 Build Finished (took 179ms)
+19:47:07 Build Finished (took 270ms)
 

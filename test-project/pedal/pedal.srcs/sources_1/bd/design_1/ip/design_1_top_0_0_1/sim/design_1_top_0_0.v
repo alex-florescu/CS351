@@ -68,7 +68,9 @@ module design_1_top_0_0 (
   btn,
   led,
   led5_rgb,
-  led6_rgb
+  led6_rgb,
+  probe_tx_dat,
+  probe_tx_vld
 );
 
 input wire sysclk;
@@ -87,6 +89,8 @@ input wire [2 : 0] btn;
 output wire [3 : 0] led;
 output wire [2 : 0] led5_rgb;
 output wire [2 : 0] led6_rgb;
+output wire [15 : 0] probe_tx_dat;
+output wire probe_tx_vld;
 
   top inst (
     .sysclk(sysclk),
@@ -102,6 +106,8 @@ output wire [2 : 0] led6_rgb;
     .btn(btn),
     .led(led),
     .led5_rgb(led5_rgb),
-    .led6_rgb(led6_rgb)
+    .led6_rgb(led6_rgb),
+    .probe_tx_dat(probe_tx_dat),
+    .probe_tx_vld(probe_tx_vld)
   );
 endmodule

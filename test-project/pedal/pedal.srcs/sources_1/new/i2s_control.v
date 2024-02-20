@@ -40,7 +40,7 @@ module i2s_control #(
     input  tx_vld,
     
     // extra: remove later
-    output [2:0] led5_rgb,
+    output led3,
     output [2:0] led6_rgb
     );
 
@@ -153,7 +153,8 @@ assign muten = 1'b1;
 // RGB leds -----------------------------------------------------------
 // sanity check for clocks
 reg [21:0] led_cnt = 22'd0;
-assign led5_rgb = led_cnt[21:19];
+
+assign led3 = led_cnt[20];
 
 always @(posedge clk) begin
     if(rst)
