@@ -35,5 +35,9 @@ Talk about decisions (maybe in the future use a high pass filter to reduce noise
 TODO: change parameters for sound copies to be more spread out??? maybe increase the number of copies? (that might not be viable since we aim for power of 2)
 TODO: change divisions to shifting??
 
+## Wah-wah
+(cite fixed point lecture ES2E3)
+
 ### References
 * SSM2603 Data sheet (https://www.analog.com/media/en/technical-documentation/data-sheets/ssm2603.pdf)
+* ES2E3 Fixed point Lecture Slides (https://moodle.warwick.ac.uk/pluginfile.php/2100365/mod_label/intro/Arithmetic%20on%20FPGAs_04%20-%20Fixed%20point%20arithmetic.pdf)
