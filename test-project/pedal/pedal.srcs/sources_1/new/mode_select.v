@@ -1,5 +1,5 @@
 module mode_select #(
-   parameter CONFIG_BITS = 4
+   parameter CONFIG_BITS = 3
 )(
     input  clk,
     input  rst,
@@ -15,7 +15,7 @@ module mode_select #(
     
     always @(posedge clk) begin
         if(rst) begin
-            config_value <= 4'b0000;
+            config_value <= 0;
         end else begin
             if(btn && ~btn_d1) begin // detect button press
                 // increase value

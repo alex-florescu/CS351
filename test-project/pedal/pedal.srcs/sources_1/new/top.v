@@ -25,7 +25,7 @@ module top(
 );
 
 localparam DATA_WIDTH = 16; // fixed
-localparam CONFIG_BITS = 4; // value tbd
+localparam CONFIG_BITS = 3; // value tbd
 
 wire [DATA_WIDTH - 1:0] rx_dat; // receive data from i2s
 wire [DATA_WIDTH - 1:0] tx_dat; // transmit data to i2s
@@ -39,6 +39,8 @@ assign probe_tx_vld = tx_vld;
 
 wire [2:0] button; // stable button signals, output of debouncers
 wire [CONFIG_BITS - 1:0] config_value;
+
+assign led[2:0] = config_value;
 
 assign led5_rgb = 3'b101;
 
@@ -75,8 +77,7 @@ pipeline #(
     .tx_dat(tx_dat),
     .rx_vld(rx_vld),
     .tx_vld(tx_vld),
-    .sw(sw),
-    .led(led[2:0])
+    .sw(sw)
 );
 
 // Clock generation: 12.288 MHz

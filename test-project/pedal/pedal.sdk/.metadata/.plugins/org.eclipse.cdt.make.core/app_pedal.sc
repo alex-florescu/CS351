@@ -24,6 +24,7 @@
 <includePath path="#undef __ARM_FEATURE_SAT" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_LDREX" removed="true"/>
 <includePath path="c:\xilinx2019\sdk\2019.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_FMA" removed="true"/>
 <includePath path="#undef __ARM_ASM_SYNTAX_UNIFIED__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_COPROC" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>

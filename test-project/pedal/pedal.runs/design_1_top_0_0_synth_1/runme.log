@@ -17,7 +17,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21860 
+INFO: Helper process launched with PID 30004 
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:48]
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:49]
 WARNING: [Synth 8-6901] identifier 'y_new' is used before its declaration [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:61]
@@ -29,12 +29,12 @@ WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode 
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:78]
 WARNING: [Synth 8-2369] multiple packed dimensions are not allowed in this mode of verilog [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:79]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 868.016 ; gain = 184.840
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 867.641 ; gain = 183.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
-	Parameter CONFIG_BITS bound to: 4 - type: integer 
+	Parameter CONFIG_BITS bound to: 3 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'i2s_control' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:23]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'i2s_control' (1#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/i2s_control.v:23]
@@ -340,7 +340,7 @@ INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/alexm/OneDrive/Do
 INFO: [Synth 8-6155] done synthesizing module 'debouncer' (26#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'debouncer_array' (27#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/debouncer_array.v:1]
 INFO: [Synth 8-6157] synthesizing module 'mode_select' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v:1]
-	Parameter CONFIG_BITS bound to: 4 - type: integer 
+	Parameter CONFIG_BITS bound to: 3 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mode_select' (28#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/mode_select.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'top' (29#1) [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/top.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (30#1) [c:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/ip/design_1_top_0_0_1/synth/design_1_top_0_0.v:58]
@@ -446,7 +446,7 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unco
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized8 has unconnected port DINB[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished RTL Elaboration : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -459,10 +459,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -474,20 +474,20 @@ Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal
 Finished Parsing XDC File [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1202.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1207.223 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1202.211 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Constraint Validation : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -495,13 +495,13 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for inst/inst_pipe/inst_reverb/inst_ram_reverb/inst_dpram_reverb. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/inst_pipe/inst_delay/inst_ram_delay/inst_dpram_delay. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3936] Found unconnected internal register 'y_new_reg' and it is trimmed from '64' to '16' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:152]
 WARNING: [Synth 8-3936] Found unconnected internal register 'ax_bx_reg' and it is trimmed from '94' to '78' bits. [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:149]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:92]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -528,7 +528,8 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 3     
 	   2 Input     13 Bit       Adders := 3     
-	   2 Input      4 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               96 Bit    Registers := 1     
@@ -551,8 +552,8 @@ Detailed RTL Component Info :
 	               14 Bit    Registers := 2     
 	               13 Bit    Registers := 4     
 	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 8     
 	                1 Bit    Registers := 13    
 +---Multipliers : 
@@ -733,9 +734,9 @@ Detailed RTL Component Info :
 Module mode_select 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -932,9 +933,6 @@ DSP Report: register inst/inst_pipe/inst_wah/bx_reg[0] is absorbed into DSP inst
 DSP Report: operator p_1_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
 DSP Report: operator p_0_out is absorbed into DSP inst/inst_pipe/inst_wah/bx_reg[0].
 INFO: [Synth 8-3917] design design_1_top_0_0 has port ac_muten driven by constant 1
-INFO: [Synth 8-3917] design design_1_top_0_0 has port led[2] driven by constant 1
-INFO: [Synth 8-3917] design design_1_top_0_0 has port led[1] driven by constant 0
-INFO: [Synth 8-3917] design design_1_top_0_0 has port led[0] driven by constant 1
 INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[2] driven by constant 1
 INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[1] driven by constant 0
 INFO: [Synth 8-3917] design design_1_top_0_0 has port led5_rgb[0] driven by constant 1
@@ -1191,7 +1189,7 @@ INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][42]) 
 INFO: [Synth 8-3332] Sequential element (inst/inst_pipe/inst_wah/bx_reg[2][41]) is unused and will be removed from module design_1_top_0_0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1243,13 +1241,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Timing Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1261,7 +1259,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1285,7 +1283,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1298,7 +1296,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1310,25 +1308,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1361,20 +1359,20 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     2|
-|2     |CARRY4     |   270|
+|2     |CARRY4     |   275|
 |3     |DSP48E1    |     9|
 |4     |DSP48E1_1  |     5|
-|5     |DSP48E1_10 |     1|
+|5     |DSP48E1_10 |     3|
 |6     |DSP48E1_4  |     3|
 |7     |DSP48E1_5  |     2|
 |8     |DSP48E1_6  |     2|
-|9     |DSP48E1_8  |     3|
+|9     |DSP48E1_8  |     1|
 |10    |DSP48E1_9  |     1|
-|11    |LUT1       |    33|
-|12    |LUT2       |   767|
-|13    |LUT3       |   123|
-|14    |LUT4       |    45|
-|15    |LUT5       |    35|
+|11    |LUT1       |    34|
+|12    |LUT2       |   768|
+|13    |LUT3       |   125|
+|14    |LUT4       |    46|
+|15    |LUT5       |    36|
 |16    |LUT6       |    56|
 |17    |MMCME2_ADV |     1|
 |18    |MUXF7      |     2|
@@ -1383,7 +1381,7 @@ Report Cell Usage:
 |21    |RAMB36E1   |     3|
 |22    |RAMB36E1_1 |     8|
 |23    |SRL16E     |    30|
-|24    |FDRE       |  1830|
+|24    |FDRE       |  1852|
 |25    |FDSE       |     1|
 |26    |IBUF       |     1|
 +------+-----------+------+
@@ -1392,87 +1390,90 @@ Report Instance Areas:
 +------+-------------------------------------------------------+------------------------------------------+------+
 |      |Instance                                               |Module                                    |Cells |
 +------+-------------------------------------------------------+------------------------------------------+------+
-|1     |top                                                    |                                          |  3235|
-|2     |  inst                                                 |top                                       |  3235|
+|1     |top                                                    |                                          |  3268|
+|2     |  inst                                                 |top                                       |  3268|
 |3     |    inst_clock_wizard                                  |clk_wiz                                   |     4|
 |4     |      inst                                             |clk_wiz_leaf                              |     4|
-|5     |    inst_i2s                                           |i2s_control                               |   165|
-|6     |    inst_pipe                                          |pipeline                                  |  3066|
-|7     |      inst_delay                                       |delay                                     |   179|
-|8     |        inst_ram_delay                                 |ram_delay                                 |    79|
-|9     |          inst_dpram_delay                             |blk_mem_gen_0                             |    29|
-|10    |            U0                                         |blk_mem_gen_v8_4_3                        |    29|
-|11    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth                  |    29|
-|12    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |    29|
-|13    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                  |    29|
-|14    |                    \bindec_a.bindec_inst_a            |bindec                                    |     3|
-|15    |                    \bindec_b.bindec_inst_b            |bindec_1                                  |     3|
-|16    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |    13|
-|17    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
-|18    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
-|19    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
-|20    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
-|21    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
-|22    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
-|23    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
-|24    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
-|25    |                    \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
-|26    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
-|27    |                    \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
-|28    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
-|29    |                    \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
-|30    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
-|31    |                    \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     3|
-|32    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     3|
-|33    |      inst_dist                                        |distortion                                |   128|
-|34    |      inst_reverb                                      |reverb                                    |   456|
-|35    |        inst_ram_reverb                                |ram_reverb                                |   281|
-|36    |          inst_dpram_reverb                            |blk_mem_gen_1                             |    28|
-|37    |            U0                                         |blk_mem_gen_v8_4_3__parameterized1        |    28|
-|38    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth__parameterized0  |    28|
-|39    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0           |    28|
-|40    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0  |    28|
-|41    |                    \bindec_a.bindec_inst_a            |bindec__parameterized0                    |     2|
-|42    |                    \bindec_b.bindec_inst_b            |bindec__parameterized0_0                  |     2|
-|43    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized2           |    20|
-|44    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
-|45    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
-|46    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
-|47    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
-|48    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized9    |     1|
-|49    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
-|50    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized10   |     1|
-|51    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
-|52    |      inst_wah                                         |wah                                       |  2302|
+|5     |    inst_config                                        |mode_select                               |     7|
+|6     |    inst_debouncer                                     |debouncer_array                           |    26|
+|7     |      inst_deb_1                                       |debouncer                                 |    26|
+|8     |    inst_i2s                                           |i2s_control                               |   165|
+|9     |    inst_pipe                                          |pipeline                                  |  3066|
+|10    |      inst_delay                                       |delay                                     |   179|
+|11    |        inst_ram_delay                                 |ram_delay                                 |    79|
+|12    |          inst_dpram_delay                             |blk_mem_gen_0                             |    29|
+|13    |            U0                                         |blk_mem_gen_v8_4_3                        |    29|
+|14    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth                  |    29|
+|15    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |    29|
+|16    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                  |    29|
+|17    |                    \bindec_a.bindec_inst_a            |bindec                                    |     3|
+|18    |                    \bindec_b.bindec_inst_b            |bindec_1                                  |     3|
+|19    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |    13|
+|20    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     1|
+|21    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     1|
+|22    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     1|
+|23    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     1|
+|24    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     1|
+|25    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     1|
+|26    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
+|27    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|28    |                    \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     1|
+|29    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     1|
+|30    |                    \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     1|
+|31    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     1|
+|32    |                    \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
+|33    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|34    |                    \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     3|
+|35    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     3|
+|36    |      inst_dist                                        |distortion                                |   128|
+|37    |      inst_reverb                                      |reverb                                    |   456|
+|38    |        inst_ram_reverb                                |ram_reverb                                |   281|
+|39    |          inst_dpram_reverb                            |blk_mem_gen_1                             |    28|
+|40    |            U0                                         |blk_mem_gen_v8_4_3__parameterized1        |    28|
+|41    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth__parameterized0  |    28|
+|42    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0           |    28|
+|43    |                  \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0  |    28|
+|44    |                    \bindec_a.bindec_inst_a            |bindec__parameterized0                    |     2|
+|45    |                    \bindec_b.bindec_inst_b            |bindec__parameterized0_0                  |     2|
+|46    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized2           |    20|
+|47    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     1|
+|48    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     1|
+|49    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
+|50    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
+|51    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized9    |     1|
+|52    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|53    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized10   |     1|
+|54    |                      \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|55    |      inst_wah                                         |wah                                       |  2302|
 +------+-------------------------------------------------------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 304 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:25 . Memory (MB): peak = 1207.223 ; gain = 524.047
-Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1207.223 ; gain = 524.047
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:28 . Memory (MB): peak = 1202.211 ; gain = 518.566
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1202.211 ; gain = 518.566
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 312 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 317 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1202.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-337 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+334 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1207.223 ; gain = 789.867
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1207.223 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:37 . Memory (MB): peak = 1202.211 ; gain = 782.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1202.211 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1174] Renamed 51 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.223 ; gain = 0.000
+INFO: [Coretcl 2-1174] Renamed 54 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1202.211 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 20 19:52:41 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 21 18:42:54 2024...

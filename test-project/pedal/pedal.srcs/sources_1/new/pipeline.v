@@ -10,11 +10,8 @@ module pipeline #(
     input  rx_vld,
     output tx_vld,
     
-    input [3:0] sw,
-    output [2:0] led
+    input [3:0] sw
 );
-
-assign led[2:0] = 3'b101;
 
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
 wire [DATA_WIDTH - 1:0] tx_dat_eff2;
