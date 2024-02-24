@@ -66,3 +66,6 @@
 - 17 Feb - Matlab Wah effect similar to an FPGA implementation
 - 18 Feb - prepared form for Demo Day
 - 19 Feb - meeting with Eduardo
+- 20 Feb - started work on Wah effect in Verilog
+- 21 Feb - Demo Day
+- 24 Feb - Wah effect edits, .coe file created
