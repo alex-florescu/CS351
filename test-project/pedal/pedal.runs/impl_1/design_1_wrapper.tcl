@@ -66,7 +66,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z020clg400-1
   set_property board_part_repo_paths {C:/Users/alexm/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
   set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
@@ -76,10 +78,11 @@ set rc [catch {
   set_property parent.project_path C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.xpr [current_project]
   set_property ip_output_repo C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
+  read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
   read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
   read_ip -quiet C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   add_files C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/bd/design_1/design_1.bd
@@ -167,7 +170,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force design_1_wrapper.mmi }
   write_bitstream -force design_1_wrapper.bit 
   catch { write_sysdef -hwdef design_1_wrapper.hwdef -bitfile design_1_wrapper.bit -meminfo design_1_wrapper.mmi -file design_1_wrapper.sysdef }

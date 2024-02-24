@@ -250,7 +250,7 @@ bCoef = round(bCoef);
 
 
 % a coefficients
-aCoef = a(100, :)
+aCoef = a(:, 2:13); %(100, :)
 
 fracBitsA = 14; % for max abs error 2^-15 = 3e-5
 aCoef = aCoef * 2^fracBitsA;
@@ -258,4 +258,8 @@ aCoef = round(aCoef);
 % append to obtain a total of 25 bits (it is signed)
 
 % the 24 bits value will be 11.14 (int.frac)
+
+
+
+
 

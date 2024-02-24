@@ -105,7 +105,7 @@ module ram_reverb #(
     wire [DEPTH_WIDTH - 1:0] wr_addr;
     wire [DATA_WIDTH - 1:0] wr_data;
 
-    wire rd_enable_v2;
+    // wire rd_enable_v2;
     wire rd_enable;
     wire [DEPTH_WIDTH - 1:0] rd_addr;
 
@@ -116,7 +116,7 @@ module ram_reverb #(
     reg rd_enable_hold;
 
     // TODO: Change this to register
-    assign rd_enable_v2 = i_vld || i_vld_d[0] || i_vld_d[1] || i_vld_d[2] || i_vld_d[3];
+    // assign rd_enable_v2 = i_vld || i_vld_d[0] || i_vld_d[1] || i_vld_d[2] || i_vld_d[3];
     assign rd_enable = i_vld || rd_enable_hold;
     assign rd_vld_v2 = i_vld_d[1] || i_vld_d[2] || i_vld_d[3] || i_vld_d[4];
 

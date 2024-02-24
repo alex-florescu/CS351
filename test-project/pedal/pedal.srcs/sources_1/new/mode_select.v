@@ -19,7 +19,7 @@ module mode_select #(
         end else begin
             if(btn && ~btn_d1) begin // detect button press
                 // increase value
-                config_value <= config_value + 1;
+                config_value <= config_value - 1;
             end
         end
     end
