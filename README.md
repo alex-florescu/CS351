@@ -17,6 +17,17 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggest
   - in the related works section, compare:
      - project that use/don't use frequency altering effects
      - the Audio Codec device model they had
+  - exchange your unfinished report with someone else for proofread
+  - don't put too much code in-line with the text: use appendices
+     - don't put large amounts of code in the appendix: you will submit it as a .zip
+  - have a *self-assessment* section
+  - have a project management section
+  - come up with a plan with the supervisor to send drafts and receive feedback gradually
+  - all code must be submitted on Tabula (and a README with all explanations needed for running the code)
+     - if you don't submit code you will get a penalty
+     - don't leave it to the last minute
+  - 
+  
 
 ### Effects I'm not sure have been done before in FPGA
  * Wah-pedal
