@@ -84,7 +84,7 @@ end
 %%
 n = 250;
 % position = linspace(13,29,n)
-position = linspace(13,30,n)
+position = linspace(18,50,n)
 
 audioComb = zeros(240000,n);
 audioOut = zeros(240000,1);
@@ -94,9 +94,11 @@ a = zeros(n,13);
 b = zeros(n,13);
 
 for i = 1:n
-    wcNorm = [position(i) - 5,position(i)+5]./360.*2;
+    wcNorm = [position(i)-5,position(i)+10]./360.*2;
 
     [b1,a1] = butter(6, wcNorm, "bandpass");
+
+    % [b1,a1] = butter(12, wcNorm(1), "low");
     b1 = b1;
 
     a(i,:) = a1;
@@ -164,7 +166,7 @@ sound(audioWah, 48000); % Play audio from vector
 sound(audioOut, 48000);
 
 %%
-mags = abs(fft(audioRaw));
+mags = 20*log10(abs(fft(audioRaw)));
 figure;
 plot(mags)
 
@@ -177,29 +179,53 @@ ylim([0,3000])
 cpyGuitarAudio = audioRaw;
 
 %%
-var = 1; % start cycle from 1
+% var = 1; % start cycle from 1
+var = 1; % start cycle from 100
 adder = 1; % fixed
 
-x = audioRaw*8;
+% x = audioRaw*8;
 y = zeros(240000,1);
 
+% audioRaw = zeros(240000,1);
+% audioRaw(1:15) = zeros(15,1);
+
+% audioRaw(16:20) = ones(5,1)*100;
+
+
+x = audioRaw*8;
+
+
+% for i = 1 : 30
 for i = 1 : length(y)
     print_var(i) = var;
 
-    out = x(i)*b(var,1);
+    out = x(i)*b(1,1);
+
+    bx = x(i)*b(1,1);
+    ay = 0;
     for j = 2 : 13 
         index = i - j + 1;
         if(index > 0) % if index within bounds
-            out = out + x(index)*b(var,j);
+            bx = bx + x(index)*b(1,j);
+            ay = ay + y(index)*a(var,j);
+            out = out + x(index)*b(1,j);
             out = out - y(index)*a(var,j);
         end
     end
 
+    % bx
+    % ay
+    % new_out = bx - ay
+
+
+
     out = out/a(var,1);
     y(i) = out;
 
-    precision = 20;
-    y(i) = floor(y(i)*10^precision)/(10^precision);
+
+
+    % precision = 20;
+    % y(i) = floor(y(i)*10^precision)/(10^precision);
 
     % mod(i,400)
 
@@ -214,7 +240,16 @@ for i = 1 : length(y)
     % var, adder, i
 end
 
-sound(y,48000)
+% sound(y*4,48000)
+
+y = y*2 + audioRaw/8;
+for i = 1:length(y) 
+    if(abs(y(i)) < 8e-4)
+        y(i) = 0;
+    end
+end
+
+sound(y, 48000)
 % sound(audioRaw*8,48000)
 % sound(y + audioRaw/8, 48000)
 
@@ -250,9 +285,12 @@ bCoef = round(bCoef);
 
 
 % a coefficients
-aCoef = a(:, 2:13); %(100, :)
+aCoef = a(:, 2:13); 
 
-fracBitsA = 14; % for max abs error 2^-15 = 3e-5
+% aCoef = a(100, :)
+
+% fracBitsA = 14;
+fracBitsA = 32; % for max abs error 2^-15 = 3e-5
 aCoef = aCoef * 2^fracBitsA;
 aCoef = round(aCoef);
 % append to obtain a total of 25 bits (it is signed)
@@ -260,6 +298,16 @@ aCoef = round(aCoef);
 % the 24 bits value will be 11.14 (int.frac)
 
 
+%%
+% % sum up a coefs
+% sum = 0;
+% for i = 1:13
+%     sum = sum + a(100,i);
+% end
+
+figure;
+plot(y)
+xlim([0,2000])
 
 
 

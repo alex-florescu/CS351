@@ -21,7 +21,8 @@ module top(
 //    output [15:0] probe_rx_dat,
 //    output probe_rx_vld
     output [15:0] probe_tx_dat,
-    output probe_tx_vld
+    output probe_tx_vld,
+    output [7:0] cur_row
 );
 
 localparam DATA_WIDTH = 16; // fixed
@@ -77,7 +78,8 @@ pipeline #(
     .tx_dat(tx_dat),
     .rx_vld(rx_vld),
     .tx_vld(tx_vld),
-    .sw(sw)
+    .sw(sw),
+    .cur_row(cur_row)
 );
 
 // Clock generation: 12.288 MHz

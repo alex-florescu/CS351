@@ -7,75 +7,113 @@ module wah #(
     input                     i_vld, // a 1 bit signal that is high for one clock cycle for each sample
     output [DATA_WIDTH - 1:0] o_dat,
     output                    o_vld,
-    input                     enable
+    input                     enable,
+    output [7:0] cur_row
 );
 
+    reg [DATA_WIDTH - 1:0] y_master;
+    reg [DATA_WIDTH - 1:0] x_master;
+    reg [DATA_WIDTH - 1:0] y_combined;
     // b coefs, positions 1 up to 13 (0.48 int.frac)
     // localparam signed [47:0] b_coef [0:12] = '{90049739, 0, -540298434, 0, 1350746086, 0, -1800994782, 0, 1350746086, 0, -540298434, 0, 90049739};
 
-    localparam signed [47:0] b_coef0 = 90049739;
-    localparam signed [47:0] b_coef2 = -540298434;
-    localparam signed [47:0] b_coef4 = 1350746086;
-    localparam signed [47:0] b_coef6 = -1800994782;
-    localparam signed [47:0] b_coef8 = b_coef4;
-    localparam signed [47:0] b_coef10 = b_coef2;
-    localparam signed [47:0] b_coef12 = b_coef0;
+    localparam BCOEF_WIDTH = 48;
 
+    localparam signed [BCOEF_WIDTH -1:0] b_coef0 =   (48'd90049739);
+    localparam signed [BCOEF_WIDTH -1:0] b_coef2 = - (48'd540298434);
+    localparam signed [BCOEF_WIDTH -1:0] b_coef4 =   (48'd1350746086);
+    localparam signed [BCOEF_WIDTH -1:0] b_coef6 = - (48'd1800994782);
+    localparam signed [BCOEF_WIDTH -1:0] b_coef8 = b_coef4;
+    localparam signed [BCOEF_WIDTH -1:0] b_coef10 = b_coef2;
+    localparam signed [BCOEF_WIDTH -1:0] b_coef12 = b_coef0;
 
-    // a coefs, positions 2 up to 13 (11.14 int.frac)
-    // localparam signed [24:0] a_coef [0:11] = '{-175304, 869299, -2640897, 5473035, -8150185, 8941717, -7282101, 4369277, -1883784, 554062, -99840, 8338};
+    /// OLD A COEFS (localparams)
+        // a coefs, positions 2 up to 13 (11.14 int.frac)
+        // // localparam signed [24:0] a_coef [0:11] = '{-175304, 869299, -2640897, 5473035, -8150185, 8941717, -7282101, 4369277, -1883784, 554062, -99840, 8338};
+        // localparam ACOEF_INT = 11;
+        // localparam ACOEF_FRAC = 14;
+        // localparam ACOEF_WIDTH = ACOEF_INT + ACOEF_FRAC; //25
 
-    localparam signed [24:0] a_coef0  = -175304;  //  -1; 
-    localparam signed [24:0] a_coef1  = 869299;   //   1; 
-    localparam signed [24:0] a_coef2  = -2640897; //  -1; 
-    localparam signed [24:0] a_coef3  = 5473035;  //   1; 
-    localparam signed [24:0] a_coef4  = -8150185; //  -1; 
-    localparam signed [24:0] a_coef5  = 8941717;  //   1; 
-    localparam signed [24:0] a_coef6  = -7282101; //  -1; 
-    localparam signed [24:0] a_coef7  = 4369277;  //   1; 
-    localparam signed [24:0] a_coef8  = -1883784; //  -1; 
-    localparam signed [24:0] a_coef9  = 554062;   //   1; 
-    localparam signed [24:0] a_coef10 = -99840;   //  -1; 
-    localparam signed [24:0] a_coef11 = 8338;     //   1; 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef0  = -175304; 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef1  = 869299;   // 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef2  = -2640897; //    OLD VALUES WITH FRAC = 14
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef3  = 5473035;  // 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef4  = -8150185; // 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef5  = 8941717; 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef6  = -7282101;
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef7  = 4369277; 
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef8  = -1883784;
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef9  = 554062;  
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef10 = -99840;  
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef11 = 8338;
+        
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef0  = - (43'd45954882721);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef1  =   (43'd227881599186);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef2  = - (43'd692295274636);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef3  =   (43'd1434723173130);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef4  = - (43'd2136522103223);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef5  =   (43'd2344017500936);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef6  = - (43'd1908959205136);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef7  =   (43'd1145379768117);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef8  = - (43'd493822778990);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef9  =   (43'd145243897871);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef10 = - (43'd26172523604);
+        // localparam signed [ACOEF_WIDTH - 1:0] a_coef11 =   (43'd2185867371);
+
+    // a coef loaded from BRAM
+    localparam ACOEF_INT = 11;
+    localparam ACOEF_FRAC = 32;
+    localparam ACOEF_WIDTH = ACOEF_INT + ACOEF_FRAC; //43
+
+    reg signed [ACOEF_WIDTH - 1:0] a_coef     [0:10];
+    reg signed [ACOEF_WIDTH - 1:0] temp_a_coef[0:10];
+    localparam signed [ACOEF_WIDTH - 1:0] a_coef11 = (43'd2185867371);
+
 
 
     localparam FILTER_DEPTH = 13;
     localparam X_DEPTH = FILTER_DEPTH;
     localparam Y_DEPTH = X_DEPTH - 1;
 
-    localparam Y_WIDTH = 72; // define y as 16.48 - we know that no more than 16 bits are needed for the integer part
+    localparam Y_INT = DATA_WIDTH; //16
+    localparam Y_WIDTH = 64;//64; // define y as 16.48 - we know that no more than 16 bits are needed for the integer part
+    localparam Y_FRAC = Y_WIDTH - Y_INT; //48
 
-    reg signed [DATA_WIDTH - 1:0] x [0 : X_DEPTH - 1];
-    reg signed [63:0] y [0 : Y_DEPTH - 1]; // one less sample since y[0] is being calculated
+    localparam BX_WIDTH = BCOEF_WIDTH + DATA_WIDTH; //64
+    localparam BX_FRAC = BCOEF_WIDTH; //48
 
-    localparam BX_WIDTH = 65;
-    localparam AY_WIDTH = 89 ;
-    // b*x has size 1.48 + 16.0 = 17.48
+    localparam AY_FRAC = ACOEF_FRAC + Y_FRAC; // 62 = 14 + 48
+    localparam AY_WIDTH = ACOEF_WIDTH + Y_WIDTH; // 89 ;
+
+    localparam APPEND_BITS = AY_FRAC - BX_FRAC; // 14 = 62 - 48 (i think it's = ACOEF_FRAC)
+
+    // b*x has size 0.48 + 16.0 = 16.48
     // a*y has size 11.14 + 16.48 = 27.62
-
 
     // x[0] is x[n] (no delay)
     // x[12] is x[n-12] (delay of 12)
 
     // y[0] is y[n-1] (delay of 1)
     // y[11] is y[n-12] (delay of 12)
+    reg signed [DATA_WIDTH - 1:0] x [0 : X_DEPTH - 1];
+    reg signed [Y_WIDTH -1:0] y [0 : Y_DEPTH - 1]; // one less data sample since y[0] is being calculated
 
-    reg signed [64 : 0] bx      [0 : 6]; // 65 bits 17.48
-    reg signed [65 : 0] sbx_st1 [0 : 3]; // +1 bit to avoid overflow
-    reg signed [66 : 0] sbx_st2 [0 : 1]; // +1 bit to avoid overflow
-    reg signed [67 : 0] sbx_st3;         // +1 bit to avoid overflow = 68 = 20.48
+    reg signed [BX_WIDTH - 1                   : 0] bx      [0 : 6]; // 64 bits 16.48
+    reg signed [BX_WIDTH - 1 + 1               : 0] sbx_st1 [0 : 3]; // +1 bit to avoid overflow
+    reg signed [BX_WIDTH - 1 + 2               : 0] sbx_st2 [0 : 1]; // +1 bit to avoid overflow
+    reg signed [BX_WIDTH - 1 + 3               : 0] sbx_st3;         // +1 bit to avoid overflow = 67 = 19.48
+    reg signed [BX_WIDTH - 1 + 3 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
 
-    reg signed [88 : 0] ay      [0 : 11]; // 89 bits 27.62
-    reg signed [89 : 0] say_st1 [0 :  5]; // +1 bit to avoid overflow
-    reg signed [90 : 0] say_st2 [0 :  2]; // +1 bit to avoid overflow
-    reg signed [91 : 0] say_st3 [0 :  1]; // +1 bit to avoid overflow
-    reg signed [92 : 0] say_st4;          // +1 bit to avoid overflow = 93 = 31.62
+    reg signed [AY_WIDTH - 1     : 0] ay      [0 : 11]; // 89 bits 27.62
+    reg signed [AY_WIDTH - 1 + 1 : 0] say_st1 [0 :  5]; // +1 bit to avoid overflow
+    reg signed [AY_WIDTH - 1 + 2 : 0] say_st2 [0 :  2]; // +1 bit to avoid overflow
+    reg signed [AY_WIDTH - 1 + 3 : 0] say_st3 [0 :  1]; // +1 bit to avoid overflow
+    reg signed [AY_WIDTH - 1 + 4 : 0] say_st4;          // +1 bit to avoid overflow = 93 = 31.62
 
-    reg signed [93 : 0] ax_bx; // 94 bits 32.62 
-    reg signed [81 : 0] sbx_adapted; // 82 = 20.62
+    reg signed [AY_WIDTH - 1 + 5 : 0] ax_bx; // 94 bits 32.62 
 
     reg [DATA_WIDTH - 1:0] y_out;
-    reg [63 : 0] y_new;
+    reg [Y_WIDTH - 1 : 0] y_new; //64
 
     reg [4:0] sample_cnt;
     wire start;
@@ -97,7 +135,6 @@ module wah #(
         if(rst) begin
             // for (i = 0; i <= Y_DEPTH - 1; i = i+1) begin
             //     y[i] <= 0;
-            //     ay[i] <= 0;
             // end
             // for (j = 1; j <= X_DEPTH - 1; j = j+1) begin
             //     x[j] <= 0;
@@ -233,21 +270,21 @@ module wah #(
             sbx_st3 <= sbx_st2[0] + sbx_st2[1];
 
             // adapt size to match ay (add 14 frac bits at the end) no matter neg/pos, we append 14 zeros
-            sbx_adapted <= {sbx_st3, 14'd0};
+            sbx_adapted <= {sbx_st3, {APPEND_BITS{1'b0}}};
 
             /// A*y multiplication
-            ay[ 0] <= y[ 0]*a_coef0;
-            ay[ 1] <= y[ 1]*a_coef1;
-            ay[ 2] <= y[ 2]*a_coef2;
-            ay[ 3] <= y[ 3]*a_coef3;
-            ay[ 4] <= y[ 4]*a_coef4;
-            ay[ 5] <= y[ 5]*a_coef5;
-            ay[ 6] <= y[ 6]*a_coef6;
-            ay[ 7] <= y[ 7]*a_coef7;
-            ay[ 8] <= y[ 8]*a_coef8;
-            ay[ 9] <= y[ 9]*a_coef9;
-            ay[10] <= y[10]*a_coef10;
-            ay[11] <= y[11]*a_coef11;
+            ay[ 0] <= y[ 0]*a_coef[ 0];
+            ay[ 1] <= y[ 1]*a_coef[ 1];
+            ay[ 2] <= y[ 2]*a_coef[ 2];
+            ay[ 3] <= y[ 3]*a_coef[ 3];
+            ay[ 4] <= y[ 4]*a_coef[ 4];
+            ay[ 5] <= y[ 5]*a_coef[ 5];
+            ay[ 6] <= y[ 6]*a_coef[ 6];
+            ay[ 7] <= y[ 7]*a_coef[ 7];
+            ay[ 8] <= y[ 8]*a_coef[ 8];
+            ay[ 9] <= y[ 9]*a_coef[ 9];
+            ay[10] <= y[10]*a_coef[10];
+            ay[11] <= y[11]*a_coef11; // unchanged, hence coef value never updated
 
             // sum ax
             // stage 1
@@ -271,20 +308,21 @@ module wah #(
             ax_bx <= sbx_adapted - say_st4;
 
             // cast to 64 = 16.48 for buffer
-            y_new <= ax_bx[(62 + 16) - 1 -: 64]; // ax_bx frac bits (62) + y_new int bits (16)
+            y_new <= ax_bx[(AY_FRAC + DATA_WIDTH) - 1 -: Y_WIDTH]; // ax_bx frac bits (62) + y_new int bits (16)
 
             // cast to 16 int bits for output
-            y_out <= ax_bx[(62 + 16) - 1 -: 16]; // ax_bx frac bits (62) + y_out int bits (16)
+            y_out <= ax_bx[(AY_FRAC + DATA_WIDTH) - 1 -: DATA_WIDTH]; // ax_bx frac bits (62) + y_out int bits (16)
+
+            y_master  <= y_out * 8;
+            x_master  <= x[8] / 4;
+            y_combined <= x_master + y_master;
         end
-        
     end
 
     // localparam DEPTH = 3; // number of stages for distortion effect
 
-
-
     // select output based on enable
-    assign o_dat = (enable) ? y_out : i_dat;
+    assign o_dat = (enable) ? y_combined : i_dat;
     // assign o_dat = i_dat;
     assign o_vld = i_vld;
     
@@ -292,15 +330,40 @@ module wah #(
 
     ///////////////////////////
 
-    wire [24:0] loaded_coef;
-    wire [3:0] loaded_coef_offset;
+    wire [ACOEF_WIDTH - 1:0] load_coef;
+    wire [3:0] load_coef_offset;
+    wire load_coef_valid;
 
-    load_coefficients inst_coe (
-      .clk(clk),
-      .rst(rst),
-      .i_vld(i_vld),
-      .a_coef(loaded_coef),
-      .offset(loaded_coef_offset)
+    load_coefficients #(
+        .COEF_WIDTH(ACOEF_WIDTH)
+    ) inst_coe (
+        .clk(clk),
+        .rst(rst),
+        .i_vld(i_vld),
+        .a_coef(load_coef),
+        .offset(load_coef_offset),
+        .valid(load_coef_valid),
+        .row_select(cur_row)
     );
+
+    always @(posedge clk) begin
+        if(load_coef_valid) begin
+            temp_a_coef[load_coef_offset] <= load_coef;
+        end
+
+        if(i_vld) begin
+            a_coef[ 0] <= temp_a_coef[ 0];
+            a_coef[ 1] <= temp_a_coef[ 1];
+            a_coef[ 2] <= temp_a_coef[ 2];
+            a_coef[ 3] <= temp_a_coef[ 3];
+            a_coef[ 4] <= temp_a_coef[ 4];
+            a_coef[ 5] <= temp_a_coef[ 5];
+            a_coef[ 6] <= temp_a_coef[ 6];
+            a_coef[ 7] <= temp_a_coef[ 7];
+            a_coef[ 8] <= temp_a_coef[ 8];
+            a_coef[ 9] <= temp_a_coef[ 9];
+            a_coef[10] <= temp_a_coef[10];
+        end
+    end
 
 endmodule

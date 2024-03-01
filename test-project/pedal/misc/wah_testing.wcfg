@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="356741800000fs"></ZoomStartTime>
+      <ZoomEndTime time="12436741800001fs"></ZoomEndTime>
+      <Cursor1Time time="1655612656000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="374"></NameColumnWidth>
+      <ValueColumnWidth column_width="276"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/top/inst_pipe/inst_wah/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/o_dat" type="array">
+      <obj_property name="ElementShortName">o_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/o_vld" type="logic">
+      <obj_property name="ElementShortName">o_vld</obj_property>
+      <obj_property name="ObjectShortName">o_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/i_dat" type="array">
+      <obj_property name="ElementShortName">i_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_dat[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/i_vld" type="logic">
+      <obj_property name="ElementShortName">i_vld</obj_property>
+      <obj_property name="ObjectShortName">i_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/x" type="array">
+      <obj_property name="ElementShortName">x[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[0:12][15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/y" type="array">
+      <obj_property name="ElementShortName">y[0:11][63:0]</obj_property>
+      <obj_property name="ObjectShortName">y[0:11][63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/bx" type="array">
+      <obj_property name="ElementShortName">bx[0:6][63:0]</obj_property>
+      <obj_property name="ObjectShortName">bx[0:6][63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/sbx_st1" type="array">
+      <obj_property name="ElementShortName">sbx_st1[0:3][64:0]</obj_property>
+      <obj_property name="ObjectShortName">sbx_st1[0:3][64:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/sbx_st2" type="array">
+      <obj_property name="ElementShortName">sbx_st2[0:1][65:0]</obj_property>
+      <obj_property name="ObjectShortName">sbx_st2[0:1][65:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/sbx_st3" type="array">
+      <obj_property name="ElementShortName">sbx_st3[66:0]</obj_property>
+      <obj_property name="ObjectShortName">sbx_st3[66:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/sbx_adapted" type="array">
+      <obj_property name="ElementShortName">sbx_adapted[98:0]</obj_property>
+      <obj_property name="ObjectShortName">sbx_adapted[98:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/ay" type="array">
+      <obj_property name="ElementShortName">ay[0:11][106:0]</obj_property>
+      <obj_property name="ObjectShortName">ay[0:11][106:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[0]" type="array">
+         <obj_property name="ElementShortName">[0][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[1]" type="array">
+         <obj_property name="ElementShortName">[1][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[2]" type="array">
+         <obj_property name="ElementShortName">[2][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[3]" type="array">
+         <obj_property name="ElementShortName">[3][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[4]" type="array">
+         <obj_property name="ElementShortName">[4][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[5]" type="array">
+         <obj_property name="ElementShortName">[5][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[6]" type="array">
+         <obj_property name="ElementShortName">[6][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[7]" type="array">
+         <obj_property name="ElementShortName">[7][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[8]" type="array">
+         <obj_property name="ElementShortName">[8][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[9]" type="array">
+         <obj_property name="ElementShortName">[9][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[10]" type="array">
+         <obj_property name="ElementShortName">[10][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/ay[11]" type="array">
+         <obj_property name="ElementShortName">[11][106:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][106:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/say_st1" type="array">
+      <obj_property name="ElementShortName">say_st1[0:5][107:0]</obj_property>
+      <obj_property name="ObjectShortName">say_st1[0:5][107:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/say_st2" type="array">
+      <obj_property name="ElementShortName">say_st2[0:2][108:0]</obj_property>
+      <obj_property name="ObjectShortName">say_st2[0:2][108:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/say_st3" type="array">
+      <obj_property name="ElementShortName">say_st3[0:1][109:0]</obj_property>
+      <obj_property name="ObjectShortName">say_st3[0:1][109:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/say_st4" type="array">
+      <obj_property name="ElementShortName">say_st4[110:0]</obj_property>
+      <obj_property name="ObjectShortName">say_st4[110:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/ax_bx" type="array">
+      <obj_property name="ElementShortName">ax_bx[111:0]</obj_property>
+      <obj_property name="ObjectShortName">ax_bx[111:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/y_out" type="array">
+      <obj_property name="ElementShortName">y_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/y_new" type="array">
+      <obj_property name="ElementShortName">y_new[63:0]</obj_property>
+      <obj_property name="ObjectShortName">y_new[63:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/sample_cnt" type="array">
+      <obj_property name="ElementShortName">sample_cnt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_cnt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/AY_FRAC" type="array">
+      <obj_property name="ElementShortName">AY_FRAC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AY_FRAC[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/APPEND_BITS" type="array">
+      <obj_property name="ElementShortName">APPEND_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">APPEND_BITS[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/Y_FRAC" type="array">
+      <obj_property name="ElementShortName">Y_FRAC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_FRAC[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/ACOEF_FRAC" type="array">
+      <obj_property name="ElementShortName">ACOEF_FRAC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ACOEF_FRAC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/row_offset" type="array">
+      <obj_property name="ElementShortName">row_offset[11:0]</obj_property>
+      <obj_property name="ObjectShortName">row_offset[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/coef_offset" type="array">
+      <obj_property name="ElementShortName">coef_offset[3:0]</obj_property>
+      <obj_property name="ObjectShortName">coef_offset[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/row_select" type="array">
+      <obj_property name="ElementShortName">row_select[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row_select[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/offset" type="array">
+      <obj_property name="ElementShortName">offset[3:0]</obj_property>
+      <obj_property name="ObjectShortName">offset[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider213">
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef" type="array">
+      <obj_property name="ElementShortName">a_coef[0:10][42:0]</obj_property>
+      <obj_property name="ObjectShortName">a_coef[0:10][42:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[0]" type="array">
+         <obj_property name="ElementShortName">[0][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[1]" type="array">
+         <obj_property name="ElementShortName">[1][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[2]" type="array">
+         <obj_property name="ElementShortName">[2][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[3]" type="array">
+         <obj_property name="ElementShortName">[3][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[4]" type="array">
+         <obj_property name="ElementShortName">[4][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[5]" type="array">
+         <obj_property name="ElementShortName">[5][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[6]" type="array">
+         <obj_property name="ElementShortName">[6][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[7]" type="array">
+         <obj_property name="ElementShortName">[7][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[8]" type="array">
+         <obj_property name="ElementShortName">[8][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[9]" type="array">
+         <obj_property name="ElementShortName">[9][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/a_coef[10]" type="array">
+         <obj_property name="ElementShortName">[10][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef" type="array">
+      <obj_property name="ElementShortName">temp_a_coef[0:10][42:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_a_coef[0:10][42:0]</obj_property>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[0]" type="array">
+         <obj_property name="ElementShortName">[0][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[1]" type="array">
+         <obj_property name="ElementShortName">[1][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[2]" type="array">
+         <obj_property name="ElementShortName">[2][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[3]" type="array">
+         <obj_property name="ElementShortName">[3][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[4]" type="array">
+         <obj_property name="ElementShortName">[4][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[5]" type="array">
+         <obj_property name="ElementShortName">[5][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[6]" type="array">
+         <obj_property name="ElementShortName">[6][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[7]" type="array">
+         <obj_property name="ElementShortName">[7][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[8]" type="array">
+         <obj_property name="ElementShortName">[8][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[9]" type="array">
+         <obj_property name="ElementShortName">[9][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][42:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/inst_pipe/inst_wah/temp_a_coef[10]" type="array">
+         <obj_property name="ElementShortName">[10][42:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][42:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/load_coef_offset" type="array">
+      <obj_property name="ElementShortName">load_coef_offset[3:0]</obj_property>
+      <obj_property name="ObjectShortName">load_coef_offset[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/load_coef_valid" type="logic">
+      <obj_property name="ElementShortName">load_coef_valid</obj_property>
+      <obj_property name="ObjectShortName">load_coef_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/load_coef" type="array">
+      <obj_property name="ElementShortName">load_coef[42:0]</obj_property>
+      <obj_property name="ObjectShortName">load_coef[42:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/read_en" type="logic">
+      <obj_property name="ElementShortName">read_en</obj_property>
+      <obj_property name="ObjectShortName">read_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/matrix_pos" type="array">
+      <obj_property name="ElementShortName">matrix_pos[11:0]</obj_property>
+      <obj_property name="ObjectShortName">matrix_pos[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top/inst_pipe/inst_wah/inst_coe/a_coef" type="array">
+      <obj_property name="ElementShortName">a_coef[42:0]</obj_property>
+      <obj_property name="ObjectShortName">a_coef[42:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

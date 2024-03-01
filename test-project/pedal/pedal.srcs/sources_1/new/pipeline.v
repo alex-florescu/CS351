@@ -10,7 +10,8 @@ module pipeline #(
     input  rx_vld,
     output tx_vld,
     
-    input [3:0] sw
+    input [3:0] sw,
+    output [7:0] cur_row
 );
 
 wire [DATA_WIDTH - 1:0] tx_dat_eff1;
@@ -87,7 +88,8 @@ wah #(
     .o_dat(tx_dat_eff4),
     .i_vld(tx_vld_eff3),
     .o_vld(tx_vld_eff4),
-    .enable(sw[3])
+    .enable(sw[3]),
+    .cur_row(cur_row)
 );
 
 

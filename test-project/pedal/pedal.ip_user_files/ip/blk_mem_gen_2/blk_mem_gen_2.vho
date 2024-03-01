@@ -57,7 +57,7 @@ COMPONENT blk_mem_gen_2
     clka : IN STD_LOGIC;
     ena : IN STD_LOGIC;
     addra : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(24 DOWNTO 0)
+    douta : OUT STD_LOGIC_VECTOR(42 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------

@@ -46,7 +46,7 @@ module ram_reverb #(
     reg [DEPTH_WIDTH - 1:0] addr2;
     reg [DEPTH_WIDTH - 1:0] addr3;
 
-    wire rd_vld_v2;
+    // wire rd_vld_v2;
     reg rd_vld;
 
     // Create an index that loops, therefore delaying each data value after a complete loop
@@ -118,7 +118,7 @@ module ram_reverb #(
     // TODO: Change this to register
     // assign rd_enable_v2 = i_vld || i_vld_d[0] || i_vld_d[1] || i_vld_d[2] || i_vld_d[3];
     assign rd_enable = i_vld || rd_enable_hold;
-    assign rd_vld_v2 = i_vld_d[1] || i_vld_d[2] || i_vld_d[3] || i_vld_d[4];
+    // assign rd_vld_v2 = i_vld_d[1] || i_vld_d[2] || i_vld_d[3] || i_vld_d[4];
 
     always @(posedge clk) begin
         if(rst) begin
