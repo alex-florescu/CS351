@@ -76,3 +76,5 @@
 ### March
 - 01 Mar - Made distortion and delay configurable
 - 02 Mar - Made noise gate module, more writing
+- 03 Mar - Meeting with Eduardo
+- 
