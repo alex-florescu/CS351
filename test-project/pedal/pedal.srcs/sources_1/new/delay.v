@@ -1,6 +1,7 @@
 module delay #(
     parameter DATA_WIDTH = 16,
     parameter FIFO_DEPTH = 32768,
+    parameter FIFO_DEPTH_BITS = 15,
     parameter DIV_GAIN = 2
 )(
     input                     clk,
@@ -9,7 +10,8 @@ module delay #(
     input                     i_vld, // a 1 bit signal that is high for one clock cycle for each sample
     output [DATA_WIDTH - 1:0] o_dat,
     output                    o_vld,
-    input                     enable
+    input                     enable,
+    input [FIFO_DEPTH_BITS - 1:0] offset
 );
 
     localparam DEPTH = 2; // number of stages for delay effect
@@ -79,13 +81,15 @@ module delay #(
 
     ram_delay #(
         .DATA_WIDTH(DATA_WIDTH),
-        .DEPTH(FIFO_DEPTH)
+        .DEPTH(FIFO_DEPTH),
+        .DEPTH_WIDTH(FIFO_DEPTH_BITS)
     ) inst_ram_delay (
         .clk(clk),
         .rst(rst),
         .i_dat(o_dat), // change to i_dat for simple delayed input
         .i_vld(o_vld), // change to i_vld for simple delayed input
-        .o_dat(fifo_data)
+        .o_dat(fifo_data),
+        .offset(offset)
     );
 
     // select output based on enable

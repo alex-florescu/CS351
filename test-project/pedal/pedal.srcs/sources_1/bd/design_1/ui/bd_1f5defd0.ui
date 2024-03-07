@@ -6,45 +6,45 @@
    "PinnedBlocks":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 990 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 990 -y 90 -defaultsOSRD
-preplace port IIC_Interface -pg 1 -lvl 4 -x 990 -y 120 -defaultsOSRD
-preplace port sysclk -pg 1 -lvl 0 -x -40 -y 210 -defaultsOSRD
-preplace port rst -pg 1 -lvl 0 -x -40 -y 330 -defaultsOSRD
-preplace port ac_recdat -pg 1 -lvl 0 -x -40 -y 360 -defaultsOSRD
-preplace port ac_mclk -pg 1 -lvl 4 -x 990 -y 230 -defaultsOSRD
-preplace port ac_bclk -pg 1 -lvl 4 -x 990 -y 260 -defaultsOSRD
-preplace port ac_muten -pg 1 -lvl 4 -x 990 -y 290 -defaultsOSRD
-preplace port ac_pbdat -pg 1 -lvl 4 -x 990 -y 320 -defaultsOSRD
-preplace port ac_pblrc -pg 1 -lvl 4 -x 990 -y 350 -defaultsOSRD
-preplace port ac_reclrc -pg 1 -lvl 4 -x 990 -y 380 -defaultsOSRD
-preplace portBus sw -pg 1 -lvl 0 -x -40 -y 390 -defaultsOSRD
-preplace portBus btn -pg 1 -lvl 0 -x -40 -y 420 -defaultsOSRD
-preplace portBus led -pg 1 -lvl 4 -x 990 -y 410 -defaultsOSRD
-preplace portBus led5_rgb -pg 1 -lvl 4 -x 990 -y 440 -defaultsOSRD
-preplace portBus led6_rgb -pg 1 -lvl 4 -x 990 -y 470 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 3 -x 730 -y 130 -defaultsOSRD
-preplace inst top_0 -pg 1 -lvl 2 -x 330 -y 370 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 2 2 500 0 920
-preplace netloc btn_1 1 0 2 NJ 420 100
-preplace netloc sw_1 1 0 2 NJ 390 N
-preplace netloc ac_recdat_1 1 0 2 NJ 360 110
-preplace netloc rst_1 1 0 2 NJ 330 100
-preplace netloc top_0_ac_bclk 1 2 2 NJ 280 930J
-preplace netloc top_0_ac_muten 1 2 2 500J 290 NJ
-preplace netloc top_0_ac_pbdat 1 2 2 NJ 320 NJ
-preplace netloc top_0_ac_reclrc 1 2 2 500J 380 NJ
-preplace netloc top_0_ac_pblrc 1 2 2 500J 350 NJ
-preplace netloc top_0_led 1 2 2 490J 410 NJ
-preplace netloc top_0_led6_rgb 1 2 2 470J 470 NJ
-preplace netloc top_0_led5_rgb 1 2 2 480J 440 NJ
-preplace netloc top_0_ac_mclk 1 2 2 NJ 260 920J
-preplace netloc sysclk_1 1 0 2 NJ 210 110
-preplace netloc processing_system7_0_DDR 1 3 1 NJ 60
-preplace netloc processing_system7_0_IIC_1 1 3 1 NJ 120
-preplace netloc processing_system7_0_FIXED_IO 1 3 1 930J 80n
-levelinfo -pg 1 -40 80 330 730 990
-pagesize -pg 1 -db -bbox -sgen -150 -50 1130 610
+preplace port DDR -pg 1 -lvl 2 -x 440 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 2 -x 440 -y 90 -defaultsOSRD
+preplace port IIC_Interface -pg 1 -lvl 2 -x 440 -y 120 -defaultsOSRD
+preplace port sysclk -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port ac_recdat -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace port ac_mclk -pg 1 -lvl 2 -x 440 -y 280 -defaultsOSRD
+preplace port ac_bclk -pg 1 -lvl 2 -x 440 -y 310 -defaultsOSRD
+preplace port ac_muten -pg 1 -lvl 2 -x 440 -y 340 -defaultsOSRD
+preplace port ac_pbdat -pg 1 -lvl 2 -x 440 -y 370 -defaultsOSRD
+preplace port ac_pblrc -pg 1 -lvl 2 -x 440 -y 400 -defaultsOSRD
+preplace port ac_reclrc -pg 1 -lvl 2 -x 440 -y 430 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 2 -x 440 -y 460 -defaultsOSRD
+preplace portBus led5_rgb -pg 1 -lvl 2 -x 440 -y 490 -defaultsOSRD
+preplace portBus led6_rgb -pg 1 -lvl 2 -x 440 -y 520 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 130 -defaultsOSRD
+preplace inst top_0 -pg 1 -lvl 1 -x 210 -y 430 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 20 260 400
+preplace netloc btn_1 1 0 1 20J 470n
+preplace netloc sw_1 1 0 1 20J 450n
+preplace netloc ac_recdat_1 1 0 1 NJ 430
+preplace netloc rst_1 1 0 1 20J 400n
+preplace netloc top_0_ac_bclk 1 1 1 410J 310n
+preplace netloc top_0_ac_muten 1 1 1 420J 340n
+preplace netloc top_0_ac_pbdat 1 1 1 410J 370n
+preplace netloc top_0_ac_reclrc 1 1 1 410J 420n
+preplace netloc top_0_ac_pblrc 1 1 1 NJ 400
+preplace netloc top_0_led 1 1 1 420J 440n
+preplace netloc top_0_led6_rgb 1 1 1 400J 480n
+preplace netloc top_0_led5_rgb 1 1 1 410J 460n
+preplace netloc top_0_ac_mclk 1 1 1 400J 280n
+preplace netloc sysclk_1 1 0 1 20J 370n
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 400J 80n
+preplace netloc processing_system7_0_IIC_1 1 1 1 NJ 120
+preplace netloc processing_system7_0_DDR 1 1 1 NJ 60
+levelinfo -pg 1 0 210 440
+pagesize -pg 1 -db -bbox -sgen -110 0 580 600
 "
 }
 {

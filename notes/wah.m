@@ -89,7 +89,7 @@ position = linspace(18,50,n)
 audioComb = zeros(240000,n);
 audioOut = zeros(240000,1);
 
-% figure;
+figure;
 a = zeros(n,13);
 b = zeros(n,13);
 
@@ -99,17 +99,20 @@ for i = 1:n
     [b1,a1] = butter(6, wcNorm, "bandpass");
 
     % [b1,a1] = butter(12, wcNorm(1), "low");
-    b1 = b1;
+    % b1 = b1;
 
     a(i,:) = a1;
     b(i,:) = b1;
-    % h1 = impz(b1,a1);
-    % hold on
-    % freqz(h1)
-
+    if(i == 1 || i == n)
+        h1 = impz(b1,a1);
+        hold on
+        freqz(h1)
+        % [H, f] = freqz(b1, a1);
+        % plot(f, 20*log10(abs(H)))
+    end
     audioComb(:,i) = filter(b1, a1, audioRaw);
 end
-% hold off
+hold off
 
 % sound(audioComb(:,10), 48000);
 

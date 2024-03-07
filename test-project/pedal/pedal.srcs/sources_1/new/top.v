@@ -38,10 +38,10 @@ wire tx_vld; // last clk before tx_dat changes
 assign probe_tx_dat = tx_dat;
 assign probe_tx_vld = tx_vld;
 
-wire [2:0] button; // stable button signals, output of debouncers
+wire [2:0] stable_btn; // stable button signals, output of debouncers
 wire [CONFIG_BITS - 1:0] config_value;
 
-assign led[2:0] = config_value;
+// assign led[2:0] = config_value;
 
 assign led5_rgb = 3'b101;
 
@@ -65,7 +65,7 @@ i2s_control #(
     .tx_vld(tx_vld),
 
     // extra: remove later
-    .led3(led[3]),
+    .led3(),
     .led6_rgb(led6_rgb)
 );
 
@@ -79,7 +79,9 @@ pipeline #(
     .rx_vld(rx_vld),
     .tx_vld(tx_vld),
     .sw(sw),
-    .cur_row(cur_row)
+    .btn(stable_btn),
+    .cur_row(cur_row),
+    .led(led)
 );
 
 // Clock generation: 12.288 MHz
@@ -93,16 +95,16 @@ debouncer_array inst_debouncer (
     .clk(ac_mclk),
     .rst(rst),
     .btn_array(btn),
-    .stable_btn_array(button)
+    .stable_btn_array(stable_btn)
 );
 
-mode_select #(
-    .CONFIG_BITS(CONFIG_BITS)
-) inst_config (
-    .clk(ac_mclk),
-    .rst(rst),
-    .btn(button[1]),
-    .config_value(config_value)
-);
+// mode_select #(
+//     .CONFIG_BITS(CONFIG_BITS)
+// ) inst_config (
+//     .clk(ac_mclk),
+//     .rst(rst),
+//     .btn(stable_btn[1]),
+//     .config_value(config_value)
+// );
 
 endmodule

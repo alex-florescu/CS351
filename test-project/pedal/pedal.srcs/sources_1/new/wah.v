@@ -98,11 +98,22 @@ module wah #(
     reg signed [DATA_WIDTH - 1:0] x [0 : X_DEPTH - 1];
     reg signed [Y_WIDTH -1:0] y [0 : Y_DEPTH - 1]; // one less data sample since y[0] is being calculated
 
-    reg signed [BX_WIDTH - 1                   : 0] bx      [0 : 6]; // 64 bits 16.48
-    reg signed [BX_WIDTH - 1 + 1               : 0] sbx_st1 [0 : 3]; // +1 bit to avoid overflow
-    reg signed [BX_WIDTH - 1 + 2               : 0] sbx_st2 [0 : 1]; // +1 bit to avoid overflow
-    reg signed [BX_WIDTH - 1 + 3               : 0] sbx_st3;         // +1 bit to avoid overflow = 67 = 19.48
-    reg signed [BX_WIDTH - 1 + 3 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
+    // reg signed [BX_WIDTH - 1                   : 0] bx      [0 : 6]; // 64 bits 16.48
+    // reg signed [BX_WIDTH - 1 + 1               : 0] sbx_st1 [0 : 3]; // 17.48 (+1 bit to avoid overflow)
+    // reg signed [BX_WIDTH - 1 + 2               : 0] sbx_st2 [0 : 1]; // 18.48 (+1 bit to avoid overflow)
+    // reg signed [BX_WIDTH - 1 + 3               : 0] sbx_st3;         // 19.48 (bit to avoid overflow = 67 = 19.48)
+    // reg signed [BX_WIDTH - 1 + 3 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
+
+    
+    localparam BX_V2_WIDTH = DATA_WIDTH + 1 + BCOEF_WIDTH ;
+
+    reg signed [DATA_WIDTH - 1 + 1 : 0] sx [0 : 3]; //17.0
+    reg signed [BX_V2_WIDTH - 1     : 0] bx_v2   [0 : 3]; //17.48
+    reg signed [BX_V2_WIDTH - 1 + 1 : 0] sbx_st1 [0 : 1]; // 18.48
+    reg signed [BX_V2_WIDTH - 1 + 2 : 0] sbx_st2;         // 19.48
+    reg signed [BX_V2_WIDTH - 1 + 2 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
+
+
 
     reg signed [AY_WIDTH - 1     : 0] ay      [0 : 11]; // 89 bits 27.62
     reg signed [AY_WIDTH - 1 + 1 : 0] say_st1 [0 :  5]; // +1 bit to avoid overflow
@@ -180,13 +191,18 @@ module wah #(
             x[11] <= 0;
             x[12] <= 0;
 
-            bx[0] <= 0;
-            bx[1] <= 0;
-            bx[2] <= 0;
-            bx[3] <= 0;
-            bx[4] <= 0;
-            bx[5] <= 0;
-            bx[6] <= 0;
+            bx_v2[0] <= 0; // bx[0] <= 0;
+            bx_v2[1] <= 0; // bx[1] <= 0;
+            bx_v2[2] <= 0; // bx[2] <= 0;
+            bx_v2[3] <= 0; // bx[3] <= 0;
+            bx_v2[4] <= 0; // bx[4] <= 0;
+            bx_v2[5] <= 0; // bx[5] <= 0;
+            bx_v2[6] <= 0; // bx[6] <= 0;
+            
+            sx[0] <= 0;
+            sx[1] <= 0;
+            sx[2] <= 0;
+            sx[3] <= 0;
 
             say_st1[0] <= 0;
             say_st1[1] <= 0;
@@ -199,10 +215,10 @@ module wah #(
             say_st2[1] <= 0;
             say_st2[2] <= 0;
             // stage 3
-            say_st3[0] <= 0;
-            say_st3[1] <= 0;
+            // say_st3[0] <= 0;
+            // say_st3[1] <= 0;
 
-            say_st4 <= 0;
+            // say_st4 <= 0;
             y_new <= 0;
         end else begin
 
@@ -248,29 +264,45 @@ module wah #(
                 // y[0 : Y_DEPTH - 1] <= {y_new, y[0 : Y_DEPTH - 2]};
             end
 
-            /// B*x multiplication, ignore coeffs of value 0
-            bx[0] <= x[ 0]*b_coef0;
-            bx[1] <= x[ 2]*b_coef2;
-            bx[2] <= x[ 4]*b_coef4;
-            bx[3] <= x[ 6]*b_coef6;
-            bx[4] <= x[ 8]*b_coef8;
-            bx[5] <= x[10]*b_coef10;
-            bx[6] <= x[12]*b_coef12;
+            // /// B*x multiplication, ignore coeffs of value 0
+            // bx[0] <= x[ 0]*b_coef0;
+            // bx[1] <= x[ 2]*b_coef2;
+            // bx[2] <= x[ 4]*b_coef4;
+            // bx[3] <= x[ 6]*b_coef6;
+            // bx[4] <= x[ 8]*b_coef8;
+            // bx[5] <= x[10]*b_coef10;
+            // bx[6] <= x[12]*b_coef12;
 
-            // sum bx
-            // sum stage 1
-            sbx_st1[0] <= bx[0] + bx[1];
-            sbx_st1[1] <= bx[2] + bx[3];
-            sbx_st1[2] <= bx[4] + bx[5];
-            sbx_st1[3] <= bx[6];
-            // sum stage 2
-            sbx_st2[0] <= sbx_st1[0] + sbx_st1[1];
-            sbx_st2[1] <= sbx_st1[2] + sbx_st1[3];
-            // sum stage 3
-            sbx_st3 <= sbx_st2[0] + sbx_st2[1];
+            // // sum bx
+            // // sum stage 1
+            // sbx_st1[0] <= bx[0] + bx[1];
+            // sbx_st1[1] <= bx[2] + bx[3];
+            // sbx_st1[2] <= bx[4] + bx[5];
+            // sbx_st1[3] <= bx[6];
+            // // sum stage 2
+            // sbx_st2[0] <= sbx_st1[0] + sbx_st1[1];
+            // sbx_st2[1] <= sbx_st1[2] + sbx_st1[3];
+            // // sum stage 3
+            // sbx_st3 <= sbx_st2[0] + sbx_st2[1];
 
-            // adapt size to match ay (add 14 frac bits at the end) no matter neg/pos, we append 14 zeros
-            sbx_adapted <= {sbx_st3, {APPEND_BITS{1'b0}}};
+            // // adapt size to match ay (add 14 frac bits at the end) no matter neg/pos, we append 14 zeros
+            // sbx_adapted <= {sbx_st3, {APPEND_BITS{1'b0}}};
+
+            sx[0] <= x[0] + x[12];
+            sx[1] <= x[2] + x[10];
+            sx[2] <= x[4] + x[ 8];
+            sx[3] <= x[6];
+            
+            bx_v2[0] <= sx[0] * b_coef0;
+            bx_v2[1] <= sx[1] * b_coef2;
+            bx_v2[2] <= sx[2] * b_coef4;
+            bx_v2[3] <= sx[3] * b_coef6;
+
+            sbx_st1[0] <= bx_v2[0] + bx_v2[1];
+            sbx_st1[1] <= bx_v2[2] + bx_v2[3];
+
+            sbx_st2 <= sbx_st1[0] + sbx_st1[1];
+            sbx_adapted <= {sbx_st2, {APPEND_BITS{1'b0}}};
 
             /// A*y multiplication
             ay[ 0] <= y[ 0]*a_coef[ 0];

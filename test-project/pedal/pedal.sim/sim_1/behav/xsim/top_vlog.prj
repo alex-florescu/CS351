@@ -9,9 +9,10 @@ verilog xil_defaultlib  --include "../../../../pedal.srcs/sources_1/bd/design_1/
 "../../../../pedal.srcs/sources_1/new/debouncer_array.v" \
 "../../../../pedal.srcs/sources_1/new/delay.v" \
 "../../../../pedal.srcs/sources_1/new/distortion.v" \
+"../../../../pedal.srcs/sources_1/new/effect_config.v" \
 "../../../../pedal.srcs/sources_1/new/i2s_control.v" \
 "../../../../pedal.srcs/sources_1/new/load_coefficients.v" \
-"../../../../pedal.srcs/sources_1/new/mode_select.v" \
+"../../../../pedal.srcs/sources_1/new/noise_gate.v" \
 "../../../../pedal.srcs/sources_1/new/pipeline.v" \
 "../../../../pedal.srcs/sources_1/new/ram_delay.v" \
 "../../../../pedal.srcs/sources_1/new/ram_reverb.v" \

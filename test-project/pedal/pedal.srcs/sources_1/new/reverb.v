@@ -1,7 +1,7 @@
 module reverb #(
     parameter DATA_WIDTH = 16,
-    parameter FIFO_DEPTH = 16384,
-    parameter DIV_GAIN = 3
+    parameter FIFO_DEPTH = 16384
+    // parameter DIV_GAIN = 3
 )(
     input                     clk,
     input                     rst,

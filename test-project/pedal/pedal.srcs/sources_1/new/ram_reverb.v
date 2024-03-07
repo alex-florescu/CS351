@@ -37,11 +37,6 @@ module ram_reverb #(
     reg read_enable;
     reg phase_vld;
 
-    // reg [DATA_WIDTH - 1:0] fifo_data;
-    // reg [DATA_WIDTH - 1:0] fifo_data1;
-    // reg [DATA_WIDTH - 1:0] fifo_data2;
-    // reg [DATA_WIDTH - 1:0] fifo_data3;
-
     reg [DEPTH_WIDTH - 1:0] addr1;
     reg [DEPTH_WIDTH - 1:0] addr2;
     reg [DEPTH_WIDTH - 1:0] addr3;
@@ -99,26 +94,20 @@ module ram_reverb #(
         end
     end
 
-    assign o_dat = 0;
-
     wire wr_enable;
     wire [DEPTH_WIDTH - 1:0] wr_addr;
     wire [DATA_WIDTH - 1:0] wr_data;
 
-    // wire rd_enable_v2;
     wire rd_enable;
     wire [DEPTH_WIDTH - 1:0] rd_addr;
+    reg rd_enable_hold;
 
     assign wr_enable = i_vld_d[5];
     assign wr_data   = i_dat_d[5 * DATA_WIDTH +: DATA_WIDTH];
     assign wr_addr   = index_d[5 * DEPTH_WIDTH +: DEPTH_WIDTH];
 
-    reg rd_enable_hold;
 
-    // TODO: Change this to register
-    // assign rd_enable_v2 = i_vld || i_vld_d[0] || i_vld_d[1] || i_vld_d[2] || i_vld_d[3];
     assign rd_enable = i_vld || rd_enable_hold;
-    // assign rd_vld_v2 = i_vld_d[1] || i_vld_d[2] || i_vld_d[3] || i_vld_d[4];
 
     always @(posedge clk) begin
         if(rst) begin
@@ -141,11 +130,10 @@ module ram_reverb #(
         end
     end
 
-    assign rd_addr =    (phase == 0) ? index : 
-                        (phase == 1) ? addr1 : 
-                        (phase == 2) ? addr2 :  
-                        addr3;
-
+    assign rd_addr = (phase == 0) ? index : 
+                     (phase == 1) ? addr1 : 
+                     (phase == 2) ? addr2 :  
+                     addr3;
 
     // perform writes 3 clocks after the read to avoid rw collisions
     blk_mem_gen_1 inst_dpram_reverb (

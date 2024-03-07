@@ -1,6 +1,6 @@
 module distortion #(
-    parameter DATA_WIDTH = 16,
-    parameter THRESH = 256 // value TBD
+    parameter DATA_WIDTH = 16
+    // parameter THRESH = 256 // value TBD
 )(
     input                     clk,
     input                     rst,
@@ -9,7 +9,8 @@ module distortion #(
     output [DATA_WIDTH - 1:0] o_dat,
     output                    o_vld,
     input                     enable,
-    input [3:0]               gain
+    input [3:0]               gain,
+    input signed [11:0]       thresh
 );
 
     localparam DEPTH = 3; // number of stages for distortion effect
@@ -36,11 +37,11 @@ module distortion #(
             dist_data[1] <= dist_data[0] * gain;
             // compare with threshold
             if(dist_data[1] > 0)
-                dist_data[2] <= (dist_data[1] > THRESH) ?
-                THRESH : dist_data[1];
+                dist_data[2] <= (dist_data[1] > thresh) ?
+                thresh : dist_data[1];
             else
-                dist_data[2] <= (dist_data[1] < (-1)*THRESH) ?
-                (-1)*THRESH : dist_data[1]; 
+                dist_data[2] <= (dist_data[1] < (-1)*thresh) ?
+                (-1)*thresh : dist_data[1]; 
         end     
     end
 

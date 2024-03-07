@@ -20,9 +20,9 @@ plot(index, x)
 %% distortion
 
 
-gainLin = 4;
+gainLin = 1.5;
 % gainDB = 20*log(gainLin);
-thresh = 2000;
+thresh = 3500;
 % thresh = 0.7*1e5
 
 
@@ -39,12 +39,30 @@ end
 
 % plot all 3 on the same plot
 figure;
-plot(index, x)
-hold on
-% plot(index, yGain)
-plot(index, yDist)
+plot(index, x/2, 'LineWidth',2)
 xlim([index(1),index(end)])
+ylim([-8000, 8000]);
+xlabel("Time")
+ylabel("Amplitude")
+title("Input sound wave")
 
+
+figure;
+plot(index, yGain, "r-", 'LineWidth',2)
+xlim([index(1),index(end)])
+ylim([-8000, 8000]);
+xlabel("Time")
+ylabel("Amplitude")
+title("Increased gain")
+
+figure;
+% plot(index, yGain)
+plot(index, yDist, "k-", 'LineWidth',2)
+xlim([index(1),index(end)])
+ylim([-8000, 8000]);
+xlabel("Time")
+ylabel("Amplitude")
+title("Clipped to threshold")
 %%
 
 xTest = x;

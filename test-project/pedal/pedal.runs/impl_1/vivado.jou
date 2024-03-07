@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Feb 27 22:12:21 2024
-# Process ID: 40772
+# Start of session at: Wed Mar  6 23:08:44 2024
+# Process ID: 11256
 # Current directory: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/impl_1/design_1_wrapper.vdi
