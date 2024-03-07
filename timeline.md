@@ -69,3 +69,12 @@
 - 20 Feb - started work on Wah effect in Verilog
 - 21 Feb - Demo Day
 - 24 Feb - Wah effect edits, .coe file created
+- 26 Feb - Meeting with Eduardo
+- 27 Feb - Wah effect working
+- 28 Feb - Writing for presentation
+
+### March
+- 01 Mar - Made distortion and delay configurable
+- 02 Mar - Made noise gate module, more writing
+- 03 Mar - Meeting with Eduardo
+- 
