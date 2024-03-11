@@ -78,5 +78,8 @@
 - 02 Mar - Made noise gate module, more writing
 - 04 Mar - Meeting with Eduardo
 - 05 Mar - Created presentation slides
-- 06 Mar - reviewed presentation slides
-- 
+- 06 Mar - Reviewed presentation slides
+- 08 Mar - Mock Presentations
+- 09 Mar - Record backup demo video
+- 11 Mar - Meeting with Eduardo
+- 12 Mar - Presentation
