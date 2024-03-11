@@ -1,4 +1,4 @@
-23:19:28 **** Incremental Build of configuration Debug for project app_pedal ****
+14:08:19 **** Incremental Build of configuration Debug for project app_pedal ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -11,5 +11,5 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cort
 compilation terminated.
 make: *** [src/subdir.mk:26: src/main.o] Error 1
 
-23:19:28 Build Finished (took 399ms)
+14:08:20 Build Finished (took 427ms)
 

@@ -8,7 +8,8 @@ module wah #(
     output [DATA_WIDTH - 1:0] o_dat,
     output                    o_vld,
     input                     enable,
-    output [7:0] cur_row
+    output [7:0]              cur_row,
+    input  [7:0]              wah_speed
 );
 
     reg [DATA_WIDTH - 1:0] y_master;
@@ -346,7 +347,7 @@ module wah #(
             y_out <= ax_bx[(AY_FRAC + DATA_WIDTH) - 1 -: DATA_WIDTH]; // ax_bx frac bits (62) + y_out int bits (16)
 
             y_master  <= y_out * 8;
-            x_master  <= x[8] / 4;
+            x_master  <= x[8] / 2; // changed from 4 to 2
             y_combined <= x_master + y_master;
         end
     end
@@ -375,9 +376,11 @@ module wah #(
         .a_coef(load_coef),
         .offset(load_coef_offset),
         .valid(load_coef_valid),
-        .row_select(cur_row)
+        .row_select(cur_row),
+        .wah_speed(wah_speed)
     );
 
+    // sync coefficients
     always @(posedge clk) begin
         if(load_coef_valid) begin
             temp_a_coef[load_coef_offset] <= load_coef;

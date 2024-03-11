@@ -7,7 +7,8 @@ module load_coefficients #(
     output wire [COEF_WIDTH - 1:0] a_coef,
     output wire [3:0] offset,
     output wire valid,
-    output reg [7:0] row_select
+    output reg [7:0] row_select,
+    input [7:0] wah_speed
 );
     localparam COEF_MATRIX_WIDTH = 11;
     localparam COEF_MATRIX_HEIGHT_M2 = 248;
@@ -82,7 +83,7 @@ module load_coefficients #(
         end else if (i_vld) begin
             sample_cnt <= sample_cnt + 1;
 
-            if(sample_cnt == 200) begin // change this if you want the speed to be reconfigurable
+            if(sample_cnt == wah_speed) begin // change this if you want the speed to be reconfigurable
                 // reset counter
                 sample_cnt <= 0;
 

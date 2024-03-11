@@ -8,7 +8,8 @@ module effect_config #(
     output reg [3:0] led,
     output reg [3:0] gain_val,
     output reg [11:0] thresh_val,
-    output reg [DELAY_DEPTH_BITS - 1:0] delay_val
+    output reg [DELAY_DEPTH_BITS - 1:0] delay_val,
+    output reg [7:0] wah_val // row select
 );
 
     // Obtain button press values from buttons
@@ -46,7 +47,6 @@ module effect_config #(
     end
 
     // Obtain config values from effects
-
     reg [1:0] gain_sel;
     reg [1:0] thresh_sel;
     reg [1:0] delay_sel;
@@ -103,7 +103,6 @@ module effect_config #(
                 default: delay_val <= 0;
             endcase
             // reverb_val <= 0;  
-            // wah_val <= 0;          
             // case (reverb_sel)
             //     2'b00: 
             //     2'b01: 
@@ -111,13 +110,13 @@ module effect_config #(
             //     2'b11: 
             //     default: 
             // endcase        
-            // case (wah_sel)
-            //     2'b00: 
-            //     2'b01: 
-            //     2'b10: 
-            //     2'b11: 
-            //     default: 
-            // endcase        
+            case (wah_sel)
+                2'b00: wah_val <= 150;
+                2'b01: wah_val <= 190;
+                2'b10: wah_val <= 220;
+                2'b11: wah_val <= 250;
+                default: wah_val <= 0;
+            endcase        
         end
     end
 

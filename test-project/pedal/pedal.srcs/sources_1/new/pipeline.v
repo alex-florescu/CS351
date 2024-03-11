@@ -96,6 +96,8 @@ reverb #(
     .enable(sw[2])
 );
 
+wire [7:0] wah_val;
+
 wah #(
     .DATA_WIDTH(DATA_WIDTH)
 ) inst_wah (
@@ -106,7 +108,8 @@ wah #(
     .i_vld(tx_vld_eff3),
     .o_vld(tx_vld_eff4),
     .enable(sw[3]),
-    .cur_row(cur_row)
+    .cur_row(cur_row),
+    .wah_speed(wah_val)
 );
 
 noise_gate #(
@@ -135,7 +138,8 @@ effect_config #(
     .led(led),
     .gain_val(gain_val),
     .thresh_val(thresh_val),
-    .delay_val(delay_val)
+    .delay_val(delay_val),
+    .wah_val(wah_val)
 );
 
 // beep #(

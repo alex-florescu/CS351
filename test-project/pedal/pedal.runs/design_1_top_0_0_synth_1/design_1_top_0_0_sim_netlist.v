@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Wed Mar  6 23:07:47 2024
+// Date        : Sat Mar  9 12:53:58 2024
 // Host        : alex-yoga running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_top_0_0_sim_netlist.v
@@ -1836,7 +1836,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .D(fifo_data[11]),
         .Q(fifo_data_reduced[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[0]_i_1 
@@ -1844,7 +1844,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [0]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [0]));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[10]_i_1 
@@ -1852,7 +1852,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [10]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [10]));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[11]_i_1 
@@ -1860,7 +1860,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [11]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [11]));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[12]_i_1 
@@ -1868,7 +1868,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [12]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [12]));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[13]_i_1 
@@ -1876,7 +1876,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [13]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [13]));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[14]_i_1 
@@ -1884,7 +1884,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [14]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [14]));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[15]_i_1 
@@ -1892,7 +1892,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [15]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [15]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[1]_i_1 
@@ -1900,7 +1900,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [1]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[2]_i_1 
@@ -1908,7 +1908,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [2]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [2]));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[3]_i_1 
@@ -1916,7 +1916,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [3]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [3]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[4]_i_1 
@@ -1924,7 +1924,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [4]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [4]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[5]_i_1 
@@ -1932,7 +1932,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [5]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [5]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[6]_i_1 
@@ -1940,7 +1940,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [6]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [6]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[7]_i_1 
@@ -1948,7 +1948,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [7]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [7]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[8]_i_1 
@@ -1956,7 +1956,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay
         .I1(\pure_data_reg[1]_7 [8]),
         .I2(sw),
         .O(\delay_data_reg[1][15]_0 [8]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \i_dat_d1[9]_i_1 
@@ -2549,35 +2549,35 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
   wire [3:0]NLW_p_2_out_carry_O_UNCONNECTED;
   wire [3:0]NLW_p_2_out_carry__0_O_UNCONNECTED;
 
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][11]_i_10 
        (.I0(Q[10]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][11]_i_10_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][11]_i_11 
        (.I0(Q[9]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][11]_i_11_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][11]_i_12 
        (.I0(Q[8]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][11]_i_12_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][11]_i_13 
        (.I0(Q[7]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][11]_i_13_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][11]_i_14 
@@ -2586,7 +2586,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [1]),
         .I3(\dist_data_reg[1][3]_1 [2]),
         .O(\dist_data[1][11]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][11]_i_16 
@@ -2595,7 +2595,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [1]),
         .I3(\dist_data_reg[1][3]_1 [2]),
         .O(\dist_data[1][11]_i_16_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][11]_i_18 
@@ -2614,7 +2614,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I4(Q[9]),
         .I5(Q[7]),
         .O(\dist_data[1][11]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][11]_i_20 
@@ -2689,14 +2689,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I3(\dist_data[1][11]_i_20_n_0 ),
         .I4(\dist_data_reg[1][11]_1 ),
         .O(\dist_data[1][11]_i_9_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][15]_i_10 
        (.I0(Q[12]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][15]_i_10_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][15]_i_11 
@@ -2709,7 +2709,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
        (.I0(Q[14]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][15]_i_13_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][15]_i_16 
@@ -2718,7 +2718,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [2]),
         .I3(\dist_data_reg[1][3]_1 [1]),
         .O(\dist_data[1][15]_i_16_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][15]_i_17 
@@ -2727,7 +2727,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [1]),
         .I3(\dist_data_reg[1][3]_1 [2]),
         .O(\dist_data[1][15]_i_17_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][15]_i_19 
@@ -2803,7 +2803,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I3(\dist_data[1][15]_i_19_n_0 ),
         .I4(\dist_data_reg[1][15]_0 ),
         .O(\dist_data[1][15]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][15]_i_9 
@@ -2858,28 +2858,28 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
        (.I0(Q[0]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][3]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][3]_i_9 
        (.I0(Q[3]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][3]_i_9_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][7]_i_10 
        (.I0(Q[6]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][7]_i_10_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \dist_data[1][7]_i_11 
        (.I0(Q[5]),
         .I1(\dist_data_reg[1][3]_1 [0]),
         .O(\dist_data[1][7]_i_11_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][7]_i_14 
@@ -2888,7 +2888,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [1]),
         .I3(\dist_data_reg[1][3]_1 [2]),
         .O(\dist_data[1][7]_i_14_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][7]_i_16 
@@ -2897,7 +2897,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(\dist_data_reg[1][3]_1 [1]),
         .I3(\dist_data_reg[1][3]_1 [2]),
         .O(\dist_data[1][7]_i_16_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \dist_data[1][7]_i_18 
@@ -3722,7 +3722,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I2(p_0_out[1]),
         .I3(\dist_data_reg_n_0_[1][1] ),
         .O(p_2_out_carry_i_8_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][0]_i_1 
@@ -3730,7 +3730,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [0]),
         .I2(sw),
         .O(D[0]));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][10]_i_1 
@@ -3738,7 +3738,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [10]),
         .I2(sw),
         .O(D[10]));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][11]_i_1 
@@ -3746,7 +3746,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [11]),
         .I2(sw),
         .O(D[11]));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][12]_i_1 
@@ -3754,7 +3754,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [12]),
         .I2(sw),
         .O(D[12]));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][13]_i_1 
@@ -3762,7 +3762,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [13]),
         .I2(sw),
         .O(D[13]));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][14]_i_1 
@@ -3770,7 +3770,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [14]),
         .I2(sw),
         .O(D[14]));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][15]_i_1 
@@ -3778,7 +3778,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [15]),
         .I2(sw),
         .O(D[15]));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][1]_i_1 
@@ -3786,7 +3786,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [1]),
         .I2(sw),
         .O(D[1]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][2]_i_1 
@@ -3794,7 +3794,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [2]),
         .I2(sw),
         .O(D[2]));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][3]_i_1 
@@ -3802,7 +3802,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [3]),
         .I2(sw),
         .O(D[3]));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][4]_i_1 
@@ -3810,7 +3810,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [4]),
         .I2(sw),
         .O(D[4]));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][5]_i_1 
@@ -3818,7 +3818,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [5]),
         .I2(sw),
         .O(D[5]));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][6]_i_1 
@@ -3826,7 +3826,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [6]),
         .I2(sw),
         .O(D[6]));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][7]_i_1 
@@ -3834,7 +3834,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [7]),
         .I2(sw),
         .O(D[7]));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][8]_i_1 
@@ -3842,7 +3842,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_distortion
         .I1(\pure_data_reg[2]_4 [8]),
         .I2(sw),
         .O(D[8]));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \pure_data[0][9]_i_1 
@@ -4182,6 +4182,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
     \thresh_val_reg[7]_0 ,
     \thresh_val_reg[5]_0 ,
     \delay_val_reg[14]_0 ,
+    \wah_val_reg[6]_0 ,
     \dist_data[1][15]_i_5 ,
     O,
     p_2_out_carry__0,
@@ -4213,6 +4214,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
   output [3:0]\thresh_val_reg[7]_0 ;
   output [2:0]\thresh_val_reg[5]_0 ;
   output [3:0]\delay_val_reg[14]_0 ;
+  output [4:0]\wah_val_reg[6]_0 ;
   input [15:0]\dist_data[1][15]_i_5 ;
   input [0:0]O;
   input [1:0]p_2_out_carry__0;
@@ -4280,6 +4282,13 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
   wire [5:0]\thresh_val_reg[10]_1 ;
   wire [2:0]\thresh_val_reg[5]_0 ;
   wire [3:0]\thresh_val_reg[7]_0 ;
+  wire [1:0]wah_sel;
+  wire \wah_sel[0]_i_1_n_0 ;
+  wire \wah_sel[1]_i_1_n_0 ;
+  wire \wah_val[1]_i_1_n_0 ;
+  wire \wah_val[2]_i_1_n_0 ;
+  wire \wah_val[3]_i_1_n_0 ;
+  wire [4:0]\wah_val_reg[6]_0 ;
 
   FDRE \btn_d1_reg[0] 
        (.C(clk_out1),
@@ -4331,28 +4340,28 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .D(\delay_sel[1]_i_1_n_0 ),
         .Q(delay_sel[1]),
         .R(rst));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \delay_val[12]_i_1 
        (.I0(delay_sel[0]),
         .I1(delay_sel[1]),
         .O(\delay_val[12]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \delay_val[13]_i_1 
        (.I0(delay_sel[1]),
         .I1(delay_sel[0]),
         .O(\delay_val[13]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \delay_val[14]_i_1 
        (.I0(delay_sel[0]),
         .I1(delay_sel[1]),
         .O(\delay_val[14]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \delay_val[6]_i_1 
@@ -4383,7 +4392,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .D(\delay_val[6]_i_1_n_0 ),
         .Q(\delay_val_reg[14]_0 [0]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][11]_i_15 
@@ -4392,7 +4401,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [9]),
         .I3(\dist_data[1][15]_i_5 [10]),
         .O(\gain_val_reg[1]_3 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][11]_i_17 
@@ -4401,7 +4410,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [8]),
         .I3(\dist_data[1][15]_i_5 [9]),
         .O(\gain_val_reg[1]_4 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][11]_i_19 
@@ -4410,7 +4419,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [7]),
         .I3(\dist_data[1][15]_i_5 [8]),
         .O(\gain_val_reg[1]_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][11]_i_21 
@@ -4419,7 +4428,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [6]),
         .I3(\dist_data[1][15]_i_5 [7]),
         .O(\gain_val_reg[1]_6 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][15]_i_12 
@@ -4438,7 +4447,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I4(Q[2]),
         .I5(Q[1]),
         .O(\gain_val_reg[0]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \dist_data[1][15]_i_15 
@@ -4446,7 +4455,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I1(Q[2]),
         .I2(\dist_data[1][15]_i_5 [12]),
         .O(\gain_val_reg[1]_11 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][15]_i_18 
@@ -4455,7 +4464,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [11]),
         .I3(\dist_data[1][15]_i_5 [12]),
         .O(\gain_val_reg[1]_1 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][15]_i_20 
@@ -4482,7 +4491,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I4(\dist_data[1][15]_i_5 [0]),
         .I5(\dist_data[1][15]_i_5 [1]),
         .O(\dist_data[1][7]_i_12_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][7]_i_13 
@@ -4491,7 +4500,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [2]),
         .I3(\dist_data[1][15]_i_5 [3]),
         .O(\dist_data[1][7]_i_13_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][7]_i_15 
@@ -4500,7 +4509,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [5]),
         .I3(\dist_data[1][15]_i_5 [6]),
         .O(\gain_val_reg[1]_7 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][7]_i_17 
@@ -4509,7 +4518,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [4]),
         .I3(\dist_data[1][15]_i_5 [5]),
         .O(\gain_val_reg[1]_8 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT4 #(
     .INIT(16'h6AC0)) 
     \dist_data[1][7]_i_19 
@@ -4534,7 +4543,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .I2(\dist_data[1][15]_i_5 [4]),
         .I3(Q[0]),
         .O(DI[0]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT5 #(
     .INIT(32'hFFEF0010)) 
     \gain_sel[0]_i_1 
@@ -4654,6 +4663,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
        (.I0(selected_effect[0]),
         .I1(selected_effect[1]),
         .O(led[1]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \led[2]_INST_0 
@@ -4712,7 +4722,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .D(\selected_effect[1]_i_1_n_0 ),
         .Q(selected_effect[1]),
         .R(rst));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT5 #(
     .INIT(32'hFFEF0010)) 
     \thresh_sel[0]_i_1 
@@ -4750,28 +4760,28 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
        (.I0(thresh_sel[1]),
         .I1(thresh_sel[0]),
         .O(\thresh_val[10]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \thresh_val[5]_i_1 
        (.I0(thresh_sel[0]),
         .I1(thresh_sel[1]),
         .O(\thresh_val[5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT2 #(
     .INIT(4'h9)) 
     \thresh_val[7]_i_1 
        (.I0(thresh_sel[0]),
         .I1(thresh_sel[1]),
         .O(\thresh_val[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \thresh_val[8]_i_1 
        (.I0(thresh_sel[0]),
         .I1(thresh_sel[1]),
         .O(\thresh_val[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \thresh_val[9]_i_1 
@@ -4813,6 +4823,88 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config
         .CE(E),
         .D(\thresh_val[9]_i_1_n_0 ),
         .Q(\thresh_val_reg[10]_1 [4]),
+        .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT5 #(
+    .INIT(32'hDFFF2000)) 
+    \wah_sel[0]_i_1 
+       (.I0(selected_effect[0]),
+        .I1(p_0_in),
+        .I2(\btn_d1_reg[2]_0 [1]),
+        .I3(selected_effect[1]),
+        .I4(wah_sel[0]),
+        .O(\wah_sel[0]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hFF7FFFFF00800000)) 
+    \wah_sel[1]_i_1 
+       (.I0(wah_sel[0]),
+        .I1(selected_effect[1]),
+        .I2(\btn_d1_reg[2]_0 [1]),
+        .I3(p_0_in),
+        .I4(selected_effect[0]),
+        .I5(wah_sel[1]),
+        .O(\wah_sel[1]_i_1_n_0 ));
+  FDRE \wah_sel_reg[0] 
+       (.C(clk_out1),
+        .CE(1'b1),
+        .D(\wah_sel[0]_i_1_n_0 ),
+        .Q(wah_sel[0]),
+        .R(rst));
+  FDRE \wah_sel_reg[1] 
+       (.C(clk_out1),
+        .CE(1'b1),
+        .D(\wah_sel[1]_i_1_n_0 ),
+        .Q(wah_sel[1]),
+        .R(rst));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \wah_val[1]_i_1 
+       (.I0(wah_sel[0]),
+        .I1(wah_sel[1]),
+        .O(\wah_val[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT2 #(
+    .INIT(4'h7)) 
+    \wah_val[2]_i_1 
+       (.I0(wah_sel[1]),
+        .I1(wah_sel[0]),
+        .O(\wah_val[2]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \wah_val[3]_i_1 
+       (.I0(wah_sel[1]),
+        .I1(wah_sel[0]),
+        .O(\wah_val[3]_i_1_n_0 ));
+  FDRE \wah_val_reg[1] 
+       (.C(clk_out1),
+        .CE(E),
+        .D(\wah_val[1]_i_1_n_0 ),
+        .Q(\wah_val_reg[6]_0 [0]),
+        .R(1'b0));
+  FDRE \wah_val_reg[2] 
+       (.C(clk_out1),
+        .CE(E),
+        .D(\wah_val[2]_i_1_n_0 ),
+        .Q(\wah_val_reg[6]_0 [1]),
+        .R(1'b0));
+  FDRE \wah_val_reg[3] 
+       (.C(clk_out1),
+        .CE(E),
+        .D(\wah_val[3]_i_1_n_0 ),
+        .Q(\wah_val_reg[6]_0 [2]),
+        .R(1'b0));
+  FDRE \wah_val_reg[5] 
+       (.C(clk_out1),
+        .CE(E),
+        .D(wah_sel[0]),
+        .Q(\wah_val_reg[6]_0 [3]),
+        .R(1'b0));
+  FDRE \wah_val_reg[6] 
+       (.C(clk_out1),
+        .CE(E),
+        .D(wah_sel[1]),
+        .Q(\wah_val_reg[6]_0 [4]),
         .R(1'b0));
 endmodule
 
@@ -5876,11 +5968,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_control
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
-   (douta,
+   (Q,
+    douta,
     read_enable_d1,
+    read_enable,
     read_enable_d2,
-    Q,
-    \sample_cnt_reg[4]_0 ,
+    CO,
+    \row_select_reg[7]_0 ,
+    DI,
+    \row_select_reg[3]_0 ,
     read_enable_d3_reg_0,
     read_enable_d3_reg_1,
     read_enable_d3_reg_2,
@@ -5895,13 +5991,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
     clk_out1,
     ena,
     rst,
-    \coef_offset_reg[3]_0 ,
-    E);
+    increase_reg_0,
+    \coef_offset_reg[0]_0 ,
+    \sample_cnt0_inferred__0/i__carry_0 ,
+    E,
+    \row_select_reg[0]_0 );
+  output [3:0]Q;
   output [42:0]douta;
   output read_enable_d1;
+  output read_enable;
   output read_enable_d2;
-  output [7:0]Q;
-  output \sample_cnt_reg[4]_0 ;
+  output [0:0]CO;
+  output [7:0]\row_select_reg[7]_0 ;
+  output [0:0]DI;
+  output \row_select_reg[3]_0 ;
   output read_enable_d3_reg_0;
   output read_enable_d3_reg_1;
   output read_enable_d3_reg_2;
@@ -5916,28 +6019,31 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
   input clk_out1;
   input ena;
   input rst;
-  input [0:0]\coef_offset_reg[3]_0 ;
+  input increase_reg_0;
+  input [0:0]\coef_offset_reg[0]_0 ;
+  input [4:0]\sample_cnt0_inferred__0/i__carry_0 ;
   input [0:0]E;
+  input [0:0]\row_select_reg[0]_0 ;
 
+  wire [0:0]CO;
+  wire [0:0]DI;
   wire [0:0]E;
-  wire [7:0]Q;
+  wire [3:0]Q;
   wire clk_out1;
   wire \coef_offset[0]_i_1_n_0 ;
-  wire \coef_offset[3]_i_1_n_0 ;
   wire \coef_offset_d2_reg[0]_srl2_n_0 ;
   wire \coef_offset_d2_reg[1]_srl2_n_0 ;
   wire \coef_offset_d2_reg[2]_srl2_n_0 ;
   wire \coef_offset_d2_reg[3]_srl2_n_0 ;
-  wire [3:0]coef_offset_reg;
-  wire [0:0]\coef_offset_reg[3]_0 ;
+  wire [0:0]\coef_offset_reg[0]_0 ;
   wire [42:0]douta;
   wire ena;
-  wire increase_i_1_n_0;
-  wire increase_i_2_n_0;
+  wire i__carry_i_1__1_n_0;
+  wire i__carry_i_2__1_n_0;
+  wire i__carry_i_3__1_n_0;
   wire increase_i_3_n_0;
   wire increase_i_4_n_0;
-  wire increase_i_5_n_0;
-  wire increase_reg_n_0;
+  wire increase_reg_0;
   wire [3:0]load_coef_offset;
   wire load_coef_valid;
   wire [11:0]matrix_pos0;
@@ -5999,6 +6105,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
   wire \matrix_pos_reg_n_0_[8] ;
   wire \matrix_pos_reg_n_0_[9] ;
   wire [3:1]p_0_in__0;
+  wire [8:1]p_0_in__1;
   wire read_enable;
   wire read_enable_d1;
   wire read_enable_d2;
@@ -6018,10 +6125,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
   wire \row_select[4]_i_3_n_0 ;
   wire \row_select[4]_i_4_n_0 ;
   wire \row_select[4]_i_5_n_0 ;
+  wire \row_select[7]_i_3_n_0 ;
   wire \row_select[7]_i_4_n_0 ;
   wire \row_select[7]_i_5_n_0 ;
-  wire \row_select[7]_i_6_n_0 ;
-  wire \row_select[7]_i_7_n_0 ;
+  wire [0:0]\row_select_reg[0]_0 ;
+  wire \row_select_reg[3]_0 ;
   wire \row_select_reg[4]_i_1_n_0 ;
   wire \row_select_reg[4]_i_1_n_1 ;
   wire \row_select_reg[4]_i_1_n_2 ;
@@ -6030,61 +6138,57 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
   wire \row_select_reg[4]_i_1_n_5 ;
   wire \row_select_reg[4]_i_1_n_6 ;
   wire \row_select_reg[4]_i_1_n_7 ;
+  wire [7:0]\row_select_reg[7]_0 ;
   wire \row_select_reg[7]_i_2_n_2 ;
   wire \row_select_reg[7]_i_2_n_3 ;
   wire \row_select_reg[7]_i_2_n_5 ;
   wire \row_select_reg[7]_i_2_n_6 ;
   wire \row_select_reg[7]_i_2_n_7 ;
   wire rst;
-  wire [8:0]sample_cnt;
-  wire \sample_cnt[2]_i_1__0_n_0 ;
-  wire \sample_cnt[8]_i_2_n_0 ;
-  wire [8:0]sample_cnt_0;
-  wire \sample_cnt_reg[4]_0 ;
+  wire [4:0]\sample_cnt0_inferred__0/i__carry_0 ;
+  wire \sample_cnt0_inferred__0/i__carry_n_2 ;
+  wire \sample_cnt0_inferred__0/i__carry_n_3 ;
+  wire \sample_cnt[0]_i_1_n_0 ;
+  wire \sample_cnt[8]_i_1_n_0 ;
+  wire \sample_cnt[8]_i_3_n_0 ;
+  wire [8:0]sample_cnt_reg;
   wire temp_a_coef;
   wire [3:3]NLW_matrix_pos1__0_carry__1_CO_UNCONNECTED;
   wire [3:3]\NLW_matrix_pos_reg[11]_i_1_CO_UNCONNECTED ;
   wire [3:2]\NLW_row_select_reg[7]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_row_select_reg[7]_i_2_O_UNCONNECTED ;
+  wire [3:3]\NLW_sample_cnt0_inferred__0/i__carry_CO_UNCONNECTED ;
+  wire [3:0]\NLW_sample_cnt0_inferred__0/i__carry_O_UNCONNECTED ;
 
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \coef_offset[0]_i_1 
-       (.I0(coef_offset_reg[0]),
+       (.I0(Q[0]),
         .O(\coef_offset[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \coef_offset[1]_i_1 
-       (.I0(coef_offset_reg[1]),
-        .I1(coef_offset_reg[0]),
+       (.I0(Q[1]),
+        .I1(Q[0]),
         .O(p_0_in__0[1]));
   (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT3 #(
-    .INIT(8'h6A)) 
+    .INIT(8'h78)) 
     \coef_offset[2]_i_1 
-       (.I0(coef_offset_reg[2]),
-        .I1(coef_offset_reg[0]),
-        .I2(coef_offset_reg[1]),
+       (.I0(Q[1]),
+        .I1(Q[0]),
+        .I2(Q[2]),
         .O(p_0_in__0[2]));
-  LUT5 #(
-    .INIT(32'hAAAA8AAA)) 
-    \coef_offset[3]_i_1 
-       (.I0(read_enable),
-        .I1(coef_offset_reg[2]),
-        .I2(coef_offset_reg[3]),
-        .I3(coef_offset_reg[1]),
-        .I4(coef_offset_reg[0]),
-        .O(\coef_offset[3]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT4 #(
-    .INIT(16'h6AAA)) 
+    .INIT(16'h6CCC)) 
     \coef_offset[3]_i_2 
-       (.I0(coef_offset_reg[3]),
-        .I1(coef_offset_reg[1]),
-        .I2(coef_offset_reg[0]),
-        .I3(coef_offset_reg[2]),
+       (.I0(Q[2]),
+        .I1(Q[3]),
+        .I2(Q[0]),
+        .I3(Q[1]),
         .O(p_0_in__0[3]));
   (* srl_bus_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg " *) 
   (* srl_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg[0]_srl2 " *) 
@@ -6095,7 +6199,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .A3(1'b0),
         .CE(1'b1),
         .CLK(clk_out1),
-        .D(coef_offset_reg[0]),
+        .D(Q[0]),
         .Q(\coef_offset_d2_reg[0]_srl2_n_0 ));
   (* srl_bus_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg " *) 
   (* srl_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg[1]_srl2 " *) 
@@ -6106,7 +6210,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .A3(1'b0),
         .CE(1'b1),
         .CLK(clk_out1),
-        .D(coef_offset_reg[1]),
+        .D(Q[1]),
         .Q(\coef_offset_d2_reg[1]_srl2_n_0 ));
   (* srl_bus_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg " *) 
   (* srl_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg[2]_srl2 " *) 
@@ -6117,7 +6221,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .A3(1'b0),
         .CE(1'b1),
         .CLK(clk_out1),
-        .D(coef_offset_reg[2]),
+        .D(Q[2]),
         .Q(\coef_offset_d2_reg[2]_srl2_n_0 ));
   (* srl_bus_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg " *) 
   (* srl_name = "\inst/inst_pipe/inst_wah/inst_coe/coef_offset_d2_reg[3]_srl2 " *) 
@@ -6128,7 +6232,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .A3(1'b0),
         .CE(1'b1),
         .CLK(clk_out1),
-        .D(coef_offset_reg[3]),
+        .D(Q[3]),
         .Q(\coef_offset_d2_reg[3]_srl2_n_0 ));
   FDRE \coef_offset_d3_reg[0] 
        (.C(clk_out1),
@@ -6156,77 +6260,87 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .R(1'b0));
   FDRE \coef_offset_reg[0] 
        (.C(clk_out1),
-        .CE(\coef_offset[3]_i_1_n_0 ),
+        .CE(E),
         .D(\coef_offset[0]_i_1_n_0 ),
-        .Q(coef_offset_reg[0]),
-        .R(\coef_offset_reg[3]_0 ));
+        .Q(Q[0]),
+        .R(\coef_offset_reg[0]_0 ));
   FDRE \coef_offset_reg[1] 
        (.C(clk_out1),
-        .CE(\coef_offset[3]_i_1_n_0 ),
+        .CE(E),
         .D(p_0_in__0[1]),
-        .Q(coef_offset_reg[1]),
-        .R(\coef_offset_reg[3]_0 ));
+        .Q(Q[1]),
+        .R(\coef_offset_reg[0]_0 ));
   FDRE \coef_offset_reg[2] 
        (.C(clk_out1),
-        .CE(\coef_offset[3]_i_1_n_0 ),
+        .CE(E),
         .D(p_0_in__0[2]),
-        .Q(coef_offset_reg[2]),
-        .R(\coef_offset_reg[3]_0 ));
+        .Q(Q[2]),
+        .R(\coef_offset_reg[0]_0 ));
   FDRE \coef_offset_reg[3] 
        (.C(clk_out1),
-        .CE(\coef_offset[3]_i_1_n_0 ),
+        .CE(E),
         .D(p_0_in__0[3]),
-        .Q(coef_offset_reg[3]),
-        .R(\coef_offset_reg[3]_0 ));
+        .Q(Q[3]),
+        .R(\coef_offset_reg[0]_0 ));
+  LUT4 #(
+    .INIT(16'h4004)) 
+    i__carry_i_1__1
+       (.I0(sample_cnt_reg[8]),
+        .I1(sample_cnt_reg[7]),
+        .I2(sample_cnt_reg[6]),
+        .I3(\sample_cnt0_inferred__0/i__carry_0 [4]),
+        .O(i__carry_i_1__1_n_0));
   LUT5 #(
-    .INIT(32'hFDFD0022)) 
-    increase_i_1
-       (.I0(\coef_offset_reg[3]_0 ),
-        .I1(\sample_cnt_reg[4]_0 ),
-        .I2(increase_i_2_n_0),
-        .I3(increase_i_3_n_0),
-        .I4(increase_reg_n_0),
-        .O(increase_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+    .INIT(32'h82000082)) 
+    i__carry_i_2__1
+       (.I0(sample_cnt_reg[4]),
+        .I1(\sample_cnt0_inferred__0/i__carry_0 [3]),
+        .I2(sample_cnt_reg[5]),
+        .I3(sample_cnt_reg[3]),
+        .I4(\sample_cnt0_inferred__0/i__carry_0 [2]),
+        .O(i__carry_i_2__1_n_0));
   LUT5 #(
-    .INIT(32'hFFFFEFFF)) 
+    .INIT(32'h41000041)) 
+    i__carry_i_3__1
+       (.I0(sample_cnt_reg[0]),
+        .I1(\sample_cnt0_inferred__0/i__carry_0 [1]),
+        .I2(sample_cnt_reg[2]),
+        .I3(sample_cnt_reg[1]),
+        .I4(\sample_cnt0_inferred__0/i__carry_0 [0]),
+        .O(i__carry_i_3__1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  LUT5 #(
+    .INIT(32'h08300800)) 
     increase_i_2
-       (.I0(Q[2]),
-        .I1(Q[0]),
-        .I2(Q[5]),
-        .I3(Q[7]),
+       (.I0(increase_i_3_n_0),
+        .I1(\row_select_reg[7]_0 [3]),
+        .I2(\row_select_reg[7]_0 [0]),
+        .I3(DI),
         .I4(increase_i_4_n_0),
-        .O(increase_i_2_n_0));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
+        .O(\row_select_reg[3]_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
     increase_i_3
-       (.I0(Q[6]),
-        .I1(Q[4]),
-        .I2(Q[5]),
-        .I3(Q[7]),
-        .I4(increase_i_5_n_0),
+       (.I0(\row_select_reg[7]_0 [7]),
+        .I1(\row_select_reg[7]_0 [6]),
+        .I2(\row_select_reg[7]_0 [5]),
+        .I3(\row_select_reg[7]_0 [4]),
         .O(increase_i_3_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT4 #(
-    .INIT(16'hFF7F)) 
+    .INIT(16'h0001)) 
     increase_i_4
-       (.I0(Q[4]),
-        .I1(Q[6]),
-        .I2(Q[3]),
-        .I3(Q[1]),
+       (.I0(\row_select_reg[7]_0 [7]),
+        .I1(\row_select_reg[7]_0 [6]),
+        .I2(\row_select_reg[7]_0 [5]),
+        .I3(\row_select_reg[7]_0 [4]),
         .O(increase_i_4_n_0));
-  LUT4 #(
-    .INIT(16'hFFEF)) 
-    increase_i_5
-       (.I0(Q[3]),
-        .I1(Q[1]),
-        .I2(Q[0]),
-        .I3(Q[2]),
-        .O(increase_i_5_n_0));
   FDSE increase_reg
        (.C(clk_out1),
         .CE(1'b1),
-        .D(increase_i_1_n_0),
-        .Q(increase_reg_n_0),
+        .D(increase_reg_0),
+        .Q(DI),
         .S(rst));
   (* CHECK_LICENSE_TYPE = "blk_mem_gen_2,blk_mem_gen_v8_4_3,{}" *) 
   (* downgradeipidentifiedwarnings = "yes" *) 
@@ -6241,9 +6355,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
        (.CI(1'b0),
         .CO({matrix_pos1__0_carry_n_0,matrix_pos1__0_carry_n_1,matrix_pos1__0_carry_n_2,matrix_pos1__0_carry_n_3}),
         .CYINIT(1'b0),
-        .DI({matrix_pos1__0_carry_i_1_n_0,Q[0],1'b0,1'b1}),
+        .DI({matrix_pos1__0_carry_i_1_n_0,\row_select_reg[7]_0 [0],1'b0,1'b1}),
         .O(matrix_pos1[3:0]),
-        .S({matrix_pos1__0_carry_i_2_n_0,matrix_pos1__0_carry_i_3_n_0,matrix_pos1__0_carry_i_4_n_0,Q[0]}));
+        .S({matrix_pos1__0_carry_i_2_n_0,matrix_pos1__0_carry_i_3_n_0,matrix_pos1__0_carry_i_4_n_0,\row_select_reg[7]_0 [0]}));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 matrix_pos1__0_carry__0
        (.CI(matrix_pos1__0_carry_n_0),
@@ -6252,169 +6366,166 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .DI({matrix_pos1__0_carry__0_i_1_n_0,matrix_pos1__0_carry__0_i_2_n_0,matrix_pos1__0_carry__0_i_3_n_0,matrix_pos1__0_carry__0_i_4_n_0}),
         .O(matrix_pos1[7:4]),
         .S({matrix_pos1__0_carry__0_i_5_n_0,matrix_pos1__0_carry__0_i_6_n_0,matrix_pos1__0_carry__0_i_7_n_0,matrix_pos1__0_carry__0_i_8_n_0}));
-  (* HLUTNM = "lutpair1" *) 
   LUT3 #(
     .INIT(8'h2B)) 
     matrix_pos1__0_carry__0_i_1
-       (.I0(Q[2]),
-        .I1(Q[6]),
-        .I2(Q[4]),
+       (.I0(\row_select_reg[7]_0 [2]),
+        .I1(\row_select_reg[7]_0 [6]),
+        .I2(\row_select_reg[7]_0 [4]),
         .O(matrix_pos1__0_carry__0_i_1_n_0));
-  (* HLUTNM = "lutpair0" *) 
   LUT3 #(
     .INIT(8'h4D)) 
     matrix_pos1__0_carry__0_i_2
-       (.I0(Q[5]),
-        .I1(Q[1]),
-        .I2(Q[3]),
+       (.I0(\row_select_reg[7]_0 [5]),
+        .I1(\row_select_reg[7]_0 [1]),
+        .I2(\row_select_reg[7]_0 [3]),
         .O(matrix_pos1__0_carry__0_i_2_n_0));
-  (* HLUTNM = "lutpair110" *) 
+  (* HLUTNM = "lutpair0" *) 
   LUT3 #(
     .INIT(8'h4D)) 
     matrix_pos1__0_carry__0_i_3
-       (.I0(Q[2]),
-        .I1(Q[0]),
-        .I2(Q[4]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [0]),
+        .I2(\row_select_reg[7]_0 [2]),
         .O(matrix_pos1__0_carry__0_i_3_n_0));
   LUT3 #(
     .INIT(8'h96)) 
     matrix_pos1__0_carry__0_i_4
-       (.I0(Q[4]),
-        .I1(Q[0]),
-        .I2(Q[2]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [0]),
+        .I2(\row_select_reg[7]_0 [2]),
         .O(matrix_pos1__0_carry__0_i_4_n_0));
   LUT4 #(
     .INIT(16'h6996)) 
     matrix_pos1__0_carry__0_i_5
        (.I0(matrix_pos1__0_carry__0_i_1_n_0),
-        .I1(Q[5]),
-        .I2(Q[7]),
-        .I3(Q[3]),
+        .I1(\row_select_reg[7]_0 [3]),
+        .I2(\row_select_reg[7]_0 [5]),
+        .I3(\row_select_reg[7]_0 [7]),
         .O(matrix_pos1__0_carry__0_i_5_n_0));
-  (* HLUTNM = "lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h6996)) 
+  LUT6 #(
+    .INIT(64'hB24D4DB24DB2B24D)) 
     matrix_pos1__0_carry__0_i_6
-       (.I0(Q[2]),
-        .I1(Q[6]),
-        .I2(Q[4]),
-        .I3(matrix_pos1__0_carry__0_i_2_n_0),
+       (.I0(\row_select_reg[7]_0 [3]),
+        .I1(\row_select_reg[7]_0 [1]),
+        .I2(\row_select_reg[7]_0 [5]),
+        .I3(\row_select_reg[7]_0 [2]),
+        .I4(\row_select_reg[7]_0 [6]),
+        .I5(\row_select_reg[7]_0 [4]),
         .O(matrix_pos1__0_carry__0_i_6_n_0));
-  (* HLUTNM = "lutpair0" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     matrix_pos1__0_carry__0_i_7
-       (.I0(Q[5]),
-        .I1(Q[1]),
-        .I2(Q[3]),
-        .I3(matrix_pos1__0_carry__0_i_3_n_0),
+       (.I0(matrix_pos1__0_carry__0_i_3_n_0),
+        .I1(\row_select_reg[7]_0 [3]),
+        .I2(\row_select_reg[7]_0 [5]),
+        .I3(\row_select_reg[7]_0 [1]),
         .O(matrix_pos1__0_carry__0_i_7_n_0));
-  (* HLUTNM = "lutpair110" *) 
+  (* HLUTNM = "lutpair0" *) 
   LUT5 #(
     .INIT(32'h96969669)) 
     matrix_pos1__0_carry__0_i_8
-       (.I0(Q[2]),
-        .I1(Q[0]),
-        .I2(Q[4]),
-        .I3(Q[3]),
-        .I4(Q[1]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [0]),
+        .I2(\row_select_reg[7]_0 [2]),
+        .I3(\row_select_reg[7]_0 [3]),
+        .I4(\row_select_reg[7]_0 [1]),
         .O(matrix_pos1__0_carry__0_i_8_n_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 matrix_pos1__0_carry__1
        (.CI(matrix_pos1__0_carry__0_n_0),
         .CO({NLW_matrix_pos1__0_carry__1_CO_UNCONNECTED[3],matrix_pos1__0_carry__1_n_1,matrix_pos1__0_carry__1_n_2,matrix_pos1__0_carry__1_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b0,Q[6],matrix_pos1__0_carry__1_i_1_n_0,matrix_pos1__0_carry__1_i_2_n_0}),
+        .DI({1'b0,\row_select_reg[7]_0 [6],matrix_pos1__0_carry__1_i_1_n_0,matrix_pos1__0_carry__1_i_2_n_0}),
         .O(matrix_pos1[11:8]),
         .S({matrix_pos1__0_carry__1_i_3_n_0,matrix_pos1__0_carry__1_i_4_n_0,matrix_pos1__0_carry__1_i_5_n_0,matrix_pos1__0_carry__1_i_6_n_0}));
   LUT2 #(
-    .INIT(4'h6)) 
+    .INIT(4'hB)) 
     matrix_pos1__0_carry__1_i_1
-       (.I0(Q[5]),
-        .I1(Q[7]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [6]),
         .O(matrix_pos1__0_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     matrix_pos1__0_carry__1_i_2
-       (.I0(Q[6]),
-        .I1(Q[4]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [6]),
         .O(matrix_pos1__0_carry__1_i_2_n_0));
   LUT1 #(
     .INIT(2'h1)) 
     matrix_pos1__0_carry__1_i_3
-       (.I0(Q[7]),
+       (.I0(\row_select_reg[7]_0 [7]),
         .O(matrix_pos1__0_carry__1_i_3_n_0));
   LUT3 #(
     .INIT(8'h2D)) 
     matrix_pos1__0_carry__1_i_4
-       (.I0(Q[7]),
-        .I1(Q[5]),
-        .I2(Q[6]),
+       (.I0(\row_select_reg[7]_0 [7]),
+        .I1(\row_select_reg[7]_0 [5]),
+        .I2(\row_select_reg[7]_0 [6]),
         .O(matrix_pos1__0_carry__1_i_4_n_0));
   LUT4 #(
     .INIT(16'hD22D)) 
     matrix_pos1__0_carry__1_i_5
-       (.I0(Q[6]),
-        .I1(Q[4]),
-        .I2(Q[7]),
-        .I3(Q[5]),
+       (.I0(\row_select_reg[7]_0 [6]),
+        .I1(\row_select_reg[7]_0 [4]),
+        .I2(\row_select_reg[7]_0 [7]),
+        .I3(\row_select_reg[7]_0 [5]),
         .O(matrix_pos1__0_carry__1_i_5_n_0));
   LUT5 #(
-    .INIT(32'h718E8E71)) 
+    .INIT(32'h2BD4D42B)) 
     matrix_pos1__0_carry__1_i_6
-       (.I0(Q[7]),
-        .I1(Q[5]),
-        .I2(Q[3]),
-        .I3(Q[4]),
-        .I4(Q[6]),
+       (.I0(\row_select_reg[7]_0 [3]),
+        .I1(\row_select_reg[7]_0 [5]),
+        .I2(\row_select_reg[7]_0 [7]),
+        .I3(\row_select_reg[7]_0 [6]),
+        .I4(\row_select_reg[7]_0 [4]),
         .O(matrix_pos1__0_carry__1_i_6_n_0));
-  LUT2 #(
-    .INIT(4'h6)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     matrix_pos1__0_carry_i_1
-       (.I0(Q[1]),
-        .I1(Q[3]),
+       (.I0(\row_select_reg[7]_0 [0]),
         .O(matrix_pos1__0_carry_i_1_n_0));
   LUT3 #(
     .INIT(8'h69)) 
     matrix_pos1__0_carry_i_2
-       (.I0(Q[0]),
-        .I1(Q[3]),
-        .I2(Q[1]),
+       (.I0(\row_select_reg[7]_0 [0]),
+        .I1(\row_select_reg[7]_0 [1]),
+        .I2(\row_select_reg[7]_0 [3]),
         .O(matrix_pos1__0_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     matrix_pos1__0_carry_i_3
-       (.I0(Q[0]),
-        .I1(Q[2]),
+       (.I0(\row_select_reg[7]_0 [0]),
+        .I1(\row_select_reg[7]_0 [2]),
         .O(matrix_pos1__0_carry_i_3_n_0));
   LUT1 #(
     .INIT(2'h1)) 
     matrix_pos1__0_carry_i_4
-       (.I0(Q[1]),
+       (.I0(\row_select_reg[7]_0 [1]),
         .O(matrix_pos1__0_carry_i_4_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     \matrix_pos[3]_i_2 
        (.I0(matrix_pos1[3]),
-        .I1(coef_offset_reg[3]),
+        .I1(Q[3]),
         .O(\matrix_pos[3]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \matrix_pos[3]_i_3 
        (.I0(matrix_pos1[2]),
-        .I1(coef_offset_reg[2]),
+        .I1(Q[2]),
         .O(\matrix_pos[3]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \matrix_pos[3]_i_4 
        (.I0(matrix_pos1[1]),
-        .I1(coef_offset_reg[1]),
+        .I1(Q[1]),
         .O(\matrix_pos[3]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \matrix_pos[3]_i_5 
        (.I0(matrix_pos1[0]),
-        .I1(coef_offset_reg[0]),
+        .I1(Q[0]),
         .O(\matrix_pos[3]_i_5_n_0 ));
   FDRE \matrix_pos_reg[0] 
        (.C(clk_out1),
@@ -6630,14 +6741,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .Q(load_coef_valid),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFFBF0000)) 
+    .INIT(64'hFFFFFFFFAAAAA2AA)) 
     read_enable_i_1
-       (.I0(coef_offset_reg[0]),
-        .I1(coef_offset_reg[1]),
-        .I2(coef_offset_reg[3]),
-        .I3(coef_offset_reg[2]),
-        .I4(read_enable),
-        .I5(\coef_offset_reg[3]_0 ),
+       (.I0(read_enable),
+        .I1(Q[1]),
+        .I2(Q[0]),
+        .I3(Q[3]),
+        .I4(Q[2]),
+        .I5(\coef_offset_reg[0]_0 ),
         .O(read_enable_i_1_n_0));
   FDRE read_enable_reg
        (.C(clk_out1),
@@ -6645,276 +6756,268 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients
         .D(read_enable_i_1_n_0),
         .Q(read_enable),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \row_select[0]_i_1 
-       (.I0(Q[0]),
+       (.I0(\row_select_reg[7]_0 [0]),
         .O(\row_select[0]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[4]_i_2 
-       (.I0(Q[3]),
-        .I1(Q[4]),
+       (.I0(\row_select_reg[7]_0 [3]),
+        .I1(\row_select_reg[7]_0 [4]),
         .O(\row_select[4]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[4]_i_3 
-       (.I0(Q[2]),
-        .I1(Q[3]),
+       (.I0(\row_select_reg[7]_0 [2]),
+        .I1(\row_select_reg[7]_0 [3]),
         .O(\row_select[4]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[4]_i_4 
-       (.I0(Q[1]),
-        .I1(Q[2]),
+       (.I0(\row_select_reg[7]_0 [1]),
+        .I1(\row_select_reg[7]_0 [2]),
         .O(\row_select[4]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[4]_i_5 
-       (.I0(Q[1]),
-        .I1(increase_reg_n_0),
+       (.I0(\row_select_reg[7]_0 [1]),
+        .I1(DI),
         .O(\row_select[4]_i_5_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFEF)) 
+  LUT2 #(
+    .INIT(4'h9)) 
     \row_select[7]_i_3 
-       (.I0(\row_select[7]_i_7_n_0 ),
-        .I1(sample_cnt[4]),
-        .I2(sample_cnt[3]),
-        .I3(sample_cnt[2]),
-        .O(\sample_cnt_reg[4]_0 ));
+       (.I0(\row_select_reg[7]_0 [6]),
+        .I1(\row_select_reg[7]_0 [7]),
+        .O(\row_select[7]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[7]_i_4 
-       (.I0(Q[6]),
-        .I1(Q[7]),
+       (.I0(\row_select_reg[7]_0 [5]),
+        .I1(\row_select_reg[7]_0 [6]),
         .O(\row_select[7]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \row_select[7]_i_5 
-       (.I0(Q[5]),
-        .I1(Q[6]),
+       (.I0(\row_select_reg[7]_0 [4]),
+        .I1(\row_select_reg[7]_0 [5]),
         .O(\row_select[7]_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h9)) 
-    \row_select[7]_i_6 
-       (.I0(Q[4]),
-        .I1(Q[5]),
-        .O(\row_select[7]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFEFFFFFFFFFF)) 
-    \row_select[7]_i_7 
-       (.I0(sample_cnt[1]),
-        .I1(sample_cnt[0]),
-        .I2(sample_cnt[5]),
-        .I3(sample_cnt[7]),
-        .I4(sample_cnt[8]),
-        .I5(sample_cnt[6]),
-        .O(\row_select[7]_i_7_n_0 ));
   FDRE \row_select_reg[0] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select[0]_i_1_n_0 ),
-        .Q(Q[0]),
+        .Q(\row_select_reg[7]_0 [0]),
         .R(rst));
   FDRE \row_select_reg[1] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[4]_i_1_n_7 ),
-        .Q(Q[1]),
+        .Q(\row_select_reg[7]_0 [1]),
         .R(rst));
   FDRE \row_select_reg[2] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[4]_i_1_n_6 ),
-        .Q(Q[2]),
+        .Q(\row_select_reg[7]_0 [2]),
         .R(rst));
   FDSE \row_select_reg[3] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[4]_i_1_n_5 ),
-        .Q(Q[3]),
+        .Q(\row_select_reg[7]_0 [3]),
         .S(rst));
   FDSE \row_select_reg[4] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[4]_i_1_n_4 ),
-        .Q(Q[4]),
+        .Q(\row_select_reg[7]_0 [4]),
         .S(rst));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 \row_select_reg[4]_i_1 
        (.CI(1'b0),
         .CO({\row_select_reg[4]_i_1_n_0 ,\row_select_reg[4]_i_1_n_1 ,\row_select_reg[4]_i_1_n_2 ,\row_select_reg[4]_i_1_n_3 }),
-        .CYINIT(Q[0]),
-        .DI({Q[3:1],increase_reg_n_0}),
+        .CYINIT(\row_select_reg[7]_0 [0]),
+        .DI({\row_select_reg[7]_0 [3:1],DI}),
         .O({\row_select_reg[4]_i_1_n_4 ,\row_select_reg[4]_i_1_n_5 ,\row_select_reg[4]_i_1_n_6 ,\row_select_reg[4]_i_1_n_7 }),
         .S({\row_select[4]_i_2_n_0 ,\row_select[4]_i_3_n_0 ,\row_select[4]_i_4_n_0 ,\row_select[4]_i_5_n_0 }));
   FDSE \row_select_reg[5] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[7]_i_2_n_7 ),
-        .Q(Q[5]),
+        .Q(\row_select_reg[7]_0 [5]),
         .S(rst));
   FDSE \row_select_reg[6] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[7]_i_2_n_6 ),
-        .Q(Q[6]),
+        .Q(\row_select_reg[7]_0 [6]),
         .S(rst));
   FDSE \row_select_reg[7] 
        (.C(clk_out1),
-        .CE(E),
+        .CE(\row_select_reg[0]_0 ),
         .D(\row_select_reg[7]_i_2_n_5 ),
-        .Q(Q[7]),
+        .Q(\row_select_reg[7]_0 [7]),
         .S(rst));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-8 {cell *THIS*}}" *) 
   CARRY4 \row_select_reg[7]_i_2 
        (.CI(\row_select_reg[4]_i_1_n_0 ),
         .CO({\NLW_row_select_reg[7]_i_2_CO_UNCONNECTED [3:2],\row_select_reg[7]_i_2_n_2 ,\row_select_reg[7]_i_2_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,Q[5:4]}),
+        .DI({1'b0,1'b0,\row_select_reg[7]_0 [5:4]}),
         .O({\NLW_row_select_reg[7]_i_2_O_UNCONNECTED [3],\row_select_reg[7]_i_2_n_5 ,\row_select_reg[7]_i_2_n_6 ,\row_select_reg[7]_i_2_n_7 }),
-        .S({1'b0,\row_select[7]_i_4_n_0 ,\row_select[7]_i_5_n_0 ,\row_select[7]_i_6_n_0 }));
-  LUT2 #(
-    .INIT(4'h2)) 
+        .S({1'b0,\row_select[7]_i_3_n_0 ,\row_select[7]_i_4_n_0 ,\row_select[7]_i_5_n_0 }));
+  CARRY4 \sample_cnt0_inferred__0/i__carry 
+       (.CI(1'b0),
+        .CO({\NLW_sample_cnt0_inferred__0/i__carry_CO_UNCONNECTED [3],CO,\sample_cnt0_inferred__0/i__carry_n_2 ,\sample_cnt0_inferred__0/i__carry_n_3 }),
+        .CYINIT(1'b1),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(\NLW_sample_cnt0_inferred__0/i__carry_O_UNCONNECTED [3:0]),
+        .S({1'b0,i__carry_i_1__1_n_0,i__carry_i_2__1_n_0,i__carry_i_3__1_n_0}));
+  LUT1 #(
+    .INIT(2'h1)) 
     \sample_cnt[0]_i_1 
-       (.I0(\sample_cnt_reg[4]_0 ),
-        .I1(sample_cnt[0]),
-        .O(sample_cnt_0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+       (.I0(sample_cnt_reg[0]),
+        .O(\sample_cnt[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \sample_cnt[1]_i_1__0 
-       (.I0(sample_cnt[0]),
-        .I1(sample_cnt[1]),
-        .O(sample_cnt_0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+    \sample_cnt[1]_i_1 
+       (.I0(sample_cnt_reg[0]),
+        .I1(sample_cnt_reg[1]),
+        .O(p_0_in__1[1]));
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT3 #(
-    .INIT(8'h6A)) 
-    \sample_cnt[2]_i_1__0 
-       (.I0(sample_cnt[2]),
-        .I1(sample_cnt[1]),
-        .I2(sample_cnt[0]),
-        .O(\sample_cnt[2]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
-  LUT5 #(
-    .INIT(32'h2AAA8000)) 
+    .INIT(8'h78)) 
+    \sample_cnt[2]_i_1 
+       (.I0(sample_cnt_reg[1]),
+        .I1(sample_cnt_reg[0]),
+        .I2(sample_cnt_reg[2]),
+        .O(p_0_in__1[2]));
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
     \sample_cnt[3]_i_1 
-       (.I0(\sample_cnt_reg[4]_0 ),
-        .I1(sample_cnt[1]),
-        .I2(sample_cnt[0]),
-        .I3(sample_cnt[2]),
-        .I4(sample_cnt[3]),
-        .O(sample_cnt_0[3]));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+       (.I0(sample_cnt_reg[2]),
+        .I1(sample_cnt_reg[0]),
+        .I2(sample_cnt_reg[1]),
+        .I3(sample_cnt_reg[3]),
+        .O(p_0_in__1[3]));
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT5 #(
-    .INIT(32'h6AAAAAAA)) 
-    \sample_cnt[4]_i_1__0 
-       (.I0(sample_cnt[4]),
-        .I1(sample_cnt[1]),
-        .I2(sample_cnt[0]),
-        .I3(sample_cnt[2]),
-        .I4(sample_cnt[3]),
-        .O(sample_cnt_0[4]));
+    .INIT(32'h7FFF8000)) 
+    \sample_cnt[4]_i_1 
+       (.I0(sample_cnt_reg[3]),
+        .I1(sample_cnt_reg[1]),
+        .I2(sample_cnt_reg[0]),
+        .I3(sample_cnt_reg[2]),
+        .I4(sample_cnt_reg[4]),
+        .O(p_0_in__1[4]));
   LUT6 #(
-    .INIT(64'h6AAAAAAAAAAAAAAA)) 
+    .INIT(64'h7FFFFFFF80000000)) 
     \sample_cnt[5]_i_1 
-       (.I0(sample_cnt[5]),
-        .I1(sample_cnt[3]),
-        .I2(sample_cnt[2]),
-        .I3(sample_cnt[0]),
-        .I4(sample_cnt[1]),
-        .I5(sample_cnt[4]),
-        .O(sample_cnt_0[5]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
-  LUT3 #(
-    .INIT(8'h82)) 
+       (.I0(sample_cnt_reg[4]),
+        .I1(sample_cnt_reg[2]),
+        .I2(sample_cnt_reg[0]),
+        .I3(sample_cnt_reg[1]),
+        .I4(sample_cnt_reg[3]),
+        .I5(sample_cnt_reg[5]),
+        .O(p_0_in__1[5]));
+  LUT2 #(
+    .INIT(4'h9)) 
     \sample_cnt[6]_i_1 
-       (.I0(\sample_cnt_reg[4]_0 ),
-        .I1(\sample_cnt[8]_i_2_n_0 ),
-        .I2(sample_cnt[6]),
-        .O(sample_cnt_0[6]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
-  LUT4 #(
-    .INIT(16'hA208)) 
+       (.I0(\sample_cnt[8]_i_3_n_0 ),
+        .I1(sample_cnt_reg[6]),
+        .O(p_0_in__1[6]));
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  LUT3 #(
+    .INIT(8'hD2)) 
     \sample_cnt[7]_i_1 
-       (.I0(\sample_cnt_reg[4]_0 ),
-        .I1(sample_cnt[6]),
-        .I2(\sample_cnt[8]_i_2_n_0 ),
-        .I3(sample_cnt[7]),
-        .O(sample_cnt_0[7]));
-  LUT4 #(
-    .INIT(16'hAA6A)) 
+       (.I0(sample_cnt_reg[6]),
+        .I1(\sample_cnt[8]_i_3_n_0 ),
+        .I2(sample_cnt_reg[7]),
+        .O(p_0_in__1[7]));
+  LUT3 #(
+    .INIT(8'hF8)) 
     \sample_cnt[8]_i_1 
-       (.I0(sample_cnt[8]),
-        .I1(sample_cnt[7]),
-        .I2(sample_cnt[6]),
-        .I3(\sample_cnt[8]_i_2_n_0 ),
-        .O(sample_cnt_0[8]));
+       (.I0(CO),
+        .I1(\coef_offset_reg[0]_0 ),
+        .I2(rst),
+        .O(\sample_cnt[8]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  LUT4 #(
+    .INIT(16'hDF20)) 
+    \sample_cnt[8]_i_2 
+       (.I0(sample_cnt_reg[7]),
+        .I1(\sample_cnt[8]_i_3_n_0 ),
+        .I2(sample_cnt_reg[6]),
+        .I3(sample_cnt_reg[8]),
+        .O(p_0_in__1[8]));
   LUT6 #(
     .INIT(64'h7FFFFFFFFFFFFFFF)) 
-    \sample_cnt[8]_i_2 
-       (.I0(sample_cnt[5]),
-        .I1(sample_cnt[3]),
-        .I2(sample_cnt[2]),
-        .I3(sample_cnt[0]),
-        .I4(sample_cnt[1]),
-        .I5(sample_cnt[4]),
-        .O(\sample_cnt[8]_i_2_n_0 ));
+    \sample_cnt[8]_i_3 
+       (.I0(sample_cnt_reg[4]),
+        .I1(sample_cnt_reg[2]),
+        .I2(sample_cnt_reg[0]),
+        .I3(sample_cnt_reg[1]),
+        .I4(sample_cnt_reg[3]),
+        .I5(sample_cnt_reg[5]),
+        .O(\sample_cnt[8]_i_3_n_0 ));
   FDRE \sample_cnt_reg[0] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[0]),
-        .Q(sample_cnt[0]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(\sample_cnt[0]_i_1_n_0 ),
+        .Q(sample_cnt_reg[0]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[1] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[1]),
-        .Q(sample_cnt[1]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[1]),
+        .Q(sample_cnt_reg[1]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[2] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(\sample_cnt[2]_i_1__0_n_0 ),
-        .Q(sample_cnt[2]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[2]),
+        .Q(sample_cnt_reg[2]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[3] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[3]),
-        .Q(sample_cnt[3]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[3]),
+        .Q(sample_cnt_reg[3]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[4] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[4]),
-        .Q(sample_cnt[4]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[4]),
+        .Q(sample_cnt_reg[4]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[5] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[5]),
-        .Q(sample_cnt[5]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[5]),
+        .Q(sample_cnt_reg[5]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[6] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[6]),
-        .Q(sample_cnt[6]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[6]),
+        .Q(sample_cnt_reg[6]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[7] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[7]),
-        .Q(sample_cnt[7]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[7]),
+        .Q(sample_cnt_reg[7]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
   FDRE \sample_cnt_reg[8] 
        (.C(clk_out1),
-        .CE(\coef_offset_reg[3]_0 ),
-        .D(sample_cnt_0[8]),
-        .Q(sample_cnt[8]),
-        .R(rst));
+        .CE(\coef_offset_reg[0]_0 ),
+        .D(p_0_in__1[8]),
+        .Q(sample_cnt_reg[8]),
+        .R(\sample_cnt[8]_i_1_n_0 ));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
@@ -6955,15 +7058,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
   wire i__carry__0_i_6__0_n_0;
   wire i__carry__0_i_7__0_n_0;
   wire i__carry__0_i_8__0_n_0;
-  wire i__carry_i_1__1_n_0;
   wire i__carry_i_1__2_n_0;
-  wire i__carry_i_1__8_n_0;
-  wire i__carry_i_2__1_n_0;
+  wire i__carry_i_1__3_n_0;
+  wire i__carry_i_1__9_n_0;
   wire i__carry_i_2__2_n_0;
-  wire i__carry_i_2__8_n_0;
-  wire i__carry_i_3__1_n_0;
+  wire i__carry_i_2__3_n_0;
+  wire i__carry_i_2__9_n_0;
   wire i__carry_i_3__2_n_0;
-  wire i__carry_i_3__7_n_0;
+  wire i__carry_i_3__3_n_0;
+  wire i__carry_i_3__8_n_0;
   wire i__carry_i_4__0_n_0;
   wire i__carry_i_4__1_n_0;
   wire i__carry_i_4__6_n_0;
@@ -7215,58 +7318,58 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
         .O(i__carry__0_i_8__0_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    i__carry_i_1__1
-       (.I0(\pure_data_reg[0]_0 [6]),
-        .I1(\pure_data_reg[0]_0 [7]),
-        .O(i__carry_i_1__1_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
     i__carry_i_1__2
        (.I0(\pure_data_reg[0]_0 [6]),
         .I1(\pure_data_reg[0]_0 [7]),
         .O(i__carry_i_1__2_n_0));
   LUT2 #(
+    .INIT(4'h8)) 
+    i__carry_i_1__3
+       (.I0(\pure_data_reg[0]_0 [6]),
+        .I1(\pure_data_reg[0]_0 [7]),
+        .O(i__carry_i_1__3_n_0));
+  LUT2 #(
     .INIT(4'h7)) 
-    i__carry_i_1__8
+    i__carry_i_1__9
        (.I0(\pure_data_reg[0]_0 [0]),
         .I1(\pure_data_reg[0]_0 [1]),
-        .O(i__carry_i_1__8_n_0));
+        .O(i__carry_i_1__9_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    i__carry_i_2__1
-       (.I0(\pure_data_reg[0]_0 [4]),
-        .I1(\pure_data_reg[0]_0 [5]),
-        .O(i__carry_i_2__1_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
     i__carry_i_2__2
        (.I0(\pure_data_reg[0]_0 [4]),
         .I1(\pure_data_reg[0]_0 [5]),
         .O(i__carry_i_2__2_n_0));
   LUT2 #(
+    .INIT(4'h8)) 
+    i__carry_i_2__3
+       (.I0(\pure_data_reg[0]_0 [4]),
+        .I1(\pure_data_reg[0]_0 [5]),
+        .O(i__carry_i_2__3_n_0));
+  LUT2 #(
     .INIT(4'h1)) 
-    i__carry_i_2__8
+    i__carry_i_2__9
        (.I0(\pure_data_reg[0]_0 [7]),
         .I1(\pure_data_reg[0]_0 [6]),
-        .O(i__carry_i_2__8_n_0));
+        .O(i__carry_i_2__9_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    i__carry_i_3__1
-       (.I0(\pure_data_reg[0]_0 [2]),
-        .I1(\pure_data_reg[0]_0 [3]),
-        .O(i__carry_i_3__1_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
     i__carry_i_3__2
        (.I0(\pure_data_reg[0]_0 [2]),
         .I1(\pure_data_reg[0]_0 [3]),
         .O(i__carry_i_3__2_n_0));
   LUT2 #(
+    .INIT(4'h8)) 
+    i__carry_i_3__3
+       (.I0(\pure_data_reg[0]_0 [2]),
+        .I1(\pure_data_reg[0]_0 [3]),
+        .O(i__carry_i_3__3_n_0));
+  LUT2 #(
     .INIT(4'h1)) 
-    i__carry_i_3__7
+    i__carry_i_3__8
        (.I0(\pure_data_reg[0]_0 [5]),
         .I1(\pure_data_reg[0]_0 [4]),
-        .O(i__carry_i_3__7_n_0));
+        .O(i__carry_i_3__8_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_4__0
@@ -7319,7 +7422,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
        (.CI(1'b0),
         .CO({\p_0_out_inferred__0/i__carry_n_0 ,\p_0_out_inferred__0/i__carry_n_1 ,\p_0_out_inferred__0/i__carry_n_2 ,\p_0_out_inferred__0/i__carry_n_3 }),
         .CYINIT(1'b0),
-        .DI({i__carry_i_1__1_n_0,i__carry_i_2__1_n_0,i__carry_i_3__1_n_0,i__carry_i_4__0_n_0}),
+        .DI({i__carry_i_1__2_n_0,i__carry_i_2__2_n_0,i__carry_i_3__2_n_0,i__carry_i_4__0_n_0}),
         .O(\NLW_p_0_out_inferred__0/i__carry_O_UNCONNECTED [3:0]),
         .S({i__carry_i_5__1_n_0,i__carry_i_6__2_n_0,i__carry_i_7__1_n_0,i__carry_i_8_n_0}));
   CARRY4 \p_0_out_inferred__0/i__carry__0 
@@ -7335,7 +7438,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\pure_data_reg[0]_0 [1]}),
         .O(\NLW_p_0_out_inferred__1/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_1__2_n_0,i__carry_i_2__2_n_0,i__carry_i_3__2_n_0,i__carry_i_4__1_n_0}));
+        .S({i__carry_i_1__3_n_0,i__carry_i_2__3_n_0,i__carry_i_3__3_n_0,i__carry_i_4__1_n_0}));
   CARRY4 \p_0_out_inferred__1/i__carry__0 
        (.CI(\p_0_out_inferred__1/i__carry_n_0 ),
         .CO({\p_0_out_inferred__1/i__carry__0_n_0 ,\p_0_out_inferred__1/i__carry__0_n_1 ,\p_0_out_inferred__1/i__carry__0_n_2 ,\p_0_out_inferred__1/i__carry__0_n_3 }),
@@ -7347,9 +7450,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate
        (.CI(1'b0),
         .CO({\p_0_out_inferred__2/i__carry_n_0 ,\p_0_out_inferred__2/i__carry_n_1 ,\p_0_out_inferred__2/i__carry_n_2 ,\p_0_out_inferred__2/i__carry_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,i__carry_i_1__8_n_0}),
+        .DI({1'b0,1'b0,1'b0,i__carry_i_1__9_n_0}),
         .O(\NLW_p_0_out_inferred__2/i__carry_O_UNCONNECTED [3:0]),
-        .S({i__carry_i_2__8_n_0,i__carry_i_3__7_n_0,i__carry_i_4__6_n_0,i__carry_i_5__0_n_0}));
+        .S({i__carry_i_2__9_n_0,i__carry_i_3__8_n_0,i__carry_i_4__6_n_0,i__carry_i_5__0_n_0}));
   CARRY4 \p_0_out_inferred__2/i__carry__0 
        (.CI(\p_0_out_inferred__2/i__carry_n_0 ),
         .CO({\p_0_out_inferred__2/i__carry__0_n_0 ,\p_0_out_inferred__2/i__carry__0_n_1 ,\p_0_out_inferred__2/i__carry__0_n_2 ,\p_0_out_inferred__2/i__carry__0_n_3 }),
@@ -7518,12 +7621,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
   wire i__carry__0_i_6__1_n_0;
   wire i__carry__0_i_7__1_n_0;
   wire i__carry__0_i_8__1_n_0;
-  wire i__carry_i_1__3_n_0;
   wire i__carry_i_1__4_n_0;
-  wire i__carry_i_2__3_n_0;
+  wire i__carry_i_1__5_n_0;
   wire i__carry_i_2__4_n_0;
-  wire i__carry_i_3__3_n_0;
+  wire i__carry_i_2__5_n_0;
   wire i__carry_i_3__4_n_0;
+  wire i__carry_i_3__5_n_0;
   wire i__carry_i_4__2_n_0;
   wire i__carry_i_4__3_n_0;
   wire i__carry_i_5__2_n_0;
@@ -7802,40 +7905,40 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .O(i__carry__0_i_8__1_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    i__carry_i_1__3
+    i__carry_i_1__4
        (.I0(\pure_data_reg[0]_66 [6]),
         .I1(\pure_data_reg[0]_66 [7]),
-        .O(i__carry_i_1__3_n_0));
-  LUT2 #(
-    .INIT(4'h8)) 
-    i__carry_i_1__4
-       (.I0(\pure_data_reg[0]_66 [4]),
-        .I1(\pure_data_reg[0]_66 [5]),
         .O(i__carry_i_1__4_n_0));
   LUT2 #(
-    .INIT(4'hE)) 
-    i__carry_i_2__3
+    .INIT(4'h8)) 
+    i__carry_i_1__5
        (.I0(\pure_data_reg[0]_66 [4]),
         .I1(\pure_data_reg[0]_66 [5]),
-        .O(i__carry_i_2__3_n_0));
+        .O(i__carry_i_1__5_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_2__4
-       (.I0(\pure_data_reg[0]_66 [2]),
-        .I1(\pure_data_reg[0]_66 [3]),
+       (.I0(\pure_data_reg[0]_66 [4]),
+        .I1(\pure_data_reg[0]_66 [5]),
         .O(i__carry_i_2__4_n_0));
   LUT2 #(
     .INIT(4'hE)) 
-    i__carry_i_3__3
-       (.I0(\pure_data_reg[0]_66 [1]),
-        .I1(\pure_data_reg[0]_66 [0]),
-        .O(i__carry_i_3__3_n_0));
+    i__carry_i_2__5
+       (.I0(\pure_data_reg[0]_66 [2]),
+        .I1(\pure_data_reg[0]_66 [3]),
+        .O(i__carry_i_2__5_n_0));
   LUT2 #(
     .INIT(4'hE)) 
     i__carry_i_3__4
+       (.I0(\pure_data_reg[0]_66 [1]),
+        .I1(\pure_data_reg[0]_66 [0]),
+        .O(i__carry_i_3__4_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    i__carry_i_3__5
        (.I0(\pure_data_reg[0]_66 [2]),
         .I1(\pure_data_reg[0]_66 [3]),
-        .O(i__carry_i_3__4_n_0));
+        .O(i__carry_i_3__5_n_0));
   LUT2 #(
     .INIT(4'h8)) 
     i__carry_i_4__2
@@ -7894,7 +7997,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
        (.CI(1'b0),
         .CO({\p_0_out_inferred__0/i__carry_n_0 ,\p_0_out_inferred__0/i__carry_n_1 ,\p_0_out_inferred__0/i__carry_n_2 ,\p_0_out_inferred__0/i__carry_n_3 }),
         .CYINIT(1'b0),
-        .DI({i__carry_i_1__3_n_0,i__carry_i_2__3_n_0,i__carry_i_3__4_n_0,i__carry_i_4__3_n_0}),
+        .DI({i__carry_i_1__4_n_0,i__carry_i_2__4_n_0,i__carry_i_3__5_n_0,i__carry_i_4__3_n_0}),
         .O(\NLW_p_0_out_inferred__0/i__carry_O_UNCONNECTED [3:0]),
         .S({i__carry_i_5__2_n_0,i__carry_i_6_n_0,i__carry_i_7__2_n_0,i__carry_i_8__1_n_0}));
   CARRY4 \p_0_out_inferred__0/i__carry__0 
@@ -7908,7 +8011,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
        (.CI(1'b0),
         .CO({\p_0_out_inferred__1/i__carry_n_0 ,\p_0_out_inferred__1/i__carry_n_1 ,\p_0_out_inferred__1/i__carry_n_2 ,\p_0_out_inferred__1/i__carry_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,i__carry_i_1__4_n_0,i__carry_i_2__4_n_0,i__carry_i_3__3_n_0}),
+        .DI({1'b0,i__carry_i_1__5_n_0,i__carry_i_2__5_n_0,i__carry_i_3__4_n_0}),
         .O(\NLW_p_0_out_inferred__1/i__carry_O_UNCONNECTED [3:0]),
         .S({i__carry_i_4__2_n_0,i__carry_i_5__3_n_0,i__carry_i_6__0_n_0,i__carry_i_7_n_0}));
   CARRY4 \p_0_out_inferred__1/i__carry__0 
@@ -7918,7 +8021,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .DI({i__carry__0_i_1__3_n_0,1'b0,1'b0,1'b0}),
         .O(\NLW_p_0_out_inferred__1/i__carry__0_O_UNCONNECTED [3:0]),
         .S({i__carry__0_i_2__4_n_0,i__carry__0_i_3__4_n_0,i__carry__0_i_4__4_n_0,i__carry__0_i_5__0_n_0}));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[0]_INST_0 
@@ -7926,7 +8029,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [0]),
         .I2(sw),
         .O(probe_tx_dat[0]));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[10]_INST_0 
@@ -7934,7 +8037,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [10]),
         .I2(sw),
         .O(probe_tx_dat[10]));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[11]_INST_0 
@@ -7942,7 +8045,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [11]),
         .I2(sw),
         .O(probe_tx_dat[11]));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[12]_INST_0 
@@ -7950,7 +8053,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [12]),
         .I2(sw),
         .O(probe_tx_dat[12]));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[13]_INST_0 
@@ -7958,7 +8061,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [13]),
         .I2(sw),
         .O(probe_tx_dat[13]));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[14]_INST_0 
@@ -7966,7 +8069,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [14]),
         .I2(sw),
         .O(probe_tx_dat[14]));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[15]_INST_0 
@@ -7974,7 +8077,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [15]),
         .I2(sw),
         .O(probe_tx_dat[15]));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[1]_INST_0 
@@ -7982,7 +8085,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [1]),
         .I2(sw),
         .O(probe_tx_dat[1]));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[2]_INST_0 
@@ -7990,7 +8093,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [2]),
         .I2(sw),
         .O(probe_tx_dat[2]));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[3]_INST_0 
@@ -7998,7 +8101,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [3]),
         .I2(sw),
         .O(probe_tx_dat[3]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[4]_INST_0 
@@ -8006,7 +8109,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [4]),
         .I2(sw),
         .O(probe_tx_dat[4]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[5]_INST_0 
@@ -8014,7 +8117,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [5]),
         .I2(sw),
         .O(probe_tx_dat[5]));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[6]_INST_0 
@@ -8022,7 +8125,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [6]),
         .I2(sw),
         .O(probe_tx_dat[6]));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[7]_INST_0 
@@ -8030,7 +8133,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [7]),
         .I2(sw),
         .O(probe_tx_dat[7]));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[8]_INST_0 
@@ -8038,7 +8141,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_noise_gate__parameterized0
         .I1(\pure_data_reg[1]_67 [8]),
         .I2(sw),
         .O(probe_tx_dat[8]));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \probe_tx_dat[9]_INST_0 
@@ -8279,13 +8382,18 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
   wire [2:0]\btn_d1_reg[2] ;
   wire [15:0]\clean_data_reg[1]_1 ;
   wire clk_out1;
+  wire \coef_offset[3]_i_1_n_0 ;
   wire [7:0]cur_row;
   wire [15:0]\delay_data_reg[2]_13 ;
   wire [14:6]delay_val;
   wire [2:0]gain_val;
+  wire increase_i_1_n_0;
+  wire [3:0]\inst_coe/coef_offset_reg ;
   wire \inst_coe/read_en ;
   wire \inst_coe/read_enable_d1 ;
   wire \inst_coe/read_enable_d2 ;
+  wire \inst_coe/sample_cnt ;
+  wire \inst_coe/sample_cnt0 ;
   wire inst_config_n_10;
   wire inst_config_n_11;
   wire inst_config_n_12;
@@ -8316,14 +8424,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
   wire inst_dist_n_17;
   wire inst_dist_n_18;
   wire inst_dist_n_19;
-  wire inst_reverb_n_0;
-  wire inst_wah_n_11;
+  wire inst_reverb_n_2;
+  wire inst_wah_n_17;
+  wire inst_wah_n_19;
   wire [3:0]led;
   wire [10:10]p_0_out;
   wire [15:0]probe_tx_dat;
   wire probe_tx_vld;
   wire [15:0]\pure_data_reg[0]_2 ;
   wire [15:0]\pure_data_reg[2]_12 ;
+  wire read_enable;
   wire rst;
   wire [4:4]sample_cnt_reg;
   wire [3:0]sw;
@@ -8337,8 +8447,27 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
   wire tx_vld_eff2;
   wire tx_vld_eff3;
   wire [0:0]\valid_reg[0] ;
-  wire y;
+  wire [6:1]wah_val;
 
+  LUT5 #(
+    .INIT(32'hFBFF0000)) 
+    \coef_offset[3]_i_1 
+       (.I0(\inst_coe/coef_offset_reg [2]),
+        .I1(\inst_coe/coef_offset_reg [3]),
+        .I2(\inst_coe/coef_offset_reg [0]),
+        .I3(\inst_coe/coef_offset_reg [1]),
+        .I4(read_enable),
+        .O(\coef_offset[3]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hFDFFFFFF02000000)) 
+    increase_i_1
+       (.I0(inst_wah_n_19),
+        .I1(cur_row[2]),
+        .I2(cur_row[1]),
+        .I3(\inst_coe/sample_cnt0 ),
+        .I4(tx_vld_eff3),
+        .I5(inst_wah_n_17),
+        .O(increase_i_1_n_0));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_effect_config inst_config
        (.CO(inst_dist_n_17),
         .DI({inst_config_n_18,inst_config_n_19}),
@@ -8370,7 +8499,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
         .\thresh_val_reg[10]_0 ({inst_config_n_24,inst_config_n_25,inst_config_n_26}),
         .\thresh_val_reg[10]_1 ({thresh_val[10:7],thresh_val[5],thresh_val[1]}),
         .\thresh_val_reg[5]_0 ({inst_config_n_37,inst_config_n_38,inst_config_n_39}),
-        .\thresh_val_reg[7]_0 ({inst_config_n_33,inst_config_n_34,inst_config_n_35,inst_config_n_36}));
+        .\thresh_val_reg[7]_0 ({inst_config_n_33,inst_config_n_34,inst_config_n_35,inst_config_n_36}),
+        .\wah_val_reg[6]_0 ({wah_val[6:5],wah_val[3:1]}));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_delay inst_delay
        (.D(tx_dat_eff1),
         .E(CEM),
@@ -8433,19 +8563,19 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
         .rst(rst),
         .sw(sw[3]));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb inst_reverb
-       (.D(tx_vld_eff2),
-        .E(inst_reverb_n_0),
+       (.CO(\inst_coe/sample_cnt0 ),
+        .D(tx_vld_eff2),
+        .E(\inst_coe/sample_cnt ),
         .Q(tx_vld_eff3),
         .clk_out1(clk_out1),
         .\delay_data_reg[2][15]_0 (\delay_data_reg[2]_13 ),
         .\delay_data_reg[2][15]_1 (tx_dat_eff3),
         .\pure_data_reg[0][15]_0 (tx_dat_eff2),
         .\pure_data_reg[2][15]_0 (\pure_data_reg[2]_12 ),
-        .\row_select_reg[0] (inst_wah_n_11),
         .rst(rst),
-        .\sample_cnt_reg[4] (sample_cnt_reg),
+        .\sample_cnt_reg[0] (sample_cnt_reg),
         .sw(sw[2]),
-        .\valid_reg[2]_0 (y),
+        .\valid_reg[2]_0 (inst_reverb_n_2),
         .\valid_reg[2]_1 (CEM));
   LUT2 #(
     .INIT(4'hE)) 
@@ -8454,21 +8584,28 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_pipeline
         .I1(\inst_coe/read_enable_d2 ),
         .O(\inst_coe/read_en ));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah inst_wah
-       (.D(tx_dat_eff4),
-        .E(inst_reverb_n_0),
-        .Q(tx_vld_eff3),
+       (.CO(\inst_coe/sample_cnt0 ),
+        .D(tx_dat_eff4),
+        .E(\coef_offset[3]_i_1_n_0 ),
+        .Q(\inst_coe/coef_offset_reg ),
         .clk_out1(clk_out1),
+        .\coef_offset_reg[0] (tx_vld_eff3),
         .ena(\inst_coe/read_en ),
+        .increase_reg(inst_wah_n_17),
+        .increase_reg_0(increase_i_1_n_0),
         .\pure_data_reg[0][15] (\delay_data_reg[2]_13 ),
         .\pure_data_reg[0][15]_0 (\pure_data_reg[2]_12 ),
+        .read_enable(read_enable),
         .read_enable_d1(\inst_coe/read_enable_d1 ),
         .read_enable_d2(\inst_coe/read_enable_d2 ),
+        .\row_select_reg[0] (\inst_coe/sample_cnt ),
+        .\row_select_reg[3] (inst_wah_n_19),
         .\row_select_reg[7] (cur_row),
         .rst(rst),
         .rst_0(CEM),
-        .\sample_cnt_reg[4]_0 (inst_wah_n_11),
-        .\sample_cnt_reg[4]_1 (sample_cnt_reg),
-        .\sample_cnt_reg[4]_2 (y),
+        .\sample_cnt0_inferred__0/i__carry ({wah_val[6:5],wah_val[3:1]}),
+        .\sample_cnt_reg[0]_0 (inst_reverb_n_2),
+        .\sample_cnt_reg[4]_0 (sample_cnt_reg),
         .sw(sw[3:2]),
         .\x_reg[0][15]_0 (tx_dat_eff3));
 endmodule
@@ -9987,7 +10124,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ram_reverb
         .I4(o_dat2[11]),
         .I5(o_dat3[11]),
         .O(S[0]));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT3 #(
     .INIT(8'h96)) 
     i___2_carry__2_i_9
@@ -10013,7 +10150,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ram_reverb
         .I3(o_dat2[15]),
         .I4(o_dat1[15]),
         .O(\o_dat0_reg[15]_1 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     i___2_carry__3_i_3
@@ -11339,7 +11476,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ram_reverb
         .D(read_data[9]),
         .Q(o_dat3[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT3 #(
     .INIT(8'h0E)) 
     \phase[0]_i_1 
@@ -11347,7 +11484,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ram_reverb
         .I1(phase[1]),
         .I2(phase[0]),
         .O(\phase[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \phase[1]_i_1 
@@ -11429,8 +11566,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
     \delay_data_reg[2][15]_1 ,
     clk_out1,
     rst,
-    \row_select_reg[0] ,
-    \sample_cnt_reg[4] ,
+    CO,
+    \sample_cnt_reg[0] ,
     \valid_reg[2]_1 ,
     D,
     \pure_data_reg[0][15]_0 ,
@@ -11443,13 +11580,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
   output [15:0]\delay_data_reg[2][15]_1 ;
   input clk_out1;
   input rst;
-  input \row_select_reg[0] ;
-  input [0:0]\sample_cnt_reg[4] ;
+  input [0:0]CO;
+  input [0:0]\sample_cnt_reg[0] ;
   input [0:0]\valid_reg[2]_1 ;
   input [0:0]D;
   input [15:0]\pure_data_reg[0][15]_0 ;
   input [0:0]sw;
 
+  wire [0:0]CO;
   wire [0:0]D;
   wire [0:0]E;
   wire [0:0]Q;
@@ -11481,11 +11619,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
   wire i__carry__2_i_5_n_0;
   wire i__carry__2_i_6_n_0;
   wire i__carry__2_i_7_n_0;
-  wire i__carry_i_1__5_n_0;
-  wire i__carry_i_1__7_n_0;
-  wire i__carry_i_2__5_n_0;
-  wire i__carry_i_2__7_n_0;
-  wire i__carry_i_3__6_n_0;
+  wire i__carry_i_1__6_n_0;
+  wire i__carry_i_1__8_n_0;
+  wire i__carry_i_2__6_n_0;
+  wire i__carry_i_2__8_n_0;
+  wire i__carry_i_3__7_n_0;
   wire i__carry_i_4__5_n_0;
   wire i__carry_i_5__4_n_0;
   wire i__carry_i_6__3_n_0;
@@ -11705,9 +11843,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
   wire [15:0]\pure_data_reg[0]_9 ;
   wire [15:0]\pure_data_reg[1]_11 ;
   wire [15:0]\pure_data_reg[2][15]_0 ;
-  wire \row_select_reg[0] ;
   wire rst;
-  wire [0:0]\sample_cnt_reg[4] ;
+  wire [0:0]\sample_cnt_reg[0] ;
   wire [0:0]sw;
   wire [1:1]valid;
   wire [0:0]valid__0;
@@ -12205,59 +12342,59 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
         .O(i__carry__2_i_7_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    i__carry_i_1__5
+    i__carry_i_1__6
        (.I0(\p_0_out_inferred__0/i___2_carry_n_5 ),
-        .O(i__carry_i_1__5_n_0));
+        .O(i__carry_i_1__6_n_0));
   LUT3 #(
     .INIT(8'hAC)) 
-    i__carry_i_1__6
+    i__carry_i_1__7
        (.I0(\p_0_out_inferred__2/i__carry_n_4 ),
         .I1(\pure_data_reg[0]_9 [4]),
         .I2(\pure_data_reg[0]_9 [15]),
         .O(p_1_in[3]));
   LUT4 #(
     .INIT(16'h569A)) 
-    i__carry_i_1__7
+    i__carry_i_1__8
        (.I0(\delay_data_reg[1]_10 [3]),
         .I1(\pure_data_reg[1]_11 [15]),
         .I2(\pure_data_reg[1]_11 [4]),
         .I3(\p_0_out_inferred__5/i__carry_n_4 ),
-        .O(i__carry_i_1__7_n_0));
+        .O(i__carry_i_1__8_n_0));
   LUT1 #(
     .INIT(2'h1)) 
-    i__carry_i_2__5
+    i__carry_i_2__6
        (.I0(\p_0_out_inferred__0/i___2_carry_n_6 ),
-        .O(i__carry_i_2__5_n_0));
+        .O(i__carry_i_2__6_n_0));
   LUT3 #(
     .INIT(8'hAC)) 
-    i__carry_i_2__6
+    i__carry_i_2__7
        (.I0(\p_0_out_inferred__2/i__carry_n_5 ),
         .I1(\pure_data_reg[0]_9 [3]),
         .I2(\pure_data_reg[0]_9 [15]),
         .O(p_1_in[2]));
   LUT4 #(
     .INIT(16'h569A)) 
-    i__carry_i_2__7
+    i__carry_i_2__8
        (.I0(\delay_data_reg[1]_10 [2]),
         .I1(\pure_data_reg[1]_11 [15]),
         .I2(\pure_data_reg[1]_11 [3]),
         .I3(\p_0_out_inferred__5/i__carry_n_5 ),
-        .O(i__carry_i_2__7_n_0));
+        .O(i__carry_i_2__8_n_0));
   LUT3 #(
     .INIT(8'hAC)) 
-    i__carry_i_3__5
+    i__carry_i_3__6
        (.I0(\p_0_out_inferred__2/i__carry_n_6 ),
         .I1(\pure_data_reg[0]_9 [2]),
         .I2(\pure_data_reg[0]_9 [15]),
         .O(p_1_in[1]));
   LUT4 #(
     .INIT(16'h569A)) 
-    i__carry_i_3__6
+    i__carry_i_3__7
        (.I0(\delay_data_reg[1]_10 [1]),
         .I1(\pure_data_reg[1]_11 [15]),
         .I2(\pure_data_reg[1]_11 [2]),
         .I3(\p_0_out_inferred__5/i__carry_n_6 ),
-        .O(i__carry_i_3__6_n_0));
+        .O(i__carry_i_3__7_n_0));
   LUT3 #(
     .INIT(8'hAC)) 
     i__carry_i_4__4
@@ -12453,7 +12590,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
         .CYINIT(1'b0),
         .DI(\delay_data_reg[1]_10 [3:0]),
         .O({\p_0_out_inferred__6/i__carry_n_4 ,\p_0_out_inferred__6/i__carry_n_5 ,\p_0_out_inferred__6/i__carry_n_6 ,\p_0_out_inferred__6/i__carry_n_7 }),
-        .S({i__carry_i_1__7_n_0,i__carry_i_2__7_n_0,i__carry_i_3__6_n_0,i__carry_i_4__5_n_0}));
+        .S({i__carry_i_1__8_n_0,i__carry_i_2__8_n_0,i__carry_i_3__7_n_0,i__carry_i_4__5_n_0}));
   CARRY4 \p_0_out_inferred__6/i__carry__0 
        (.CI(\p_0_out_inferred__6/i__carry_n_0 ),
         .CO({\p_0_out_inferred__6/i__carry__0_n_0 ,\p_0_out_inferred__6/i__carry__0_n_1 ,\p_0_out_inferred__6/i__carry__0_n_2 ,\p_0_out_inferred__6/i__carry__0_n_3 }),
@@ -12481,7 +12618,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
         .CYINIT(\p_0_out_inferred__0/i___2_carry_n_7 ),
         .DI({1'b0,1'b0,\p_0_out_inferred__0/i___2_carry_n_5 ,\p_0_out_inferred__0/i___2_carry_n_6 }),
         .O({p_2_in[4:3],\NLW_p_1_out_inferred__0/i__carry_O_UNCONNECTED [1:0]}),
-        .S({\p_0_out_inferred__0/i___2_carry__0_n_7 ,\p_0_out_inferred__0/i___2_carry_n_4 ,i__carry_i_1__5_n_0,i__carry_i_2__5_n_0}));
+        .S({\p_0_out_inferred__0/i___2_carry__0_n_7 ,\p_0_out_inferred__0/i___2_carry_n_4 ,i__carry_i_1__6_n_0,i__carry_i_2__6_n_0}));
   CARRY4 \p_1_out_inferred__0/i__carry__0 
        (.CI(\p_1_out_inferred__0/i__carry_n_0 ),
         .CO({\p_1_out_inferred__0/i__carry__0_n_0 ,\p_1_out_inferred__0/i__carry__0_n_1 ,\p_1_out_inferred__0/i__carry__0_n_2 ,\p_1_out_inferred__0/i__carry__0_n_3 }),
@@ -12798,19 +12935,19 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_reverb
         .D(\pure_data_reg[1]_11 [9]),
         .Q(\pure_data_reg[2][15]_0 [9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h8)) 
     \row_select[7]_i_1 
        (.I0(Q),
-        .I1(\row_select_reg[0] ),
+        .I1(CO),
         .O(E));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT2 #(
     .INIT(4'h2)) 
-    \sample_cnt[4]_i_1 
+    \sample_cnt[4]_i_1__0 
        (.I0(Q),
-        .I1(\sample_cnt_reg[4] ),
+        .I1(\sample_cnt_reg[0] ),
         .O(\valid_reg[2]_0 ));
   FDRE \valid_reg[0] 
        (.C(clk_out1),
@@ -13026,45 +13163,61 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_top
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
-   (read_enable_d1,
+   (Q,
+    read_enable_d1,
+    read_enable,
     read_enable_d2,
     rst_0,
+    CO,
     \row_select_reg[7] ,
+    increase_reg,
     \sample_cnt_reg[4]_0 ,
-    \sample_cnt_reg[4]_1 ,
+    \row_select_reg[3] ,
     D,
     clk_out1,
     ena,
-    Q,
+    \coef_offset_reg[0] ,
     rst,
     \x_reg[0][15]_0 ,
+    increase_reg_0,
+    \sample_cnt0_inferred__0/i__carry ,
     \pure_data_reg[0][15] ,
     \pure_data_reg[0][15]_0 ,
     sw,
     E,
-    \sample_cnt_reg[4]_2 );
+    \row_select_reg[0] ,
+    \sample_cnt_reg[0]_0 );
+  output [3:0]Q;
   output read_enable_d1;
+  output read_enable;
   output read_enable_d2;
   output [0:0]rst_0;
+  output [0:0]CO;
   output [7:0]\row_select_reg[7] ;
-  output \sample_cnt_reg[4]_0 ;
-  output [0:0]\sample_cnt_reg[4]_1 ;
+  output increase_reg;
+  output [0:0]\sample_cnt_reg[4]_0 ;
+  output \row_select_reg[3] ;
   output [15:0]D;
   input clk_out1;
   input ena;
-  input [0:0]Q;
+  input [0:0]\coef_offset_reg[0] ;
   input rst;
   input [15:0]\x_reg[0][15]_0 ;
+  input increase_reg_0;
+  input [4:0]\sample_cnt0_inferred__0/i__carry ;
   input [15:0]\pure_data_reg[0][15] ;
   input [15:0]\pure_data_reg[0][15]_0 ;
   input [1:0]sw;
   input [0:0]E;
-  input [0:0]\sample_cnt_reg[4]_2 ;
+  input [0:0]\row_select_reg[0] ;
+  input [0:0]\sample_cnt_reg[0]_0 ;
 
   wire [15:0]A;
+  wire [15:0]C;
+  wire [0:0]CO;
   wire [15:0]D;
   wire [0:0]E;
-  wire [0:0]Q;
+  wire [3:0]Q;
   wire \ax_bx[35]_i_10_n_0 ;
   wire \ax_bx[35]_i_11_n_0 ;
   wire \ax_bx[35]_i_13_n_0 ;
@@ -16034,17 +16187,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire \bx_v2_reg_n_73_[2] ;
   wire \bx_v2_reg_n_74_[1] ;
   wire clk_out1;
+  wire [0:0]\coef_offset_reg[0] ;
   wire ena;
-  wire inst_coe_n_54;
-  wire inst_coe_n_55;
-  wire inst_coe_n_56;
-  wire inst_coe_n_57;
-  wire inst_coe_n_58;
-  wire inst_coe_n_59;
-  wire inst_coe_n_60;
+  wire increase_reg;
+  wire increase_reg_0;
   wire inst_coe_n_61;
   wire inst_coe_n_62;
   wire inst_coe_n_63;
+  wire inst_coe_n_64;
+  wire inst_coe_n_65;
+  wire inst_coe_n_66;
+  wire inst_coe_n_67;
+  wire inst_coe_n_68;
+  wire inst_coe_n_69;
+  wire inst_coe_n_70;
   wire [42:0]load_coef;
   wire p_0_in__0_n_106;
   wire p_0_in__0_n_107;
@@ -16094,7 +16250,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire p_0_in__0_n_151;
   wire p_0_in__0_n_152;
   wire p_0_in__0_n_153;
-  wire [4:0]p_0_in__1__0;
   wire p_0_in__1_n_100;
   wire p_0_in__1_n_101;
   wire p_0_in__1_n_102;
@@ -16191,6 +16346,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire p_0_in__1_n_97;
   wire p_0_in__1_n_98;
   wire p_0_in__1_n_99;
+  wire [4:0]p_0_in__2__0;
   wire p_0_in__2_n_100;
   wire p_0_in__2_n_101;
   wire p_0_in__2_n_102;
@@ -22145,14 +22301,17 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire p_3_in_n_81;
   wire [15:0]\pure_data_reg[0][15] ;
   wire [15:0]\pure_data_reg[0][15]_0 ;
+  wire read_enable;
   wire read_enable_d1;
   wire read_enable_d2;
+  wire [0:0]\row_select_reg[0] ;
+  wire \row_select_reg[3] ;
   wire [7:0]\row_select_reg[7] ;
   wire rst;
   wire [0:0]rst_0;
-  wire \sample_cnt_reg[4]_0 ;
-  wire [0:0]\sample_cnt_reg[4]_1 ;
-  wire [0:0]\sample_cnt_reg[4]_2 ;
+  wire [4:0]\sample_cnt0_inferred__0/i__carry ;
+  wire [0:0]\sample_cnt_reg[0]_0 ;
+  wire [0:0]\sample_cnt_reg[4]_0 ;
   wire \sample_cnt_reg_n_0_[0] ;
   wire \sample_cnt_reg_n_0_[1] ;
   wire \sample_cnt_reg_n_0_[2] ;
@@ -27825,24 +27984,22 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire [1:0]sw;
   wire temp_a_coef;
   wire [15:0]x_master;
-  wire [16:2]x_master1;
-  wire [15:2]x_master2;
-  wire \x_master[2]_i_3_n_0 ;
-  wire \x_master_reg[10]_i_2_n_0 ;
-  wire \x_master_reg[10]_i_2_n_1 ;
-  wire \x_master_reg[10]_i_2_n_2 ;
-  wire \x_master_reg[10]_i_2_n_3 ;
+  wire [15:1]x_master2;
+  wire \x_master_reg[11]_i_2_n_0 ;
+  wire \x_master_reg[11]_i_2_n_1 ;
+  wire \x_master_reg[11]_i_2_n_2 ;
+  wire \x_master_reg[11]_i_2_n_3 ;
   wire \x_master_reg[15]_i_2_n_0 ;
   wire \x_master_reg[15]_i_2_n_2 ;
   wire \x_master_reg[15]_i_2_n_3 ;
-  wire \x_master_reg[2]_i_2_n_0 ;
-  wire \x_master_reg[2]_i_2_n_1 ;
-  wire \x_master_reg[2]_i_2_n_2 ;
-  wire \x_master_reg[2]_i_2_n_3 ;
-  wire \x_master_reg[6]_i_2_n_0 ;
-  wire \x_master_reg[6]_i_2_n_1 ;
-  wire \x_master_reg[6]_i_2_n_2 ;
-  wire \x_master_reg[6]_i_2_n_3 ;
+  wire \x_master_reg[3]_i_2_n_0 ;
+  wire \x_master_reg[3]_i_2_n_1 ;
+  wire \x_master_reg[3]_i_2_n_2 ;
+  wire \x_master_reg[3]_i_2_n_3 ;
+  wire \x_master_reg[7]_i_2_n_0 ;
+  wire \x_master_reg[7]_i_2_n_1 ;
+  wire \x_master_reg[7]_i_2_n_2 ;
+  wire \x_master_reg[7]_i_2_n_3 ;
   wire [15:0]\x_reg[0][15]_0 ;
   wire [15:0]\x_reg[0]_34 ;
   wire [15:0]\x_reg[10]_48 ;
@@ -29444,7 +29601,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   wire [3:3]\NLW_sbx_st2_reg[63]_i_1_CO_UNCONNECTED ;
   wire [2:2]\NLW_x_master_reg[15]_i_2_CO_UNCONNECTED ;
   wire [3:3]\NLW_x_master_reg[15]_i_2_O_UNCONNECTED ;
-  wire [0:0]\NLW_x_master_reg[2]_i_2_O_UNCONNECTED ;
   wire [3:3]\NLW_y_combined_reg[-1111111099]_i_1_CO_UNCONNECTED ;
   wire [3:0]\NLW_y_combined_reg[15]_i_1_CO_UNCONNECTED ;
   wire [3:1]\NLW_y_combined_reg[15]_i_1_O_UNCONNECTED ;
@@ -30386,11 +30542,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[0]_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -30667,11 +30823,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[0]__0_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(temp_a_coef),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -30744,11 +30900,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[0]__1_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -30821,11 +30977,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[0]__2_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -30897,12 +31053,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[10]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -31178,12 +31334,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[10]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_54),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_61),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -31255,12 +31411,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[10]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -31332,12 +31488,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[10]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -31413,8 +31569,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEA2(1'b0),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -31792,8 +31948,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[11]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -31869,8 +32025,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[11]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -31947,11 +32103,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[1]_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32227,12 +32383,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[1]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_63),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_70),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32305,11 +32461,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[1]__1_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32382,11 +32538,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[1]__2_CARRYOUT_UNCONNECTED [3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32458,12 +32614,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[2]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32739,12 +32895,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[2]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_62),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_69),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32816,12 +32972,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[2]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32893,12 +33049,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[2]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -32970,12 +33126,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[3]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33251,12 +33407,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[3]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_61),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_68),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33328,12 +33484,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[3]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33405,12 +33561,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[3]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33482,12 +33638,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[4]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33763,12 +33919,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[4]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_60),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_67),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33840,12 +33996,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[4]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33917,12 +34073,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[4]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -33994,12 +34150,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[5]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34275,12 +34431,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[5]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_59),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_66),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34352,12 +34508,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[5]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34429,12 +34585,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[5]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34506,12 +34662,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[6]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34787,12 +34943,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[6]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_58),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_65),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34864,12 +35020,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[6]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -34941,12 +35097,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[6]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35018,12 +35174,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[7]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35299,12 +35455,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[7]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_57),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_64),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35376,12 +35532,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[7]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35453,12 +35609,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[7]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35530,12 +35686,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[8]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35811,12 +35967,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[8]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_56),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_63),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35888,12 +36044,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[8]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -35965,12 +36121,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[8]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -36042,12 +36198,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[9]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -36323,12 +36479,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[9]__0_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(inst_coe_n_55),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_62),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -36400,12 +36556,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[9]__1_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -36477,12 +36633,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_ay_reg[9]__2_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -36697,8 +36853,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_bx_v2_reg[1]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b1),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -36706,7 +36862,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
-        .CED(Q),
+        .CED(\coef_offset_reg[0] ),
         .CEINMODE(1'b0),
         .CEM(1'b0),
         .CEP(1'b1),
@@ -36875,8 +37031,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(\NLW_bx_v2_reg[2]_CARRYOUT_UNCONNECTED [3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b1),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -36884,7 +37040,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
-        .CED(Q),
+        .CED(\coef_offset_reg[0] ),
         .CEINMODE(1'b0),
         .CEM(1'b0),
         .CEP(1'b1),
@@ -37116,26 +37272,33 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .Q(\bx_v2_reg[3]_40 [9]),
         .R(rst));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_load_coefficients inst_coe
-       (.E(E),
-        .Q(\row_select_reg[7] ),
+       (.CO(CO),
+        .DI(increase_reg),
+        .E(E),
+        .Q(Q),
         .clk_out1(clk_out1),
-        .\coef_offset_reg[3]_0 (Q),
+        .\coef_offset_reg[0]_0 (\coef_offset_reg[0] ),
         .douta(load_coef),
         .ena(ena),
+        .increase_reg_0(increase_reg_0),
+        .read_enable(read_enable),
         .read_enable_d1(read_enable_d1),
         .read_enable_d2(read_enable_d2),
-        .read_enable_d3_reg_0(inst_coe_n_54),
-        .read_enable_d3_reg_1(inst_coe_n_55),
-        .read_enable_d3_reg_2(inst_coe_n_56),
-        .read_enable_d3_reg_3(inst_coe_n_57),
-        .read_enable_d3_reg_4(inst_coe_n_58),
-        .read_enable_d3_reg_5(inst_coe_n_59),
-        .read_enable_d3_reg_6(inst_coe_n_60),
-        .read_enable_d3_reg_7(inst_coe_n_61),
-        .read_enable_d3_reg_8(inst_coe_n_62),
-        .read_enable_d3_reg_9(inst_coe_n_63),
+        .read_enable_d3_reg_0(inst_coe_n_61),
+        .read_enable_d3_reg_1(inst_coe_n_62),
+        .read_enable_d3_reg_2(inst_coe_n_63),
+        .read_enable_d3_reg_3(inst_coe_n_64),
+        .read_enable_d3_reg_4(inst_coe_n_65),
+        .read_enable_d3_reg_5(inst_coe_n_66),
+        .read_enable_d3_reg_6(inst_coe_n_67),
+        .read_enable_d3_reg_7(inst_coe_n_68),
+        .read_enable_d3_reg_8(inst_coe_n_69),
+        .read_enable_d3_reg_9(inst_coe_n_70),
+        .\row_select_reg[0]_0 (\row_select_reg[0] ),
+        .\row_select_reg[3]_0 (\row_select_reg[3] ),
+        .\row_select_reg[7]_0 (\row_select_reg[7] ),
         .rst(rst),
-        .\sample_cnt_reg[4]_0 (\sample_cnt_reg[4]_0 ),
+        .\sample_cnt0_inferred__0/i__carry_0 (\sample_cnt0_inferred__0/i__carry ),
         .temp_a_coef(temp_a_coef));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-10 {cell *THIS*} {string 13x18 8}}" *) 
   DSP48E1 #(
@@ -37182,8 +37345,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEA2(1'b0),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -37255,8 +37418,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_in__0_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -37332,8 +37495,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_in__1_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -37409,8 +37572,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_in__2_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -37486,8 +37649,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_in__3_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -37567,7 +37730,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEA2(1'b0),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
+        .CEB1(\coef_offset_reg[0] ),
         .CEB2(1'b1),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
@@ -37639,7 +37802,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_in__5_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
+        .CEA1(\coef_offset_reg[0] ),
         .CEA2(1'b1),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
@@ -37716,12 +37879,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -37793,12 +37956,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__0_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_54),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_61),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -37870,12 +38033,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__1_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -37947,12 +38110,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__10_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38024,12 +38187,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__11_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38101,12 +38264,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__12_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38178,12 +38341,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__13_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38255,12 +38418,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__14_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38350,12 +38513,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__15_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38487,12 +38650,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__16_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_56),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_63),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38618,12 +38781,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__17_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38743,12 +38906,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__18_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38880,12 +39043,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__19_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -38999,12 +39162,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__2_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39076,12 +39239,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__20_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39213,12 +39376,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__21_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39332,12 +39495,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__22_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_56),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_63),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39409,12 +39572,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__23_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39486,12 +39649,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__24_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_57),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_64),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39563,12 +39726,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__25_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39640,12 +39803,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__26_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39717,12 +39880,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__27_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39794,12 +39957,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__28_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39871,12 +40034,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__29_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -39948,12 +40111,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__3_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40025,12 +40188,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__30_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_57),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_64),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40102,12 +40265,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__31_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40179,12 +40342,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__32_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_58),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_65),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40256,12 +40419,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__33_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40333,12 +40496,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__34_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40410,12 +40573,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__35_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40487,12 +40650,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__36_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40564,12 +40727,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__37_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40641,12 +40804,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__38_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_58),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_65),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40718,12 +40881,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__39_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40795,12 +40958,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__4_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40872,12 +41035,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__40_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_59),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_66),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -40949,12 +41112,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__41_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41026,12 +41189,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__42_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41103,12 +41266,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__43_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41180,12 +41343,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__44_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41257,12 +41420,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__45_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41334,12 +41497,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__46_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_59),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_66),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41411,12 +41574,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__47_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41488,12 +41651,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__48_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_60),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_67),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41565,12 +41728,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__49_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41642,12 +41805,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__5_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41719,12 +41882,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__50_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41796,12 +41959,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__51_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41873,12 +42036,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__52_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -41950,12 +42113,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__53_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42027,12 +42190,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__54_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_60),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_67),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42104,12 +42267,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__55_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42181,12 +42344,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__56_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_61),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_68),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42258,12 +42421,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__57_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42335,12 +42498,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__58_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42412,12 +42575,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__59_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42489,12 +42652,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__6_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_54),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_61),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42566,12 +42729,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__60_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42643,12 +42806,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__61_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42720,12 +42883,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__62_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_61),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_68),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42797,12 +42960,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__63_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42874,12 +43037,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__64_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_62),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_69),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -42951,12 +43114,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__65_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43028,12 +43191,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__66_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43105,12 +43268,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__67_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43182,12 +43345,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__68_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43259,12 +43422,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__69_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43336,12 +43499,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__7_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43413,12 +43576,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__70_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_62),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_69),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43491,11 +43654,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__71_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43567,12 +43730,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__72_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_63),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_70),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43645,11 +43808,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__73_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43722,11 +43885,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__74_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43799,11 +43962,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__75_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43876,11 +44039,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__76_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -43953,11 +44116,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__77_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44030,11 +44193,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__78_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_63),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_70),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44107,11 +44270,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__79_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44143,11 +44306,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .RSTP(1'b0),
         .UNDERFLOW(NLW_p_0_out__79_UNDERFLOW_UNCONNECTED));
   LUT3 #(
-    .INIT(8'hBA)) 
+    .INIT(8'hF4)) 
     p_0_out__79_i_2
-       (.I0(rst),
-        .I1(\sample_cnt_reg[4]_1 ),
-        .I2(Q),
+       (.I0(\sample_cnt_reg[4]_0 ),
+        .I1(\coef_offset_reg[0] ),
+        .I2(rst),
         .O(p_0_out__79_i_2_n_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-10 {cell *THIS*} {string 13x18 12}}" *) 
   DSP48E1 #(
@@ -44190,12 +44353,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__8_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(inst_coe_n_55),
-        .CEA2(Q),
+        .CEA1(inst_coe_n_62),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(Q),
-        .CEB2(Q),
+        .CEB1(\coef_offset_reg[0] ),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44268,11 +44431,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__80_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(temp_a_coef),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44345,11 +44508,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__81_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44422,11 +44585,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__82_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44499,11 +44662,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__83_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44576,11 +44739,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__84_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44653,11 +44816,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__85_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44730,11 +44893,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__86_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
-        .CEA2(Q),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
         .CEB1(temp_a_coef),
-        .CEB2(Q),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44806,12 +44969,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_0_out__9_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b0),
         .CEALUMODE(1'b0),
-        .CEB1(inst_coe_n_55),
-        .CEB2(Q),
+        .CEB1(inst_coe_n_62),
+        .CEB2(\coef_offset_reg[0] ),
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
@@ -44883,8 +45046,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_1_in_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b1),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -44892,7 +45055,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
-        .CED(Q),
+        .CED(\coef_offset_reg[0] ),
         .CEINMODE(1'b0),
         .CEM(1'b0),
         .CEP(1'b0),
@@ -44960,8 +45123,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_2_in_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b1),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -44969,7 +45132,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
-        .CED(Q),
+        .CED(\coef_offset_reg[0] ),
         .CEINMODE(1'b0),
         .CEM(1'b0),
         .CEP(1'b0),
@@ -45113,8 +45276,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
         .CARRYOUT(NLW_p_3_in__0_CARRYOUT_UNCONNECTED[3:0]),
-        .CEA1(Q),
-        .CEA2(Q),
+        .CEA1(\coef_offset_reg[0] ),
+        .CEA2(\coef_offset_reg[0] ),
         .CEAD(1'b1),
         .CEALUMODE(1'b0),
         .CEB1(1'b0),
@@ -45122,7 +45285,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .CEC(1'b0),
         .CECARRYIN(1'b0),
         .CECTRL(1'b0),
-        .CED(Q),
+        .CED(\coef_offset_reg[0] ),
         .CEINMODE(1'b0),
         .CEM(1'b0),
         .CEP(1'b1),
@@ -45433,69 +45596,69 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
     .INIT(2'h1)) 
     \sample_cnt[0]_i_1__0 
        (.I0(\sample_cnt_reg_n_0_[0] ),
-        .O(p_0_in__1__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+        .O(p_0_in__2__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT2 #(
     .INIT(4'h6)) 
-    \sample_cnt[1]_i_1 
+    \sample_cnt[1]_i_1__0 
        (.I0(\sample_cnt_reg_n_0_[0] ),
         .I1(\sample_cnt_reg_n_0_[1] ),
-        .O(p_0_in__1__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+        .O(p_0_in__2__0[1]));
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT3 #(
-    .INIT(8'h6A)) 
-    \sample_cnt[2]_i_1 
-       (.I0(\sample_cnt_reg_n_0_[2] ),
+    .INIT(8'h78)) 
+    \sample_cnt[2]_i_1__0 
+       (.I0(\sample_cnt_reg_n_0_[1] ),
         .I1(\sample_cnt_reg_n_0_[0] ),
-        .I2(\sample_cnt_reg_n_0_[1] ),
-        .O(p_0_in__1__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+        .I2(\sample_cnt_reg_n_0_[2] ),
+        .O(p_0_in__2__0[2]));
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT4 #(
     .INIT(16'h7F80)) 
     \sample_cnt[3]_i_1__0 
-       (.I0(\sample_cnt_reg_n_0_[1] ),
+       (.I0(\sample_cnt_reg_n_0_[2] ),
         .I1(\sample_cnt_reg_n_0_[0] ),
-        .I2(\sample_cnt_reg_n_0_[2] ),
+        .I2(\sample_cnt_reg_n_0_[1] ),
         .I3(\sample_cnt_reg_n_0_[3] ),
-        .O(p_0_in__1__0[3]));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+        .O(p_0_in__2__0[3]));
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \sample_cnt[4]_i_2 
-       (.I0(\sample_cnt_reg_n_0_[1] ),
-        .I1(\sample_cnt_reg_n_0_[0] ),
-        .I2(\sample_cnt_reg_n_0_[2] ),
-        .I3(\sample_cnt_reg_n_0_[3] ),
-        .O(p_0_in__1__0[4]));
+       (.I0(\sample_cnt_reg_n_0_[3] ),
+        .I1(\sample_cnt_reg_n_0_[1] ),
+        .I2(\sample_cnt_reg_n_0_[0] ),
+        .I3(\sample_cnt_reg_n_0_[2] ),
+        .O(p_0_in__2__0[4]));
   FDRE \sample_cnt_reg[0] 
        (.C(clk_out1),
-        .CE(\sample_cnt_reg[4]_2 ),
-        .D(p_0_in__1__0[0]),
+        .CE(\sample_cnt_reg[0]_0 ),
+        .D(p_0_in__2__0[0]),
         .Q(\sample_cnt_reg_n_0_[0] ),
         .R(rst));
   FDRE \sample_cnt_reg[1] 
        (.C(clk_out1),
-        .CE(\sample_cnt_reg[4]_2 ),
-        .D(p_0_in__1__0[1]),
+        .CE(\sample_cnt_reg[0]_0 ),
+        .D(p_0_in__2__0[1]),
         .Q(\sample_cnt_reg_n_0_[1] ),
         .R(rst));
   FDRE \sample_cnt_reg[2] 
        (.C(clk_out1),
-        .CE(\sample_cnt_reg[4]_2 ),
-        .D(p_0_in__1__0[2]),
+        .CE(\sample_cnt_reg[0]_0 ),
+        .D(p_0_in__2__0[2]),
         .Q(\sample_cnt_reg_n_0_[2] ),
         .R(rst));
   FDRE \sample_cnt_reg[3] 
        (.C(clk_out1),
-        .CE(\sample_cnt_reg[4]_2 ),
-        .D(p_0_in__1__0[3]),
+        .CE(\sample_cnt_reg[0]_0 ),
+        .D(p_0_in__2__0[3]),
         .Q(\sample_cnt_reg_n_0_[3] ),
         .R(rst));
   FDRE \sample_cnt_reg[4] 
        (.C(clk_out1),
-        .CE(\sample_cnt_reg[4]_2 ),
-        .D(p_0_in__1__0[4]),
-        .Q(\sample_cnt_reg[4]_1 ),
+        .CE(\sample_cnt_reg[0]_0 ),
+        .D(p_0_in__2__0[4]),
+        .Q(\sample_cnt_reg[4]_0 ),
         .R(rst));
   LUT2 #(
     .INIT(4'h6)) 
@@ -45984,7 +46147,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__0_n_104 ),
         .I2(\ay_reg[1]__1_n_87 ),
         .O(\say_st1[0][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair92" *) 
+  (* HLUTNM = "lutpair91" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[0][55]_i_14 
@@ -46044,7 +46207,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__0_n_104 ),
         .I2(\ay_reg[0]__1_n_87 ),
         .O(\say_st1[0][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair101" *) 
+  (* HLUTNM = "lutpair100" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[0][55]_i_8 
@@ -46061,7 +46224,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_88 ),
         .I2(\ay_reg[0]__2_n_71 ),
         .O(\say_st1[0][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair101" *) 
+  (* HLUTNM = "lutpair100" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][59]_i_10 
@@ -46069,7 +46232,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_87 ),
         .I2(\ay_reg[0]__2_n_70 ),
         .O(\say_st1[0][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair103" *) 
+  (* HLUTNM = "lutpair102" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][59]_i_11 
@@ -46078,7 +46241,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_66 ),
         .I3(\say_st1[0][59]_i_7_n_0 ),
         .O(\say_st1[0][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair102" *) 
+  (* HLUTNM = "lutpair101" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][59]_i_12 
@@ -46103,7 +46266,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_69 ),
         .I3(\say_st1[0][59]_i_10_n_0 ),
         .O(\say_st1[0][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair93" *) 
+  (* HLUTNM = "lutpair92" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][59]_i_16 
@@ -46125,7 +46288,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_86 ),
         .I2(\ay_reg[1]__2_n_69 ),
         .O(\say_st1[0][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair92" *) 
+  (* HLUTNM = "lutpair91" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][59]_i_19 
@@ -46133,7 +46296,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_87 ),
         .I2(\ay_reg[1]__2_n_70 ),
         .O(\say_st1[0][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair94" *) 
+  (* HLUTNM = "lutpair93" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][59]_i_20 
@@ -46142,7 +46305,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__2_n_66 ),
         .I3(\say_st1[0][59]_i_16_n_0 ),
         .O(\say_st1[0][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair93" *) 
+  (* HLUTNM = "lutpair92" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][59]_i_21 
@@ -46191,7 +46354,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[0]_65 [56]),
         .I1(\ay_reg[1]_64 [56]),
         .O(\say_st1[0][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair102" *) 
+  (* HLUTNM = "lutpair101" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][59]_i_7 
@@ -46213,7 +46376,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_86 ),
         .I2(\ay_reg[0]__2_n_69 ),
         .O(\say_st1[0][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair103" *) 
+  (* HLUTNM = "lutpair102" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_10 
@@ -46221,7 +46384,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_83 ),
         .I2(\ay_reg[0]__2_n_66 ),
         .O(\say_st1[0][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair107" *) 
+  (* HLUTNM = "lutpair106" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_11 
@@ -46230,7 +46393,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_62 ),
         .I3(\say_st1[0][63]_i_7_n_0 ),
         .O(\say_st1[0][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair106" *) 
+  (* HLUTNM = "lutpair105" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_12 
@@ -46239,7 +46402,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_63 ),
         .I3(\say_st1[0][63]_i_8_n_0 ),
         .O(\say_st1[0][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair105" *) 
+  (* HLUTNM = "lutpair104" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_13 
@@ -46248,7 +46411,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_64 ),
         .I3(\say_st1[0][63]_i_9_n_0 ),
         .O(\say_st1[0][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair104" *) 
+  (* HLUTNM = "lutpair103" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_14 
@@ -46257,7 +46420,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_65 ),
         .I3(\say_st1[0][63]_i_10_n_0 ),
         .O(\say_st1[0][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair97" *) 
+  (* HLUTNM = "lutpair96" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_16 
@@ -46265,7 +46428,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_80 ),
         .I2(\ay_reg[1]__2_n_63 ),
         .O(\say_st1[0][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair96" *) 
+  (* HLUTNM = "lutpair95" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_17 
@@ -46273,7 +46436,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_81 ),
         .I2(\ay_reg[1]__2_n_64 ),
         .O(\say_st1[0][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair95" *) 
+  (* HLUTNM = "lutpair94" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_18 
@@ -46281,7 +46444,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_82 ),
         .I2(\ay_reg[1]__2_n_65 ),
         .O(\say_st1[0][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair94" *) 
+  (* HLUTNM = "lutpair93" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_19 
@@ -46289,7 +46452,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_83 ),
         .I2(\ay_reg[1]__2_n_66 ),
         .O(\say_st1[0][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair98" *) 
+  (* HLUTNM = "lutpair97" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_20 
@@ -46298,7 +46461,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__2_n_62 ),
         .I3(\say_st1[0][63]_i_16_n_0 ),
         .O(\say_st1[0][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair97" *) 
+  (* HLUTNM = "lutpair96" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_21 
@@ -46307,7 +46470,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__2_n_63 ),
         .I3(\say_st1[0][63]_i_17_n_0 ),
         .O(\say_st1[0][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair96" *) 
+  (* HLUTNM = "lutpair95" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_22 
@@ -46316,7 +46479,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__2_n_64 ),
         .I3(\say_st1[0][63]_i_18_n_0 ),
         .O(\say_st1[0][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair95" *) 
+  (* HLUTNM = "lutpair94" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][63]_i_23 
@@ -46349,7 +46512,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[0]_65 [60]),
         .I1(\ay_reg[1]_64 [60]),
         .O(\say_st1[0][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair106" *) 
+  (* HLUTNM = "lutpair105" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_7 
@@ -46357,7 +46520,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_80 ),
         .I2(\ay_reg[0]__2_n_63 ),
         .O(\say_st1[0][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair105" *) 
+  (* HLUTNM = "lutpair104" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_8 
@@ -46365,7 +46528,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_81 ),
         .I2(\ay_reg[0]__2_n_64 ),
         .O(\say_st1[0][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair104" *) 
+  (* HLUTNM = "lutpair103" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][63]_i_9 
@@ -46373,7 +46536,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_82 ),
         .I2(\ay_reg[0]__2_n_65 ),
         .O(\say_st1[0][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair107" *) 
+  (* HLUTNM = "lutpair106" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_10 
@@ -46399,7 +46562,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__0_n_93 ),
         .I3(\ay_reg[0]__2_n_59 ),
         .O(\say_st1[0][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair109" *) 
+  (* HLUTNM = "lutpair108" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][67]_i_13 
@@ -46408,7 +46571,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[0]__2_n_60 ),
         .I3(\say_st1[0][67]_i_9_n_0 ),
         .O(\say_st1[0][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair108" *) 
+  (* HLUTNM = "lutpair107" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][67]_i_14 
@@ -46424,7 +46587,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_75 ),
         .I2(\ay_reg[1]__0_n_92 ),
         .O(\say_st1[0][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair100" *) 
+  (* HLUTNM = "lutpair99" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_17 
@@ -46432,7 +46595,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_77 ),
         .I2(\ay_reg[1]__2_n_60 ),
         .O(\say_st1[0][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair99" *) 
+  (* HLUTNM = "lutpair98" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_18 
@@ -46440,7 +46603,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[1]__1_n_78 ),
         .I2(\ay_reg[1]__2_n_61 ),
         .O(\say_st1[0][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair98" *) 
+  (* HLUTNM = "lutpair97" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_19 
@@ -46466,7 +46629,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__0_n_93 ),
         .I3(\ay_reg[1]__2_n_59 ),
         .O(\say_st1[0][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair100" *) 
+  (* HLUTNM = "lutpair99" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][67]_i_22 
@@ -46475,7 +46638,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[1]__2_n_60 ),
         .I3(\say_st1[0][67]_i_18_n_0 ),
         .O(\say_st1[0][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair99" *) 
+  (* HLUTNM = "lutpair98" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[0][67]_i_23 
@@ -46515,7 +46678,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_75 ),
         .I2(\ay_reg[0]__0_n_92 ),
         .O(\say_st1[0][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair109" *) 
+  (* HLUTNM = "lutpair108" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_8 
@@ -46523,7 +46686,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[0]__1_n_77 ),
         .I2(\ay_reg[0]__2_n_60 ),
         .O(\say_st1[0][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair108" *) 
+  (* HLUTNM = "lutpair107" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[0][67]_i_9 
@@ -48374,7 +48537,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__0_n_104 ),
         .I2(\ay_reg[3]__1_n_87 ),
         .O(\say_st1[1][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair74" *) 
+  (* HLUTNM = "lutpair73" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[1][55]_i_14 
@@ -48434,7 +48597,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__0_n_104 ),
         .I2(\ay_reg[2]__1_n_87 ),
         .O(\say_st1[1][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair83" *) 
+  (* HLUTNM = "lutpair82" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[1][55]_i_8 
@@ -48451,7 +48614,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_88 ),
         .I2(\ay_reg[2]__2_n_71 ),
         .O(\say_st1[1][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair83" *) 
+  (* HLUTNM = "lutpair82" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][59]_i_10 
@@ -48459,7 +48622,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_87 ),
         .I2(\ay_reg[2]__2_n_70 ),
         .O(\say_st1[1][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair85" *) 
+  (* HLUTNM = "lutpair84" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][59]_i_11 
@@ -48468,7 +48631,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_66 ),
         .I3(\say_st1[1][59]_i_7_n_0 ),
         .O(\say_st1[1][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair84" *) 
+  (* HLUTNM = "lutpair83" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][59]_i_12 
@@ -48493,7 +48656,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_69 ),
         .I3(\say_st1[1][59]_i_10_n_0 ),
         .O(\say_st1[1][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair75" *) 
+  (* HLUTNM = "lutpair74" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][59]_i_16 
@@ -48515,7 +48678,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_86 ),
         .I2(\ay_reg[3]__2_n_69 ),
         .O(\say_st1[1][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair74" *) 
+  (* HLUTNM = "lutpair73" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][59]_i_19 
@@ -48523,7 +48686,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_87 ),
         .I2(\ay_reg[3]__2_n_70 ),
         .O(\say_st1[1][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair76" *) 
+  (* HLUTNM = "lutpair75" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][59]_i_20 
@@ -48532,7 +48695,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__2_n_66 ),
         .I3(\say_st1[1][59]_i_16_n_0 ),
         .O(\say_st1[1][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair75" *) 
+  (* HLUTNM = "lutpair74" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][59]_i_21 
@@ -48581,7 +48744,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[2]_63 [56]),
         .I1(\ay_reg[3]_62 [56]),
         .O(\say_st1[1][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair84" *) 
+  (* HLUTNM = "lutpair83" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][59]_i_7 
@@ -48603,7 +48766,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_86 ),
         .I2(\ay_reg[2]__2_n_69 ),
         .O(\say_st1[1][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair85" *) 
+  (* HLUTNM = "lutpair84" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_10 
@@ -48611,7 +48774,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_83 ),
         .I2(\ay_reg[2]__2_n_66 ),
         .O(\say_st1[1][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair89" *) 
+  (* HLUTNM = "lutpair88" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_11 
@@ -48620,7 +48783,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_62 ),
         .I3(\say_st1[1][63]_i_7_n_0 ),
         .O(\say_st1[1][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair88" *) 
+  (* HLUTNM = "lutpair87" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_12 
@@ -48629,7 +48792,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_63 ),
         .I3(\say_st1[1][63]_i_8_n_0 ),
         .O(\say_st1[1][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair87" *) 
+  (* HLUTNM = "lutpair86" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_13 
@@ -48638,7 +48801,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_64 ),
         .I3(\say_st1[1][63]_i_9_n_0 ),
         .O(\say_st1[1][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair86" *) 
+  (* HLUTNM = "lutpair85" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_14 
@@ -48647,7 +48810,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_65 ),
         .I3(\say_st1[1][63]_i_10_n_0 ),
         .O(\say_st1[1][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair79" *) 
+  (* HLUTNM = "lutpair78" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_16 
@@ -48655,7 +48818,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_80 ),
         .I2(\ay_reg[3]__2_n_63 ),
         .O(\say_st1[1][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair78" *) 
+  (* HLUTNM = "lutpair77" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_17 
@@ -48663,7 +48826,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_81 ),
         .I2(\ay_reg[3]__2_n_64 ),
         .O(\say_st1[1][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair77" *) 
+  (* HLUTNM = "lutpair76" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_18 
@@ -48671,7 +48834,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_82 ),
         .I2(\ay_reg[3]__2_n_65 ),
         .O(\say_st1[1][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair76" *) 
+  (* HLUTNM = "lutpair75" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_19 
@@ -48679,7 +48842,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_83 ),
         .I2(\ay_reg[3]__2_n_66 ),
         .O(\say_st1[1][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair80" *) 
+  (* HLUTNM = "lutpair79" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_20 
@@ -48688,7 +48851,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__2_n_62 ),
         .I3(\say_st1[1][63]_i_16_n_0 ),
         .O(\say_st1[1][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair79" *) 
+  (* HLUTNM = "lutpair78" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_21 
@@ -48697,7 +48860,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__2_n_63 ),
         .I3(\say_st1[1][63]_i_17_n_0 ),
         .O(\say_st1[1][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair78" *) 
+  (* HLUTNM = "lutpair77" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_22 
@@ -48706,7 +48869,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__2_n_64 ),
         .I3(\say_st1[1][63]_i_18_n_0 ),
         .O(\say_st1[1][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair77" *) 
+  (* HLUTNM = "lutpair76" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][63]_i_23 
@@ -48739,7 +48902,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[2]_63 [60]),
         .I1(\ay_reg[3]_62 [60]),
         .O(\say_st1[1][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair88" *) 
+  (* HLUTNM = "lutpair87" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_7 
@@ -48747,7 +48910,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_80 ),
         .I2(\ay_reg[2]__2_n_63 ),
         .O(\say_st1[1][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair87" *) 
+  (* HLUTNM = "lutpair86" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_8 
@@ -48755,7 +48918,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_81 ),
         .I2(\ay_reg[2]__2_n_64 ),
         .O(\say_st1[1][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair86" *) 
+  (* HLUTNM = "lutpair85" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][63]_i_9 
@@ -48763,7 +48926,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_82 ),
         .I2(\ay_reg[2]__2_n_65 ),
         .O(\say_st1[1][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair89" *) 
+  (* HLUTNM = "lutpair88" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_10 
@@ -48789,7 +48952,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__0_n_93 ),
         .I3(\ay_reg[2]__2_n_59 ),
         .O(\say_st1[1][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair91" *) 
+  (* HLUTNM = "lutpair90" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][67]_i_13 
@@ -48798,7 +48961,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[2]__2_n_60 ),
         .I3(\say_st1[1][67]_i_9_n_0 ),
         .O(\say_st1[1][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair90" *) 
+  (* HLUTNM = "lutpair89" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][67]_i_14 
@@ -48814,7 +48977,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_75 ),
         .I2(\ay_reg[3]__0_n_92 ),
         .O(\say_st1[1][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair82" *) 
+  (* HLUTNM = "lutpair81" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_17 
@@ -48822,7 +48985,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_77 ),
         .I2(\ay_reg[3]__2_n_60 ),
         .O(\say_st1[1][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair81" *) 
+  (* HLUTNM = "lutpair80" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_18 
@@ -48830,7 +48993,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[3]__1_n_78 ),
         .I2(\ay_reg[3]__2_n_61 ),
         .O(\say_st1[1][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair80" *) 
+  (* HLUTNM = "lutpair79" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_19 
@@ -48856,7 +49019,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__0_n_93 ),
         .I3(\ay_reg[3]__2_n_59 ),
         .O(\say_st1[1][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair82" *) 
+  (* HLUTNM = "lutpair81" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][67]_i_22 
@@ -48865,7 +49028,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[3]__2_n_60 ),
         .I3(\say_st1[1][67]_i_18_n_0 ),
         .O(\say_st1[1][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair81" *) 
+  (* HLUTNM = "lutpair80" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[1][67]_i_23 
@@ -48905,7 +49068,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_75 ),
         .I2(\ay_reg[2]__0_n_92 ),
         .O(\say_st1[1][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair91" *) 
+  (* HLUTNM = "lutpair90" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_8 
@@ -48913,7 +49076,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[2]__1_n_77 ),
         .I2(\ay_reg[2]__2_n_60 ),
         .O(\say_st1[1][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair90" *) 
+  (* HLUTNM = "lutpair89" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[1][67]_i_9 
@@ -50764,7 +50927,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__0_n_104 ),
         .I2(\ay_reg[5]__1_n_87 ),
         .O(\say_st1[2][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair56" *) 
+  (* HLUTNM = "lutpair55" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[2][55]_i_14 
@@ -50824,7 +50987,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__0_n_104 ),
         .I2(\ay_reg[4]__1_n_87 ),
         .O(\say_st1[2][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair65" *) 
+  (* HLUTNM = "lutpair64" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[2][55]_i_8 
@@ -50841,7 +51004,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_88 ),
         .I2(\ay_reg[4]__2_n_71 ),
         .O(\say_st1[2][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair65" *) 
+  (* HLUTNM = "lutpair64" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][59]_i_10 
@@ -50849,7 +51012,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_87 ),
         .I2(\ay_reg[4]__2_n_70 ),
         .O(\say_st1[2][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair67" *) 
+  (* HLUTNM = "lutpair66" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][59]_i_11 
@@ -50858,7 +51021,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_66 ),
         .I3(\say_st1[2][59]_i_7_n_0 ),
         .O(\say_st1[2][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair66" *) 
+  (* HLUTNM = "lutpair65" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][59]_i_12 
@@ -50883,7 +51046,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_69 ),
         .I3(\say_st1[2][59]_i_10_n_0 ),
         .O(\say_st1[2][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair57" *) 
+  (* HLUTNM = "lutpair56" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][59]_i_16 
@@ -50905,7 +51068,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_86 ),
         .I2(\ay_reg[5]__2_n_69 ),
         .O(\say_st1[2][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair56" *) 
+  (* HLUTNM = "lutpair55" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][59]_i_19 
@@ -50913,7 +51076,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_87 ),
         .I2(\ay_reg[5]__2_n_70 ),
         .O(\say_st1[2][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair58" *) 
+  (* HLUTNM = "lutpair57" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][59]_i_20 
@@ -50922,7 +51085,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__2_n_66 ),
         .I3(\say_st1[2][59]_i_16_n_0 ),
         .O(\say_st1[2][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair57" *) 
+  (* HLUTNM = "lutpair56" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][59]_i_21 
@@ -50971,7 +51134,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[4]_61 [56]),
         .I1(\ay_reg[5]_60 [56]),
         .O(\say_st1[2][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair66" *) 
+  (* HLUTNM = "lutpair65" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][59]_i_7 
@@ -50993,7 +51156,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_86 ),
         .I2(\ay_reg[4]__2_n_69 ),
         .O(\say_st1[2][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair67" *) 
+  (* HLUTNM = "lutpair66" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_10 
@@ -51001,7 +51164,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_83 ),
         .I2(\ay_reg[4]__2_n_66 ),
         .O(\say_st1[2][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair71" *) 
+  (* HLUTNM = "lutpair70" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_11 
@@ -51010,7 +51173,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_62 ),
         .I3(\say_st1[2][63]_i_7_n_0 ),
         .O(\say_st1[2][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair70" *) 
+  (* HLUTNM = "lutpair69" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_12 
@@ -51019,7 +51182,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_63 ),
         .I3(\say_st1[2][63]_i_8_n_0 ),
         .O(\say_st1[2][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair69" *) 
+  (* HLUTNM = "lutpair68" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_13 
@@ -51028,7 +51191,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_64 ),
         .I3(\say_st1[2][63]_i_9_n_0 ),
         .O(\say_st1[2][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair68" *) 
+  (* HLUTNM = "lutpair67" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_14 
@@ -51037,7 +51200,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_65 ),
         .I3(\say_st1[2][63]_i_10_n_0 ),
         .O(\say_st1[2][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair61" *) 
+  (* HLUTNM = "lutpair60" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_16 
@@ -51045,7 +51208,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_80 ),
         .I2(\ay_reg[5]__2_n_63 ),
         .O(\say_st1[2][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair60" *) 
+  (* HLUTNM = "lutpair59" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_17 
@@ -51053,7 +51216,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_81 ),
         .I2(\ay_reg[5]__2_n_64 ),
         .O(\say_st1[2][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair59" *) 
+  (* HLUTNM = "lutpair58" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_18 
@@ -51061,7 +51224,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_82 ),
         .I2(\ay_reg[5]__2_n_65 ),
         .O(\say_st1[2][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair58" *) 
+  (* HLUTNM = "lutpair57" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_19 
@@ -51069,7 +51232,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_83 ),
         .I2(\ay_reg[5]__2_n_66 ),
         .O(\say_st1[2][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair62" *) 
+  (* HLUTNM = "lutpair61" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_20 
@@ -51078,7 +51241,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__2_n_62 ),
         .I3(\say_st1[2][63]_i_16_n_0 ),
         .O(\say_st1[2][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair61" *) 
+  (* HLUTNM = "lutpair60" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_21 
@@ -51087,7 +51250,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__2_n_63 ),
         .I3(\say_st1[2][63]_i_17_n_0 ),
         .O(\say_st1[2][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair60" *) 
+  (* HLUTNM = "lutpair59" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_22 
@@ -51096,7 +51259,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__2_n_64 ),
         .I3(\say_st1[2][63]_i_18_n_0 ),
         .O(\say_st1[2][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair59" *) 
+  (* HLUTNM = "lutpair58" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][63]_i_23 
@@ -51129,7 +51292,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[4]_61 [60]),
         .I1(\ay_reg[5]_60 [60]),
         .O(\say_st1[2][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair70" *) 
+  (* HLUTNM = "lutpair69" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_7 
@@ -51137,7 +51300,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_80 ),
         .I2(\ay_reg[4]__2_n_63 ),
         .O(\say_st1[2][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair69" *) 
+  (* HLUTNM = "lutpair68" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_8 
@@ -51145,7 +51308,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_81 ),
         .I2(\ay_reg[4]__2_n_64 ),
         .O(\say_st1[2][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair68" *) 
+  (* HLUTNM = "lutpair67" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][63]_i_9 
@@ -51153,7 +51316,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_82 ),
         .I2(\ay_reg[4]__2_n_65 ),
         .O(\say_st1[2][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair71" *) 
+  (* HLUTNM = "lutpair70" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_10 
@@ -51179,7 +51342,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__0_n_93 ),
         .I3(\ay_reg[4]__2_n_59 ),
         .O(\say_st1[2][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair73" *) 
+  (* HLUTNM = "lutpair72" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][67]_i_13 
@@ -51188,7 +51351,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[4]__2_n_60 ),
         .I3(\say_st1[2][67]_i_9_n_0 ),
         .O(\say_st1[2][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair72" *) 
+  (* HLUTNM = "lutpair71" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][67]_i_14 
@@ -51204,7 +51367,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_75 ),
         .I2(\ay_reg[5]__0_n_92 ),
         .O(\say_st1[2][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair64" *) 
+  (* HLUTNM = "lutpair63" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_17 
@@ -51212,7 +51375,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_77 ),
         .I2(\ay_reg[5]__2_n_60 ),
         .O(\say_st1[2][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair63" *) 
+  (* HLUTNM = "lutpair62" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_18 
@@ -51220,7 +51383,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[5]__1_n_78 ),
         .I2(\ay_reg[5]__2_n_61 ),
         .O(\say_st1[2][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair62" *) 
+  (* HLUTNM = "lutpair61" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_19 
@@ -51246,7 +51409,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__0_n_93 ),
         .I3(\ay_reg[5]__2_n_59 ),
         .O(\say_st1[2][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair64" *) 
+  (* HLUTNM = "lutpair63" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][67]_i_22 
@@ -51255,7 +51418,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[5]__2_n_60 ),
         .I3(\say_st1[2][67]_i_18_n_0 ),
         .O(\say_st1[2][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair63" *) 
+  (* HLUTNM = "lutpair62" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[2][67]_i_23 
@@ -51295,7 +51458,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_75 ),
         .I2(\ay_reg[4]__0_n_92 ),
         .O(\say_st1[2][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair73" *) 
+  (* HLUTNM = "lutpair72" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_8 
@@ -51303,7 +51466,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[4]__1_n_77 ),
         .I2(\ay_reg[4]__2_n_60 ),
         .O(\say_st1[2][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair72" *) 
+  (* HLUTNM = "lutpair71" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[2][67]_i_9 
@@ -53154,7 +53317,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__0_n_104 ),
         .I2(\ay_reg[7]__1_n_87 ),
         .O(\say_st1[3][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair38" *) 
+  (* HLUTNM = "lutpair37" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[3][55]_i_14 
@@ -53214,7 +53377,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__0_n_104 ),
         .I2(\ay_reg[6]__1_n_87 ),
         .O(\say_st1[3][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair47" *) 
+  (* HLUTNM = "lutpair46" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[3][55]_i_8 
@@ -53231,7 +53394,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_88 ),
         .I2(\ay_reg[6]__2_n_71 ),
         .O(\say_st1[3][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair47" *) 
+  (* HLUTNM = "lutpair46" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][59]_i_10 
@@ -53239,7 +53402,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_87 ),
         .I2(\ay_reg[6]__2_n_70 ),
         .O(\say_st1[3][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair49" *) 
+  (* HLUTNM = "lutpair48" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][59]_i_11 
@@ -53248,7 +53411,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_66 ),
         .I3(\say_st1[3][59]_i_7_n_0 ),
         .O(\say_st1[3][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair48" *) 
+  (* HLUTNM = "lutpair47" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][59]_i_12 
@@ -53273,7 +53436,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_69 ),
         .I3(\say_st1[3][59]_i_10_n_0 ),
         .O(\say_st1[3][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair39" *) 
+  (* HLUTNM = "lutpair38" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][59]_i_16 
@@ -53295,7 +53458,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_86 ),
         .I2(\ay_reg[7]__2_n_69 ),
         .O(\say_st1[3][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair38" *) 
+  (* HLUTNM = "lutpair37" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][59]_i_19 
@@ -53303,7 +53466,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_87 ),
         .I2(\ay_reg[7]__2_n_70 ),
         .O(\say_st1[3][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair40" *) 
+  (* HLUTNM = "lutpair39" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][59]_i_20 
@@ -53312,7 +53475,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__2_n_66 ),
         .I3(\say_st1[3][59]_i_16_n_0 ),
         .O(\say_st1[3][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair39" *) 
+  (* HLUTNM = "lutpair38" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][59]_i_21 
@@ -53361,7 +53524,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[6]_59 [56]),
         .I1(\ay_reg[7]_58 [56]),
         .O(\say_st1[3][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair48" *) 
+  (* HLUTNM = "lutpair47" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][59]_i_7 
@@ -53383,7 +53546,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_86 ),
         .I2(\ay_reg[6]__2_n_69 ),
         .O(\say_st1[3][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair49" *) 
+  (* HLUTNM = "lutpair48" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_10 
@@ -53391,7 +53554,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_83 ),
         .I2(\ay_reg[6]__2_n_66 ),
         .O(\say_st1[3][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair53" *) 
+  (* HLUTNM = "lutpair52" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_11 
@@ -53400,7 +53563,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_62 ),
         .I3(\say_st1[3][63]_i_7_n_0 ),
         .O(\say_st1[3][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair52" *) 
+  (* HLUTNM = "lutpair51" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_12 
@@ -53409,7 +53572,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_63 ),
         .I3(\say_st1[3][63]_i_8_n_0 ),
         .O(\say_st1[3][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair51" *) 
+  (* HLUTNM = "lutpair50" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_13 
@@ -53418,7 +53581,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_64 ),
         .I3(\say_st1[3][63]_i_9_n_0 ),
         .O(\say_st1[3][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair50" *) 
+  (* HLUTNM = "lutpair49" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_14 
@@ -53427,7 +53590,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_65 ),
         .I3(\say_st1[3][63]_i_10_n_0 ),
         .O(\say_st1[3][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair43" *) 
+  (* HLUTNM = "lutpair42" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_16 
@@ -53435,7 +53598,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_80 ),
         .I2(\ay_reg[7]__2_n_63 ),
         .O(\say_st1[3][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair42" *) 
+  (* HLUTNM = "lutpair41" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_17 
@@ -53443,7 +53606,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_81 ),
         .I2(\ay_reg[7]__2_n_64 ),
         .O(\say_st1[3][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair41" *) 
+  (* HLUTNM = "lutpair40" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_18 
@@ -53451,7 +53614,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_82 ),
         .I2(\ay_reg[7]__2_n_65 ),
         .O(\say_st1[3][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair40" *) 
+  (* HLUTNM = "lutpair39" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_19 
@@ -53459,7 +53622,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_83 ),
         .I2(\ay_reg[7]__2_n_66 ),
         .O(\say_st1[3][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair44" *) 
+  (* HLUTNM = "lutpair43" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_20 
@@ -53468,7 +53631,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__2_n_62 ),
         .I3(\say_st1[3][63]_i_16_n_0 ),
         .O(\say_st1[3][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair43" *) 
+  (* HLUTNM = "lutpair42" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_21 
@@ -53477,7 +53640,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__2_n_63 ),
         .I3(\say_st1[3][63]_i_17_n_0 ),
         .O(\say_st1[3][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair42" *) 
+  (* HLUTNM = "lutpair41" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_22 
@@ -53486,7 +53649,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__2_n_64 ),
         .I3(\say_st1[3][63]_i_18_n_0 ),
         .O(\say_st1[3][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair41" *) 
+  (* HLUTNM = "lutpair40" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][63]_i_23 
@@ -53519,7 +53682,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[6]_59 [60]),
         .I1(\ay_reg[7]_58 [60]),
         .O(\say_st1[3][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair52" *) 
+  (* HLUTNM = "lutpair51" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_7 
@@ -53527,7 +53690,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_80 ),
         .I2(\ay_reg[6]__2_n_63 ),
         .O(\say_st1[3][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair51" *) 
+  (* HLUTNM = "lutpair50" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_8 
@@ -53535,7 +53698,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_81 ),
         .I2(\ay_reg[6]__2_n_64 ),
         .O(\say_st1[3][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair50" *) 
+  (* HLUTNM = "lutpair49" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][63]_i_9 
@@ -53543,7 +53706,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_82 ),
         .I2(\ay_reg[6]__2_n_65 ),
         .O(\say_st1[3][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair53" *) 
+  (* HLUTNM = "lutpair52" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_10 
@@ -53569,7 +53732,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__0_n_93 ),
         .I3(\ay_reg[6]__2_n_59 ),
         .O(\say_st1[3][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair55" *) 
+  (* HLUTNM = "lutpair54" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][67]_i_13 
@@ -53578,7 +53741,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[6]__2_n_60 ),
         .I3(\say_st1[3][67]_i_9_n_0 ),
         .O(\say_st1[3][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair54" *) 
+  (* HLUTNM = "lutpair53" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][67]_i_14 
@@ -53594,7 +53757,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_75 ),
         .I2(\ay_reg[7]__0_n_92 ),
         .O(\say_st1[3][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair46" *) 
+  (* HLUTNM = "lutpair45" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_17 
@@ -53602,7 +53765,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_77 ),
         .I2(\ay_reg[7]__2_n_60 ),
         .O(\say_st1[3][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair45" *) 
+  (* HLUTNM = "lutpair44" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_18 
@@ -53610,7 +53773,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[7]__1_n_78 ),
         .I2(\ay_reg[7]__2_n_61 ),
         .O(\say_st1[3][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair44" *) 
+  (* HLUTNM = "lutpair43" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_19 
@@ -53636,7 +53799,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__0_n_93 ),
         .I3(\ay_reg[7]__2_n_59 ),
         .O(\say_st1[3][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair46" *) 
+  (* HLUTNM = "lutpair45" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][67]_i_22 
@@ -53645,7 +53808,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[7]__2_n_60 ),
         .I3(\say_st1[3][67]_i_18_n_0 ),
         .O(\say_st1[3][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair45" *) 
+  (* HLUTNM = "lutpair44" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[3][67]_i_23 
@@ -53685,7 +53848,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_75 ),
         .I2(\ay_reg[6]__0_n_92 ),
         .O(\say_st1[3][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair55" *) 
+  (* HLUTNM = "lutpair54" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_8 
@@ -53693,7 +53856,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[6]__1_n_77 ),
         .I2(\ay_reg[6]__2_n_60 ),
         .O(\say_st1[3][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair54" *) 
+  (* HLUTNM = "lutpair53" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[3][67]_i_9 
@@ -55544,7 +55707,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__0_n_104 ),
         .I2(\ay_reg[9]__1_n_87 ),
         .O(\say_st1[4][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair20" *) 
+  (* HLUTNM = "lutpair19" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[4][55]_i_14 
@@ -55604,7 +55767,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__0_n_104 ),
         .I2(\ay_reg[8]__1_n_87 ),
         .O(\say_st1[4][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair29" *) 
+  (* HLUTNM = "lutpair28" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[4][55]_i_8 
@@ -55621,7 +55784,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_88 ),
         .I2(\ay_reg[8]__2_n_71 ),
         .O(\say_st1[4][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair29" *) 
+  (* HLUTNM = "lutpair28" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][59]_i_10 
@@ -55629,7 +55792,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_87 ),
         .I2(\ay_reg[8]__2_n_70 ),
         .O(\say_st1[4][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair31" *) 
+  (* HLUTNM = "lutpair30" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][59]_i_11 
@@ -55638,7 +55801,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_66 ),
         .I3(\say_st1[4][59]_i_7_n_0 ),
         .O(\say_st1[4][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair30" *) 
+  (* HLUTNM = "lutpair29" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][59]_i_12 
@@ -55663,7 +55826,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_69 ),
         .I3(\say_st1[4][59]_i_10_n_0 ),
         .O(\say_st1[4][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair21" *) 
+  (* HLUTNM = "lutpair20" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][59]_i_16 
@@ -55685,7 +55848,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_86 ),
         .I2(\ay_reg[9]__2_n_69 ),
         .O(\say_st1[4][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair20" *) 
+  (* HLUTNM = "lutpair19" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][59]_i_19 
@@ -55693,7 +55856,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_87 ),
         .I2(\ay_reg[9]__2_n_70 ),
         .O(\say_st1[4][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair22" *) 
+  (* HLUTNM = "lutpair21" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][59]_i_20 
@@ -55702,7 +55865,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__2_n_66 ),
         .I3(\say_st1[4][59]_i_16_n_0 ),
         .O(\say_st1[4][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair21" *) 
+  (* HLUTNM = "lutpair20" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][59]_i_21 
@@ -55751,7 +55914,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[8]_57 [56]),
         .I1(\ay_reg[9]_56 [56]),
         .O(\say_st1[4][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair30" *) 
+  (* HLUTNM = "lutpair29" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][59]_i_7 
@@ -55773,7 +55936,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_86 ),
         .I2(\ay_reg[8]__2_n_69 ),
         .O(\say_st1[4][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair31" *) 
+  (* HLUTNM = "lutpair30" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_10 
@@ -55781,7 +55944,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_83 ),
         .I2(\ay_reg[8]__2_n_66 ),
         .O(\say_st1[4][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair35" *) 
+  (* HLUTNM = "lutpair34" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_11 
@@ -55790,7 +55953,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_62 ),
         .I3(\say_st1[4][63]_i_7_n_0 ),
         .O(\say_st1[4][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair34" *) 
+  (* HLUTNM = "lutpair33" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_12 
@@ -55799,7 +55962,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_63 ),
         .I3(\say_st1[4][63]_i_8_n_0 ),
         .O(\say_st1[4][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair33" *) 
+  (* HLUTNM = "lutpair32" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_13 
@@ -55808,7 +55971,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_64 ),
         .I3(\say_st1[4][63]_i_9_n_0 ),
         .O(\say_st1[4][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair32" *) 
+  (* HLUTNM = "lutpair31" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_14 
@@ -55817,7 +55980,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_65 ),
         .I3(\say_st1[4][63]_i_10_n_0 ),
         .O(\say_st1[4][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair25" *) 
+  (* HLUTNM = "lutpair24" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_16 
@@ -55825,7 +55988,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_80 ),
         .I2(\ay_reg[9]__2_n_63 ),
         .O(\say_st1[4][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair24" *) 
+  (* HLUTNM = "lutpair23" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_17 
@@ -55833,7 +55996,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_81 ),
         .I2(\ay_reg[9]__2_n_64 ),
         .O(\say_st1[4][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair23" *) 
+  (* HLUTNM = "lutpair22" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_18 
@@ -55841,7 +56004,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_82 ),
         .I2(\ay_reg[9]__2_n_65 ),
         .O(\say_st1[4][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair22" *) 
+  (* HLUTNM = "lutpair21" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_19 
@@ -55849,7 +56012,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_83 ),
         .I2(\ay_reg[9]__2_n_66 ),
         .O(\say_st1[4][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair26" *) 
+  (* HLUTNM = "lutpair25" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_20 
@@ -55858,7 +56021,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__2_n_62 ),
         .I3(\say_st1[4][63]_i_16_n_0 ),
         .O(\say_st1[4][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair25" *) 
+  (* HLUTNM = "lutpair24" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_21 
@@ -55867,7 +56030,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__2_n_63 ),
         .I3(\say_st1[4][63]_i_17_n_0 ),
         .O(\say_st1[4][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair24" *) 
+  (* HLUTNM = "lutpair23" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_22 
@@ -55876,7 +56039,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__2_n_64 ),
         .I3(\say_st1[4][63]_i_18_n_0 ),
         .O(\say_st1[4][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair23" *) 
+  (* HLUTNM = "lutpair22" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][63]_i_23 
@@ -55909,7 +56072,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[8]_57 [60]),
         .I1(\ay_reg[9]_56 [60]),
         .O(\say_st1[4][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair34" *) 
+  (* HLUTNM = "lutpair33" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_7 
@@ -55917,7 +56080,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_80 ),
         .I2(\ay_reg[8]__2_n_63 ),
         .O(\say_st1[4][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair33" *) 
+  (* HLUTNM = "lutpair32" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_8 
@@ -55925,7 +56088,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_81 ),
         .I2(\ay_reg[8]__2_n_64 ),
         .O(\say_st1[4][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair32" *) 
+  (* HLUTNM = "lutpair31" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][63]_i_9 
@@ -55933,7 +56096,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_82 ),
         .I2(\ay_reg[8]__2_n_65 ),
         .O(\say_st1[4][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair35" *) 
+  (* HLUTNM = "lutpair34" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_10 
@@ -55959,7 +56122,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__0_n_93 ),
         .I3(\ay_reg[8]__2_n_59 ),
         .O(\say_st1[4][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair37" *) 
+  (* HLUTNM = "lutpair36" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][67]_i_13 
@@ -55968,7 +56131,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[8]__2_n_60 ),
         .I3(\say_st1[4][67]_i_9_n_0 ),
         .O(\say_st1[4][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair36" *) 
+  (* HLUTNM = "lutpair35" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][67]_i_14 
@@ -55984,7 +56147,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_75 ),
         .I2(\ay_reg[9]__0_n_92 ),
         .O(\say_st1[4][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair28" *) 
+  (* HLUTNM = "lutpair27" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_17 
@@ -55992,7 +56155,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_77 ),
         .I2(\ay_reg[9]__2_n_60 ),
         .O(\say_st1[4][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair27" *) 
+  (* HLUTNM = "lutpair26" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_18 
@@ -56000,7 +56163,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[9]__1_n_78 ),
         .I2(\ay_reg[9]__2_n_61 ),
         .O(\say_st1[4][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair26" *) 
+  (* HLUTNM = "lutpair25" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_19 
@@ -56026,7 +56189,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__0_n_93 ),
         .I3(\ay_reg[9]__2_n_59 ),
         .O(\say_st1[4][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair28" *) 
+  (* HLUTNM = "lutpair27" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][67]_i_22 
@@ -56035,7 +56198,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[9]__2_n_60 ),
         .I3(\say_st1[4][67]_i_18_n_0 ),
         .O(\say_st1[4][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair27" *) 
+  (* HLUTNM = "lutpair26" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[4][67]_i_23 
@@ -56075,7 +56238,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_75 ),
         .I2(\ay_reg[8]__0_n_92 ),
         .O(\say_st1[4][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair37" *) 
+  (* HLUTNM = "lutpair36" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_8 
@@ -56083,7 +56246,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[8]__1_n_77 ),
         .I2(\ay_reg[8]__2_n_60 ),
         .O(\say_st1[4][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair36" *) 
+  (* HLUTNM = "lutpair35" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[4][67]_i_9 
@@ -57934,7 +58097,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg_n_0_[11][1] ),
         .I2(\ay_reg[11]__0_n_104 ),
         .O(\say_st1[5][55]_i_13_n_0 ));
-  (* HLUTNM = "lutpair2" *) 
+  (* HLUTNM = "lutpair1" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[5][55]_i_14 
@@ -57994,7 +58157,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__0_n_104 ),
         .I2(\ay_reg[10]__1_n_87 ),
         .O(\say_st1[5][55]_i_7_n_0 ));
-  (* HLUTNM = "lutpair11" *) 
+  (* HLUTNM = "lutpair10" *) 
   LUT5 #(
     .INIT(32'h69969696)) 
     \say_st1[5][55]_i_8 
@@ -58011,7 +58174,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_88 ),
         .I2(\ay_reg[10]__2_n_71 ),
         .O(\say_st1[5][55]_i_9_n_0 ));
-  (* HLUTNM = "lutpair11" *) 
+  (* HLUTNM = "lutpair10" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][59]_i_10 
@@ -58019,7 +58182,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_87 ),
         .I2(\ay_reg[10]__2_n_70 ),
         .O(\say_st1[5][59]_i_10_n_0 ));
-  (* HLUTNM = "lutpair13" *) 
+  (* HLUTNM = "lutpair12" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][59]_i_11 
@@ -58028,7 +58191,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_66 ),
         .I3(\say_st1[5][59]_i_7_n_0 ),
         .O(\say_st1[5][59]_i_11_n_0 ));
-  (* HLUTNM = "lutpair12" *) 
+  (* HLUTNM = "lutpair11" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][59]_i_12 
@@ -58053,7 +58216,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_69 ),
         .I3(\say_st1[5][59]_i_10_n_0 ),
         .O(\say_st1[5][59]_i_14_n_0 ));
-  (* HLUTNM = "lutpair3" *) 
+  (* HLUTNM = "lutpair2" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][59]_i_16 
@@ -58075,7 +58238,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_103 ),
         .I2(\ay_reg[11]__1_n_69 ),
         .O(\say_st1[5][59]_i_18_n_0 ));
-  (* HLUTNM = "lutpair2" *) 
+  (* HLUTNM = "lutpair1" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][59]_i_19 
@@ -58083,7 +58246,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_104 ),
         .I2(\ay_reg[11]__1_n_70 ),
         .O(\say_st1[5][59]_i_19_n_0 ));
-  (* HLUTNM = "lutpair4" *) 
+  (* HLUTNM = "lutpair3" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][59]_i_20 
@@ -58092,7 +58255,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[11]__1_n_66 ),
         .I3(\say_st1[5][59]_i_16_n_0 ),
         .O(\say_st1[5][59]_i_20_n_0 ));
-  (* HLUTNM = "lutpair3" *) 
+  (* HLUTNM = "lutpair2" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][59]_i_21 
@@ -58141,7 +58304,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[10]_55 [56]),
         .I1(\ay_reg[11]_54 [56]),
         .O(\say_st1[5][59]_i_6_n_0 ));
-  (* HLUTNM = "lutpair12" *) 
+  (* HLUTNM = "lutpair11" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][59]_i_7 
@@ -58163,7 +58326,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_86 ),
         .I2(\ay_reg[10]__2_n_69 ),
         .O(\say_st1[5][59]_i_9_n_0 ));
-  (* HLUTNM = "lutpair13" *) 
+  (* HLUTNM = "lutpair12" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_10 
@@ -58171,7 +58334,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_83 ),
         .I2(\ay_reg[10]__2_n_66 ),
         .O(\say_st1[5][63]_i_10_n_0 ));
-  (* HLUTNM = "lutpair17" *) 
+  (* HLUTNM = "lutpair16" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_11 
@@ -58180,7 +58343,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_62 ),
         .I3(\say_st1[5][63]_i_7_n_0 ),
         .O(\say_st1[5][63]_i_11_n_0 ));
-  (* HLUTNM = "lutpair16" *) 
+  (* HLUTNM = "lutpair15" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_12 
@@ -58189,7 +58352,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_63 ),
         .I3(\say_st1[5][63]_i_8_n_0 ),
         .O(\say_st1[5][63]_i_12_n_0 ));
-  (* HLUTNM = "lutpair15" *) 
+  (* HLUTNM = "lutpair14" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_13 
@@ -58198,7 +58361,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_64 ),
         .I3(\say_st1[5][63]_i_9_n_0 ),
         .O(\say_st1[5][63]_i_13_n_0 ));
-  (* HLUTNM = "lutpair14" *) 
+  (* HLUTNM = "lutpair13" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_14 
@@ -58207,7 +58370,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_65 ),
         .I3(\say_st1[5][63]_i_10_n_0 ),
         .O(\say_st1[5][63]_i_14_n_0 ));
-  (* HLUTNM = "lutpair7" *) 
+  (* HLUTNM = "lutpair6" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_16 
@@ -58215,7 +58378,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_97 ),
         .I2(\ay_reg[11]__1_n_63 ),
         .O(\say_st1[5][63]_i_16_n_0 ));
-  (* HLUTNM = "lutpair6" *) 
+  (* HLUTNM = "lutpair5" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_17 
@@ -58223,7 +58386,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_98 ),
         .I2(\ay_reg[11]__1_n_64 ),
         .O(\say_st1[5][63]_i_17_n_0 ));
-  (* HLUTNM = "lutpair5" *) 
+  (* HLUTNM = "lutpair4" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_18 
@@ -58231,7 +58394,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_99 ),
         .I2(\ay_reg[11]__1_n_65 ),
         .O(\say_st1[5][63]_i_18_n_0 ));
-  (* HLUTNM = "lutpair4" *) 
+  (* HLUTNM = "lutpair3" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_19 
@@ -58239,7 +58402,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_100 ),
         .I2(\ay_reg[11]__1_n_66 ),
         .O(\say_st1[5][63]_i_19_n_0 ));
-  (* HLUTNM = "lutpair8" *) 
+  (* HLUTNM = "lutpair7" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_20 
@@ -58248,7 +58411,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[11]__1_n_62 ),
         .I3(\say_st1[5][63]_i_16_n_0 ),
         .O(\say_st1[5][63]_i_20_n_0 ));
-  (* HLUTNM = "lutpair7" *) 
+  (* HLUTNM = "lutpair6" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_21 
@@ -58257,7 +58420,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[11]__1_n_63 ),
         .I3(\say_st1[5][63]_i_17_n_0 ),
         .O(\say_st1[5][63]_i_21_n_0 ));
-  (* HLUTNM = "lutpair6" *) 
+  (* HLUTNM = "lutpair5" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_22 
@@ -58266,7 +58429,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[11]__1_n_64 ),
         .I3(\say_st1[5][63]_i_18_n_0 ),
         .O(\say_st1[5][63]_i_22_n_0 ));
-  (* HLUTNM = "lutpair5" *) 
+  (* HLUTNM = "lutpair4" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][63]_i_23 
@@ -58299,7 +58462,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.I0(\ay_reg[10]_55 [60]),
         .I1(\ay_reg[11]_54 [60]),
         .O(\say_st1[5][63]_i_6_n_0 ));
-  (* HLUTNM = "lutpair16" *) 
+  (* HLUTNM = "lutpair15" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_7 
@@ -58307,7 +58470,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_80 ),
         .I2(\ay_reg[10]__2_n_63 ),
         .O(\say_st1[5][63]_i_7_n_0 ));
-  (* HLUTNM = "lutpair15" *) 
+  (* HLUTNM = "lutpair14" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_8 
@@ -58315,7 +58478,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_81 ),
         .I2(\ay_reg[10]__2_n_64 ),
         .O(\say_st1[5][63]_i_8_n_0 ));
-  (* HLUTNM = "lutpair14" *) 
+  (* HLUTNM = "lutpair13" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][63]_i_9 
@@ -58323,7 +58486,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_82 ),
         .I2(\ay_reg[10]__2_n_65 ),
         .O(\say_st1[5][63]_i_9_n_0 ));
-  (* HLUTNM = "lutpair17" *) 
+  (* HLUTNM = "lutpair16" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_10 
@@ -58349,7 +58512,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__0_n_93 ),
         .I3(\ay_reg[10]__2_n_59 ),
         .O(\say_st1[5][67]_i_12_n_0 ));
-  (* HLUTNM = "lutpair19" *) 
+  (* HLUTNM = "lutpair18" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][67]_i_13 
@@ -58358,7 +58521,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[10]__2_n_60 ),
         .I3(\say_st1[5][67]_i_9_n_0 ),
         .O(\say_st1[5][67]_i_13_n_0 ));
-  (* HLUTNM = "lutpair18" *) 
+  (* HLUTNM = "lutpair17" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][67]_i_14 
@@ -58374,7 +58537,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_92 ),
         .I2(\ay_reg_n_0_[11][13] ),
         .O(\say_st1[5][67]_i_16_n_0 ));
-  (* HLUTNM = "lutpair10" *) 
+  (* HLUTNM = "lutpair9" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_17 
@@ -58382,7 +58545,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_94 ),
         .I2(\ay_reg[11]__1_n_60 ),
         .O(\say_st1[5][67]_i_17_n_0 ));
-  (* HLUTNM = "lutpair9" *) 
+  (* HLUTNM = "lutpair8" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_18 
@@ -58390,7 +58553,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[11]__0_n_95 ),
         .I2(\ay_reg[11]__1_n_61 ),
         .O(\say_st1[5][67]_i_18_n_0 ));
-  (* HLUTNM = "lutpair8" *) 
+  (* HLUTNM = "lutpair7" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_19 
@@ -58416,7 +58579,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg_n_0_[11][12] ),
         .I3(\ay_reg[11]__1_n_59 ),
         .O(\say_st1[5][67]_i_21_n_0 ));
-  (* HLUTNM = "lutpair10" *) 
+  (* HLUTNM = "lutpair9" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][67]_i_22 
@@ -58425,7 +58588,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I2(\ay_reg[11]__1_n_60 ),
         .I3(\say_st1[5][67]_i_18_n_0 ),
         .O(\say_st1[5][67]_i_22_n_0 ));
-  (* HLUTNM = "lutpair9" *) 
+  (* HLUTNM = "lutpair8" *) 
   LUT4 #(
     .INIT(16'h6996)) 
     \say_st1[5][67]_i_23 
@@ -58465,7 +58628,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_75 ),
         .I2(\ay_reg[10]__0_n_92 ),
         .O(\say_st1[5][67]_i_7_n_0 ));
-  (* HLUTNM = "lutpair19" *) 
+  (* HLUTNM = "lutpair18" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_8 
@@ -58473,7 +58636,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .I1(\ay_reg[10]__1_n_77 ),
         .I2(\ay_reg[10]__2_n_60 ),
         .O(\say_st1[5][67]_i_8_n_0 ));
-  (* HLUTNM = "lutpair18" *) 
+  (* HLUTNM = "lutpair17" *) 
   LUT3 #(
     .INIT(8'hE8)) 
     \say_st1[5][67]_i_9 
@@ -75436,173 +75599,183 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
     \valid[1]_i_1 
        (.I0(rst),
         .O(rst_0));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \x_master[0]_i_1 
-       (.I0(x_master2[2]),
-        .I1(\x_reg[8]_45 [2]),
-        .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[2]));
   (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT3 #(
     .INIT(8'hAC)) 
-    \x_master[10]_i_1 
-       (.I0(x_master2[12]),
-        .I1(\x_reg[8]_45 [12]),
+    \x_master[0]_i_1 
+       (.I0(x_master2[1]),
+        .I1(\x_reg[8]_45 [1]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[12]));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+        .O(C[0]));
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \x_master[10]_i_1 
+       (.I0(x_master2[11]),
+        .I1(\x_reg[8]_45 [11]),
+        .I2(\x_reg[8]_45 [15]),
+        .O(C[10]));
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[11]_i_1 
-       (.I0(x_master2[13]),
-        .I1(\x_reg[8]_45 [13]),
+       (.I0(x_master2[12]),
+        .I1(\x_reg[8]_45 [12]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[13]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+        .O(C[11]));
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[12]_i_1 
+       (.I0(x_master2[13]),
+        .I1(\x_reg[8]_45 [13]),
+        .I2(\x_reg[8]_45 [15]),
+        .O(C[12]));
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \x_master[13]_i_1 
        (.I0(x_master2[14]),
         .I1(\x_reg[8]_45 [14]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[14]));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+        .O(C[13]));
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT2 #(
     .INIT(4'h8)) 
-    \x_master[13]_i_1 
+    \x_master[14]_i_1 
        (.I0(x_master2[15]),
         .I1(\x_reg[8]_45 [15]),
-        .O(x_master1[15]));
+        .O(C[14]));
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT2 #(
     .INIT(4'h4)) 
     \x_master[15]_i_1 
        (.I0(\x_master_reg[15]_i_2_n_0 ),
         .I1(\x_reg[8]_45 [15]),
-        .O(x_master1[16]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+        .O(C[15]));
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[1]_i_1 
-       (.I0(x_master2[3]),
-        .I1(\x_reg[8]_45 [3]),
+       (.I0(x_master2[2]),
+        .I1(\x_reg[8]_45 [2]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[3]));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \x_master[2]_i_1 
-       (.I0(x_master2[4]),
-        .I1(\x_reg[8]_45 [4]),
-        .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[4]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \x_master[2]_i_3 
-       (.I0(\x_reg[8]_45 [1]),
-        .O(\x_master[2]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \x_master[3]_i_1 
-       (.I0(x_master2[5]),
-        .I1(\x_reg[8]_45 [5]),
-        .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[5]));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \x_master[4]_i_1 
-       (.I0(x_master2[6]),
-        .I1(\x_reg[8]_45 [6]),
-        .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[6]));
+        .O(C[1]));
   (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT3 #(
     .INIT(8'hAC)) 
-    \x_master[5]_i_1 
-       (.I0(x_master2[7]),
-        .I1(\x_reg[8]_45 [7]),
+    \x_master[2]_i_1 
+       (.I0(x_master2[3]),
+        .I1(\x_reg[8]_45 [3]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[7]));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+        .O(C[2]));
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \x_master[3]_i_1 
+       (.I0(x_master2[4]),
+        .I1(\x_reg[8]_45 [4]),
+        .I2(\x_reg[8]_45 [15]),
+        .O(C[3]));
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \x_master[4]_i_1 
+       (.I0(x_master2[5]),
+        .I1(\x_reg[8]_45 [5]),
+        .I2(\x_reg[8]_45 [15]),
+        .O(C[4]));
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \x_master[5]_i_1 
+       (.I0(x_master2[6]),
+        .I1(\x_reg[8]_45 [6]),
+        .I2(\x_reg[8]_45 [15]),
+        .O(C[5]));
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[6]_i_1 
-       (.I0(x_master2[8]),
-        .I1(\x_reg[8]_45 [8]),
+       (.I0(x_master2[7]),
+        .I1(\x_reg[8]_45 [7]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[8]));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+        .O(C[6]));
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[7]_i_1 
-       (.I0(x_master2[9]),
-        .I1(\x_reg[8]_45 [9]),
+       (.I0(x_master2[8]),
+        .I1(\x_reg[8]_45 [8]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[9]));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+        .O(C[7]));
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[8]_i_1 
-       (.I0(x_master2[10]),
-        .I1(\x_reg[8]_45 [10]),
+       (.I0(x_master2[9]),
+        .I1(\x_reg[8]_45 [9]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[10]));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+        .O(C[8]));
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \x_master[9]_i_1 
-       (.I0(x_master2[11]),
-        .I1(\x_reg[8]_45 [11]),
+       (.I0(x_master2[10]),
+        .I1(\x_reg[8]_45 [10]),
         .I2(\x_reg[8]_45 [15]),
-        .O(x_master1[11]));
+        .O(C[9]));
   FDRE \x_master_reg[0] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[2]),
+        .D(C[0]),
         .Q(x_master[0]),
         .R(1'b0));
   FDRE \x_master_reg[10] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[12]),
+        .D(C[10]),
         .Q(x_master[10]),
         .R(1'b0));
-  CARRY4 \x_master_reg[10]_i_2 
-       (.CI(\x_master_reg[6]_i_2_n_0 ),
-        .CO({\x_master_reg[10]_i_2_n_0 ,\x_master_reg[10]_i_2_n_1 ,\x_master_reg[10]_i_2_n_2 ,\x_master_reg[10]_i_2_n_3 }),
+  FDRE \x_master_reg[11] 
+       (.C(clk_out1),
+        .CE(rst_0),
+        .D(C[11]),
+        .Q(x_master[11]),
+        .R(1'b0));
+  CARRY4 \x_master_reg[11]_i_2 
+       (.CI(\x_master_reg[7]_i_2_n_0 ),
+        .CO({\x_master_reg[11]_i_2_n_0 ,\x_master_reg[11]_i_2_n_1 ,\x_master_reg[11]_i_2_n_2 ,\x_master_reg[11]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(x_master2[12:9]),
         .S(\x_reg[8]_45 [12:9]));
-  FDRE \x_master_reg[11] 
-       (.C(clk_out1),
-        .CE(rst_0),
-        .D(x_master1[13]),
-        .Q(x_master[11]),
-        .R(1'b0));
   FDRE \x_master_reg[12] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[14]),
+        .D(C[12]),
         .Q(x_master[12]),
         .R(1'b0));
   FDRE \x_master_reg[13] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[15]),
+        .D(C[13]),
         .Q(x_master[13]),
+        .R(1'b0));
+  FDRE \x_master_reg[14] 
+       (.C(clk_out1),
+        .CE(rst_0),
+        .D(C[14]),
+        .Q(x_master[14]),
         .R(1'b0));
   FDRE \x_master_reg[15] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[16]),
+        .D(C[15]),
         .Q(x_master[15]),
         .R(1'b0));
   CARRY4 \x_master_reg[15]_i_2 
-       (.CI(\x_master_reg[10]_i_2_n_0 ),
+       (.CI(\x_master_reg[11]_i_2_n_0 ),
         .CO({\x_master_reg[15]_i_2_n_0 ,\NLW_x_master_reg[15]_i_2_CO_UNCONNECTED [2],\x_master_reg[15]_i_2_n_2 ,\x_master_reg[15]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b1,1'b0,1'b0}),
@@ -75611,1316 +75784,1316 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   FDRE \x_master_reg[1] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[3]),
+        .D(C[1]),
         .Q(x_master[1]),
         .R(1'b0));
   FDRE \x_master_reg[2] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[4]),
+        .D(C[2]),
         .Q(x_master[2]),
         .R(1'b0));
-  CARRY4 \x_master_reg[2]_i_2 
-       (.CI(1'b0),
-        .CO({\x_master_reg[2]_i_2_n_0 ,\x_master_reg[2]_i_2_n_1 ,\x_master_reg[2]_i_2_n_2 ,\x_master_reg[2]_i_2_n_3 }),
-        .CYINIT(\x_reg[8]_45 [0]),
-        .DI({1'b0,1'b0,1'b0,\x_reg[8]_45 [1]}),
-        .O({x_master2[4:2],\NLW_x_master_reg[2]_i_2_O_UNCONNECTED [0]}),
-        .S({\x_reg[8]_45 [4:2],\x_master[2]_i_3_n_0 }));
   FDRE \x_master_reg[3] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[5]),
+        .D(C[3]),
         .Q(x_master[3]),
         .R(1'b0));
+  CARRY4 \x_master_reg[3]_i_2 
+       (.CI(1'b0),
+        .CO({\x_master_reg[3]_i_2_n_0 ,\x_master_reg[3]_i_2_n_1 ,\x_master_reg[3]_i_2_n_2 ,\x_master_reg[3]_i_2_n_3 }),
+        .CYINIT(\x_reg[8]_45 [0]),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(x_master2[4:1]),
+        .S(\x_reg[8]_45 [4:1]));
   FDRE \x_master_reg[4] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[6]),
+        .D(C[4]),
         .Q(x_master[4]),
         .R(1'b0));
   FDRE \x_master_reg[5] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[7]),
+        .D(C[5]),
         .Q(x_master[5]),
         .R(1'b0));
   FDRE \x_master_reg[6] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[8]),
+        .D(C[6]),
         .Q(x_master[6]),
         .R(1'b0));
-  CARRY4 \x_master_reg[6]_i_2 
-       (.CI(\x_master_reg[2]_i_2_n_0 ),
-        .CO({\x_master_reg[6]_i_2_n_0 ,\x_master_reg[6]_i_2_n_1 ,\x_master_reg[6]_i_2_n_2 ,\x_master_reg[6]_i_2_n_3 }),
+  FDRE \x_master_reg[7] 
+       (.C(clk_out1),
+        .CE(rst_0),
+        .D(C[7]),
+        .Q(x_master[7]),
+        .R(1'b0));
+  CARRY4 \x_master_reg[7]_i_2 
+       (.CI(\x_master_reg[3]_i_2_n_0 ),
+        .CO({\x_master_reg[7]_i_2_n_0 ,\x_master_reg[7]_i_2_n_1 ,\x_master_reg[7]_i_2_n_2 ,\x_master_reg[7]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(x_master2[8:5]),
         .S(\x_reg[8]_45 [8:5]));
-  FDRE \x_master_reg[7] 
-       (.C(clk_out1),
-        .CE(rst_0),
-        .D(x_master1[9]),
-        .Q(x_master[7]),
-        .R(1'b0));
   FDRE \x_master_reg[8] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[10]),
+        .D(C[8]),
         .Q(x_master[8]),
         .R(1'b0));
   FDRE \x_master_reg[9] 
        (.C(clk_out1),
         .CE(rst_0),
-        .D(x_master1[11]),
+        .D(C[9]),
         .Q(x_master[9]),
         .R(1'b0));
   FDRE \x_reg[0][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [0]),
         .Q(\x_reg[0]_34 [0]),
         .R(rst));
   FDRE \x_reg[0][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [10]),
         .Q(\x_reg[0]_34 [10]),
         .R(rst));
   FDRE \x_reg[0][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [11]),
         .Q(\x_reg[0]_34 [11]),
         .R(rst));
   FDRE \x_reg[0][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [12]),
         .Q(\x_reg[0]_34 [12]),
         .R(rst));
   FDRE \x_reg[0][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [13]),
         .Q(\x_reg[0]_34 [13]),
         .R(rst));
   FDRE \x_reg[0][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [14]),
         .Q(\x_reg[0]_34 [14]),
         .R(rst));
   FDRE \x_reg[0][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [15]),
         .Q(\x_reg[0]_34 [15]),
         .R(rst));
   FDRE \x_reg[0][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [1]),
         .Q(\x_reg[0]_34 [1]),
         .R(rst));
   FDRE \x_reg[0][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [2]),
         .Q(\x_reg[0]_34 [2]),
         .R(rst));
   FDRE \x_reg[0][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [3]),
         .Q(\x_reg[0]_34 [3]),
         .R(rst));
   FDRE \x_reg[0][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [4]),
         .Q(\x_reg[0]_34 [4]),
         .R(rst));
   FDRE \x_reg[0][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [5]),
         .Q(\x_reg[0]_34 [5]),
         .R(rst));
   FDRE \x_reg[0][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [6]),
         .Q(\x_reg[0]_34 [6]),
         .R(rst));
   FDRE \x_reg[0][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [7]),
         .Q(\x_reg[0]_34 [7]),
         .R(rst));
   FDRE \x_reg[0][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [8]),
         .Q(\x_reg[0]_34 [8]),
         .R(rst));
   FDRE \x_reg[0][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0][15]_0 [9]),
         .Q(\x_reg[0]_34 [9]),
         .R(rst));
   FDRE \x_reg[10][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [0]),
         .Q(\x_reg[10]_48 [0]),
         .R(rst));
   FDRE \x_reg[10][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [10]),
         .Q(\x_reg[10]_48 [10]),
         .R(rst));
   FDRE \x_reg[10][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [11]),
         .Q(\x_reg[10]_48 [11]),
         .R(rst));
   FDRE \x_reg[10][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [12]),
         .Q(\x_reg[10]_48 [12]),
         .R(rst));
   FDRE \x_reg[10][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [13]),
         .Q(\x_reg[10]_48 [13]),
         .R(rst));
   FDRE \x_reg[10][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [14]),
         .Q(\x_reg[10]_48 [14]),
         .R(rst));
   FDRE \x_reg[10][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [15]),
         .Q(\x_reg[10]_48 [15]),
         .R(rst));
   FDRE \x_reg[10][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [1]),
         .Q(\x_reg[10]_48 [1]),
         .R(rst));
   FDRE \x_reg[10][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [2]),
         .Q(\x_reg[10]_48 [2]),
         .R(rst));
   FDRE \x_reg[10][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [3]),
         .Q(\x_reg[10]_48 [3]),
         .R(rst));
   FDRE \x_reg[10][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [4]),
         .Q(\x_reg[10]_48 [4]),
         .R(rst));
   FDRE \x_reg[10][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [5]),
         .Q(\x_reg[10]_48 [5]),
         .R(rst));
   FDRE \x_reg[10][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [6]),
         .Q(\x_reg[10]_48 [6]),
         .R(rst));
   FDRE \x_reg[10][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [7]),
         .Q(\x_reg[10]_48 [7]),
         .R(rst));
   FDRE \x_reg[10][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [8]),
         .Q(\x_reg[10]_48 [8]),
         .R(rst));
   FDRE \x_reg[10][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[9]_46 [9]),
         .Q(\x_reg[10]_48 [9]),
         .R(rst));
   FDRE \x_reg[11][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [0]),
         .Q(\x_reg[11]_49 [0]),
         .R(rst));
   FDRE \x_reg[11][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [10]),
         .Q(\x_reg[11]_49 [10]),
         .R(rst));
   FDRE \x_reg[11][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [11]),
         .Q(\x_reg[11]_49 [11]),
         .R(rst));
   FDRE \x_reg[11][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [12]),
         .Q(\x_reg[11]_49 [12]),
         .R(rst));
   FDRE \x_reg[11][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [13]),
         .Q(\x_reg[11]_49 [13]),
         .R(rst));
   FDRE \x_reg[11][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [14]),
         .Q(\x_reg[11]_49 [14]),
         .R(rst));
   FDRE \x_reg[11][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [15]),
         .Q(\x_reg[11]_49 [15]),
         .R(rst));
   FDRE \x_reg[11][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [1]),
         .Q(\x_reg[11]_49 [1]),
         .R(rst));
   FDRE \x_reg[11][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [2]),
         .Q(\x_reg[11]_49 [2]),
         .R(rst));
   FDRE \x_reg[11][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [3]),
         .Q(\x_reg[11]_49 [3]),
         .R(rst));
   FDRE \x_reg[11][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [4]),
         .Q(\x_reg[11]_49 [4]),
         .R(rst));
   FDRE \x_reg[11][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [5]),
         .Q(\x_reg[11]_49 [5]),
         .R(rst));
   FDRE \x_reg[11][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [6]),
         .Q(\x_reg[11]_49 [6]),
         .R(rst));
   FDRE \x_reg[11][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [7]),
         .Q(\x_reg[11]_49 [7]),
         .R(rst));
   FDRE \x_reg[11][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [8]),
         .Q(\x_reg[11]_49 [8]),
         .R(rst));
   FDRE \x_reg[11][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[10]_48 [9]),
         .Q(\x_reg[11]_49 [9]),
         .R(rst));
   FDRE \x_reg[12][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [0]),
         .Q(\x_reg[12]_50 [0]),
         .R(rst));
   FDRE \x_reg[12][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [10]),
         .Q(\x_reg[12]_50 [10]),
         .R(rst));
   FDRE \x_reg[12][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [11]),
         .Q(\x_reg[12]_50 [11]),
         .R(rst));
   FDRE \x_reg[12][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [12]),
         .Q(\x_reg[12]_50 [12]),
         .R(rst));
   FDRE \x_reg[12][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [13]),
         .Q(\x_reg[12]_50 [13]),
         .R(rst));
   FDRE \x_reg[12][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [14]),
         .Q(\x_reg[12]_50 [14]),
         .R(rst));
   FDRE \x_reg[12][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [15]),
         .Q(\x_reg[12]_50 [15]),
         .R(rst));
   FDRE \x_reg[12][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [1]),
         .Q(\x_reg[12]_50 [1]),
         .R(rst));
   FDRE \x_reg[12][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [2]),
         .Q(\x_reg[12]_50 [2]),
         .R(rst));
   FDRE \x_reg[12][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [3]),
         .Q(\x_reg[12]_50 [3]),
         .R(rst));
   FDRE \x_reg[12][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [4]),
         .Q(\x_reg[12]_50 [4]),
         .R(rst));
   FDRE \x_reg[12][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [5]),
         .Q(\x_reg[12]_50 [5]),
         .R(rst));
   FDRE \x_reg[12][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [6]),
         .Q(\x_reg[12]_50 [6]),
         .R(rst));
   FDRE \x_reg[12][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [7]),
         .Q(\x_reg[12]_50 [7]),
         .R(rst));
   FDRE \x_reg[12][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [8]),
         .Q(\x_reg[12]_50 [8]),
         .R(rst));
   FDRE \x_reg[12][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[11]_49 [9]),
         .Q(\x_reg[12]_50 [9]),
         .R(rst));
   FDRE \x_reg[1][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [0]),
         .Q(\x_reg[1]_35 [0]),
         .R(rst));
   FDRE \x_reg[1][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [10]),
         .Q(\x_reg[1]_35 [10]),
         .R(rst));
   FDRE \x_reg[1][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [11]),
         .Q(\x_reg[1]_35 [11]),
         .R(rst));
   FDRE \x_reg[1][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [12]),
         .Q(\x_reg[1]_35 [12]),
         .R(rst));
   FDRE \x_reg[1][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [13]),
         .Q(\x_reg[1]_35 [13]),
         .R(rst));
   FDRE \x_reg[1][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [14]),
         .Q(\x_reg[1]_35 [14]),
         .R(rst));
   FDRE \x_reg[1][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [15]),
         .Q(\x_reg[1]_35 [15]),
         .R(rst));
   FDRE \x_reg[1][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [1]),
         .Q(\x_reg[1]_35 [1]),
         .R(rst));
   FDRE \x_reg[1][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [2]),
         .Q(\x_reg[1]_35 [2]),
         .R(rst));
   FDRE \x_reg[1][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [3]),
         .Q(\x_reg[1]_35 [3]),
         .R(rst));
   FDRE \x_reg[1][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [4]),
         .Q(\x_reg[1]_35 [4]),
         .R(rst));
   FDRE \x_reg[1][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [5]),
         .Q(\x_reg[1]_35 [5]),
         .R(rst));
   FDRE \x_reg[1][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [6]),
         .Q(\x_reg[1]_35 [6]),
         .R(rst));
   FDRE \x_reg[1][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [7]),
         .Q(\x_reg[1]_35 [7]),
         .R(rst));
   FDRE \x_reg[1][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [8]),
         .Q(\x_reg[1]_35 [8]),
         .R(rst));
   FDRE \x_reg[1][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[0]_34 [9]),
         .Q(\x_reg[1]_35 [9]),
         .R(rst));
   FDRE \x_reg[2][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [0]),
         .Q(\x_reg[2]_36 [0]),
         .R(rst));
   FDRE \x_reg[2][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [10]),
         .Q(\x_reg[2]_36 [10]),
         .R(rst));
   FDRE \x_reg[2][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [11]),
         .Q(\x_reg[2]_36 [11]),
         .R(rst));
   FDRE \x_reg[2][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [12]),
         .Q(\x_reg[2]_36 [12]),
         .R(rst));
   FDRE \x_reg[2][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [13]),
         .Q(\x_reg[2]_36 [13]),
         .R(rst));
   FDRE \x_reg[2][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [14]),
         .Q(\x_reg[2]_36 [14]),
         .R(rst));
   FDRE \x_reg[2][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [15]),
         .Q(\x_reg[2]_36 [15]),
         .R(rst));
   FDRE \x_reg[2][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [1]),
         .Q(\x_reg[2]_36 [1]),
         .R(rst));
   FDRE \x_reg[2][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [2]),
         .Q(\x_reg[2]_36 [2]),
         .R(rst));
   FDRE \x_reg[2][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [3]),
         .Q(\x_reg[2]_36 [3]),
         .R(rst));
   FDRE \x_reg[2][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [4]),
         .Q(\x_reg[2]_36 [4]),
         .R(rst));
   FDRE \x_reg[2][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [5]),
         .Q(\x_reg[2]_36 [5]),
         .R(rst));
   FDRE \x_reg[2][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [6]),
         .Q(\x_reg[2]_36 [6]),
         .R(rst));
   FDRE \x_reg[2][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [7]),
         .Q(\x_reg[2]_36 [7]),
         .R(rst));
   FDRE \x_reg[2][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [8]),
         .Q(\x_reg[2]_36 [8]),
         .R(rst));
   FDRE \x_reg[2][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[1]_35 [9]),
         .Q(\x_reg[2]_36 [9]),
         .R(rst));
   FDRE \x_reg[3][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [0]),
         .Q(\x_reg[3]_37 [0]),
         .R(rst));
   FDRE \x_reg[3][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [10]),
         .Q(\x_reg[3]_37 [10]),
         .R(rst));
   FDRE \x_reg[3][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [11]),
         .Q(\x_reg[3]_37 [11]),
         .R(rst));
   FDRE \x_reg[3][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [12]),
         .Q(\x_reg[3]_37 [12]),
         .R(rst));
   FDRE \x_reg[3][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [13]),
         .Q(\x_reg[3]_37 [13]),
         .R(rst));
   FDRE \x_reg[3][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [14]),
         .Q(\x_reg[3]_37 [14]),
         .R(rst));
   FDRE \x_reg[3][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [15]),
         .Q(\x_reg[3]_37 [15]),
         .R(rst));
   FDRE \x_reg[3][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [1]),
         .Q(\x_reg[3]_37 [1]),
         .R(rst));
   FDRE \x_reg[3][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [2]),
         .Q(\x_reg[3]_37 [2]),
         .R(rst));
   FDRE \x_reg[3][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [3]),
         .Q(\x_reg[3]_37 [3]),
         .R(rst));
   FDRE \x_reg[3][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [4]),
         .Q(\x_reg[3]_37 [4]),
         .R(rst));
   FDRE \x_reg[3][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [5]),
         .Q(\x_reg[3]_37 [5]),
         .R(rst));
   FDRE \x_reg[3][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [6]),
         .Q(\x_reg[3]_37 [6]),
         .R(rst));
   FDRE \x_reg[3][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [7]),
         .Q(\x_reg[3]_37 [7]),
         .R(rst));
   FDRE \x_reg[3][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [8]),
         .Q(\x_reg[3]_37 [8]),
         .R(rst));
   FDRE \x_reg[3][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[2]_36 [9]),
         .Q(\x_reg[3]_37 [9]),
         .R(rst));
   FDRE \x_reg[4][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [0]),
         .Q(\x_reg[4]_38 [0]),
         .R(rst));
   FDRE \x_reg[4][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [10]),
         .Q(\x_reg[4]_38 [10]),
         .R(rst));
   FDRE \x_reg[4][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [11]),
         .Q(\x_reg[4]_38 [11]),
         .R(rst));
   FDRE \x_reg[4][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [12]),
         .Q(\x_reg[4]_38 [12]),
         .R(rst));
   FDRE \x_reg[4][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [13]),
         .Q(\x_reg[4]_38 [13]),
         .R(rst));
   FDRE \x_reg[4][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [14]),
         .Q(\x_reg[4]_38 [14]),
         .R(rst));
   FDRE \x_reg[4][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [15]),
         .Q(\x_reg[4]_38 [15]),
         .R(rst));
   FDRE \x_reg[4][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [1]),
         .Q(\x_reg[4]_38 [1]),
         .R(rst));
   FDRE \x_reg[4][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [2]),
         .Q(\x_reg[4]_38 [2]),
         .R(rst));
   FDRE \x_reg[4][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [3]),
         .Q(\x_reg[4]_38 [3]),
         .R(rst));
   FDRE \x_reg[4][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [4]),
         .Q(\x_reg[4]_38 [4]),
         .R(rst));
   FDRE \x_reg[4][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [5]),
         .Q(\x_reg[4]_38 [5]),
         .R(rst));
   FDRE \x_reg[4][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [6]),
         .Q(\x_reg[4]_38 [6]),
         .R(rst));
   FDRE \x_reg[4][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [7]),
         .Q(\x_reg[4]_38 [7]),
         .R(rst));
   FDRE \x_reg[4][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [8]),
         .Q(\x_reg[4]_38 [8]),
         .R(rst));
   FDRE \x_reg[4][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[3]_37 [9]),
         .Q(\x_reg[4]_38 [9]),
         .R(rst));
   FDRE \x_reg[5][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [0]),
         .Q(\x_reg[5]_39 [0]),
         .R(rst));
   FDRE \x_reg[5][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [10]),
         .Q(\x_reg[5]_39 [10]),
         .R(rst));
   FDRE \x_reg[5][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [11]),
         .Q(\x_reg[5]_39 [11]),
         .R(rst));
   FDRE \x_reg[5][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [12]),
         .Q(\x_reg[5]_39 [12]),
         .R(rst));
   FDRE \x_reg[5][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [13]),
         .Q(\x_reg[5]_39 [13]),
         .R(rst));
   FDRE \x_reg[5][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [14]),
         .Q(\x_reg[5]_39 [14]),
         .R(rst));
   FDRE \x_reg[5][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [15]),
         .Q(\x_reg[5]_39 [15]),
         .R(rst));
   FDRE \x_reg[5][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [1]),
         .Q(\x_reg[5]_39 [1]),
         .R(rst));
   FDRE \x_reg[5][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [2]),
         .Q(\x_reg[5]_39 [2]),
         .R(rst));
   FDRE \x_reg[5][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [3]),
         .Q(\x_reg[5]_39 [3]),
         .R(rst));
   FDRE \x_reg[5][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [4]),
         .Q(\x_reg[5]_39 [4]),
         .R(rst));
   FDRE \x_reg[5][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [5]),
         .Q(\x_reg[5]_39 [5]),
         .R(rst));
   FDRE \x_reg[5][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [6]),
         .Q(\x_reg[5]_39 [6]),
         .R(rst));
   FDRE \x_reg[5][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [7]),
         .Q(\x_reg[5]_39 [7]),
         .R(rst));
   FDRE \x_reg[5][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [8]),
         .Q(\x_reg[5]_39 [8]),
         .R(rst));
   FDRE \x_reg[5][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[4]_38 [9]),
         .Q(\x_reg[5]_39 [9]),
         .R(rst));
   FDRE \x_reg[6][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [0]),
         .Q(\x_reg[6]_41 [0]),
         .R(rst));
   FDRE \x_reg[6][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [10]),
         .Q(\x_reg[6]_41 [10]),
         .R(rst));
   FDRE \x_reg[6][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [11]),
         .Q(\x_reg[6]_41 [11]),
         .R(rst));
   FDRE \x_reg[6][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [12]),
         .Q(\x_reg[6]_41 [12]),
         .R(rst));
   FDRE \x_reg[6][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [13]),
         .Q(\x_reg[6]_41 [13]),
         .R(rst));
   FDRE \x_reg[6][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [14]),
         .Q(\x_reg[6]_41 [14]),
         .R(rst));
   FDRE \x_reg[6][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [15]),
         .Q(\x_reg[6]_41 [15]),
         .R(rst));
   FDRE \x_reg[6][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [1]),
         .Q(\x_reg[6]_41 [1]),
         .R(rst));
   FDRE \x_reg[6][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [2]),
         .Q(\x_reg[6]_41 [2]),
         .R(rst));
   FDRE \x_reg[6][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [3]),
         .Q(\x_reg[6]_41 [3]),
         .R(rst));
   FDRE \x_reg[6][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [4]),
         .Q(\x_reg[6]_41 [4]),
         .R(rst));
   FDRE \x_reg[6][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [5]),
         .Q(\x_reg[6]_41 [5]),
         .R(rst));
   FDRE \x_reg[6][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [6]),
         .Q(\x_reg[6]_41 [6]),
         .R(rst));
   FDRE \x_reg[6][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [7]),
         .Q(\x_reg[6]_41 [7]),
         .R(rst));
   FDRE \x_reg[6][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [8]),
         .Q(\x_reg[6]_41 [8]),
         .R(rst));
   FDRE \x_reg[6][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[5]_39 [9]),
         .Q(\x_reg[6]_41 [9]),
         .R(rst));
   FDRE \x_reg[7][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [0]),
         .Q(\x_reg[7]_42 [0]),
         .R(rst));
   FDRE \x_reg[7][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [10]),
         .Q(\x_reg[7]_42 [10]),
         .R(rst));
   FDRE \x_reg[7][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [11]),
         .Q(\x_reg[7]_42 [11]),
         .R(rst));
   FDRE \x_reg[7][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [12]),
         .Q(\x_reg[7]_42 [12]),
         .R(rst));
   FDRE \x_reg[7][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [13]),
         .Q(\x_reg[7]_42 [13]),
         .R(rst));
   FDRE \x_reg[7][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [14]),
         .Q(\x_reg[7]_42 [14]),
         .R(rst));
   FDRE \x_reg[7][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [15]),
         .Q(\x_reg[7]_42 [15]),
         .R(rst));
   FDRE \x_reg[7][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [1]),
         .Q(\x_reg[7]_42 [1]),
         .R(rst));
   FDRE \x_reg[7][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [2]),
         .Q(\x_reg[7]_42 [2]),
         .R(rst));
   FDRE \x_reg[7][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [3]),
         .Q(\x_reg[7]_42 [3]),
         .R(rst));
   FDRE \x_reg[7][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [4]),
         .Q(\x_reg[7]_42 [4]),
         .R(rst));
   FDRE \x_reg[7][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [5]),
         .Q(\x_reg[7]_42 [5]),
         .R(rst));
   FDRE \x_reg[7][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [6]),
         .Q(\x_reg[7]_42 [6]),
         .R(rst));
   FDRE \x_reg[7][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [7]),
         .Q(\x_reg[7]_42 [7]),
         .R(rst));
   FDRE \x_reg[7][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [8]),
         .Q(\x_reg[7]_42 [8]),
         .R(rst));
   FDRE \x_reg[7][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[6]_41 [9]),
         .Q(\x_reg[7]_42 [9]),
         .R(rst));
   FDRE \x_reg[8][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [0]),
         .Q(\x_reg[8]_45 [0]),
         .R(rst));
   FDRE \x_reg[8][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [10]),
         .Q(\x_reg[8]_45 [10]),
         .R(rst));
   FDRE \x_reg[8][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [11]),
         .Q(\x_reg[8]_45 [11]),
         .R(rst));
   FDRE \x_reg[8][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [12]),
         .Q(\x_reg[8]_45 [12]),
         .R(rst));
   FDRE \x_reg[8][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [13]),
         .Q(\x_reg[8]_45 [13]),
         .R(rst));
   FDRE \x_reg[8][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [14]),
         .Q(\x_reg[8]_45 [14]),
         .R(rst));
   FDRE \x_reg[8][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [15]),
         .Q(\x_reg[8]_45 [15]),
         .R(rst));
   FDRE \x_reg[8][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [1]),
         .Q(\x_reg[8]_45 [1]),
         .R(rst));
   FDRE \x_reg[8][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [2]),
         .Q(\x_reg[8]_45 [2]),
         .R(rst));
   FDRE \x_reg[8][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [3]),
         .Q(\x_reg[8]_45 [3]),
         .R(rst));
   FDRE \x_reg[8][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [4]),
         .Q(\x_reg[8]_45 [4]),
         .R(rst));
   FDRE \x_reg[8][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [5]),
         .Q(\x_reg[8]_45 [5]),
         .R(rst));
   FDRE \x_reg[8][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [6]),
         .Q(\x_reg[8]_45 [6]),
         .R(rst));
   FDRE \x_reg[8][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [7]),
         .Q(\x_reg[8]_45 [7]),
         .R(rst));
   FDRE \x_reg[8][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [8]),
         .Q(\x_reg[8]_45 [8]),
         .R(rst));
   FDRE \x_reg[8][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[7]_42 [9]),
         .Q(\x_reg[8]_45 [9]),
         .R(rst));
   FDRE \x_reg[9][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [0]),
         .Q(\x_reg[9]_46 [0]),
         .R(rst));
   FDRE \x_reg[9][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [10]),
         .Q(\x_reg[9]_46 [10]),
         .R(rst));
   FDRE \x_reg[9][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [11]),
         .Q(\x_reg[9]_46 [11]),
         .R(rst));
   FDRE \x_reg[9][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [12]),
         .Q(\x_reg[9]_46 [12]),
         .R(rst));
   FDRE \x_reg[9][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [13]),
         .Q(\x_reg[9]_46 [13]),
         .R(rst));
   FDRE \x_reg[9][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [14]),
         .Q(\x_reg[9]_46 [14]),
         .R(rst));
   FDRE \x_reg[9][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [15]),
         .Q(\x_reg[9]_46 [15]),
         .R(rst));
   FDRE \x_reg[9][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [1]),
         .Q(\x_reg[9]_46 [1]),
         .R(rst));
   FDRE \x_reg[9][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [2]),
         .Q(\x_reg[9]_46 [2]),
         .R(rst));
   FDRE \x_reg[9][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [3]),
         .Q(\x_reg[9]_46 [3]),
         .R(rst));
   FDRE \x_reg[9][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [4]),
         .Q(\x_reg[9]_46 [4]),
         .R(rst));
   FDRE \x_reg[9][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [5]),
         .Q(\x_reg[9]_46 [5]),
         .R(rst));
   FDRE \x_reg[9][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [6]),
         .Q(\x_reg[9]_46 [6]),
         .R(rst));
   FDRE \x_reg[9][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [7]),
         .Q(\x_reg[9]_46 [7]),
         .R(rst));
   FDRE \x_reg[9][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [8]),
         .Q(\x_reg[9]_46 [8]),
         .R(rst));
   FDRE \x_reg[9][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\x_reg[8]_45 [9]),
         .Q(\x_reg[9]_46 [9]),
         .R(rst));
@@ -77047,7 +77220,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
   LUT2 #(
     .INIT(4'h6)) 
     \y_combined[14]_i_2 
-       (.I0(x_master[15]),
+       (.I0(x_master[14]),
         .I1(y_master[14]),
         .O(\y_combined[14]_i_2_n_0 ));
   LUT2 #(
@@ -77257,7 +77430,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
        (.CI(\y_combined_reg[10]_i_1_n_0 ),
         .CO({\y_combined_reg[14]_i_1_n_0 ,\y_combined_reg[14]_i_1_n_1 ,\y_combined_reg[14]_i_1_n_2 ,\y_combined_reg[14]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI({x_master[15],x_master[13:11]}),
+        .DI(x_master[14:11]),
         .O(y_combined0[14:11]),
         .S({\y_combined[14]_i_2_n_0 ,\y_combined[14]_i_3_n_0 ,\y_combined[14]_i_4_n_0 ,\y_combined[14]_i_5_n_0 }));
   FDRE \y_combined_reg[15] 
@@ -77492,3841 +77665,3841 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_wah
         .R(1'b0));
   FDRE \y_reg[0][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__216_n_0),
         .Q(\y_reg[0]_53 [0]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__206_n_0),
         .Q(\y_reg[0]_53 [10]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__205_n_0),
         .Q(\y_reg[0]_53 [11]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__204_n_0),
         .Q(\y_reg[0]_53 [12]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__203_n_0),
         .Q(\y_reg[0]_53 [13]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__202_n_0),
         .Q(\y_reg[0]_53 [14]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__201_n_0),
         .Q(\y_reg[0]_53 [15]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__200_n_0),
         .Q(\y_reg[0]_53 [16]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__196_n_0),
         .Q(\y_reg[0]_53 [17]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__195_n_0),
         .Q(\y_reg[0]_53 [18]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__194_n_0),
         .Q(\y_reg[0]_53 [19]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__215_n_0),
         .Q(\y_reg[0]_53 [1]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__193_n_0),
         .Q(\y_reg[0]_53 [20]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__192_n_0),
         .Q(\y_reg[0]_53 [21]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__191_n_0),
         .Q(\y_reg[0]_53 [22]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__190_n_0),
         .Q(\y_reg[0]_53 [23]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__189_n_0),
         .Q(\y_reg[0]_53 [24]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__188_n_0),
         .Q(\y_reg[0]_53 [25]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__187_n_0),
         .Q(\y_reg[0]_53 [26]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__186_n_0),
         .Q(\y_reg[0]_53 [27]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__185_n_0),
         .Q(\y_reg[0]_53 [28]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__184_n_0),
         .Q(\y_reg[0]_53 [29]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__214_n_0),
         .Q(\y_reg[0]_53 [2]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__183_n_0),
         .Q(\y_reg[0]_53 [30]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__182_n_0),
         .Q(\y_reg[0]_53 [31]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__181_n_0),
         .Q(\y_reg[0]_53 [32]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__180_n_0),
         .Q(\y_reg[0]_53 [33]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__163_n_0),
         .Q(\y_reg[0]_53 [34]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__162_n_0),
         .Q(\y_reg[0]_53 [35]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__161_n_0),
         .Q(\y_reg[0]_53 [36]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__160_n_0),
         .Q(\y_reg[0]_53 [37]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__159_n_0),
         .Q(\y_reg[0]_53 [38]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__158_n_0),
         .Q(\y_reg[0]_53 [39]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__213_n_0),
         .Q(\y_reg[0]_53 [3]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__157_n_0),
         .Q(\y_reg[0]_53 [40]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__156_n_0),
         .Q(\y_reg[0]_53 [41]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__155_n_0),
         .Q(\y_reg[0]_53 [42]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__154_n_0),
         .Q(\y_reg[0]_53 [43]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__153_n_0),
         .Q(\y_reg[0]_53 [44]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__152_n_0),
         .Q(\y_reg[0]_53 [45]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__151_n_0),
         .Q(\y_reg[0]_53 [46]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__150_n_0),
         .Q(\y_reg[0]_53 [47]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__149_n_0),
         .Q(\y_reg[0]_53 [48]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__148_n_0),
         .Q(\y_reg[0]_53 [49]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__212_n_0),
         .Q(\y_reg[0]_53 [4]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__147_n_0),
         .Q(\y_reg[0]_53 [50]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__177_n_0),
         .Q(\y_reg[0]_53 [51]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__176_n_0),
         .Q(\y_reg[0]_53 [52]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__175_n_0),
         .Q(\y_reg[0]_53 [53]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__174_n_0),
         .Q(\y_reg[0]_53 [54]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__173_n_0),
         .Q(\y_reg[0]_53 [55]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__172_n_0),
         .Q(\y_reg[0]_53 [56]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__171_n_0),
         .Q(\y_reg[0]_53 [57]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__170_n_0),
         .Q(\y_reg[0]_53 [58]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__169_n_0),
         .Q(\y_reg[0]_53 [59]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__211_n_0),
         .Q(\y_reg[0]_53 [5]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__168_n_0),
         .Q(\y_reg[0]_53 [60]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__167_n_0),
         .Q(\y_reg[0]_53 [61]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__166_n_0),
         .Q(\y_reg[0]_53 [62]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__165_n_0),
         .Q(\y_reg[0]_53 [63]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__210_n_0),
         .Q(\y_reg[0]_53 [6]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__209_n_0),
         .Q(\y_reg[0]_53 [7]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__208_n_0),
         .Q(\y_reg[0]_53 [8]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[0][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(p_0_out__207_n_0),
         .Q(\y_reg[0]_53 [9]),
         .R(p_0_out__79_i_2_n_0));
   FDRE \y_reg[1][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [0]),
         .Q(\y_reg[1]_14 [0]),
         .R(rst));
   FDRE \y_reg[1][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [10]),
         .Q(\y_reg[1]_14 [10]),
         .R(rst));
   FDRE \y_reg[1][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [11]),
         .Q(\y_reg[1]_14 [11]),
         .R(rst));
   FDRE \y_reg[1][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [12]),
         .Q(\y_reg[1]_14 [12]),
         .R(rst));
   FDRE \y_reg[1][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [13]),
         .Q(\y_reg[1]_14 [13]),
         .R(rst));
   FDRE \y_reg[1][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [14]),
         .Q(\y_reg[1]_14 [14]),
         .R(rst));
   FDRE \y_reg[1][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [15]),
         .Q(\y_reg[1]_14 [15]),
         .R(rst));
   FDRE \y_reg[1][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [16]),
         .Q(\y_reg[1]_14 [16]),
         .R(rst));
   FDRE \y_reg[1][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [17]),
         .Q(\y_reg[1]_14 [17]),
         .R(rst));
   FDRE \y_reg[1][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [18]),
         .Q(\y_reg[1]_14 [18]),
         .R(rst));
   FDRE \y_reg[1][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [19]),
         .Q(\y_reg[1]_14 [19]),
         .R(rst));
   FDRE \y_reg[1][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [1]),
         .Q(\y_reg[1]_14 [1]),
         .R(rst));
   FDRE \y_reg[1][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [20]),
         .Q(\y_reg[1]_14 [20]),
         .R(rst));
   FDRE \y_reg[1][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [21]),
         .Q(\y_reg[1]_14 [21]),
         .R(rst));
   FDRE \y_reg[1][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [22]),
         .Q(\y_reg[1]_14 [22]),
         .R(rst));
   FDRE \y_reg[1][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [23]),
         .Q(\y_reg[1]_14 [23]),
         .R(rst));
   FDRE \y_reg[1][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [24]),
         .Q(\y_reg[1]_14 [24]),
         .R(rst));
   FDRE \y_reg[1][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [25]),
         .Q(\y_reg[1]_14 [25]),
         .R(rst));
   FDRE \y_reg[1][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [26]),
         .Q(\y_reg[1]_14 [26]),
         .R(rst));
   FDRE \y_reg[1][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [27]),
         .Q(\y_reg[1]_14 [27]),
         .R(rst));
   FDRE \y_reg[1][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [28]),
         .Q(\y_reg[1]_14 [28]),
         .R(rst));
   FDRE \y_reg[1][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [29]),
         .Q(\y_reg[1]_14 [29]),
         .R(rst));
   FDRE \y_reg[1][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [2]),
         .Q(\y_reg[1]_14 [2]),
         .R(rst));
   FDRE \y_reg[1][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [30]),
         .Q(\y_reg[1]_14 [30]),
         .R(rst));
   FDRE \y_reg[1][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [31]),
         .Q(\y_reg[1]_14 [31]),
         .R(rst));
   FDRE \y_reg[1][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [32]),
         .Q(\y_reg[1]_14 [32]),
         .R(rst));
   FDRE \y_reg[1][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [33]),
         .Q(\y_reg[1]_14 [33]),
         .R(rst));
   FDRE \y_reg[1][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [34]),
         .Q(\y_reg[1]_14 [34]),
         .R(rst));
   FDRE \y_reg[1][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [35]),
         .Q(\y_reg[1]_14 [35]),
         .R(rst));
   FDRE \y_reg[1][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [36]),
         .Q(\y_reg[1]_14 [36]),
         .R(rst));
   FDRE \y_reg[1][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [37]),
         .Q(\y_reg[1]_14 [37]),
         .R(rst));
   FDRE \y_reg[1][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [38]),
         .Q(\y_reg[1]_14 [38]),
         .R(rst));
   FDRE \y_reg[1][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [39]),
         .Q(\y_reg[1]_14 [39]),
         .R(rst));
   FDRE \y_reg[1][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [3]),
         .Q(\y_reg[1]_14 [3]),
         .R(rst));
   FDRE \y_reg[1][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [40]),
         .Q(\y_reg[1]_14 [40]),
         .R(rst));
   FDRE \y_reg[1][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [41]),
         .Q(\y_reg[1]_14 [41]),
         .R(rst));
   FDRE \y_reg[1][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [42]),
         .Q(\y_reg[1]_14 [42]),
         .R(rst));
   FDRE \y_reg[1][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [43]),
         .Q(\y_reg[1]_14 [43]),
         .R(rst));
   FDRE \y_reg[1][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [44]),
         .Q(\y_reg[1]_14 [44]),
         .R(rst));
   FDRE \y_reg[1][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [45]),
         .Q(\y_reg[1]_14 [45]),
         .R(rst));
   FDRE \y_reg[1][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [46]),
         .Q(\y_reg[1]_14 [46]),
         .R(rst));
   FDRE \y_reg[1][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [47]),
         .Q(\y_reg[1]_14 [47]),
         .R(rst));
   FDRE \y_reg[1][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [48]),
         .Q(\y_reg[1]_14 [48]),
         .R(rst));
   FDRE \y_reg[1][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [49]),
         .Q(\y_reg[1]_14 [49]),
         .R(rst));
   FDRE \y_reg[1][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [4]),
         .Q(\y_reg[1]_14 [4]),
         .R(rst));
   FDRE \y_reg[1][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [50]),
         .Q(\y_reg[1]_14 [50]),
         .R(rst));
   FDRE \y_reg[1][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [51]),
         .Q(\y_reg[1]_14 [51]),
         .R(rst));
   FDRE \y_reg[1][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [52]),
         .Q(\y_reg[1]_14 [52]),
         .R(rst));
   FDRE \y_reg[1][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [53]),
         .Q(\y_reg[1]_14 [53]),
         .R(rst));
   FDRE \y_reg[1][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [54]),
         .Q(\y_reg[1]_14 [54]),
         .R(rst));
   FDRE \y_reg[1][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [55]),
         .Q(\y_reg[1]_14 [55]),
         .R(rst));
   FDRE \y_reg[1][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [56]),
         .Q(\y_reg[1]_14 [56]),
         .R(rst));
   FDRE \y_reg[1][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [57]),
         .Q(\y_reg[1]_14 [57]),
         .R(rst));
   FDRE \y_reg[1][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [58]),
         .Q(\y_reg[1]_14 [58]),
         .R(rst));
   FDRE \y_reg[1][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [59]),
         .Q(\y_reg[1]_14 [59]),
         .R(rst));
   FDRE \y_reg[1][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [5]),
         .Q(\y_reg[1]_14 [5]),
         .R(rst));
   FDRE \y_reg[1][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [60]),
         .Q(\y_reg[1]_14 [60]),
         .R(rst));
   FDRE \y_reg[1][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [61]),
         .Q(\y_reg[1]_14 [61]),
         .R(rst));
   FDRE \y_reg[1][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [62]),
         .Q(\y_reg[1]_14 [62]),
         .R(rst));
   FDRE \y_reg[1][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [63]),
         .Q(\y_reg[1]_14 [63]),
         .R(rst));
   FDRE \y_reg[1][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [6]),
         .Q(\y_reg[1]_14 [6]),
         .R(rst));
   FDRE \y_reg[1][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [7]),
         .Q(\y_reg[1]_14 [7]),
         .R(rst));
   FDRE \y_reg[1][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [8]),
         .Q(\y_reg[1]_14 [8]),
         .R(rst));
   FDRE \y_reg[1][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[0]_53 [9]),
         .Q(\y_reg[1]_14 [9]),
         .R(rst));
   FDRE \y_reg[2][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [0]),
         .Q(\y_reg[2]_15 [0]),
         .R(rst));
   FDRE \y_reg[2][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [10]),
         .Q(\y_reg[2]_15 [10]),
         .R(rst));
   FDRE \y_reg[2][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [11]),
         .Q(\y_reg[2]_15 [11]),
         .R(rst));
   FDRE \y_reg[2][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [12]),
         .Q(\y_reg[2]_15 [12]),
         .R(rst));
   FDRE \y_reg[2][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [13]),
         .Q(\y_reg[2]_15 [13]),
         .R(rst));
   FDRE \y_reg[2][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [14]),
         .Q(\y_reg[2]_15 [14]),
         .R(rst));
   FDRE \y_reg[2][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [15]),
         .Q(\y_reg[2]_15 [15]),
         .R(rst));
   FDRE \y_reg[2][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [16]),
         .Q(\y_reg[2]_15 [16]),
         .R(rst));
   FDRE \y_reg[2][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [17]),
         .Q(\y_reg[2]_15 [17]),
         .R(rst));
   FDRE \y_reg[2][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [18]),
         .Q(\y_reg[2]_15 [18]),
         .R(rst));
   FDRE \y_reg[2][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [19]),
         .Q(\y_reg[2]_15 [19]),
         .R(rst));
   FDRE \y_reg[2][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [1]),
         .Q(\y_reg[2]_15 [1]),
         .R(rst));
   FDRE \y_reg[2][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [20]),
         .Q(\y_reg[2]_15 [20]),
         .R(rst));
   FDRE \y_reg[2][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [21]),
         .Q(\y_reg[2]_15 [21]),
         .R(rst));
   FDRE \y_reg[2][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [22]),
         .Q(\y_reg[2]_15 [22]),
         .R(rst));
   FDRE \y_reg[2][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [23]),
         .Q(\y_reg[2]_15 [23]),
         .R(rst));
   FDRE \y_reg[2][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [24]),
         .Q(\y_reg[2]_15 [24]),
         .R(rst));
   FDRE \y_reg[2][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [25]),
         .Q(\y_reg[2]_15 [25]),
         .R(rst));
   FDRE \y_reg[2][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [26]),
         .Q(\y_reg[2]_15 [26]),
         .R(rst));
   FDRE \y_reg[2][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [27]),
         .Q(\y_reg[2]_15 [27]),
         .R(rst));
   FDRE \y_reg[2][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [28]),
         .Q(\y_reg[2]_15 [28]),
         .R(rst));
   FDRE \y_reg[2][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [29]),
         .Q(\y_reg[2]_15 [29]),
         .R(rst));
   FDRE \y_reg[2][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [2]),
         .Q(\y_reg[2]_15 [2]),
         .R(rst));
   FDRE \y_reg[2][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [30]),
         .Q(\y_reg[2]_15 [30]),
         .R(rst));
   FDRE \y_reg[2][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [31]),
         .Q(\y_reg[2]_15 [31]),
         .R(rst));
   FDRE \y_reg[2][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [32]),
         .Q(\y_reg[2]_15 [32]),
         .R(rst));
   FDRE \y_reg[2][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [33]),
         .Q(\y_reg[2]_15 [33]),
         .R(rst));
   FDRE \y_reg[2][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [34]),
         .Q(\y_reg[2]_15 [34]),
         .R(rst));
   FDRE \y_reg[2][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [35]),
         .Q(\y_reg[2]_15 [35]),
         .R(rst));
   FDRE \y_reg[2][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [36]),
         .Q(\y_reg[2]_15 [36]),
         .R(rst));
   FDRE \y_reg[2][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [37]),
         .Q(\y_reg[2]_15 [37]),
         .R(rst));
   FDRE \y_reg[2][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [38]),
         .Q(\y_reg[2]_15 [38]),
         .R(rst));
   FDRE \y_reg[2][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [39]),
         .Q(\y_reg[2]_15 [39]),
         .R(rst));
   FDRE \y_reg[2][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [3]),
         .Q(\y_reg[2]_15 [3]),
         .R(rst));
   FDRE \y_reg[2][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [40]),
         .Q(\y_reg[2]_15 [40]),
         .R(rst));
   FDRE \y_reg[2][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [41]),
         .Q(\y_reg[2]_15 [41]),
         .R(rst));
   FDRE \y_reg[2][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [42]),
         .Q(\y_reg[2]_15 [42]),
         .R(rst));
   FDRE \y_reg[2][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [43]),
         .Q(\y_reg[2]_15 [43]),
         .R(rst));
   FDRE \y_reg[2][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [44]),
         .Q(\y_reg[2]_15 [44]),
         .R(rst));
   FDRE \y_reg[2][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [45]),
         .Q(\y_reg[2]_15 [45]),
         .R(rst));
   FDRE \y_reg[2][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [46]),
         .Q(\y_reg[2]_15 [46]),
         .R(rst));
   FDRE \y_reg[2][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [47]),
         .Q(\y_reg[2]_15 [47]),
         .R(rst));
   FDRE \y_reg[2][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [48]),
         .Q(\y_reg[2]_15 [48]),
         .R(rst));
   FDRE \y_reg[2][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [49]),
         .Q(\y_reg[2]_15 [49]),
         .R(rst));
   FDRE \y_reg[2][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [4]),
         .Q(\y_reg[2]_15 [4]),
         .R(rst));
   FDRE \y_reg[2][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [50]),
         .Q(\y_reg[2]_15 [50]),
         .R(rst));
   FDRE \y_reg[2][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [51]),
         .Q(\y_reg[2]_15 [51]),
         .R(rst));
   FDRE \y_reg[2][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [52]),
         .Q(\y_reg[2]_15 [52]),
         .R(rst));
   FDRE \y_reg[2][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [53]),
         .Q(\y_reg[2]_15 [53]),
         .R(rst));
   FDRE \y_reg[2][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [54]),
         .Q(\y_reg[2]_15 [54]),
         .R(rst));
   FDRE \y_reg[2][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [55]),
         .Q(\y_reg[2]_15 [55]),
         .R(rst));
   FDRE \y_reg[2][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [56]),
         .Q(\y_reg[2]_15 [56]),
         .R(rst));
   FDRE \y_reg[2][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [57]),
         .Q(\y_reg[2]_15 [57]),
         .R(rst));
   FDRE \y_reg[2][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [58]),
         .Q(\y_reg[2]_15 [58]),
         .R(rst));
   FDRE \y_reg[2][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [59]),
         .Q(\y_reg[2]_15 [59]),
         .R(rst));
   FDRE \y_reg[2][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [5]),
         .Q(\y_reg[2]_15 [5]),
         .R(rst));
   FDRE \y_reg[2][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [60]),
         .Q(\y_reg[2]_15 [60]),
         .R(rst));
   FDRE \y_reg[2][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [61]),
         .Q(\y_reg[2]_15 [61]),
         .R(rst));
   FDRE \y_reg[2][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [62]),
         .Q(\y_reg[2]_15 [62]),
         .R(rst));
   FDRE \y_reg[2][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [63]),
         .Q(\y_reg[2]_15 [63]),
         .R(rst));
   FDRE \y_reg[2][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [6]),
         .Q(\y_reg[2]_15 [6]),
         .R(rst));
   FDRE \y_reg[2][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [7]),
         .Q(\y_reg[2]_15 [7]),
         .R(rst));
   FDRE \y_reg[2][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [8]),
         .Q(\y_reg[2]_15 [8]),
         .R(rst));
   FDRE \y_reg[2][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[1]_14 [9]),
         .Q(\y_reg[2]_15 [9]),
         .R(rst));
   FDRE \y_reg[3][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [0]),
         .Q(\y_reg[3]_16 [0]),
         .R(rst));
   FDRE \y_reg[3][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [10]),
         .Q(\y_reg[3]_16 [10]),
         .R(rst));
   FDRE \y_reg[3][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [11]),
         .Q(\y_reg[3]_16 [11]),
         .R(rst));
   FDRE \y_reg[3][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [12]),
         .Q(\y_reg[3]_16 [12]),
         .R(rst));
   FDRE \y_reg[3][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [13]),
         .Q(\y_reg[3]_16 [13]),
         .R(rst));
   FDRE \y_reg[3][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [14]),
         .Q(\y_reg[3]_16 [14]),
         .R(rst));
   FDRE \y_reg[3][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [15]),
         .Q(\y_reg[3]_16 [15]),
         .R(rst));
   FDRE \y_reg[3][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [16]),
         .Q(\y_reg[3]_16 [16]),
         .R(rst));
   FDRE \y_reg[3][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [17]),
         .Q(\y_reg[3]_16 [17]),
         .R(rst));
   FDRE \y_reg[3][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [18]),
         .Q(\y_reg[3]_16 [18]),
         .R(rst));
   FDRE \y_reg[3][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [19]),
         .Q(\y_reg[3]_16 [19]),
         .R(rst));
   FDRE \y_reg[3][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [1]),
         .Q(\y_reg[3]_16 [1]),
         .R(rst));
   FDRE \y_reg[3][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [20]),
         .Q(\y_reg[3]_16 [20]),
         .R(rst));
   FDRE \y_reg[3][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [21]),
         .Q(\y_reg[3]_16 [21]),
         .R(rst));
   FDRE \y_reg[3][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [22]),
         .Q(\y_reg[3]_16 [22]),
         .R(rst));
   FDRE \y_reg[3][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [23]),
         .Q(\y_reg[3]_16 [23]),
         .R(rst));
   FDRE \y_reg[3][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [24]),
         .Q(\y_reg[3]_16 [24]),
         .R(rst));
   FDRE \y_reg[3][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [25]),
         .Q(\y_reg[3]_16 [25]),
         .R(rst));
   FDRE \y_reg[3][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [26]),
         .Q(\y_reg[3]_16 [26]),
         .R(rst));
   FDRE \y_reg[3][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [27]),
         .Q(\y_reg[3]_16 [27]),
         .R(rst));
   FDRE \y_reg[3][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [28]),
         .Q(\y_reg[3]_16 [28]),
         .R(rst));
   FDRE \y_reg[3][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [29]),
         .Q(\y_reg[3]_16 [29]),
         .R(rst));
   FDRE \y_reg[3][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [2]),
         .Q(\y_reg[3]_16 [2]),
         .R(rst));
   FDRE \y_reg[3][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [30]),
         .Q(\y_reg[3]_16 [30]),
         .R(rst));
   FDRE \y_reg[3][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [31]),
         .Q(\y_reg[3]_16 [31]),
         .R(rst));
   FDRE \y_reg[3][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [32]),
         .Q(\y_reg[3]_16 [32]),
         .R(rst));
   FDRE \y_reg[3][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [33]),
         .Q(\y_reg[3]_16 [33]),
         .R(rst));
   FDRE \y_reg[3][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [34]),
         .Q(\y_reg[3]_16 [34]),
         .R(rst));
   FDRE \y_reg[3][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [35]),
         .Q(\y_reg[3]_16 [35]),
         .R(rst));
   FDRE \y_reg[3][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [36]),
         .Q(\y_reg[3]_16 [36]),
         .R(rst));
   FDRE \y_reg[3][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [37]),
         .Q(\y_reg[3]_16 [37]),
         .R(rst));
   FDRE \y_reg[3][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [38]),
         .Q(\y_reg[3]_16 [38]),
         .R(rst));
   FDRE \y_reg[3][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [39]),
         .Q(\y_reg[3]_16 [39]),
         .R(rst));
   FDRE \y_reg[3][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [3]),
         .Q(\y_reg[3]_16 [3]),
         .R(rst));
   FDRE \y_reg[3][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [40]),
         .Q(\y_reg[3]_16 [40]),
         .R(rst));
   FDRE \y_reg[3][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [41]),
         .Q(\y_reg[3]_16 [41]),
         .R(rst));
   FDRE \y_reg[3][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [42]),
         .Q(\y_reg[3]_16 [42]),
         .R(rst));
   FDRE \y_reg[3][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [43]),
         .Q(\y_reg[3]_16 [43]),
         .R(rst));
   FDRE \y_reg[3][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [44]),
         .Q(\y_reg[3]_16 [44]),
         .R(rst));
   FDRE \y_reg[3][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [45]),
         .Q(\y_reg[3]_16 [45]),
         .R(rst));
   FDRE \y_reg[3][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [46]),
         .Q(\y_reg[3]_16 [46]),
         .R(rst));
   FDRE \y_reg[3][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [47]),
         .Q(\y_reg[3]_16 [47]),
         .R(rst));
   FDRE \y_reg[3][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [48]),
         .Q(\y_reg[3]_16 [48]),
         .R(rst));
   FDRE \y_reg[3][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [49]),
         .Q(\y_reg[3]_16 [49]),
         .R(rst));
   FDRE \y_reg[3][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [4]),
         .Q(\y_reg[3]_16 [4]),
         .R(rst));
   FDRE \y_reg[3][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [50]),
         .Q(\y_reg[3]_16 [50]),
         .R(rst));
   FDRE \y_reg[3][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [51]),
         .Q(\y_reg[3]_16 [51]),
         .R(rst));
   FDRE \y_reg[3][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [52]),
         .Q(\y_reg[3]_16 [52]),
         .R(rst));
   FDRE \y_reg[3][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [53]),
         .Q(\y_reg[3]_16 [53]),
         .R(rst));
   FDRE \y_reg[3][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [54]),
         .Q(\y_reg[3]_16 [54]),
         .R(rst));
   FDRE \y_reg[3][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [55]),
         .Q(\y_reg[3]_16 [55]),
         .R(rst));
   FDRE \y_reg[3][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [56]),
         .Q(\y_reg[3]_16 [56]),
         .R(rst));
   FDRE \y_reg[3][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [57]),
         .Q(\y_reg[3]_16 [57]),
         .R(rst));
   FDRE \y_reg[3][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [58]),
         .Q(\y_reg[3]_16 [58]),
         .R(rst));
   FDRE \y_reg[3][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [59]),
         .Q(\y_reg[3]_16 [59]),
         .R(rst));
   FDRE \y_reg[3][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [5]),
         .Q(\y_reg[3]_16 [5]),
         .R(rst));
   FDRE \y_reg[3][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [60]),
         .Q(\y_reg[3]_16 [60]),
         .R(rst));
   FDRE \y_reg[3][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [61]),
         .Q(\y_reg[3]_16 [61]),
         .R(rst));
   FDRE \y_reg[3][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [62]),
         .Q(\y_reg[3]_16 [62]),
         .R(rst));
   FDRE \y_reg[3][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [63]),
         .Q(\y_reg[3]_16 [63]),
         .R(rst));
   FDRE \y_reg[3][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [6]),
         .Q(\y_reg[3]_16 [6]),
         .R(rst));
   FDRE \y_reg[3][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [7]),
         .Q(\y_reg[3]_16 [7]),
         .R(rst));
   FDRE \y_reg[3][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [8]),
         .Q(\y_reg[3]_16 [8]),
         .R(rst));
   FDRE \y_reg[3][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[2]_15 [9]),
         .Q(\y_reg[3]_16 [9]),
         .R(rst));
   FDRE \y_reg[4][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [0]),
         .Q(\y_reg[4]_17 [0]),
         .R(rst));
   FDRE \y_reg[4][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [10]),
         .Q(\y_reg[4]_17 [10]),
         .R(rst));
   FDRE \y_reg[4][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [11]),
         .Q(\y_reg[4]_17 [11]),
         .R(rst));
   FDRE \y_reg[4][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [12]),
         .Q(\y_reg[4]_17 [12]),
         .R(rst));
   FDRE \y_reg[4][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [13]),
         .Q(\y_reg[4]_17 [13]),
         .R(rst));
   FDRE \y_reg[4][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [14]),
         .Q(\y_reg[4]_17 [14]),
         .R(rst));
   FDRE \y_reg[4][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [15]),
         .Q(\y_reg[4]_17 [15]),
         .R(rst));
   FDRE \y_reg[4][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [16]),
         .Q(\y_reg[4]_17 [16]),
         .R(rst));
   FDRE \y_reg[4][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [17]),
         .Q(\y_reg[4]_17 [17]),
         .R(rst));
   FDRE \y_reg[4][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [18]),
         .Q(\y_reg[4]_17 [18]),
         .R(rst));
   FDRE \y_reg[4][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [19]),
         .Q(\y_reg[4]_17 [19]),
         .R(rst));
   FDRE \y_reg[4][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [1]),
         .Q(\y_reg[4]_17 [1]),
         .R(rst));
   FDRE \y_reg[4][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [20]),
         .Q(\y_reg[4]_17 [20]),
         .R(rst));
   FDRE \y_reg[4][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [21]),
         .Q(\y_reg[4]_17 [21]),
         .R(rst));
   FDRE \y_reg[4][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [22]),
         .Q(\y_reg[4]_17 [22]),
         .R(rst));
   FDRE \y_reg[4][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [23]),
         .Q(\y_reg[4]_17 [23]),
         .R(rst));
   FDRE \y_reg[4][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [24]),
         .Q(\y_reg[4]_17 [24]),
         .R(rst));
   FDRE \y_reg[4][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [25]),
         .Q(\y_reg[4]_17 [25]),
         .R(rst));
   FDRE \y_reg[4][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [26]),
         .Q(\y_reg[4]_17 [26]),
         .R(rst));
   FDRE \y_reg[4][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [27]),
         .Q(\y_reg[4]_17 [27]),
         .R(rst));
   FDRE \y_reg[4][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [28]),
         .Q(\y_reg[4]_17 [28]),
         .R(rst));
   FDRE \y_reg[4][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [29]),
         .Q(\y_reg[4]_17 [29]),
         .R(rst));
   FDRE \y_reg[4][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [2]),
         .Q(\y_reg[4]_17 [2]),
         .R(rst));
   FDRE \y_reg[4][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [30]),
         .Q(\y_reg[4]_17 [30]),
         .R(rst));
   FDRE \y_reg[4][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [31]),
         .Q(\y_reg[4]_17 [31]),
         .R(rst));
   FDRE \y_reg[4][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [32]),
         .Q(\y_reg[4]_17 [32]),
         .R(rst));
   FDRE \y_reg[4][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [33]),
         .Q(\y_reg[4]_17 [33]),
         .R(rst));
   FDRE \y_reg[4][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [34]),
         .Q(\y_reg[4]_17 [34]),
         .R(rst));
   FDRE \y_reg[4][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [35]),
         .Q(\y_reg[4]_17 [35]),
         .R(rst));
   FDRE \y_reg[4][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [36]),
         .Q(\y_reg[4]_17 [36]),
         .R(rst));
   FDRE \y_reg[4][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [37]),
         .Q(\y_reg[4]_17 [37]),
         .R(rst));
   FDRE \y_reg[4][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [38]),
         .Q(\y_reg[4]_17 [38]),
         .R(rst));
   FDRE \y_reg[4][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [39]),
         .Q(\y_reg[4]_17 [39]),
         .R(rst));
   FDRE \y_reg[4][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [3]),
         .Q(\y_reg[4]_17 [3]),
         .R(rst));
   FDRE \y_reg[4][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [40]),
         .Q(\y_reg[4]_17 [40]),
         .R(rst));
   FDRE \y_reg[4][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [41]),
         .Q(\y_reg[4]_17 [41]),
         .R(rst));
   FDRE \y_reg[4][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [42]),
         .Q(\y_reg[4]_17 [42]),
         .R(rst));
   FDRE \y_reg[4][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [43]),
         .Q(\y_reg[4]_17 [43]),
         .R(rst));
   FDRE \y_reg[4][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [44]),
         .Q(\y_reg[4]_17 [44]),
         .R(rst));
   FDRE \y_reg[4][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [45]),
         .Q(\y_reg[4]_17 [45]),
         .R(rst));
   FDRE \y_reg[4][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [46]),
         .Q(\y_reg[4]_17 [46]),
         .R(rst));
   FDRE \y_reg[4][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [47]),
         .Q(\y_reg[4]_17 [47]),
         .R(rst));
   FDRE \y_reg[4][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [48]),
         .Q(\y_reg[4]_17 [48]),
         .R(rst));
   FDRE \y_reg[4][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [49]),
         .Q(\y_reg[4]_17 [49]),
         .R(rst));
   FDRE \y_reg[4][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [4]),
         .Q(\y_reg[4]_17 [4]),
         .R(rst));
   FDRE \y_reg[4][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [50]),
         .Q(\y_reg[4]_17 [50]),
         .R(rst));
   FDRE \y_reg[4][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [51]),
         .Q(\y_reg[4]_17 [51]),
         .R(rst));
   FDRE \y_reg[4][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [52]),
         .Q(\y_reg[4]_17 [52]),
         .R(rst));
   FDRE \y_reg[4][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [53]),
         .Q(\y_reg[4]_17 [53]),
         .R(rst));
   FDRE \y_reg[4][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [54]),
         .Q(\y_reg[4]_17 [54]),
         .R(rst));
   FDRE \y_reg[4][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [55]),
         .Q(\y_reg[4]_17 [55]),
         .R(rst));
   FDRE \y_reg[4][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [56]),
         .Q(\y_reg[4]_17 [56]),
         .R(rst));
   FDRE \y_reg[4][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [57]),
         .Q(\y_reg[4]_17 [57]),
         .R(rst));
   FDRE \y_reg[4][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [58]),
         .Q(\y_reg[4]_17 [58]),
         .R(rst));
   FDRE \y_reg[4][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [59]),
         .Q(\y_reg[4]_17 [59]),
         .R(rst));
   FDRE \y_reg[4][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [5]),
         .Q(\y_reg[4]_17 [5]),
         .R(rst));
   FDRE \y_reg[4][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [60]),
         .Q(\y_reg[4]_17 [60]),
         .R(rst));
   FDRE \y_reg[4][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [61]),
         .Q(\y_reg[4]_17 [61]),
         .R(rst));
   FDRE \y_reg[4][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [62]),
         .Q(\y_reg[4]_17 [62]),
         .R(rst));
   FDRE \y_reg[4][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [63]),
         .Q(\y_reg[4]_17 [63]),
         .R(rst));
   FDRE \y_reg[4][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [6]),
         .Q(\y_reg[4]_17 [6]),
         .R(rst));
   FDRE \y_reg[4][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [7]),
         .Q(\y_reg[4]_17 [7]),
         .R(rst));
   FDRE \y_reg[4][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [8]),
         .Q(\y_reg[4]_17 [8]),
         .R(rst));
   FDRE \y_reg[4][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[3]_16 [9]),
         .Q(\y_reg[4]_17 [9]),
         .R(rst));
   FDRE \y_reg[5][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [0]),
         .Q(\y_reg[5]_18 [0]),
         .R(rst));
   FDRE \y_reg[5][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [10]),
         .Q(\y_reg[5]_18 [10]),
         .R(rst));
   FDRE \y_reg[5][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [11]),
         .Q(\y_reg[5]_18 [11]),
         .R(rst));
   FDRE \y_reg[5][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [12]),
         .Q(\y_reg[5]_18 [12]),
         .R(rst));
   FDRE \y_reg[5][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [13]),
         .Q(\y_reg[5]_18 [13]),
         .R(rst));
   FDRE \y_reg[5][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [14]),
         .Q(\y_reg[5]_18 [14]),
         .R(rst));
   FDRE \y_reg[5][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [15]),
         .Q(\y_reg[5]_18 [15]),
         .R(rst));
   FDRE \y_reg[5][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [16]),
         .Q(\y_reg[5]_18 [16]),
         .R(rst));
   FDRE \y_reg[5][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [17]),
         .Q(\y_reg[5]_18 [17]),
         .R(rst));
   FDRE \y_reg[5][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [18]),
         .Q(\y_reg[5]_18 [18]),
         .R(rst));
   FDRE \y_reg[5][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [19]),
         .Q(\y_reg[5]_18 [19]),
         .R(rst));
   FDRE \y_reg[5][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [1]),
         .Q(\y_reg[5]_18 [1]),
         .R(rst));
   FDRE \y_reg[5][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [20]),
         .Q(\y_reg[5]_18 [20]),
         .R(rst));
   FDRE \y_reg[5][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [21]),
         .Q(\y_reg[5]_18 [21]),
         .R(rst));
   FDRE \y_reg[5][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [22]),
         .Q(\y_reg[5]_18 [22]),
         .R(rst));
   FDRE \y_reg[5][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [23]),
         .Q(\y_reg[5]_18 [23]),
         .R(rst));
   FDRE \y_reg[5][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [24]),
         .Q(\y_reg[5]_18 [24]),
         .R(rst));
   FDRE \y_reg[5][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [25]),
         .Q(\y_reg[5]_18 [25]),
         .R(rst));
   FDRE \y_reg[5][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [26]),
         .Q(\y_reg[5]_18 [26]),
         .R(rst));
   FDRE \y_reg[5][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [27]),
         .Q(\y_reg[5]_18 [27]),
         .R(rst));
   FDRE \y_reg[5][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [28]),
         .Q(\y_reg[5]_18 [28]),
         .R(rst));
   FDRE \y_reg[5][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [29]),
         .Q(\y_reg[5]_18 [29]),
         .R(rst));
   FDRE \y_reg[5][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [2]),
         .Q(\y_reg[5]_18 [2]),
         .R(rst));
   FDRE \y_reg[5][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [30]),
         .Q(\y_reg[5]_18 [30]),
         .R(rst));
   FDRE \y_reg[5][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [31]),
         .Q(\y_reg[5]_18 [31]),
         .R(rst));
   FDRE \y_reg[5][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [32]),
         .Q(\y_reg[5]_18 [32]),
         .R(rst));
   FDRE \y_reg[5][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [33]),
         .Q(\y_reg[5]_18 [33]),
         .R(rst));
   FDRE \y_reg[5][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [34]),
         .Q(\y_reg[5]_18 [34]),
         .R(rst));
   FDRE \y_reg[5][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [35]),
         .Q(\y_reg[5]_18 [35]),
         .R(rst));
   FDRE \y_reg[5][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [36]),
         .Q(\y_reg[5]_18 [36]),
         .R(rst));
   FDRE \y_reg[5][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [37]),
         .Q(\y_reg[5]_18 [37]),
         .R(rst));
   FDRE \y_reg[5][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [38]),
         .Q(\y_reg[5]_18 [38]),
         .R(rst));
   FDRE \y_reg[5][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [39]),
         .Q(\y_reg[5]_18 [39]),
         .R(rst));
   FDRE \y_reg[5][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [3]),
         .Q(\y_reg[5]_18 [3]),
         .R(rst));
   FDRE \y_reg[5][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [40]),
         .Q(\y_reg[5]_18 [40]),
         .R(rst));
   FDRE \y_reg[5][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [41]),
         .Q(\y_reg[5]_18 [41]),
         .R(rst));
   FDRE \y_reg[5][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [42]),
         .Q(\y_reg[5]_18 [42]),
         .R(rst));
   FDRE \y_reg[5][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [43]),
         .Q(\y_reg[5]_18 [43]),
         .R(rst));
   FDRE \y_reg[5][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [44]),
         .Q(\y_reg[5]_18 [44]),
         .R(rst));
   FDRE \y_reg[5][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [45]),
         .Q(\y_reg[5]_18 [45]),
         .R(rst));
   FDRE \y_reg[5][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [46]),
         .Q(\y_reg[5]_18 [46]),
         .R(rst));
   FDRE \y_reg[5][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [47]),
         .Q(\y_reg[5]_18 [47]),
         .R(rst));
   FDRE \y_reg[5][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [48]),
         .Q(\y_reg[5]_18 [48]),
         .R(rst));
   FDRE \y_reg[5][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [49]),
         .Q(\y_reg[5]_18 [49]),
         .R(rst));
   FDRE \y_reg[5][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [4]),
         .Q(\y_reg[5]_18 [4]),
         .R(rst));
   FDRE \y_reg[5][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [50]),
         .Q(\y_reg[5]_18 [50]),
         .R(rst));
   FDRE \y_reg[5][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [51]),
         .Q(\y_reg[5]_18 [51]),
         .R(rst));
   FDRE \y_reg[5][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [52]),
         .Q(\y_reg[5]_18 [52]),
         .R(rst));
   FDRE \y_reg[5][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [53]),
         .Q(\y_reg[5]_18 [53]),
         .R(rst));
   FDRE \y_reg[5][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [54]),
         .Q(\y_reg[5]_18 [54]),
         .R(rst));
   FDRE \y_reg[5][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [55]),
         .Q(\y_reg[5]_18 [55]),
         .R(rst));
   FDRE \y_reg[5][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [56]),
         .Q(\y_reg[5]_18 [56]),
         .R(rst));
   FDRE \y_reg[5][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [57]),
         .Q(\y_reg[5]_18 [57]),
         .R(rst));
   FDRE \y_reg[5][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [58]),
         .Q(\y_reg[5]_18 [58]),
         .R(rst));
   FDRE \y_reg[5][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [59]),
         .Q(\y_reg[5]_18 [59]),
         .R(rst));
   FDRE \y_reg[5][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [5]),
         .Q(\y_reg[5]_18 [5]),
         .R(rst));
   FDRE \y_reg[5][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [60]),
         .Q(\y_reg[5]_18 [60]),
         .R(rst));
   FDRE \y_reg[5][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [61]),
         .Q(\y_reg[5]_18 [61]),
         .R(rst));
   FDRE \y_reg[5][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [62]),
         .Q(\y_reg[5]_18 [62]),
         .R(rst));
   FDRE \y_reg[5][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [63]),
         .Q(\y_reg[5]_18 [63]),
         .R(rst));
   FDRE \y_reg[5][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [6]),
         .Q(\y_reg[5]_18 [6]),
         .R(rst));
   FDRE \y_reg[5][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [7]),
         .Q(\y_reg[5]_18 [7]),
         .R(rst));
   FDRE \y_reg[5][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [8]),
         .Q(\y_reg[5]_18 [8]),
         .R(rst));
   FDRE \y_reg[5][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[4]_17 [9]),
         .Q(\y_reg[5]_18 [9]),
         .R(rst));
   FDRE \y_reg[6][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [0]),
         .Q(\y_reg[6]_19 [0]),
         .R(rst));
   FDRE \y_reg[6][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [10]),
         .Q(\y_reg[6]_19 [10]),
         .R(rst));
   FDRE \y_reg[6][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [11]),
         .Q(\y_reg[6]_19 [11]),
         .R(rst));
   FDRE \y_reg[6][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [12]),
         .Q(\y_reg[6]_19 [12]),
         .R(rst));
   FDRE \y_reg[6][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [13]),
         .Q(\y_reg[6]_19 [13]),
         .R(rst));
   FDRE \y_reg[6][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [14]),
         .Q(\y_reg[6]_19 [14]),
         .R(rst));
   FDRE \y_reg[6][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [15]),
         .Q(\y_reg[6]_19 [15]),
         .R(rst));
   FDRE \y_reg[6][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [16]),
         .Q(\y_reg[6]_19 [16]),
         .R(rst));
   FDRE \y_reg[6][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [17]),
         .Q(\y_reg[6]_19 [17]),
         .R(rst));
   FDRE \y_reg[6][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [18]),
         .Q(\y_reg[6]_19 [18]),
         .R(rst));
   FDRE \y_reg[6][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [19]),
         .Q(\y_reg[6]_19 [19]),
         .R(rst));
   FDRE \y_reg[6][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [1]),
         .Q(\y_reg[6]_19 [1]),
         .R(rst));
   FDRE \y_reg[6][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [20]),
         .Q(\y_reg[6]_19 [20]),
         .R(rst));
   FDRE \y_reg[6][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [21]),
         .Q(\y_reg[6]_19 [21]),
         .R(rst));
   FDRE \y_reg[6][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [22]),
         .Q(\y_reg[6]_19 [22]),
         .R(rst));
   FDRE \y_reg[6][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [23]),
         .Q(\y_reg[6]_19 [23]),
         .R(rst));
   FDRE \y_reg[6][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [24]),
         .Q(\y_reg[6]_19 [24]),
         .R(rst));
   FDRE \y_reg[6][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [25]),
         .Q(\y_reg[6]_19 [25]),
         .R(rst));
   FDRE \y_reg[6][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [26]),
         .Q(\y_reg[6]_19 [26]),
         .R(rst));
   FDRE \y_reg[6][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [27]),
         .Q(\y_reg[6]_19 [27]),
         .R(rst));
   FDRE \y_reg[6][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [28]),
         .Q(\y_reg[6]_19 [28]),
         .R(rst));
   FDRE \y_reg[6][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [29]),
         .Q(\y_reg[6]_19 [29]),
         .R(rst));
   FDRE \y_reg[6][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [2]),
         .Q(\y_reg[6]_19 [2]),
         .R(rst));
   FDRE \y_reg[6][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [30]),
         .Q(\y_reg[6]_19 [30]),
         .R(rst));
   FDRE \y_reg[6][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [31]),
         .Q(\y_reg[6]_19 [31]),
         .R(rst));
   FDRE \y_reg[6][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [32]),
         .Q(\y_reg[6]_19 [32]),
         .R(rst));
   FDRE \y_reg[6][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [33]),
         .Q(\y_reg[6]_19 [33]),
         .R(rst));
   FDRE \y_reg[6][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [34]),
         .Q(\y_reg[6]_19 [34]),
         .R(rst));
   FDRE \y_reg[6][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [35]),
         .Q(\y_reg[6]_19 [35]),
         .R(rst));
   FDRE \y_reg[6][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [36]),
         .Q(\y_reg[6]_19 [36]),
         .R(rst));
   FDRE \y_reg[6][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [37]),
         .Q(\y_reg[6]_19 [37]),
         .R(rst));
   FDRE \y_reg[6][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [38]),
         .Q(\y_reg[6]_19 [38]),
         .R(rst));
   FDRE \y_reg[6][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [39]),
         .Q(\y_reg[6]_19 [39]),
         .R(rst));
   FDRE \y_reg[6][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [3]),
         .Q(\y_reg[6]_19 [3]),
         .R(rst));
   FDRE \y_reg[6][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [40]),
         .Q(\y_reg[6]_19 [40]),
         .R(rst));
   FDRE \y_reg[6][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [41]),
         .Q(\y_reg[6]_19 [41]),
         .R(rst));
   FDRE \y_reg[6][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [42]),
         .Q(\y_reg[6]_19 [42]),
         .R(rst));
   FDRE \y_reg[6][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [43]),
         .Q(\y_reg[6]_19 [43]),
         .R(rst));
   FDRE \y_reg[6][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [44]),
         .Q(\y_reg[6]_19 [44]),
         .R(rst));
   FDRE \y_reg[6][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [45]),
         .Q(\y_reg[6]_19 [45]),
         .R(rst));
   FDRE \y_reg[6][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [46]),
         .Q(\y_reg[6]_19 [46]),
         .R(rst));
   FDRE \y_reg[6][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [47]),
         .Q(\y_reg[6]_19 [47]),
         .R(rst));
   FDRE \y_reg[6][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [48]),
         .Q(\y_reg[6]_19 [48]),
         .R(rst));
   FDRE \y_reg[6][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [49]),
         .Q(\y_reg[6]_19 [49]),
         .R(rst));
   FDRE \y_reg[6][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [4]),
         .Q(\y_reg[6]_19 [4]),
         .R(rst));
   FDRE \y_reg[6][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [50]),
         .Q(\y_reg[6]_19 [50]),
         .R(rst));
   FDRE \y_reg[6][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [51]),
         .Q(\y_reg[6]_19 [51]),
         .R(rst));
   FDRE \y_reg[6][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [52]),
         .Q(\y_reg[6]_19 [52]),
         .R(rst));
   FDRE \y_reg[6][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [53]),
         .Q(\y_reg[6]_19 [53]),
         .R(rst));
   FDRE \y_reg[6][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [54]),
         .Q(\y_reg[6]_19 [54]),
         .R(rst));
   FDRE \y_reg[6][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [55]),
         .Q(\y_reg[6]_19 [55]),
         .R(rst));
   FDRE \y_reg[6][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [56]),
         .Q(\y_reg[6]_19 [56]),
         .R(rst));
   FDRE \y_reg[6][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [57]),
         .Q(\y_reg[6]_19 [57]),
         .R(rst));
   FDRE \y_reg[6][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [58]),
         .Q(\y_reg[6]_19 [58]),
         .R(rst));
   FDRE \y_reg[6][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [59]),
         .Q(\y_reg[6]_19 [59]),
         .R(rst));
   FDRE \y_reg[6][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [5]),
         .Q(\y_reg[6]_19 [5]),
         .R(rst));
   FDRE \y_reg[6][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [60]),
         .Q(\y_reg[6]_19 [60]),
         .R(rst));
   FDRE \y_reg[6][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [61]),
         .Q(\y_reg[6]_19 [61]),
         .R(rst));
   FDRE \y_reg[6][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [62]),
         .Q(\y_reg[6]_19 [62]),
         .R(rst));
   FDRE \y_reg[6][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [63]),
         .Q(\y_reg[6]_19 [63]),
         .R(rst));
   FDRE \y_reg[6][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [6]),
         .Q(\y_reg[6]_19 [6]),
         .R(rst));
   FDRE \y_reg[6][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [7]),
         .Q(\y_reg[6]_19 [7]),
         .R(rst));
   FDRE \y_reg[6][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [8]),
         .Q(\y_reg[6]_19 [8]),
         .R(rst));
   FDRE \y_reg[6][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[5]_18 [9]),
         .Q(\y_reg[6]_19 [9]),
         .R(rst));
   FDRE \y_reg[7][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [0]),
         .Q(\y_reg[7]_20 [0]),
         .R(rst));
   FDRE \y_reg[7][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [10]),
         .Q(\y_reg[7]_20 [10]),
         .R(rst));
   FDRE \y_reg[7][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [11]),
         .Q(\y_reg[7]_20 [11]),
         .R(rst));
   FDRE \y_reg[7][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [12]),
         .Q(\y_reg[7]_20 [12]),
         .R(rst));
   FDRE \y_reg[7][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [13]),
         .Q(\y_reg[7]_20 [13]),
         .R(rst));
   FDRE \y_reg[7][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [14]),
         .Q(\y_reg[7]_20 [14]),
         .R(rst));
   FDRE \y_reg[7][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [15]),
         .Q(\y_reg[7]_20 [15]),
         .R(rst));
   FDRE \y_reg[7][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [16]),
         .Q(\y_reg[7]_20 [16]),
         .R(rst));
   FDRE \y_reg[7][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [17]),
         .Q(\y_reg[7]_20 [17]),
         .R(rst));
   FDRE \y_reg[7][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [18]),
         .Q(\y_reg[7]_20 [18]),
         .R(rst));
   FDRE \y_reg[7][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [19]),
         .Q(\y_reg[7]_20 [19]),
         .R(rst));
   FDRE \y_reg[7][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [1]),
         .Q(\y_reg[7]_20 [1]),
         .R(rst));
   FDRE \y_reg[7][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [20]),
         .Q(\y_reg[7]_20 [20]),
         .R(rst));
   FDRE \y_reg[7][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [21]),
         .Q(\y_reg[7]_20 [21]),
         .R(rst));
   FDRE \y_reg[7][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [22]),
         .Q(\y_reg[7]_20 [22]),
         .R(rst));
   FDRE \y_reg[7][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [23]),
         .Q(\y_reg[7]_20 [23]),
         .R(rst));
   FDRE \y_reg[7][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [24]),
         .Q(\y_reg[7]_20 [24]),
         .R(rst));
   FDRE \y_reg[7][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [25]),
         .Q(\y_reg[7]_20 [25]),
         .R(rst));
   FDRE \y_reg[7][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [26]),
         .Q(\y_reg[7]_20 [26]),
         .R(rst));
   FDRE \y_reg[7][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [27]),
         .Q(\y_reg[7]_20 [27]),
         .R(rst));
   FDRE \y_reg[7][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [28]),
         .Q(\y_reg[7]_20 [28]),
         .R(rst));
   FDRE \y_reg[7][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [29]),
         .Q(\y_reg[7]_20 [29]),
         .R(rst));
   FDRE \y_reg[7][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [2]),
         .Q(\y_reg[7]_20 [2]),
         .R(rst));
   FDRE \y_reg[7][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [30]),
         .Q(\y_reg[7]_20 [30]),
         .R(rst));
   FDRE \y_reg[7][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [31]),
         .Q(\y_reg[7]_20 [31]),
         .R(rst));
   FDRE \y_reg[7][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [32]),
         .Q(\y_reg[7]_20 [32]),
         .R(rst));
   FDRE \y_reg[7][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [33]),
         .Q(\y_reg[7]_20 [33]),
         .R(rst));
   FDRE \y_reg[7][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [34]),
         .Q(\y_reg[7]_20 [34]),
         .R(rst));
   FDRE \y_reg[7][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [35]),
         .Q(\y_reg[7]_20 [35]),
         .R(rst));
   FDRE \y_reg[7][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [36]),
         .Q(\y_reg[7]_20 [36]),
         .R(rst));
   FDRE \y_reg[7][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [37]),
         .Q(\y_reg[7]_20 [37]),
         .R(rst));
   FDRE \y_reg[7][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [38]),
         .Q(\y_reg[7]_20 [38]),
         .R(rst));
   FDRE \y_reg[7][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [39]),
         .Q(\y_reg[7]_20 [39]),
         .R(rst));
   FDRE \y_reg[7][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [3]),
         .Q(\y_reg[7]_20 [3]),
         .R(rst));
   FDRE \y_reg[7][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [40]),
         .Q(\y_reg[7]_20 [40]),
         .R(rst));
   FDRE \y_reg[7][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [41]),
         .Q(\y_reg[7]_20 [41]),
         .R(rst));
   FDRE \y_reg[7][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [42]),
         .Q(\y_reg[7]_20 [42]),
         .R(rst));
   FDRE \y_reg[7][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [43]),
         .Q(\y_reg[7]_20 [43]),
         .R(rst));
   FDRE \y_reg[7][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [44]),
         .Q(\y_reg[7]_20 [44]),
         .R(rst));
   FDRE \y_reg[7][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [45]),
         .Q(\y_reg[7]_20 [45]),
         .R(rst));
   FDRE \y_reg[7][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [46]),
         .Q(\y_reg[7]_20 [46]),
         .R(rst));
   FDRE \y_reg[7][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [47]),
         .Q(\y_reg[7]_20 [47]),
         .R(rst));
   FDRE \y_reg[7][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [48]),
         .Q(\y_reg[7]_20 [48]),
         .R(rst));
   FDRE \y_reg[7][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [49]),
         .Q(\y_reg[7]_20 [49]),
         .R(rst));
   FDRE \y_reg[7][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [4]),
         .Q(\y_reg[7]_20 [4]),
         .R(rst));
   FDRE \y_reg[7][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [50]),
         .Q(\y_reg[7]_20 [50]),
         .R(rst));
   FDRE \y_reg[7][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [51]),
         .Q(\y_reg[7]_20 [51]),
         .R(rst));
   FDRE \y_reg[7][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [52]),
         .Q(\y_reg[7]_20 [52]),
         .R(rst));
   FDRE \y_reg[7][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [53]),
         .Q(\y_reg[7]_20 [53]),
         .R(rst));
   FDRE \y_reg[7][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [54]),
         .Q(\y_reg[7]_20 [54]),
         .R(rst));
   FDRE \y_reg[7][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [55]),
         .Q(\y_reg[7]_20 [55]),
         .R(rst));
   FDRE \y_reg[7][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [56]),
         .Q(\y_reg[7]_20 [56]),
         .R(rst));
   FDRE \y_reg[7][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [57]),
         .Q(\y_reg[7]_20 [57]),
         .R(rst));
   FDRE \y_reg[7][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [58]),
         .Q(\y_reg[7]_20 [58]),
         .R(rst));
   FDRE \y_reg[7][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [59]),
         .Q(\y_reg[7]_20 [59]),
         .R(rst));
   FDRE \y_reg[7][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [5]),
         .Q(\y_reg[7]_20 [5]),
         .R(rst));
   FDRE \y_reg[7][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [60]),
         .Q(\y_reg[7]_20 [60]),
         .R(rst));
   FDRE \y_reg[7][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [61]),
         .Q(\y_reg[7]_20 [61]),
         .R(rst));
   FDRE \y_reg[7][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [62]),
         .Q(\y_reg[7]_20 [62]),
         .R(rst));
   FDRE \y_reg[7][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [63]),
         .Q(\y_reg[7]_20 [63]),
         .R(rst));
   FDRE \y_reg[7][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [6]),
         .Q(\y_reg[7]_20 [6]),
         .R(rst));
   FDRE \y_reg[7][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [7]),
         .Q(\y_reg[7]_20 [7]),
         .R(rst));
   FDRE \y_reg[7][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [8]),
         .Q(\y_reg[7]_20 [8]),
         .R(rst));
   FDRE \y_reg[7][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[6]_19 [9]),
         .Q(\y_reg[7]_20 [9]),
         .R(rst));
   FDRE \y_reg[8][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [0]),
         .Q(\y_reg[8]_21 [0]),
         .R(rst));
   FDRE \y_reg[8][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [10]),
         .Q(\y_reg[8]_21 [10]),
         .R(rst));
   FDRE \y_reg[8][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [11]),
         .Q(\y_reg[8]_21 [11]),
         .R(rst));
   FDRE \y_reg[8][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [12]),
         .Q(\y_reg[8]_21 [12]),
         .R(rst));
   FDRE \y_reg[8][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [13]),
         .Q(\y_reg[8]_21 [13]),
         .R(rst));
   FDRE \y_reg[8][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [14]),
         .Q(\y_reg[8]_21 [14]),
         .R(rst));
   FDRE \y_reg[8][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [15]),
         .Q(\y_reg[8]_21 [15]),
         .R(rst));
   FDRE \y_reg[8][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [16]),
         .Q(\y_reg[8]_21 [16]),
         .R(rst));
   FDRE \y_reg[8][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [17]),
         .Q(\y_reg[8]_21 [17]),
         .R(rst));
   FDRE \y_reg[8][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [18]),
         .Q(\y_reg[8]_21 [18]),
         .R(rst));
   FDRE \y_reg[8][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [19]),
         .Q(\y_reg[8]_21 [19]),
         .R(rst));
   FDRE \y_reg[8][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [1]),
         .Q(\y_reg[8]_21 [1]),
         .R(rst));
   FDRE \y_reg[8][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [20]),
         .Q(\y_reg[8]_21 [20]),
         .R(rst));
   FDRE \y_reg[8][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [21]),
         .Q(\y_reg[8]_21 [21]),
         .R(rst));
   FDRE \y_reg[8][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [22]),
         .Q(\y_reg[8]_21 [22]),
         .R(rst));
   FDRE \y_reg[8][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [23]),
         .Q(\y_reg[8]_21 [23]),
         .R(rst));
   FDRE \y_reg[8][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [24]),
         .Q(\y_reg[8]_21 [24]),
         .R(rst));
   FDRE \y_reg[8][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [25]),
         .Q(\y_reg[8]_21 [25]),
         .R(rst));
   FDRE \y_reg[8][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [26]),
         .Q(\y_reg[8]_21 [26]),
         .R(rst));
   FDRE \y_reg[8][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [27]),
         .Q(\y_reg[8]_21 [27]),
         .R(rst));
   FDRE \y_reg[8][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [28]),
         .Q(\y_reg[8]_21 [28]),
         .R(rst));
   FDRE \y_reg[8][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [29]),
         .Q(\y_reg[8]_21 [29]),
         .R(rst));
   FDRE \y_reg[8][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [2]),
         .Q(\y_reg[8]_21 [2]),
         .R(rst));
   FDRE \y_reg[8][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [30]),
         .Q(\y_reg[8]_21 [30]),
         .R(rst));
   FDRE \y_reg[8][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [31]),
         .Q(\y_reg[8]_21 [31]),
         .R(rst));
   FDRE \y_reg[8][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [32]),
         .Q(\y_reg[8]_21 [32]),
         .R(rst));
   FDRE \y_reg[8][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [33]),
         .Q(\y_reg[8]_21 [33]),
         .R(rst));
   FDRE \y_reg[8][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [34]),
         .Q(\y_reg[8]_21 [34]),
         .R(rst));
   FDRE \y_reg[8][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [35]),
         .Q(\y_reg[8]_21 [35]),
         .R(rst));
   FDRE \y_reg[8][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [36]),
         .Q(\y_reg[8]_21 [36]),
         .R(rst));
   FDRE \y_reg[8][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [37]),
         .Q(\y_reg[8]_21 [37]),
         .R(rst));
   FDRE \y_reg[8][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [38]),
         .Q(\y_reg[8]_21 [38]),
         .R(rst));
   FDRE \y_reg[8][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [39]),
         .Q(\y_reg[8]_21 [39]),
         .R(rst));
   FDRE \y_reg[8][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [3]),
         .Q(\y_reg[8]_21 [3]),
         .R(rst));
   FDRE \y_reg[8][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [40]),
         .Q(\y_reg[8]_21 [40]),
         .R(rst));
   FDRE \y_reg[8][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [41]),
         .Q(\y_reg[8]_21 [41]),
         .R(rst));
   FDRE \y_reg[8][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [42]),
         .Q(\y_reg[8]_21 [42]),
         .R(rst));
   FDRE \y_reg[8][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [43]),
         .Q(\y_reg[8]_21 [43]),
         .R(rst));
   FDRE \y_reg[8][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [44]),
         .Q(\y_reg[8]_21 [44]),
         .R(rst));
   FDRE \y_reg[8][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [45]),
         .Q(\y_reg[8]_21 [45]),
         .R(rst));
   FDRE \y_reg[8][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [46]),
         .Q(\y_reg[8]_21 [46]),
         .R(rst));
   FDRE \y_reg[8][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [47]),
         .Q(\y_reg[8]_21 [47]),
         .R(rst));
   FDRE \y_reg[8][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [48]),
         .Q(\y_reg[8]_21 [48]),
         .R(rst));
   FDRE \y_reg[8][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [49]),
         .Q(\y_reg[8]_21 [49]),
         .R(rst));
   FDRE \y_reg[8][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [4]),
         .Q(\y_reg[8]_21 [4]),
         .R(rst));
   FDRE \y_reg[8][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [50]),
         .Q(\y_reg[8]_21 [50]),
         .R(rst));
   FDRE \y_reg[8][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [51]),
         .Q(\y_reg[8]_21 [51]),
         .R(rst));
   FDRE \y_reg[8][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [52]),
         .Q(\y_reg[8]_21 [52]),
         .R(rst));
   FDRE \y_reg[8][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [53]),
         .Q(\y_reg[8]_21 [53]),
         .R(rst));
   FDRE \y_reg[8][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [54]),
         .Q(\y_reg[8]_21 [54]),
         .R(rst));
   FDRE \y_reg[8][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [55]),
         .Q(\y_reg[8]_21 [55]),
         .R(rst));
   FDRE \y_reg[8][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [56]),
         .Q(\y_reg[8]_21 [56]),
         .R(rst));
   FDRE \y_reg[8][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [57]),
         .Q(\y_reg[8]_21 [57]),
         .R(rst));
   FDRE \y_reg[8][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [58]),
         .Q(\y_reg[8]_21 [58]),
         .R(rst));
   FDRE \y_reg[8][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [59]),
         .Q(\y_reg[8]_21 [59]),
         .R(rst));
   FDRE \y_reg[8][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [5]),
         .Q(\y_reg[8]_21 [5]),
         .R(rst));
   FDRE \y_reg[8][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [60]),
         .Q(\y_reg[8]_21 [60]),
         .R(rst));
   FDRE \y_reg[8][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [61]),
         .Q(\y_reg[8]_21 [61]),
         .R(rst));
   FDRE \y_reg[8][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [62]),
         .Q(\y_reg[8]_21 [62]),
         .R(rst));
   FDRE \y_reg[8][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [63]),
         .Q(\y_reg[8]_21 [63]),
         .R(rst));
   FDRE \y_reg[8][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [6]),
         .Q(\y_reg[8]_21 [6]),
         .R(rst));
   FDRE \y_reg[8][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [7]),
         .Q(\y_reg[8]_21 [7]),
         .R(rst));
   FDRE \y_reg[8][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [8]),
         .Q(\y_reg[8]_21 [8]),
         .R(rst));
   FDRE \y_reg[8][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[7]_20 [9]),
         .Q(\y_reg[8]_21 [9]),
         .R(rst));
   FDRE \y_reg[9][0] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [0]),
         .Q(\y_reg[9]_22 [0]),
         .R(rst));
   FDRE \y_reg[9][10] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [10]),
         .Q(\y_reg[9]_22 [10]),
         .R(rst));
   FDRE \y_reg[9][11] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [11]),
         .Q(\y_reg[9]_22 [11]),
         .R(rst));
   FDRE \y_reg[9][12] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [12]),
         .Q(\y_reg[9]_22 [12]),
         .R(rst));
   FDRE \y_reg[9][13] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [13]),
         .Q(\y_reg[9]_22 [13]),
         .R(rst));
   FDRE \y_reg[9][14] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [14]),
         .Q(\y_reg[9]_22 [14]),
         .R(rst));
   FDRE \y_reg[9][15] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [15]),
         .Q(\y_reg[9]_22 [15]),
         .R(rst));
   FDRE \y_reg[9][16] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [16]),
         .Q(\y_reg[9]_22 [16]),
         .R(rst));
   FDRE \y_reg[9][17] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [17]),
         .Q(\y_reg[9]_22 [17]),
         .R(rst));
   FDRE \y_reg[9][18] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [18]),
         .Q(\y_reg[9]_22 [18]),
         .R(rst));
   FDRE \y_reg[9][19] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [19]),
         .Q(\y_reg[9]_22 [19]),
         .R(rst));
   FDRE \y_reg[9][1] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [1]),
         .Q(\y_reg[9]_22 [1]),
         .R(rst));
   FDRE \y_reg[9][20] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [20]),
         .Q(\y_reg[9]_22 [20]),
         .R(rst));
   FDRE \y_reg[9][21] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [21]),
         .Q(\y_reg[9]_22 [21]),
         .R(rst));
   FDRE \y_reg[9][22] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [22]),
         .Q(\y_reg[9]_22 [22]),
         .R(rst));
   FDRE \y_reg[9][23] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [23]),
         .Q(\y_reg[9]_22 [23]),
         .R(rst));
   FDRE \y_reg[9][24] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [24]),
         .Q(\y_reg[9]_22 [24]),
         .R(rst));
   FDRE \y_reg[9][25] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [25]),
         .Q(\y_reg[9]_22 [25]),
         .R(rst));
   FDRE \y_reg[9][26] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [26]),
         .Q(\y_reg[9]_22 [26]),
         .R(rst));
   FDRE \y_reg[9][27] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [27]),
         .Q(\y_reg[9]_22 [27]),
         .R(rst));
   FDRE \y_reg[9][28] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [28]),
         .Q(\y_reg[9]_22 [28]),
         .R(rst));
   FDRE \y_reg[9][29] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [29]),
         .Q(\y_reg[9]_22 [29]),
         .R(rst));
   FDRE \y_reg[9][2] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [2]),
         .Q(\y_reg[9]_22 [2]),
         .R(rst));
   FDRE \y_reg[9][30] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [30]),
         .Q(\y_reg[9]_22 [30]),
         .R(rst));
   FDRE \y_reg[9][31] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [31]),
         .Q(\y_reg[9]_22 [31]),
         .R(rst));
   FDRE \y_reg[9][32] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [32]),
         .Q(\y_reg[9]_22 [32]),
         .R(rst));
   FDRE \y_reg[9][33] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [33]),
         .Q(\y_reg[9]_22 [33]),
         .R(rst));
   FDRE \y_reg[9][34] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [34]),
         .Q(\y_reg[9]_22 [34]),
         .R(rst));
   FDRE \y_reg[9][35] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [35]),
         .Q(\y_reg[9]_22 [35]),
         .R(rst));
   FDRE \y_reg[9][36] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [36]),
         .Q(\y_reg[9]_22 [36]),
         .R(rst));
   FDRE \y_reg[9][37] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [37]),
         .Q(\y_reg[9]_22 [37]),
         .R(rst));
   FDRE \y_reg[9][38] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [38]),
         .Q(\y_reg[9]_22 [38]),
         .R(rst));
   FDRE \y_reg[9][39] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [39]),
         .Q(\y_reg[9]_22 [39]),
         .R(rst));
   FDRE \y_reg[9][3] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [3]),
         .Q(\y_reg[9]_22 [3]),
         .R(rst));
   FDRE \y_reg[9][40] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [40]),
         .Q(\y_reg[9]_22 [40]),
         .R(rst));
   FDRE \y_reg[9][41] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [41]),
         .Q(\y_reg[9]_22 [41]),
         .R(rst));
   FDRE \y_reg[9][42] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [42]),
         .Q(\y_reg[9]_22 [42]),
         .R(rst));
   FDRE \y_reg[9][43] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [43]),
         .Q(\y_reg[9]_22 [43]),
         .R(rst));
   FDRE \y_reg[9][44] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [44]),
         .Q(\y_reg[9]_22 [44]),
         .R(rst));
   FDRE \y_reg[9][45] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [45]),
         .Q(\y_reg[9]_22 [45]),
         .R(rst));
   FDRE \y_reg[9][46] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [46]),
         .Q(\y_reg[9]_22 [46]),
         .R(rst));
   FDRE \y_reg[9][47] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [47]),
         .Q(\y_reg[9]_22 [47]),
         .R(rst));
   FDRE \y_reg[9][48] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [48]),
         .Q(\y_reg[9]_22 [48]),
         .R(rst));
   FDRE \y_reg[9][49] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [49]),
         .Q(\y_reg[9]_22 [49]),
         .R(rst));
   FDRE \y_reg[9][4] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [4]),
         .Q(\y_reg[9]_22 [4]),
         .R(rst));
   FDRE \y_reg[9][50] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [50]),
         .Q(\y_reg[9]_22 [50]),
         .R(rst));
   FDRE \y_reg[9][51] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [51]),
         .Q(\y_reg[9]_22 [51]),
         .R(rst));
   FDRE \y_reg[9][52] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [52]),
         .Q(\y_reg[9]_22 [52]),
         .R(rst));
   FDRE \y_reg[9][53] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [53]),
         .Q(\y_reg[9]_22 [53]),
         .R(rst));
   FDRE \y_reg[9][54] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [54]),
         .Q(\y_reg[9]_22 [54]),
         .R(rst));
   FDRE \y_reg[9][55] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [55]),
         .Q(\y_reg[9]_22 [55]),
         .R(rst));
   FDRE \y_reg[9][56] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [56]),
         .Q(\y_reg[9]_22 [56]),
         .R(rst));
   FDRE \y_reg[9][57] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [57]),
         .Q(\y_reg[9]_22 [57]),
         .R(rst));
   FDRE \y_reg[9][58] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [58]),
         .Q(\y_reg[9]_22 [58]),
         .R(rst));
   FDRE \y_reg[9][59] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [59]),
         .Q(\y_reg[9]_22 [59]),
         .R(rst));
   FDRE \y_reg[9][5] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [5]),
         .Q(\y_reg[9]_22 [5]),
         .R(rst));
   FDRE \y_reg[9][60] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [60]),
         .Q(\y_reg[9]_22 [60]),
         .R(rst));
   FDRE \y_reg[9][61] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [61]),
         .Q(\y_reg[9]_22 [61]),
         .R(rst));
   FDRE \y_reg[9][62] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [62]),
         .Q(\y_reg[9]_22 [62]),
         .R(rst));
   FDRE \y_reg[9][63] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [63]),
         .Q(\y_reg[9]_22 [63]),
         .R(rst));
   FDRE \y_reg[9][6] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [6]),
         .Q(\y_reg[9]_22 [6]),
         .R(rst));
   FDRE \y_reg[9][7] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [7]),
         .Q(\y_reg[9]_22 [7]),
         .R(rst));
   FDRE \y_reg[9][8] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [8]),
         .Q(\y_reg[9]_22 [8]),
         .R(rst));
   FDRE \y_reg[9][9] 
        (.C(clk_out1),
-        .CE(Q),
+        .CE(\coef_offset_reg[0] ),
         .D(\y_reg[8]_21 [9]),
         .Q(\y_reg[9]_22 [9]),
         .R(rst));
