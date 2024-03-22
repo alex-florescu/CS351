@@ -1,54 +1,16 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx2019/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e319bde30da04bdbb85ea4b98733bd70 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx2019/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e319bde30da04bdbb85ea4b98733bd70 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dist_behav xil_defaultlib.tb_dist xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'o_dat' [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/pipeline.v:116]
-WARNING: [VRFC 10-3705] select index 4 into 'bx_v2' is out of bounds [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:198]
-WARNING: [VRFC 10-3705] select index 5 into 'bx_v2' is out of bounds [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:199]
-WARNING: [VRFC 10-3705] select index 6 into 'bx_v2' is out of bounds [C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/wah.v:200]
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/distortion.v" Line 1. Module distortion doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.i2s_control
-Compiling module xil_defaultlib.noise_gate_default
 Compiling module xil_defaultlib.distortion
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_axi_regs_fwd_v8_4(C_DATA...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="zyn...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling module xil_defaultlib.ram_delay(DEPTH=32768)
-Compiling module xil_defaultlib.delay
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="zyn...
-Compiling module xil_defaultlib.blk_mem_gen_1
-Compiling module xil_defaultlib.ram_reverb_default
-Compiling module xil_defaultlib.reverb
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
-Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="zyn...
-Compiling module xil_defaultlib.blk_mem_gen_2
-Compiling module xil_defaultlib.load_coefficients
-Compiling module xil_defaultlib.wah_default
-Compiling module xil_defaultlib.noise_gate(THRESHOLD=12)
-Compiling module xil_defaultlib.effect_config
-Compiling module xil_defaultlib.pipeline_default
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=48.0,...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_leaf
-Compiling module xil_defaultlib.clk_wiz
-Compiling module xil_defaultlib.debouncer
-Compiling module xil_defaultlib.debouncer_array
-Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_dist
+WARNING: [XSIM 43-3373] "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/test/tb_dist.v" Line 78. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.srcs/sources_1/new/test/tb_dist.v" Line 81. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot top_behav
+Built simulation snapshot tb_dist_behav

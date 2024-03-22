@@ -1,15 +1,8 @@
-14:08:19 **** Incremental Build of configuration Debug for project app_pedal ****
+21:32:54 **** Incremental Build of configuration Debug for project app_pedal ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../app_pedal_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:10:10: fatal error: sleep.h: No such file or directory
- #include "sleep.h"
-          ^~~~~~~~~
-compilation terminated.
-make: *** [src/subdir.mk:26: src/main.o] Error 1
+make: Nothing to be done for 'main-build'.
 
-14:08:20 Build Finished (took 427ms)
+21:32:54 Build Finished (took 264ms)
 
