@@ -83,3 +83,6 @@
 - 09 Mar - Record backup demo video
 - 11 Mar - Meeting with Eduardo
 - 12 Mar - Presentation
+- 18 Mar - Meeting with Eduardo
+- 21 Mar - Started writing background section
+- 22 Mar - Formalised testing setup. Distortion formal testing completed
