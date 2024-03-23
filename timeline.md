@@ -86,3 +86,4 @@
 - 18 Mar - Meeting with Eduardo
 - 21 Mar - Started writing background section
 - 22 Mar - Formalised testing setup. Distortion formal testing completed
+- 23 Mar - Delay effect formalised testing
