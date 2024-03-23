@@ -14,6 +14,8 @@ https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggest
      - reflective writing, limitations of the work
   - maybe do some formal testing with real data from Vivado ILA?
      - also show some simple values (small delay values) data 0 and 999 or sth like that
+  - for testing talk about delayed values not working in behavioural
+     - and how it can be avoided by manually adding a bit of clock skew between clocks and data generation
   - in the related works section, compare:
      - project that use/don't use frequency altering effects
      - the Audio Codec device model they had
