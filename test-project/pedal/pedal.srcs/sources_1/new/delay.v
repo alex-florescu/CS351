@@ -14,7 +14,7 @@ module delay #(
     input [FIFO_DEPTH_BITS - 1:0] offset
 );
 
-    localparam DEPTH = 2; // number of stages for delay effect
+    localparam DEPTH = 4; // number of stages for delay effect
 
     // create registers for data pipelining
     reg signed [DATA_WIDTH - 1:0] delay_data [DEPTH - 1:0];
@@ -22,6 +22,8 @@ module delay #(
     wire signed [DATA_WIDTH - 1:0] fifo_data;
     reg signed [DATA_WIDTH - 1:0] fifo_data_reduced;
     reg [DEPTH - 1:0] valid;
+
+    wire fifo_vld;
 
     always @(posedge clk) begin
         if(rst) begin
@@ -31,53 +33,42 @@ module delay #(
             // path for delayed data
             pure_data[0] <= i_dat;
             pure_data[1] <= pure_data[0];
-            // pure_data[2] <= pure_data[1];
+            pure_data[2] <= pure_data[1];
+            pure_data[3] <= pure_data[2];
 
             // place data in a signed register
             delay_data[0] <= i_dat;
+            delay_data[1] <= delay_data[0];
+            delay_data[2] <= delay_data[1];
 
             // divide fifo output data by shifting, maintain sign
-            fifo_data_reduced <= fifo_data[15] ? 
-            {{DIV_GAIN{1'b1}}, fifo_data[15:DIV_GAIN]} : // maitain MSB if 1
-            fifo_data >> DIV_GAIN; // else shift only
+            if(fifo_vld) begin
+                fifo_data_reduced <= fifo_data[15] ? 
+                    {{DIV_GAIN{1'b1}}, fifo_data[15:DIV_GAIN]} : // maitain MSB if 1
+                    fifo_data >> DIV_GAIN; // else shift only                
+            end
 
             // add reduced fifo data to unaltered input
-            delay_data[1] <= delay_data[0] + fifo_data_reduced;
+            delay_data[3] <= (start) ? delay_data[2] : delay_data[2] + fifo_data_reduced;
+            // delay_data[3] <=  delay_data[2] + fifo_data_reduced;
         end     
     end
 
-    // fifo_generator_0 fifo_delay (                          // fifo_generator_0 fifo_delay (
-    // .clk(clk),      // input wire clk                   //    .clk(clk),      // input wire clk
-    // .srst(rst),    // input wire srst                   //    .srst(rst),    // input wire srst
-    // .din(i_dat),      // input wire [15 : 0] din        //    .din(o_dat),      // input wire [15 : 0] din
-    // .wr_en(i_vld),  // input wire wr_en                 //    .wr_en(o_vld),  // input wire wr_en
-    // .rd_en(i_vld),  // input wire rd_en                 //    .rd_en(o_vld),  // input wire rd_en
-    // .dout(fifo_data),    // output wire [15 : 0] dout   //    .dout(fifo_data),    // output wire [15 : 0] dout
-    // .full(full),    // output wire full                 //    .full(full),    // output wire full
-    // .empty(empty)  // output wire empty                 //    .empty(empty)  // output wire empty
-    // );                                                    //  );
-    // // mock wires for fifo
-    // wire full;
-    // wire empty;
+    reg [FIFO_DEPTH_BITS:0] sample_cnt; // size fifo_bits + 1
+    wire start;
 
-    // // Delay only
-    // always @(posedge clk) begin
-    //    if(rst) begin
-    //       pure_data[0] <= 16'd0;
-    //       delay_data[0] <= 16'd0;
-    //    end else begin
-    //       // path for delayed data
-    //       pure_data[0] <= i_dat;
-    //       pure_data[1] <= pure_data[0];
-    //       // pure_data[2] <= pure_data[1];
+    // high for the first FIFO_DEPTH samples since reset
+    assign start = ~sample_cnt[FIFO_DEPTH_BITS];
 
-    //       // place data in a signed register
-    //       delay_data[0] <= fifo_data;
-
-    //       // add reduced fifo data to unaltered input
-    //       delay_data[1] <= delay_data[0];
-    //    end     
-    // end
+    always @(posedge clk) begin
+        if(rst) begin
+            sample_cnt <= 0;
+        end else begin
+            if(i_vld && start) begin
+                sample_cnt <= sample_cnt + 1;
+            end
+        end
+    end
 
     ram_delay #(
         .DATA_WIDTH(DATA_WIDTH),
@@ -87,14 +78,16 @@ module delay #(
         .clk(clk),
         .rst(rst),
         .i_dat(o_dat), // change to i_dat for simple delayed input
-        .i_vld(o_vld), // change to i_vld for simple delayed input
-        .o_dat(fifo_data),
+        .write(o_vld), // change to i_dat for simple delayed input
+        .read(i_vld), // change to i_vld for simple delayed input
+        .fifo_dat(fifo_data),
+        .fifo_vld(fifo_vld),
         .offset(offset)
     );
 
     // select output based on enable
-    assign o_dat = (enable) ? delay_data[1] : pure_data[1];
-    assign o_vld = valid[1];
+    assign o_dat = (enable) ? delay_data[3] : pure_data[3];
+    assign o_vld = valid[3];
 
     always @(posedge clk) begin
         // delay valid signal
@@ -103,6 +96,8 @@ module delay #(
         end else begin
             valid[0] <= i_vld;
             valid[1] <= valid[0];
+            valid[2] <= valid[1];
+            valid[3] <= valid[2];
         end
     end
 

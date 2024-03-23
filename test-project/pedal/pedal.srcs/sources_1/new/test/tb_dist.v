@@ -3,7 +3,7 @@
 module tb_dist;
 
 // Parameters
-parameter INPUT_FILE = "input_data.txt";
+parameter INPUT_FILE = "input_data_dist.txt";
 parameter OUTPUT_FILE = "output_data_dist.txt";
 parameter SCOREBOARD_FILE = "scoreboard_dist.txt";
 parameter DATA_WIDTH = 16;

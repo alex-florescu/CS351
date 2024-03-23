@@ -60,7 +60,8 @@ distortion #(
     .thresh(thresh_val)
 );
 
-localparam DELAY_DEPTH = 32768;
+localparam DELAY_DEPTH = 32;
+// localparam DELAY_DEPTH = 32768;
 localparam DELAY_DEPTH_BITS = $clog2(DELAY_DEPTH);
 wire [DELAY_DEPTH_BITS - 1:0] delay_val;
 

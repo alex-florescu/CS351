@@ -45,7 +45,7 @@ x_hex     = hex2charArray(x);
 yDist_hex = hex2charArray(yDist);
 
 % Print to .txt file
-writeCharArrayToFile('input_data.txt', x_hex);
+writeCharArrayToFile('input_data_dist.txt', x_hex);
 writeCharArrayToFile('output_data_dist.txt', yDist_hex);
 
 %% function for converting to file

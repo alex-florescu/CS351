@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pedal.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../pedal.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" --include "C:/Xilinx2019/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../pedal.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../pedal.srcs/sources_1/new/delay.v" \
+"../../../../pedal.srcs/sources_1/new/ram_delay.v" \
+"../../../../pedal.srcs/sources_1/new/test/tb_delay.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
