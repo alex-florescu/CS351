@@ -87,3 +87,5 @@
 - 21 Mar - Started writing background section
 - 22 Mar - Formalised testing setup. Distortion formal testing completed
 - 23 Mar - Delay effect formalised testing
+- 24 Mar - Started reverb effect testing - postponed
+- 25 Mar - Writing (Background, Motivation)
