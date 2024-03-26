@@ -2,11 +2,7 @@
 https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
 
 ## Notes
-* presentation:
-  - have a back up video of the effects, in case the demo is not working irl
-  - add paper labels on the effects
-  - have multiple configurations, so that the demo takes a bit
-  - increase reverb duration
+
 * final report
   - for 1st: compare other works
   - how everything is explained: a more technical language
