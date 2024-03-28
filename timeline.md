@@ -89,3 +89,6 @@
 - 23 Mar - Delay effect formalised testing
 - 24 Mar - Started reverb effect testing - postponed
 - 25 Mar - Writing (Background, Motivation)
+- 26 Mar - Writing (Design - AC configuration)
+- 27 Mar - Writing (Design - Resoning behind effects)
+- 28 Mar - Writing (Design - Distortion, debouncer algo)
