@@ -92,3 +92,7 @@
 - 26 Mar - Writing (Design - AC configuration)
 - 27 Mar - Writing (Design - Resoning behind effects)
 - 28 Mar - Writing (Design - Distortion, debouncer algo)
+- 29 Mar - Writing (Design - Delay)
+
+### April
+- 02 apr - Writing (Design - Reverb, Testing - tcl scripts)
