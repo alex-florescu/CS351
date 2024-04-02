@@ -95,4 +95,5 @@
 - 29 Mar - Writing (Design - Delay)
 
 ### April
+- 01 apr - Testing Reverb, added pipelining and optimisations
 - 02 apr - Writing (Design - Reverb, Testing - tcl scripts)
