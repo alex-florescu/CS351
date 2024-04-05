@@ -97,3 +97,6 @@
 ### April
 - 01 apr - Testing Reverb, added pipelining and optimisations
 - 02 apr - Writing (Design - Reverb, Testing - tcl scripts)
+- 03 apr - Writing (Testing - formalised testing, beep.v)
+- 04 apr - Writing (PM - Methodology, Testing - ILA)
+- 05 apr - Writing (Design - Wah)
