@@ -100,3 +100,5 @@
 - 03 apr - Writing (Testing - formalised testing, beep.v)
 - 04 apr - Writing (PM - Methodology, Testing - ILA)
 - 05 apr - Writing (Design - Wah)
+- 08 apr - Meeting with Eduardo; Writing (Design - Wah)
+- 09 apr - Writing (Results)
