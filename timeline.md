@@ -101,4 +101,5 @@
 - 04 apr - Writing (PM - Methodology, Testing - ILA)
 - 05 apr - Writing (Design - Wah)
 - 08 apr - Meeting with Eduardo; Writing (Design - Wah)
-- 09 apr - Writing (Results)
+- 09 apr - Writing (Objectives, Results), defined Listing template in OL
+- 10 apr - Writing (Related works, PM)
