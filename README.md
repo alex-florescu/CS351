@@ -1,61 +1,56 @@
-# CS351 - FPGA Guitar Effects Project
-https://warwick.ac.uk/fac/sci/dcs/teaching/material/cs310/finding/projectsuggestions/registered_projects_2023-24.pdf
+## Running the Effects on the Zybo board
+1. Download the folder
+2. Open the .xpr file (Vivado)
+3. In Vivado click File > Launch SDK
+4. On the pop-up window click OK (select Local to Project on both options)
+5. On the second pop-up warning about Exported Hardware click OK
+6. Plug in the board
+7. Click the 'Program FPGA' button
+8. Click the 'Run' button (sometimes you might have to click 'Run' twice before it works)
+9. Have fun!
 
-## Notes
+## Effect configuration
+Switch | Effect | Param 1 | Param 2
+| -- | -- | -- | -- |
+0 | Distortion | Gain | Threshold
+1 | Delay | Delay Depth | N/A
+2 | Reverb | Reverb Gain | N/A
+3 | Wah | Wah Speed | N/A
 
-* final report
-  - for 1st: compare other works
-  - how everything is explained: a more technical language
-     - talk about time domain, frequency domain
-     - reflective writing, limitations of the work
-  - maybe do some formal testing with real data from Vivado ILA?
-     - also show some simple values (small delay values) data 0 and 999 or sth like that
-  - for testing talk about delayed values not working in behavioural
-     - and how it can be avoided by manually adding a bit of clock skew between clocks and data generation
-  - in the related works section, compare:
-     - project that use/don't use frequency altering effects
-     - the Audio Codec device model they had
-  - exchange your unfinished report with someone else for proofread
-  - don't put too much code in-line with the text: use appendices
-     - don't put large amounts of code in the appendix: you will submit it as a .zip
-  - have a *self-assessment* section
-  - have a project management section
-  - come up with a plan with the supervisor to send drafts and receive feedback gradually
-  - all code must be submitted on Tabula (and a README with all explanations needed for running the code)
-     - if you don't submit code you will get a penalty
-     - don't leave it to the last minute
-  - 
-  
+Button | Functionality | Display
+| -- | -- | -- |
+0 | Change the selected effect | LED lights up next to switch corresponding to the selected effect
+1 | Change value of Param 1 of the selected effect | Colour of RGB LED 5 changes accordingly
+2 | Change value of Param 2 of the selected effect | Colour of RGB LED 6 changes accordingly
 
-### Effects I'm not sure have been done before in FPGA
- * Wah-pedal
- * Tuner
- * Flanger Pedal (Left-Right)
- * Octave Pedal
+Selected Parameter | Colour | Gain | Threshold | Delay Depth | Reverb Gain | Wah Speed 
+| -- | -- | -- | -- | -- | -- | -- |
+1 | Blue    | 1 | 700  | 32768 | 0.75  | 130
+2 | Cyan    | 2 | 970  | 29498 | 0.625 | 160
+3 | Green   | 3 | 1240 | 26228 | 0.5   | 190
+4 | Yellow  | 4 | 1510 | 22958 | 0.375 | 210
+5 | Red     | 5 | 1780 | 19688 | 0.25  | 230
+6 | Pink    | 6 | 2047 | 16384 | 0.125 | 250
 
+## Finding the source files
+#### In GitHub
+GitHub repo:
+https://github.com/alex-florescu/CS351/tree/main/test-project
 
-## Keep in mind:
-3rd year project with no customer or no iteration is NOT agile: it needs both of those things!!!! (ian saunders)
-  * set up meeting with supervisor, decide how. Don't show up to meetings with nothing to discuss
-  * apply the things you learn in Project Management
-  * Spend time on "impressive" things!
-     - After "must" objectives are complete, focus on adding interesting stuff: maybe operations in the frequency domain
-       
- ## Past notes
-  * have a problem statement
-  * timetable: include breaks for exams and holidays
-  * divide objectives into: core & extra, so that your work can be considered complete if you met only the core objectives
+Code | Location
+| -- | -- |
+Verilog design| /test-project/pedal/pedal.srcs/sources_1/new
+Verilog TB | /test-project/pedal/pedal.srcs/sources_1/new/test
+C app | /test-project/pedal/pedal.sdk/app_pedal/src/main.c
+MATLAB | /matlab-models/
 
-## Related projects
-- Design of DSP Guitar Effects with FPGA Implementation
-https://scholarworks.rit.edu/cgi/viewcontent.cgi?article=11514&context=theses
-- An FPGA Implementation of Digital Guitar Effects
-https://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1326&context=cpesp
-- Official Digilent Zybo z20 constraints file 
-  * [https://www.xilinx.com/content/dam/xilinx/support/packagefiles/z7packages/xc7z020clg400pkg.txt](https://github.com/Digilent/digilent-xdc/blob/master/Zybo-Z7-Master.xdc)
-- Zybo Reference Manual: https://digilent.com/reference/programmable-logic/zybo/reference-manual
-- Multi effects FPGA (but VHDL): https://github.com/Vladilit/fpga-multi-effect/tree/master
-- Currently a bit confused about I2C and how I can actually use that: I need to convert it to something easier to modify
-   * i think there is a Zybo audio ctrl IP in vivado I might be able to use!!! https://www.xilinx.com/products/intellectual-property/audio-i2s.html
-- Looper using FPGA: https://digilent.com/reference/learn/programmable-logic/tutorials/nexys-video-looper-demo/start?redirect=1
+#### In the .zip submitted on Tabula
+
+Code | Location
+| -- | -- |
+Verilog design| /pedal/pedal.srcs/sources_1/new
+Verilog TB | /pedal/pedal.srcs/sources_1/new/test
+C app | /pedal/pedal.sdk/app_pedal/src/main.c
+MATLAB | /matlab-models/
+
 
