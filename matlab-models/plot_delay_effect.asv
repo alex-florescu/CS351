@@ -1,0 +1,37 @@
+% Parameters
+Fs = 1000;          % Sampling frequency (Hz)
+duration = 1;       % Duration of the signal (seconds)
+f = 10;             % Frequency of the sine wave (Hz)
+
+% Create time vector
+t = 0:1/Fs:duration;
+
+% Generate sine wave for the first 100 values
+sine_wave = sin(2*pi*f*t(1:100));
+
+% Concatenate with zeros for the remaining 900 values
+signal = [sine_wave, zeros(1, 1900)];
+
+% Plot the signal
+plot(signal);
+title('Signal with Sine Wave Period and Zeros');
+xlabel('Sample');
+ylabel('Amplitude');
+
+% Plot signal with delay effect
+delayDepth = 300;
+gain = 1/2;
+
+y = zeros(1, length(signal));
+
+% clip
+for i = 1:length(yDelay)
+    if(i <= delayDepth)
+        yDelay(i) = signal(i);
+    else
+        yDelay(i) = signal(i) + yDelay(i - delayDepth)*gain;
+    end
+end
+
+figure;
+plot(yDelay)

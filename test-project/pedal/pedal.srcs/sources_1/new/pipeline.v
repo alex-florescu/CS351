@@ -13,7 +13,9 @@ module pipeline #(
     input [3:0] sw,
     input [2:0] btn,
     output [7:0] cur_row,
-    output [3:0] led
+    output [3:0] led,
+    output [2:0] led5_rgb,
+    output [2:0] led6_rgb
 );
 
 wire [DATA_WIDTH - 1:0] tx_dat_clean;
@@ -51,17 +53,19 @@ distortion #(
 ) inst_dist (
     .clk(clk),
     .rst(rst),
+    // .i_dat(rx_dat),
+    // .i_vld(rx_vld),
     .i_dat(tx_dat_clean),
-    .o_dat(tx_dat_eff1),
     .i_vld(tx_vld_clean),
+    .o_dat(tx_dat_eff1),
     .o_vld(tx_vld_eff1),
     .enable(sw[0]),
     .gain(gain_val),
     .thresh(thresh_val)
 );
 
-localparam DELAY_DEPTH = 32;
-// localparam DELAY_DEPTH = 32768;
+// localparam DELAY_DEPTH = 32;
+localparam DELAY_DEPTH = 32768;
 localparam DELAY_DEPTH_BITS = $clog2(DELAY_DEPTH);
 wire [DELAY_DEPTH_BITS - 1:0] delay_val;
 
@@ -73,9 +77,11 @@ delay #(
 ) inst_delay (
     .clk(clk),
     .rst(rst),
+    // .i_dat(rx_dat),
+    // .i_vld(rx_vld),
     .i_dat(tx_dat_eff1),
-    .o_dat(tx_dat_eff2),
     .i_vld(tx_vld_eff1),
+    .o_dat(tx_dat_eff2),
     .o_vld(tx_vld_eff2),
     .enable(sw[1]),
     .offset(delay_val)
@@ -83,6 +89,7 @@ delay #(
 
 localparam REVERB_DEPTH = 16384; //8192;
 // localparam REVERB_DEPTH_BITS = $clog2(REVERB_DEPTH);
+wire [3:0] reverb_val;
 
 reverb #(
     .DATA_WIDTH(DATA_WIDTH),
@@ -91,10 +98,13 @@ reverb #(
     .clk(clk),
     .rst(rst),
     .i_dat(tx_dat_eff2),
-    .o_dat(tx_dat_eff3),
     .i_vld(tx_vld_eff2),
+    // .i_dat(rx_dat),
+    // .i_vld(rx_vld),
+    .o_dat(tx_dat_eff3),
     .o_vld(tx_vld_eff3),
-    .enable(sw[2])
+    .enable(sw[2]),
+    .reverb_val(reverb_val) // controls volume of reverb echo
 );
 
 wire [7:0] wah_val;
@@ -105,8 +115,10 @@ wah #(
     .clk(clk),
     .rst(rst),
     .i_dat(tx_dat_eff3),
-    .o_dat(tx_dat_eff4),
     .i_vld(tx_vld_eff3),
+    // .i_dat(rx_dat),
+    // .i_vld(rx_vld),
+    .o_dat(tx_dat_eff4),
     .o_vld(tx_vld_eff4),
     .enable(sw[3]),
     .cur_row(cur_row),
@@ -126,6 +138,10 @@ noise_gate #(
     .enable(sw[3])
 );
 
+// assign tx_dat = rx_dat;
+// assign tx_vld = rx_vld;
+// assign tx_dat = tx_dat_eff4;
+// assign tx_vld = tx_vld_eff4;
 assign tx_dat = tx_dat_eff4_clean;
 assign tx_vld = tx_vld_eff4_clean;
 
@@ -140,7 +156,10 @@ effect_config #(
     .gain_val(gain_val),
     .thresh_val(thresh_val),
     .delay_val(delay_val),
-    .wah_val(wah_val)
+    .reverb_val(reverb_val),
+    .wah_val(wah_val),
+    .led5(led5_rgb),
+    .led6(led6_rgb)
 );
 
 // beep #(

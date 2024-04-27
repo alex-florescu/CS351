@@ -1,8 +1,8 @@
 %% Create input sound wave in samples
 
 % set variables
-numPeriods = 100;
-numSamples = 50000;
+numPeriods = 24;
+numSamples = 5000;
 numBits = 16;
 amplitudeMax = 2^(numBits-1); % values can be negative too
 
@@ -22,31 +22,51 @@ x = round(x); % integer values
 
 %% Obtain output sound wave
 
-reverbDepthMax = 32768;
+reverbDepthMax = 16;
 reverbDepth0 = reverbDepthMax;
 reverbDepth1 = reverbDepthMax - reverbDepthMax / 16 * 2;
 reverbDepth2 = reverbDepthMax - reverbDepthMax / 16 * 5;
 reverbDepth3 = reverbDepthMax - reverbDepthMax / 16 * 8;
 gain = 1/4;
 
-yReverb = zeros(1, numSamples)
+fifoReverb = zeros(1, numSamples);
+yReverb = zeros(1, numSamples);
+
+
+
+delayVector0 = zeros(1, numSamples);
+delayVector1 = zeros(1, numSamples);
+delayVector2 = zeros(1, numSamples);
+delayVector3 = zeros(1, numSamples);
+
 
 % clip
 for i = 1:numSamples
-    if(i <= reverbDepth3)
-        yReverb(i) = x(i);
-    else if (i <= reverbDepth2)
-        yReverb(i) = x(i) + 
-    end
-
-
-
-    if(i <= reverbDepth)
-        yReverb(i) = x(i);
+    if(i <= reverbDepthMax)
+        fifoReverb(i) = floor(x(i)/2);
+        delayVector1(i) = 0;
+        delayVector2(i) = 0;
+        delayVector3(i) = 0;
     else
-        yReverb(i) = x(i) + yReverb(i - reverbDepth)*gain;
+        % echo = (fifoReverb(i-reverbDepth0) + fifoReverb(i-reverbDepth1) + fifoReverb(i-reverbDepth2) + fifoReverb(i-reverbDepth3))/8;
+        echosum = (fifoReverb(i-reverbDepth0) + fifoReverb(i-reverbDepth1) + fifoReverb(i-reverbDepth2) + fifoReverb(i-reverbDepth3));
+        % echodiv = (echosum - mod(echosum, 8))/8;
+        echodiv = echosum/8;
+
+        delayVector0(i) = fifoReverb(i-reverbDepth0);
+        delayVector1(i) = fifoReverb(i-reverbDepth1);
+        delayVector2(i) = fifoReverb(i-reverbDepth2);
+        delayVector3(i) = fifoReverb(i-reverbDepth3);
+
+
+        fifoReverb(i) = floor(x(i)/2) + floor(echodiv);
     end
+
+    yReverb(i) = fifoReverb(i) + floor(x(i)/2);
 end
+
+delayVec = [delayVector0', delayVector1', delayVector2', delayVector3', x'];
+
 
 % plot(index, yReverb)
 % hold off
@@ -57,7 +77,7 @@ x_hex      = hex2charArray(x);
 yReverb_hex = hex2charArray(yReverb);
 
 % Print to .txt file
-writeCharArrayToFile('input_data.txt', x_hex);
+writeCharArrayToFile('input_data_reverb.txt', x_hex);
 writeCharArrayToFile('output_data_reverb.txt', yReverb_hex);
 
 %% function for converting to file

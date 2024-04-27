@@ -43,7 +43,7 @@ wire [CONFIG_BITS - 1:0] config_value;
 
 // assign led[2:0] = config_value;
 
-assign led5_rgb = 3'b101;
+// assign led5_rgb = 3'b101;
 
 // I2S signals
 // BCLK 1.536 MHZ, LRCLK 48 kHZ, 16-bit data, (LR identical)
@@ -66,7 +66,7 @@ i2s_control #(
 
     // extra: remove later
     .led3(),
-    .led6_rgb(led6_rgb)
+    .led6_rgb()
 );
 
 pipeline #(
@@ -81,7 +81,9 @@ pipeline #(
     .sw(sw),
     .btn(stable_btn),
     .cur_row(cur_row),
-    .led(led)
+    .led(led),
+    .led5_rgb(led5_rgb),
+    .led6_rgb(led6_rgb)
 );
 
 // Clock generation: 12.288 MHz

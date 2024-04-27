@@ -1,8 +1,7 @@
 %% Create input sound wave in samples
 
-% set variables
-numPeriods = 3;
-numSamples = 1500;
+numPeriods = 2000;
+numSamples = 48000;
 numBits = 16;
 amplitudeMax = 2^(numBits-1); % values can be negative too
 
@@ -15,6 +14,9 @@ index = n*(2*pi*numPeriods/numSamples);
 % create input sinusoid
 x = amplitude*sin(index);
 x = round(x); % integer values
+
+figure;
+plot(abs(fft(x)))
 
 % figure;
 % plot(index, x)
@@ -35,6 +37,9 @@ for i = 1:length(yDist)
         yDist(i) = yDist(i)/abs(yDist(i))*thresh;
     end
 end
+
+figure;
+plot((abs(fft(yDist))))
 
 % plot(index, yDist)
 % hold off

@@ -9,7 +9,10 @@ module effect_config #(
     output reg [3:0] gain_val,
     output reg [11:0] thresh_val,
     output reg [DELAY_DEPTH_BITS - 1:0] delay_val,
-    output reg [7:0] wah_val // row select
+    output reg [3:0] reverb_val,
+    output reg [7:0] wah_val, // row select
+    output [2:0] led5,
+    output [2:0] led6
 );
 
     // Obtain button press values from buttons
@@ -47,77 +50,130 @@ module effect_config #(
     end
 
     // Obtain config values from effects
-    reg [1:0] gain_sel;
-    reg [1:0] thresh_sel;
-    reg [1:0] delay_sel;
-    reg [1:0] reverb_sel;
-    reg [1:0] wah_sel;
+    reg [2:0] gain_sel;
+    reg [2:0] thresh_sel;
+    reg [2:0] delay_sel;
+    reg [2:0] reverb_sel;
+    reg [2:0] wah_sel;
     
     always @(posedge clk) begin
         if(rst) begin
-            gain_sel   <= 2'b00;
-            thresh_sel <= 2'b00;
-            delay_sel  <= 2'b00;
-            reverb_sel <= 2'b00;
-            wah_sel    <= 2'b00;
+            gain_sel   <= 3'b000;
+            thresh_sel <= 3'b000;
+            delay_sel  <= 3'b000;
+            reverb_sel <= 3'b000;
+            wah_sel    <= 3'b000;
         end else begin
-            // change configurations on button press
-            case (selected_effect)
-                // distortion
-                2'b00: begin
-                    gain_sel   <= btn_press[1] ? gain_sel   + 1 : gain_sel;
-                    thresh_sel <= btn_press[2] ? thresh_sel + 1 : thresh_sel;
+            if(btn_press[1]) begin
+                case (selected_effect)
+                    2'b00: gain_sel   <= (gain_sel   == 3'b101) ? 0 : gain_sel   + 1;
+                    2'b01: delay_sel  <= (delay_sel  == 3'b101) ? 0 : delay_sel  + 1;
+                    2'b10: reverb_sel <= (reverb_sel == 3'b101) ? 0 : reverb_sel + 1;
+                    2'b11: wah_sel    <= (wah_sel    == 3'b101) ? 0 : wah_sel    + 1;
+                    default: begin
+                        gain_sel   <= gain_sel;
+                        delay_sel  <= delay_sel;
+                        reverb_sel <= reverb_sel;
+                        wah_sel    <= wah_sel;
+                    end
+                endcase
+            end
+
+            if(btn_press[2]) begin
+                if(selected_effect == 2'b00) begin
+                    thresh_sel <= (thresh_sel == 3'b101) ? 0 : thresh_sel + 1;
                 end
-                2'b01: delay_sel  <= btn_press[1] ? delay_sel  + 1 : delay_sel;
-                2'b10: reverb_sel <= btn_press[1] ? reverb_sel + 1 : reverb_sel;
-                2'b11: wah_sel    <= btn_press[1] ? wah_sel    + 1 : wah_sel;
-                default: begin
-                    gain_sel   <= gain_sel;
-                    thresh_sel <= thresh_sel;
-                    delay_sel  <= delay_sel;
-                    reverb_sel <= reverb_sel;
-                    wah_sel    <= wah_sel;
-                end
-            endcase
+            end
 
             // output value based on configuration
             case (gain_sel)
-                2'b00: gain_val <= 1;
-                2'b01: gain_val <= 2;
-                2'b10: gain_val <= 4;
-                2'b11: gain_val <= 6;
-                default: gain_val <= 0;
+                3'b000 : gain_val <= 1;
+                3'b001 : gain_val <= 2;
+                3'b010 : gain_val <= 3;
+                3'b011 : gain_val <= 4;
+                3'b100 : gain_val <= 5;
+                3'b101 : gain_val <= 6;
+                default: gain_val <= gain_val;
             endcase        
             case (thresh_sel)
-                2'b00: thresh_val <= 700;
-                2'b01: thresh_val <= 1150;
-                2'b10: thresh_val <= 1600;
-                2'b11: thresh_val <= 2047;
-                default: thresh_val <= 0;
+                3'b000 : thresh_val <= 700;
+                3'b001 : thresh_val <= 970;
+                3'b010 : thresh_val <= 1240;
+                3'b011 : thresh_val <= 1510;
+                3'b100 : thresh_val <= 1780;
+                3'b101 : thresh_val <= 2047;
+                default: thresh_val <= thresh_val;
             endcase
             case (delay_sel)
-                2'b00: delay_val <= 0;
-                2'b01: delay_val <= 5500;
-                2'b10: delay_val <= 11000;
-                2'b11: delay_val <= 16384;
-                default: delay_val <= 0;
-            endcase
-            // reverb_val <= 0;  
-            // case (reverb_sel)
-            //     2'b00: 
-            //     2'b01: 
-            //     2'b10: 
-            //     2'b11: 
-            //     default: 
-            // endcase        
-            case (wah_sel)
-                2'b00: wah_val <= 150;
-                2'b01: wah_val <= 190;
-                2'b10: wah_val <= 220;
-                2'b11: wah_val <= 250;
-                default: wah_val <= 0;
+                3'b000 : delay_val <= 0;
+                3'b001 : delay_val <= 3270;
+                3'b010 : delay_val <= 6540;
+                3'b011 : delay_val <= 9810;
+                3'b100 : delay_val <= 13080;
+                3'b101 : delay_val <= 16384;
+                default: delay_val <= delay_val;
+
+            endcase        
+            case (reverb_sel)                
+                3'b000 : reverb_val <= 4'b0110; // 0.75
+                3'b001 : reverb_val <= 4'b0101; // 0.625
+                3'b010 : reverb_val <= 4'b0100; // 0.5
+                3'b011 : reverb_val <= 4'b0011; // 0.375
+                3'b100 : reverb_val <= 4'b0010; // 0.25
+                3'b101 : reverb_val <= 4'b0001; // 0.125
+                default: reverb_val <= reverb_val; 
+            endcase        
+            case (wah_sel)                
+                3'b000 : wah_val <= 130;
+                3'b001 : wah_val <= 160;
+                3'b010 : wah_val <= 190;
+                3'b011 : wah_val <= 210;
+                3'b100 : wah_val <= 230;
+                3'b101 : wah_val <= 250;
+                default: wah_val <= wah_val;
             endcase        
         end
     end
+
+reg [2:0] val2conv_led5;
+reg [2:0] val2conv_led6;
+
+// choose which value to display on the LEDs
+always @(posedge clk) begin
+    if (rst) begin
+        
+    end else begin
+        case (selected_effect)
+            2'b00: val2conv_led5 <= gain_sel;
+            2'b01: val2conv_led5 <= delay_sel;
+            2'b10: val2conv_led5 <= reverb_sel;
+            2'b11: val2conv_led5 <= wah_sel;
+            default: begin
+                val2conv_led5 <= val2conv_led5;
+            end
+        endcase
+
+        if(selected_effect == 2'b00) begin // distortion
+            val2conv_led6 <= thresh_sel;
+        end else begin
+            val2conv_led6 <= 3'b110; // value for turn off
+        end
+    end
+end
+
+config2led inst_config2led5 (
+    .clk(clk),
+    .rst(rst),
+    .config_val(val2conv_led5), // value to convert
+    .led_val(led5) // converted value
+);
+config2led inst_config2led6 (
+    .clk(clk),
+    .rst(rst),
+    .config_val(val2conv_led6), // value to convert
+    .led_val(led6) // converted value
+);
+
+
 
 endmodule

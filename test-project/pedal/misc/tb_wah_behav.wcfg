@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_wah_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_wah" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="514021100001fs"></ZoomEndTime>
+      <Cursor1Time time="123895100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="380"></NameColumnWidth>
+      <ValueColumnWidth column_width="127"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/tb_wah/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/i_vld" type="logic">
+      <obj_property name="ElementShortName">i_vld</obj_property>
+      <obj_property name="ObjectShortName">i_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/wah_val" type="array">
+      <obj_property name="ElementShortName">wah_val[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wah_val[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/o_dat" type="array">
+      <obj_property name="ElementShortName">o_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-35.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">35.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/o_vld" type="logic">
+      <obj_property name="ElementShortName">o_vld</obj_property>
+      <obj_property name="ObjectShortName">o_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/expected_output_data" type="array">
+      <obj_property name="ElementShortName">expected_output_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_output_data[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">-35.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">35.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/scoreboard" type="logic">
+      <obj_property name="ElementShortName">scoreboard</obj_property>
+      <obj_property name="ObjectShortName">scoreboard</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/check" type="logic">
+      <obj_property name="ElementShortName">check</obj_property>
+      <obj_property name="ObjectShortName">check</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/a_coef" type="array">
+      <obj_property name="ElementShortName">a_coef[0:10][42:0]</obj_property>
+      <obj_property name="ObjectShortName">a_coef[0:10][42:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/inst_coe/row_select" type="array">
+      <obj_property name="ElementShortName">row_select[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row_select[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/difference" type="array">
+      <obj_property name="ElementShortName">difference[15:0]</obj_property>
+      <obj_property name="ObjectShortName">difference[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_FIXED</obj_property>
+      <obj_property name="AnalogYRangeMin">-216.894</obj_property>
+      <obj_property name="AnalogYRRangeMax">242.106</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/i_dat" type="array">
+      <obj_property name="ElementShortName">i_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_dat[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/sbx_adapted" type="array">
+      <obj_property name="ElementShortName">sbx_adapted[98:0]</obj_property>
+      <obj_property name="ObjectShortName">sbx_adapted[98:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/say_st4" type="array">
+      <obj_property name="ElementShortName">say_st4[110:0]</obj_property>
+      <obj_property name="ObjectShortName">say_st4[110:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/x" type="array">
+      <obj_property name="ElementShortName">x[0:12][15:0]</obj_property>
+      <obj_property name="ObjectShortName">x[0:12][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wah/inst_wah/ax_bx" type="array">
+      <obj_property name="ElementShortName">ax_bx[111:0]</obj_property>
+      <obj_property name="ObjectShortName">ax_bx[111:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

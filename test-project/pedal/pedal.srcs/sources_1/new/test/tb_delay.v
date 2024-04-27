@@ -87,13 +87,15 @@ initial begin
         i_dat = input_data;
         i_vld = 0; // Keep i_vld low for 255 cycles
 
-        #254.1
-        i_vld = 1;
-
-        #0.9
+        #254
         // Capture output data before the new data pair
         scoreboard = (o_dat == expected_output_data) ? 1 : 0;
         
+        #0.1
+        i_vld = 1;
+
+        #0.9
+
         // Write to scoreboard file
         $fwrite(scoreboardFile, "%b: DUT: %h; Expected: %h\n", scoreboard, o_dat, expected_output_data);
     end

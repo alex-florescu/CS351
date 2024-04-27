@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_reverb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_reverb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="385521100001fs"></ZoomEndTime>
+      <Cursor1Time time="56047200000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="304"></NameColumnWidth>
+      <ValueColumnWidth column_width="184"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/tb_reverb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/i_dat" type="array">
+      <obj_property name="ElementShortName">i_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_dat[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/i_vld" type="logic">
+      <obj_property name="ElementShortName">i_vld</obj_property>
+      <obj_property name="ObjectShortName">i_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/o_dat" type="array">
+      <obj_property name="ElementShortName">o_dat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_dat[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/expected_output_data" type="array">
+      <obj_property name="ElementShortName">expected_output_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_output_data[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/o_vld" type="logic">
+      <obj_property name="ElementShortName">o_vld</obj_property>
+      <obj_property name="ObjectShortName">o_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/check" type="logic">
+      <obj_property name="ElementShortName">check</obj_property>
+      <obj_property name="ObjectShortName">check</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/inputFile" type="array">
+      <obj_property name="ElementShortName">inputFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inputFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/outputFile" type="array">
+      <obj_property name="ElementShortName">outputFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outputFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/scoreboardFile" type="array">
+      <obj_property name="ElementShortName">scoreboardFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">scoreboardFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/scoreboard" type="logic">
+      <obj_property name="ElementShortName">scoreboard</obj_property>
+      <obj_property name="ObjectShortName">scoreboard</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data0" type="array">
+      <obj_property name="ElementShortName">fifo_data0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data0[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data1" type="array">
+      <obj_property name="ElementShortName">fifo_data1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data1[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data2" type="array">
+      <obj_property name="ElementShortName">fifo_data2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data2[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data3" type="array">
+      <obj_property name="ElementShortName">fifo_data3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data3[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data_sum" type="array">
+      <obj_property name="ElementShortName">fifo_data_sum[17:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_sum[17:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_reverb/dut/fifo_data_reduced_cast" type="array">
+      <obj_property name="ElementShortName">fifo_data_reduced_cast[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_reduced_cast[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

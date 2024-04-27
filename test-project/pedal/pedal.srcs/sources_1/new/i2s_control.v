@@ -95,7 +95,7 @@ assign lrclk_in = lrclk;
 assign lrclk_out = lrclk;
 
 // RX_DAT -------------------------------------------------------------
-// I2S protocal assumes MSB 15, LSB 0
+// I2S protocal assumes MSB at position 15, LSB at 0
 wire [3:0] index_in;
 reg [15:0] temp_in;
 reg [15:0] reg_in;

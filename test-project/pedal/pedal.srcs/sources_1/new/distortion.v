@@ -35,6 +35,7 @@ module distortion #(
 
             // multiply data by gain
             dist_data[1] <= dist_data[0] * gain;
+
             // compare with threshold
             if(dist_data[1] > 0)
                 dist_data[2] <= (dist_data[1] > thresh) ?
@@ -58,7 +59,6 @@ module distortion #(
             valid[1] <= valid[0];
             valid[2] <= valid[1];
         end
-
     end
 
 

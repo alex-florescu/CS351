@@ -34,6 +34,34 @@ void writeReg(int addr, int data) {
         Xil_Out32(0xe0005000, in2);
     return;
 }
+// Cleaned-up register write method
+//void writeReg(int addr, int data) {
+//    // Configure control bits for bus communication
+//    u32 in2 = Xil_In32(0xE0005000);  // Read current value
+//    in2 |= 64 | 16;  // Set bit 6 and bit 4
+//    in2 &= ~1;       // Clear bit 0
+//    Xil_Out32(0xE0005000, in2);  // Write back the updated value
+//
+//    // Write data to the specified register
+//    Xil_Out32(0xE000500c, (addr << 1) | ((data & 256) ? 1 : 0));  // Address and LSB of data
+//    Xil_Out32(0xE000500c, data & 255);  // Remaining data bits
+//
+//    // Write the address of the target register
+//    Xil_Out32(0xE0005008, 26);
+//
+//    // Wait for completion of the operation
+//    u32 status;
+//    do {
+//        status = Xil_In32(0xE0005010) & 1;  // Read completion status
+//    } while (!status);  // Wait until status becomes 1
+//
+//    // Clear interrupts
+//    Xil_Out32(0xE0005010, 1);
+//
+//    // Clear control bit for bus communication
+//    in2 = Xil_In32(0xE0005000) & (~16);  // Clear bit 4
+//    Xil_Out32(0xE0005000, in2);  // Write back the updated value
+//}
 
 void init_sound() {
     Xil_Out32(0xe000501c, 0x1f);

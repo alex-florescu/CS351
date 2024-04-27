@@ -18,8 +18,13 @@ module wah #(
     // b coefs, positions 1 up to 13 (0.48 int.frac)
     // localparam signed [47:0] b_coef [0:12] = '{90049739, 0, -540298434, 0, 1350746086, 0, -1800994782, 0, 1350746086, 0, -540298434, 0, 90049739};
 
+    // localparam BCOEF_WIDTH = 64;
     localparam BCOEF_WIDTH = 48;
-
+// 5901499700238.00	0	-35408998201429.0	0	88522495503572.0	0	-118029994004762	0	88522495503572.0	0	-35408998201429.0	0	5901499700238.00
+    // localparam signed [BCOEF_WIDTH -1:0] b_coef0 =   (64'd5901499700238);
+    // localparam signed [BCOEF_WIDTH -1:0] b_coef2 = - (64'd35408998201429);
+    // localparam signed [BCOEF_WIDTH -1:0] b_coef4 =   (64'd88522495503572);
+    // localparam signed [BCOEF_WIDTH -1:0] b_coef6 = - (64'd118029994004762);
     localparam signed [BCOEF_WIDTH -1:0] b_coef0 =   (48'd90049739);
     localparam signed [BCOEF_WIDTH -1:0] b_coef2 = - (48'd540298434);
     localparam signed [BCOEF_WIDTH -1:0] b_coef4 =   (48'd1350746086);
@@ -77,14 +82,14 @@ module wah #(
     localparam Y_DEPTH = X_DEPTH - 1;
 
     localparam Y_INT = DATA_WIDTH; //16
-    localparam Y_WIDTH = 64;//64; // define y as 16.48 - we know that no more than 16 bits are needed for the integer part
+    localparam Y_WIDTH = 64; // define y as 16.48 - we know that no more than 16 bits are needed for the integer part
     localparam Y_FRAC = Y_WIDTH - Y_INT; //48
 
     localparam BX_WIDTH = BCOEF_WIDTH + DATA_WIDTH; //64
     localparam BX_FRAC = BCOEF_WIDTH; //48
 
-    localparam AY_FRAC = ACOEF_FRAC + Y_FRAC; // 62 = 14 + 48
-    localparam AY_WIDTH = ACOEF_WIDTH + Y_WIDTH; // 89 ;
+    localparam AY_FRAC = ACOEF_FRAC + Y_FRAC; // 80 = 32 + 48
+    localparam AY_WIDTH = ACOEF_WIDTH + Y_WIDTH; // 107 ;
 
     localparam APPEND_BITS = AY_FRAC - BX_FRAC; // 14 = 62 - 48 (i think it's = ACOEF_FRAC)
 
@@ -98,23 +103,14 @@ module wah #(
     // y[11] is y[n-12] (delay of 12)
     reg signed [DATA_WIDTH - 1:0] x [0 : X_DEPTH - 1];
     reg signed [Y_WIDTH -1:0] y [0 : Y_DEPTH - 1]; // one less data sample since y[0] is being calculated
-
-    // reg signed [BX_WIDTH - 1                   : 0] bx      [0 : 6]; // 64 bits 16.48
-    // reg signed [BX_WIDTH - 1 + 1               : 0] sbx_st1 [0 : 3]; // 17.48 (+1 bit to avoid overflow)
-    // reg signed [BX_WIDTH - 1 + 2               : 0] sbx_st2 [0 : 1]; // 18.48 (+1 bit to avoid overflow)
-    // reg signed [BX_WIDTH - 1 + 3               : 0] sbx_st3;         // 19.48 (bit to avoid overflow = 67 = 19.48)
-    // reg signed [BX_WIDTH - 1 + 3 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
-
     
     localparam BX_V2_WIDTH = DATA_WIDTH + 1 + BCOEF_WIDTH ;
 
-    reg signed [DATA_WIDTH - 1 + 1 : 0] sx [0 : 3]; //17.0
+    reg signed [DATA_WIDTH  - 1 + 1 : 0] sx      [0 : 3]; //17.0
     reg signed [BX_V2_WIDTH - 1     : 0] bx_v2   [0 : 3]; //17.48
     reg signed [BX_V2_WIDTH - 1 + 1 : 0] sbx_st1 [0 : 1]; // 18.48
     reg signed [BX_V2_WIDTH - 1 + 2 : 0] sbx_st2;         // 19.48
     reg signed [BX_V2_WIDTH - 1 + 2 + APPEND_BITS : 0] sbx_adapted; // 81 = 19.62
-
-
 
     reg signed [AY_WIDTH - 1     : 0] ay      [0 : 11]; // 89 bits 27.62
     reg signed [AY_WIDTH - 1 + 1 : 0] say_st1 [0 :  5]; // +1 bit to avoid overflow
@@ -145,13 +141,6 @@ module wah #(
     always @(posedge clk) begin
         // reset values
         if(rst) begin
-            // for (i = 0; i <= Y_DEPTH - 1; i = i+1) begin
-            //     y[i] <= 0;
-            // end
-            // for (j = 1; j <= X_DEPTH - 1; j = j+1) begin
-            //     x[j] <= 0;
-            // end
-
             y[ 0] <= 0;
             y[ 1] <= 0;
             y[ 2] <= 0;
@@ -216,10 +205,10 @@ module wah #(
             say_st2[1] <= 0;
             say_st2[2] <= 0;
             // stage 3
-            // say_st3[0] <= 0;
-            // say_st3[1] <= 0;
+            say_st3[0] <= 0;
+            say_st3[1] <= 0;
 
-            // say_st4 <= 0;
+            say_st4 <= 0;
             y_new <= 0;
         end else begin
 
@@ -227,13 +216,6 @@ module wah #(
             if(i_vld) begin
                 // update the x and y buffers with every sample
                 x[0] <= i_dat;
-                // for(integer i = 1; i <= X_DEPTH - 1; i = i+1) begin
-                //     x[i] <= x[i - 1];
-                // end
-                // for(integer i = 1; i <= Y_DEPTH - 1; i = i+1) begin
-                //     y[i] <= y[i - 1];
-                // end
-
                 x[ 1] <= x[ 0];
                 x[ 2] <= x[ 1];
                 x[ 3] <= x[ 2];
@@ -260,34 +242,7 @@ module wah #(
                 y[ 9] <= y[ 8];
                 y[10] <= y[ 9];
                 y[11] <= y[10];
-
-                // x[0 : X_DEPTH - 1] <= {i_dat, x[0 : X_DEPTH - 2]};
-                // y[0 : Y_DEPTH - 1] <= {y_new, y[0 : Y_DEPTH - 2]};
             end
-
-            // /// B*x multiplication, ignore coeffs of value 0
-            // bx[0] <= x[ 0]*b_coef0;
-            // bx[1] <= x[ 2]*b_coef2;
-            // bx[2] <= x[ 4]*b_coef4;
-            // bx[3] <= x[ 6]*b_coef6;
-            // bx[4] <= x[ 8]*b_coef8;
-            // bx[5] <= x[10]*b_coef10;
-            // bx[6] <= x[12]*b_coef12;
-
-            // // sum bx
-            // // sum stage 1
-            // sbx_st1[0] <= bx[0] + bx[1];
-            // sbx_st1[1] <= bx[2] + bx[3];
-            // sbx_st1[2] <= bx[4] + bx[5];
-            // sbx_st1[3] <= bx[6];
-            // // sum stage 2
-            // sbx_st2[0] <= sbx_st1[0] + sbx_st1[1];
-            // sbx_st2[1] <= sbx_st1[2] + sbx_st1[3];
-            // // sum stage 3
-            // sbx_st3 <= sbx_st2[0] + sbx_st2[1];
-
-            // // adapt size to match ay (add 14 frac bits at the end) no matter neg/pos, we append 14 zeros
-            // sbx_adapted <= {sbx_st3, {APPEND_BITS{1'b0}}};
 
             sx[0] <= x[0] + x[12];
             sx[1] <= x[2] + x[10];
@@ -346,9 +301,11 @@ module wah #(
             // cast to 16 int bits for output
             y_out <= ax_bx[(AY_FRAC + DATA_WIDTH) - 1 -: DATA_WIDTH]; // ax_bx frac bits (62) + y_out int bits (16)
 
-            y_master  <= y_out * 8;
-            x_master  <= x[8] / 2; // changed from 4 to 2
-            y_combined <= x_master + y_master;
+            // y_master  <= y_out * 8;
+            // x_master  <= x[8] / 2; // changed from 4 to 2
+            // y_combined <= x_master + y_master;
+
+            y_combined <= y_out;
         end
     end
 
@@ -359,8 +316,6 @@ module wah #(
     // assign o_dat = i_dat;
     assign o_vld = i_vld;
     
-    
-
     ///////////////////////////
 
     wire [ACOEF_WIDTH - 1:0] load_coef;

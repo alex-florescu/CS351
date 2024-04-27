@@ -50,7 +50,6 @@ module delay #(
 
             // add reduced fifo data to unaltered input
             delay_data[3] <= (start) ? delay_data[2] : delay_data[2] + fifo_data_reduced;
-            // delay_data[3] <=  delay_data[2] + fifo_data_reduced;
         end     
     end
 

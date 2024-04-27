@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_reverb_behav/xsimk.exe -simmode gui -wdb tb_reverb_behav.wdb -simrunnum 0 -socket 61164
+Design successfully loaded
+Design Loading Memory Usage: 7004 KB (Peak: 7004 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 15944 KB (Peak: 15944 KB)
+Simulation CPU Usage: 937 ms

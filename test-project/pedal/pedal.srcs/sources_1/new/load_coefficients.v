@@ -45,10 +45,8 @@ module load_coefficients #(
             coef_offset <= coef_offset + 1;
         end
 
-        // row_offset <= row_select * COEF_MATRIX_WIDTH;
-        // matrix_pos <= row_offset + coef_offset; // obtained 1 clk after coef_offset
-
-        matrix_pos <= row_select * COEF_MATRIX_WIDTH + coef_offset; // obtained 1 clk after coef_offset
+        // obtained 1 clk after coef_offset
+        matrix_pos <= row_select * COEF_MATRIX_WIDTH + coef_offset;
 
 
         coef_offset_d1 <= coef_offset;
@@ -78,7 +76,7 @@ module load_coefficients #(
     always @(posedge clk) begin
         if (rst) begin
             sample_cnt <= 0;
-            row_select <= 248;
+            row_select <= 0; // start from 0
             increase <= 1;
         end else if (i_vld) begin
             sample_cnt <= sample_cnt + 1;

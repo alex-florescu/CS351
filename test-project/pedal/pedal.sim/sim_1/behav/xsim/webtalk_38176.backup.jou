@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 24 15:20:32 2024
+# Process ID: 38176
+# Current directory: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.sim/sim_1/behav/xsim/xsim.dir/tb_reverb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.sim/sim_1/behav/xsim/xsim.dir/tb_reverb_behav/webtalk/xsim_webtalk.tcl -notrace
