@@ -23,10 +23,17 @@ MATLAB         | /matlab/
 3. In Vivado click File > Launch SDK
 4. On the pop-up window click OK (select Local to Project on both options)
 5. On the second pop-up warning about Exported Hardware click OK
+    * In SDK, if 'app_pedal' does not appear, click File > Open Projects from File System...
+    * Click "Directory"
+    * Browse to the project folder
+    * Select the cpy_pcam.sdk folder
+    * Click 'Finish'
 6. Plug in the board
 7. Click the 'Program FPGA' button
 8. Click the 'Run' button (sometimes you might have to click 'Run' twice before it works)
 9. Have fun!
+
+    * If SDK does not launch at all, follow this guide: https://bijan.binaee.com/2017/07/xilinx-sdk-not-opening-after-crash/
 
 ## Effect configuration
 Switch | Effect | Param 1 | Param 2
