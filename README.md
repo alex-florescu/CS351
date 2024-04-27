@@ -1,3 +1,22 @@
+## Finding the source files
+#### In GitHub
+  - GitHub repo: https://github.com/alex-florescu/CS351/tree/main/test-project
+
+Code | Location
+| -- | -- |
+Verilog design | /test-project/pedal/pedal.srcs/sources_1/new
+Verilog TB     | /test-project/pedal/pedal.srcs/sources_1/new/test
+C app          | /test-project/pedal/pedal.sdk/app_pedal/src/main.c
+MATLAB         | /matlab-models/
+
+#### In the .zip submitted on Tabula
+Code | Location
+| -- | -- |
+Verilog design | /audio_effects/audio_effects.srcs/sources_1/new
+Verilog TB     | /audio_effects/audio_effects.srcs/sources_1/new/test
+C app          | /audio_effects/audio_effects.sdk/app_pedal/src/main.c
+MATLAB         | /matlab/
+
 ## Running the Effects on the Zybo board
 1. Download the folder
 2. Open the .xpr file (Vivado)
@@ -12,14 +31,14 @@
 ## Effect configuration
 Switch | Effect | Param 1 | Param 2
 | -- | -- | -- | -- |
-0 | Distortion | Gain | Threshold
-1 | Delay | Delay Depth | N/A
-2 | Reverb | Reverb Gain | N/A
-3 | Wah | Wah Speed | N/A
+0 | Distortion  | Gain        | Threshold
+1 | Delay       | Delay Depth | N/A
+2 | Reverb      | Reverb Gain | N/A
+3 | Wah         | Wah Speed   | N/A
 
 Button | Functionality | Display
 | -- | -- | -- |
-0 | Change the selected effect | LED lights up next to switch corresponding to the selected effect
+0 | Change the selected effect                     | LED lights up next to switch corresponding to the selected effect
 1 | Change value of Param 1 of the selected effect | Colour of RGB LED 5 changes accordingly
 2 | Change value of Param 2 of the selected effect | Colour of RGB LED 6 changes accordingly
 
@@ -31,26 +50,4 @@ Selected Parameter | Colour | Gain | Threshold | Delay Depth | Reverb Gain | Wah
 4 | Yellow  | 4 | 1510 | 22958 | 0.375 | 210
 5 | Red     | 5 | 1780 | 19688 | 0.25  | 230
 6 | Pink    | 6 | 2047 | 16384 | 0.125 | 250
-
-## Finding the source files
-#### In GitHub
-GitHub repo:
-https://github.com/alex-florescu/CS351/tree/main/test-project
-
-Code | Location
-| -- | -- |
-Verilog design| /test-project/pedal/pedal.srcs/sources_1/new
-Verilog TB | /test-project/pedal/pedal.srcs/sources_1/new/test
-C app | /test-project/pedal/pedal.sdk/app_pedal/src/main.c
-MATLAB | /matlab-models/
-
-#### In the .zip submitted on Tabula
-
-Code | Location
-| -- | -- |
-Verilog design| /pedal/pedal.srcs/sources_1/new
-Verilog TB | /pedal/pedal.srcs/sources_1/new/test
-C app | /pedal/pedal.sdk/app_pedal/src/main.c
-MATLAB | /matlab-models/
-
 
