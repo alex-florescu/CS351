@@ -27,26 +27,30 @@ audioRaw(101:121) = 100;
 
 
 %% Generate coefficients
-n = 250;
-position = linspace(13,30,n)
-% position = linspace(18,50,n)
+n = 250; % number of implementations
+position = linspace(13,30,n); % set min and max bandpass
 
 a = zeros(n,13);
 b = zeros(n,13);
 
 for i = 1:n
+    % Obtain normalised bandpass frequency for the current implementation
     wcNorm = [position(i)-5,position(i)+5]./360.*2;
-    % wcNorm = [position(i)-5,position(i)+10]./360.*2;
 
+    % obtain filter coeffs
     [b1,a1] = butter(6, wcNorm, "bandpass");
+
+    % place into matrix
     a(i,:) = a1;
     b(i,:) = b1;
+    
+    % % Plot the first and the last implementation
     % figure;
-    if(i == 1 || i == n)
-        h1 = impz(b1,a1);
-        % hold on
-        % freqz(h1) % plot first and last filter
-    end
+    % if(i == 1 || i == n)
+    %     h1 = impz(b1,a1);
+    %     hold on
+    %     freqz(h1) % plot first and last filter
+    % end
 end
 % hold off
 
@@ -109,20 +113,9 @@ for i = 1 : length(y)
 
 end
 
-% sound(y*4,48000)
 
-% y = y*2 + audioRaw/8;
-
-% noise gate
-% for i = 1:length(y) 
-%     if(abs(y(i)) < 8e-4)
-%         y(i) = 0;
-%     end
-% end
-
-% sound(y, 48000)
-% sound(audioRaw*8,48000)
-% sound(y + audioRaw/8, 48000)
+y = y*8 + audioRaw/2;
+% sound(y,48000)
 
 % by increasing/decreasing the precision we observe the following:
 % the denominator values of the transfer function (b coefficient), despite

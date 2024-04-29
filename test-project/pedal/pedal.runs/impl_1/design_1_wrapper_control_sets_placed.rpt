@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Apr 19 11:27:04 2024
+| Date         : Sat Apr 27 18:28:17 2024
 | Host         : alex-yoga running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    33 |
-|    Minimum number of control sets                        |    33 |
+| Total control sets                                       |    32 |
+|    Minimum number of control sets                        |    32 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    77 |
+| Unused register locations in slices containing registers |    69 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,9 +39,9 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    33 |
+| Total control sets |    32 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     7 |
+| >= 4 to < 6        |     6 |
 | >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     0 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              81 |           27 |
+| No           | No                    | No                     |              85 |           28 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |            1625 |          460 |
-| Yes          | No                    | No                     |            1136 |          313 |
+| No           | Yes                   | No                     |            1913 |          542 |
+| Yes          | No                    | No                     |             844 |          230 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1041 |          377 |
+| Yes          | Yes                   | No                     |            1041 |          354 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,39 +73,38 @@ Table of Contents
 +--------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
 |                      Clock Signal                      |                               Enable Signal                               |                             Set/Reset Signal                            | Slice Load Count | Bel Load Count |
 +--------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_config/wah_val[6]_i_1_n_0            |                                                                         |                1 |              4 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/rd_enable     |                                                                         |                2 |              4 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/coef_offset[3]_i_1_n_0                    | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                 |                1 |              4 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_coe/read_en                          |                                                                         |                2 |              4 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_config/delay_val[14]_i_1_n_0         |                                                                         |                1 |              5 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/p_0_in_1                                   | rst_IBUF                                                                |                3 |              5 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/valid_reg[9]_0[0]             | rst_IBUF                                                                |                1 |              5 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/p_0_in_1                                   | rst_IBUF                                                                |                2 |              5 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_delay/inst_ram_delay/read_enable     |                                                                         |                3 |              6 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_config/thresh_val[9]_i_1_n_0         |                                                                         |                1 |              6 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/E[0]                          | rst_IBUF                                                                |                3 |              8 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_config/thresh_val[9]_i_1_n_0         |                                                                         |                3 |              6 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_delay/inst_ram_delay/read_enable     |                                                                         |                2 |              6 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/E[0]                          | rst_IBUF                                                                |                2 |              8 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                   | design_1_i/top_0/inst/inst_pipe/inst_wah/inst_coe/sample_cnt[8]_i_1_n_0 |                3 |              9 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_delay/inst_ram_delay/E[0]            |                                                                         |                9 |             14 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_i2s/temp_in[15]_i_1_n_0                      |                4 |             15 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_delay/inst_ram_delay/E[0]            |                                                                         |                8 |             14 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_i2s/temp_in[15]_i_1_n_0                      |                3 |             15 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/sample_cnt[0]_i_1__2_n_0      | rst_IBUF                                                                |                4 |             15 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat2_2      |                                                                         |                5 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat0_0      |                                                                         |                5 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              | design_1_i/top_0/inst/inst_pipe/inst_noise_gate_out/clean_data          |                5 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/temp_in_0                                  | rst_IBUF                                                                |                7 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat3_3      |                                                                         |                7 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat0_0      |                                                                         |                6 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat1_1      |                                                                         |                8 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat2_2      |                                                                         |                6 |             16 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_dist/valid_reg[2]_0                  | rst_IBUF                                                                |                4 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat3_3      |                                                                         |                5 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/o_dat1_1      |                                                                         |                5 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              | design_1_i/top_0/inst/inst_pipe/inst_noise_gate_in/clean_data           |                4 |             16 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_debouncer/inst_deb_2/cnt[0]_i_1__1_n_0       |                5 |             17 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_debouncer/inst_deb_1/cnt[0]_i_1__0_n_0       |                5 |             17 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/temp_in_0                                  | rst_IBUF                                                                |                4 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              | design_1_i/top_0/inst/inst_pipe/inst_noise_gate_in/clean_data           |                7 |             16 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              | design_1_i/top_0/inst/inst_pipe/inst_noise_gate_out/clean_data          |                5 |             16 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_debouncer/inst_deb_0/cnt[0]_i_1_n_0          |                5 |             17 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_debouncer/inst_deb_1/cnt[0]_i_1__0_n_0       |                5 |             17 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | design_1_i/top_0/inst/inst_debouncer/inst_deb_2/cnt[0]_i_1__1_n_0       |                5 |             17 |
 |  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_dist/valid_reg[2]_1[0]               | rst_IBUF                                                                |                8 |             30 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/reg_out[15]_i_1_n_0                        |                                                                         |                8 |             32 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/sync_fifo_dat |                                                                         |               12 |             64 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                   | design_1_i/top_0/inst/inst_pipe/inst_wah/p_0_out__79_i_2_n_0            |               33 |             64 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           |                                                                         |               27 |            115 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                   | rst_IBUF                                                                |              302 |            837 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              |                                                                         |              254 |            951 |
-|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | rst_IBUF                                                                |              441 |           1559 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_i2s/reg_out[15]_i_1_n_0                        |                                                                         |                6 |             32 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/inst_ram_reverb/sync_fifo_dat |                                                                         |               15 |             64 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                   | design_1_i/top_0/inst/inst_pipe/inst_wah/p_0_out__79_i_2_n_0            |               23 |             64 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           |                                                                         |               28 |            119 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_wah/CEM                              |                                                                         |              164 |            663 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 | design_1_i/top_0/inst/inst_pipe/inst_reverb/tx_vld_eff3                   | rst_IBUF                                                                |              289 |            837 |
+|  design_1_i/top_0/inst/inst_clock_wizard/inst/clk_out1 |                                                                           | rst_IBUF                                                                |              524 |           1847 |
 +--------------------------------------------------------+---------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+----------------+
 
 

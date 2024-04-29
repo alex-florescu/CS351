@@ -76,9 +76,9 @@ module delay #(
     ) inst_ram_delay (
         .clk(clk),
         .rst(rst),
-        .i_dat(o_dat), // change to i_dat for simple delayed input
-        .write(o_vld), // change to i_dat for simple delayed input
-        .read(i_vld), // change to i_vld for simple delayed input
+        .i_dat(o_dat),
+        .write(o_vld),
+        .read(i_vld),
         .fifo_dat(fifo_data),
         .fifo_vld(fifo_vld),
         .offset(offset)

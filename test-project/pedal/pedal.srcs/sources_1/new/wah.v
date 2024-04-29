@@ -15,16 +15,10 @@ module wah #(
     reg [DATA_WIDTH - 1:0] y_master;
     reg [DATA_WIDTH - 1:0] x_master;
     reg [DATA_WIDTH - 1:0] y_combined;
-    // b coefs, positions 1 up to 13 (0.48 int.frac)
-    // localparam signed [47:0] b_coef [0:12] = '{90049739, 0, -540298434, 0, 1350746086, 0, -1800994782, 0, 1350746086, 0, -540298434, 0, 90049739};
 
-    // localparam BCOEF_WIDTH = 64;
+    // b coefs, positions 1 up to 13 (0.48 int.frac)
     localparam BCOEF_WIDTH = 48;
-// 5901499700238.00	0	-35408998201429.0	0	88522495503572.0	0	-118029994004762	0	88522495503572.0	0	-35408998201429.0	0	5901499700238.00
-    // localparam signed [BCOEF_WIDTH -1:0] b_coef0 =   (64'd5901499700238);
-    // localparam signed [BCOEF_WIDTH -1:0] b_coef2 = - (64'd35408998201429);
-    // localparam signed [BCOEF_WIDTH -1:0] b_coef4 =   (64'd88522495503572);
-    // localparam signed [BCOEF_WIDTH -1:0] b_coef6 = - (64'd118029994004762);
+
     localparam signed [BCOEF_WIDTH -1:0] b_coef0 =   (48'd90049739);
     localparam signed [BCOEF_WIDTH -1:0] b_coef2 = - (48'd540298434);
     localparam signed [BCOEF_WIDTH -1:0] b_coef4 =   (48'd1350746086);
@@ -32,39 +26,6 @@ module wah #(
     localparam signed [BCOEF_WIDTH -1:0] b_coef8 = b_coef4;
     localparam signed [BCOEF_WIDTH -1:0] b_coef10 = b_coef2;
     localparam signed [BCOEF_WIDTH -1:0] b_coef12 = b_coef0;
-
-    /// OLD A COEFS (localparams)
-        // a coefs, positions 2 up to 13 (11.14 int.frac)
-        // // localparam signed [24:0] a_coef [0:11] = '{-175304, 869299, -2640897, 5473035, -8150185, 8941717, -7282101, 4369277, -1883784, 554062, -99840, 8338};
-        // localparam ACOEF_INT = 11;
-        // localparam ACOEF_FRAC = 14;
-        // localparam ACOEF_WIDTH = ACOEF_INT + ACOEF_FRAC; //25
-
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef0  = -175304; 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef1  = 869299;   // 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef2  = -2640897; //    OLD VALUES WITH FRAC = 14
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef3  = 5473035;  // 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef4  = -8150185; // 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef5  = 8941717; 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef6  = -7282101;
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef7  = 4369277; 
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef8  = -1883784;
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef9  = 554062;  
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef10 = -99840;  
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef11 = 8338;
-        
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef0  = - (43'd45954882721);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef1  =   (43'd227881599186);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef2  = - (43'd692295274636);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef3  =   (43'd1434723173130);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef4  = - (43'd2136522103223);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef5  =   (43'd2344017500936);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef6  = - (43'd1908959205136);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef7  =   (43'd1145379768117);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef8  = - (43'd493822778990);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef9  =   (43'd145243897871);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef10 = - (43'd26172523604);
-        // localparam signed [ACOEF_WIDTH - 1:0] a_coef11 =   (43'd2185867371);
 
     // a coef loaded from BRAM
     localparam ACOEF_INT = 11;
@@ -301,15 +262,14 @@ module wah #(
             // cast to 16 int bits for output
             y_out <= ax_bx[(AY_FRAC + DATA_WIDTH) - 1 -: DATA_WIDTH]; // ax_bx frac bits (62) + y_out int bits (16)
 
-            // y_master  <= y_out * 8;
-            // x_master  <= x[8] / 2; // changed from 4 to 2
-            // y_combined <= x_master + y_master;
+            // blend the wah output with the pure input
+            y_master  <= y_out * 8;
+            x_master  <= x[0] / 2; // changed from 4 to 2
+            y_combined <= x_master + y_master;
 
-            y_combined <= y_out;
+            // y_combined <= y_out;
         end
     end
-
-    // localparam DEPTH = 3; // number of stages for distortion effect
 
     // select output based on enable
     assign o_dat = (enable) ? y_combined : i_dat;

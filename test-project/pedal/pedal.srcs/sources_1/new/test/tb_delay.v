@@ -1,5 +1,8 @@
 `timescale 1ns / 1ps
 
+// The module is tested here on a much shorter RAM depth than used in the final design (16 instead of 16k)
+// to account for this, the BRAM settings in the design must be changed to match the testbench
+
 module tb_delay;
 
 // Parameters

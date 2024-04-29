@@ -1,6 +1,5 @@
 module distortion #(
     parameter DATA_WIDTH = 16
-    // parameter THRESH = 256 // value TBD
 )(
     input                     clk,
     input                     rst,

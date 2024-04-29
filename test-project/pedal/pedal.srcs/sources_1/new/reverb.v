@@ -17,13 +17,11 @@ module reverb #(
     localparam DIV_GAIN = 3; // divide by 8 = 2^3
 
     // create registers for data pipelining
-    reg signed [DATA_WIDTH - 1:0] delay_data [1:0]; // corresponding to pure_data[8] and [9]
+    reg signed [DATA_WIDTH - 1:0] reverb_data [1:0]; // corresponding to pure_data[8] and [9]
     reg signed [DATA_WIDTH - 1:0] pure_data [DEPTH - 1:0];
-    // reg signed [DATA_WIDTH - 1:0] pure_data_div;
-    reg signed [DATA_WIDTH + 4 - 1:0] red_data;
-    wire signed [DATA_WIDTH    - 1:0] red_data_cast;
+    reg signed [DATA_WIDTH + 4 - 1:0] reduced_data;
+    wire signed [DATA_WIDTH    - 1:0] reduced_data_cast;
     reg signed [DATA_WIDTH - 1:0] remain_data;
-    // wire signed [DATA_WIDTH - 1:0] fifo_data;
     wire signed [DATA_WIDTH - 1:0] fifo_data0;
     wire signed [DATA_WIDTH - 1:0] fifo_data1;
     wire signed [DATA_WIDTH - 1:0] fifo_data2;
@@ -57,7 +55,7 @@ module reverb #(
     always @(posedge clk) begin
         if(rst) begin
             pure_data[0] <= 16'd0;
-            delay_data[0] <= 16'd0;
+            reverb_data[0] <= 16'd0;
         end else begin
             // path for delayed data
             pure_data[0]  <= i_dat;
@@ -73,8 +71,8 @@ module reverb #(
             pure_data[10] <= pure_data[9];
 
             // delayed copy: reduced input
-            red_data    <= pure_data[6]*div_gain;          // corresp pure_data[7]
-            remain_data <= pure_data[7] - red_data_cast; // corresp pure_data[8]
+            reduced_data <= pure_data[6]*div_gain;        // corresp pure_data[7]
+            remain_data <= pure_data[7] - reduced_data_cast; // corresp pure_data[8]
             
             // sum up the BRAM outputs
             fifo_data_sum <= fifo_data0 + fifo_data1 + fifo_data2 + fifo_data3;
@@ -85,14 +83,14 @@ module reverb #(
                 fifo_data_sum >> DIV_GAIN; // else shift only
             
             // add on top of reduced input
-            delay_data[0] <= (start) ? red_data_cast : red_data_cast + fifo_data_reduced; // corresp to pure_data[8]
+            reverb_data[0] <= (start) ? reduced_data_cast : reduced_data_cast + fifo_data_reduced; // corresp to pure_data[8]
 
             // add remainder of input
-            delay_data[1] <= delay_data[0] + remain_data;  // corresp to pure_data[9]
+            reverb_data[1] <= reverb_data[0] + remain_data;  // corresp to pure_data[9]
         end     
     end
 
-    assign red_data_cast = red_data[DATA_WIDTH + 3 - 1 -: DATA_WIDTH];
+    assign reduced_data_cast = reduced_data[DATA_WIDTH + 3 - 1 -: DATA_WIDTH];
 
     wire fifo_valid;
 
@@ -102,7 +100,7 @@ module reverb #(
     ) inst_ram_reverb (
         .clk(clk),
         .rst(rst),
-        .i_dat(delay_data[0]), // send to fifo with reduced input data
+        .i_dat(reverb_data[0]), // send to fifo with reduced input data
         .write(valid[9]),
         .i_vld(i_vld),
         .fifo_dat0(fifo_data0),
@@ -113,7 +111,7 @@ module reverb #(
     );
 
     // select output based on enable
-    assign o_dat = (enable) ? delay_data[1] : pure_data[9];
+    assign o_dat = (enable) ? reverb_data[1] : pure_data[9];
     assign o_vld = valid[9];
 
     always @(posedge clk) begin

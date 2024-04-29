@@ -1,5 +1,8 @@
 `timescale 1ns / 1ps
 
+// The module is tested here on a much shorter RAM depth than used in the final design (16 instead of 16k)
+// to account for this, the BRAM settings in the design must be changed to match the testbench
+
 module tb_reverb;
 
 // Parameters
@@ -92,16 +95,13 @@ initial begin
         i_dat = input_data;
         i_vld = 0; // Keep i_vld low for 255 cycles
 
-        #10.1 // Compare
+        #10.1 // Compare: allow a small error window to account for division by 8
         check = 1;
             if(o_dat > expected_output_data) begin
                 scoreboard = ((o_dat - expected_output_data) < 8) ? 1 : 0;
             end else begin
                 scoreboard = ((expected_output_data - o_dat) < 8) ? 1 : 0;
             end
-            // scoreboard = (o_dat == expected_output_data) ? 1 : 0;
-
-
             // Write to scoreboard file
             $fwrite(scoreboardFile, "%b: DUT: %h; Expected: %h\n", scoreboard, o_dat, expected_output_data);
 
@@ -115,12 +115,6 @@ initial begin
         i_vld = 1;
 
     end
-
-        // Capture output data before the new data pair
-        // scoreboard = (o_dat == expected_output_data) ? 1 : 0;
-
-
-
 
     // Close files
     $fclose(inputFile);

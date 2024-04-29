@@ -53,8 +53,6 @@ distortion #(
 ) inst_dist (
     .clk(clk),
     .rst(rst),
-    // .i_dat(rx_dat),
-    // .i_vld(rx_vld),
     .i_dat(tx_dat_clean),
     .i_vld(tx_vld_clean),
     .o_dat(tx_dat_eff1),
@@ -64,7 +62,6 @@ distortion #(
     .thresh(thresh_val)
 );
 
-// localparam DELAY_DEPTH = 32;
 localparam DELAY_DEPTH = 32768;
 localparam DELAY_DEPTH_BITS = $clog2(DELAY_DEPTH);
 wire [DELAY_DEPTH_BITS - 1:0] delay_val;
@@ -77,8 +74,6 @@ delay #(
 ) inst_delay (
     .clk(clk),
     .rst(rst),
-    // .i_dat(rx_dat),
-    // .i_vld(rx_vld),
     .i_dat(tx_dat_eff1),
     .i_vld(tx_vld_eff1),
     .o_dat(tx_dat_eff2),
@@ -88,7 +83,6 @@ delay #(
 );
 
 localparam REVERB_DEPTH = 16384; //8192;
-// localparam REVERB_DEPTH_BITS = $clog2(REVERB_DEPTH);
 wire [3:0] reverb_val;
 
 reverb #(
@@ -99,8 +93,6 @@ reverb #(
     .rst(rst),
     .i_dat(tx_dat_eff2),
     .i_vld(tx_vld_eff2),
-    // .i_dat(rx_dat),
-    // .i_vld(rx_vld),
     .o_dat(tx_dat_eff3),
     .o_vld(tx_vld_eff3),
     .enable(sw[2]),
@@ -116,8 +108,6 @@ wah #(
     .rst(rst),
     .i_dat(tx_dat_eff3),
     .i_vld(tx_vld_eff3),
-    // .i_dat(rx_dat),
-    // .i_vld(rx_vld),
     .o_dat(tx_dat_eff4),
     .o_vld(tx_vld_eff4),
     .enable(sw[3]),
@@ -135,19 +125,14 @@ noise_gate #(
     .o_dat(tx_dat_eff4_clean),
     .i_vld(tx_vld_eff4),
     .o_vld(tx_vld_eff4_clean),
-    .enable(sw[3])
+    .enable(sw[3]) // enable only with wah
 );
 
-// assign tx_dat = rx_dat;
-// assign tx_vld = rx_vld;
-// assign tx_dat = tx_dat_eff4;
-// assign tx_vld = tx_vld_eff4;
 assign tx_dat = tx_dat_eff4_clean;
 assign tx_vld = tx_vld_eff4_clean;
 
 effect_config #(
     .DELAY_DEPTH_BITS(DELAY_DEPTH_BITS)
-    // .REVERB_DEPTH_BITS(REVERB_DEPTH_BITS)
 )inst_config (
     .clk(clk),
     .rst(rst),
@@ -161,19 +146,5 @@ effect_config #(
     .led5(led5_rgb),
     .led6(led6_rgb)
 );
-
-// beep #(
-//     .DATA_WIDTH(DATA_WIDTH),
-//     .BEEP_VALUE(16'd500),
-//     .BEEP_PERIOD(8'd150) // Say how this is converted to freq
-// ) inst_beep (
-//     .clk(clk),
-//     .rst(rst),
-//     .i_dat(tx_dat_eff2),
-//     .o_dat(tx_dat_eff3),
-//     .i_vld(tx_vld_eff2),
-//     .o_vld(tx_vld_eff3),
-//     .enable(sw[3])
-// );
 
 endmodule
