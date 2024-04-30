@@ -26,14 +26,14 @@ MATLAB         | /matlab/
     * In SDK, if 'app_pedal' does not appear, click File > Open Projects from File System...
     * Click "Directory"
     * Browse to the project folder
-    * Select the cpy_pcam.sdk folder
+    * Select the audio_effects.sdk (or pedal.sdk) folder
     * Click 'Finish'
 6. Plug in the board
 7. Click the 'Program FPGA' button
 8. Click the 'Run' button (sometimes you might have to click 'Run' twice before it works)
 9. Have fun!
 
-    * If SDK does not launch at all, follow this guide: https://bijan.binaee.com/2017/07/xilinx-sdk-not-opening-after-crash/
+* If SDK does not launch at all, follow this guide: https://bijan.binaee.com/2017/07/xilinx-sdk-not-opening-after-crash/
 
 ## Effect configuration
 Switch | Effect | Param 1 | Param 2
