@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/alexm/OneDrive/Documents/uni/CS351/test-project/pedal/pedal.runs/design_1_top_0_0_synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:1} [current_design]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property DONT_TOUCH true [get_cells inst/inst_pipe/inst_wah/inst_coe/inst_rom_coe]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property DONT_TOUCH true [get_cells inst/inst_pipe/inst_reverb/inst_ram_reverb/inst_dpram_reverb]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property DONT_TOUCH true [get_cells inst/inst_pipe/inst_delay/inst_ram_delay/inst_dpram_delay]
